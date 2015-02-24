@@ -10,7 +10,9 @@ def parseReq(input):
 		for line in f:
 			resName = packageName.search(line)
 			resEq = packageEq.findall(line)
-			resVers = packageVers.findall(line)
+			it = next(re.finditer('>=|<=|>|<|==|!=', line), None)
+			if it:
+				resVers = packageVers.findall(line[it.start():])
 			if resName:
 				name = resName.group(0)
 				if not res.has_key(name):
