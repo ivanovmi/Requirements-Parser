@@ -33,6 +33,6 @@ python-neutronclient>=2.3.11,<3
 python-heatclient>=0.3.0
 six>=1.9.0
 stevedore>=1.1.0  # Apache-2.0
-SQLAlchemy>=0.9.7,<=0.9.97
+SQLAlchemy>=0.9.8,!=0.9.99
 WebOb>=1.2.3
 
