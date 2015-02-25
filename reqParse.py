@@ -8,6 +8,8 @@ def parseReq(input):
 	res = dict()
 	with open(input, 'r') as f:
 		for line in f:
+			if line[0] == '#':
+				continue
 			resName = packageName.search(line)
 			resEq = packageEq.findall(line)
 			it = next(re.finditer('>=|<=|>|<|==|!=', line), None)
