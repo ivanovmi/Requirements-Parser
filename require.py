@@ -14,9 +14,9 @@ class Require:
 		for el in req1.keys():
 			req[el] = set(req[el]) | set(req1[el])
 			req[el] = sorted(req[el], key = lambda x: x[1])
+
 			pred = None
 			idx = 0
-			
 			while idx < len(req[el]):
 				if pred != None:
 					if req[el][idx][1] == pred[1]:
