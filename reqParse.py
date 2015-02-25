@@ -5,7 +5,7 @@ packageEq = re.compile("(>=|<=|>|<|==|!=)+")
 packageVers = re.compile("[\d.]+")
 
 def parseReq(input):
-	res = dict([])
+	res = dict()
 	with open(input, 'r') as f:
 		for line in f:
 			resName = packageName.search(line)
@@ -16,7 +16,7 @@ def parseReq(input):
 			if resName:
 				name = resName.group(0)
 				if not res.has_key(name):
-					res[name] = []
+					res[name] = set()
 					for idx, sign in enumerate(resEq):
-						res[name].append((sign, resVers[idx]))
+						res[name].add((sign, resVers[idx]))
 	return res

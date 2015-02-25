@@ -1,9 +1,9 @@
 class Require:
 
-	packages = dict([])
+	packages = dict()
 
-	def __init__(self):
-		
+	def __init__(self, req):
+		packages = req
 
 	@staticmethod
-	def merge()
+	def merge(req1, req2):
