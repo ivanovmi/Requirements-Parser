@@ -1,6 +1,6 @@
 import re
 
-packageName = re.compile("[a-zA-Z0-9-_]+")
+packageName = re.compile("[a-zA-Z0-9-_.]+")
 packageEq = re.compile("(>=|<=|>|<|==|!=)+")
 packageVers = re.compile("[\d.]+")
 

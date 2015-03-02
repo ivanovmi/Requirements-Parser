@@ -18,27 +18,22 @@ class Require:
 			req[el] = set(req[el]) | set(req1[el])
 			req[el] = sorted(req[el], key = lambda x: x[1])
 
-			signs = [x[0] for x in reversed(req[el])]
+			try:
+				eqEl = filter(lambda x: x[0] == '==', req[el])[-1]
+			except IndexError:
+				eqEl = (-1, -1)
 
 			try:
-				sI = signs.index('==')
-				eqEl = True
-			except ValueError:
-				sI = sys.maxint
-				eqEl = False
+				neqEl = filter(lambda x: x[0] in ['>=', '<=', '>', '<'], req[el])[-1]
+			except IndexError:
+				neqEl = (-1, -1)
 
-			if eqEl:
-				eqEl = itertools.ifilter(lambda x: x[0] == '==', req[el])
-				for sign in ['<=', '>=', '<', '>']:
-					try:
-						fI = signs.index(sign)
-					except ValueError:
-						fI = sys.maxint
-					if fI <= sI:
-						eqEl = False
-						break;
+			if eqEl[1] >= neqEl[1] and neqEl[0] in ['>=', '<=', -1] and eqEl[1] != -1:
+				eqEly = True
+			else:
+				eqEly = False
 
-			if not eqEl:
+			if not eqEly:
 				pred = None
 				idx = 0
 				while idx < len(req[el]):
@@ -49,11 +44,13 @@ class Require:
 							if req[el][idx][0] in ['>', '<']:
 								req[el].pop(idx - 1)
 							elif req[el][idx][0] in ['>=', '<=']:
-								if req[el][idx - 1][0] != '!=':
-									req[el].pop(idx)
-								else:
+								if not req[el][idx - 1][0] in ['!=', '<=', '>=']:
+									req[el].pop(idx - 1)
+								elif req[el][idx - 1][0] == '!=':
 									req[el][idx] = (req[el][idx][0][:1], req[el][idx][1])
 									req[el].pop(idx - 1)
+								else:
+									idx += 1
 							idx -= 1
 					pred = req[el][idx]
 					idx += 1
