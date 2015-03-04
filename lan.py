@@ -31,7 +31,7 @@ def getRequirementsFromUrl(url,gerritAccount):
         r = s.get(url)
 
         if r.status_code == 200:
-                return r.content
+                return r.iter_lines()
         else:
 		print r.status_code   
                 raise SystemExit
@@ -91,6 +91,14 @@ gerritAccount = loginToLaunchpad ()
 
 req_url = 'https://review.fuel-infra.org/gitweb?p=openstack/horizon.git;a=blob_plain;f=requirements.txt;hb=refs/heads/master'
 
-print getRequirementsFromUrl(req_url, gerritAccount)
+#print getRequirementsFromUrl(req_url, gerritAccount)
 
+#r = getRequirementsFromUrl(req_url, gerritAccount)
 
+#def call_it(r):
+#    res = dict()
+#    for i in r.iter_lines():
+#        print i
+#    return res
+
+#call_it(r)
