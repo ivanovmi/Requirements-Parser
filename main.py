@@ -5,13 +5,15 @@ import os
 import lan
 
 if __name__ == "__main__":
-    branch_name = raw_input("At the what branch we should check requirements? ")
-    if branch_name == 'master':
-        branch = 'master'
-    elif branch_name == '6.1':
-        branch = 'openstack-ci/fuel-6.1/2014.2'
-    elif branch_name == '6.0.1':
-        branch = 'openstack-ci/fuel-6.0.1/2014.2'
+    branch_name = ''
+    while branch_name not in ['master', '6.1', '6.0.1']:
+        branch_name = raw_input("At the what branch we should check requirements? ")
+        if branch_name == 'master':
+            branch = 'master'
+        elif branch_name == '6.1':
+            branch = 'openstack-ci/fuel-6.1/2014.2'
+        elif branch_name == '6.0.1':
+            branch = 'openstack-ci/fuel-6.0.1/2014.2'
     #pdb.set_trace()
     gerritAccount = lan.loginToLaunchpad()
     with open("2ndReq", 'r') as f:
