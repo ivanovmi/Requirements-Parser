@@ -1,5 +1,6 @@
 import itertools
 import sys
+from distutils.version import LooseVersion
 
 class Require:
 
@@ -8,7 +9,7 @@ class Require:
 	def __init__(self, req):
 		self.packs = req
 		for el in self.packs.keys():
-			self.packs[el] = sorted(self.packs[el], key = lambda x: x[1])
+			self.packs[el] = sorted(self.packs[el], key = lambda x: LooseVersion(x[1]))
 
 	@staticmethod
 	def merge(req1, req2):
@@ -16,7 +17,7 @@ class Require:
 
 		for el in req1.keys():
 			req[el] = set(req[el]) | set(req1[el])
-			req[el] = sorted(req[el], key = lambda x: x[1])
+			req[el] = sorted(req[el], key = lambda x: LooseVersion(x[1]))
 
 			try:
 				eqEl = filter(lambda x: x[0] == '==', req[el])[-1]
@@ -28,7 +29,7 @@ class Require:
 			except IndexError:
 				neqEl = (-1, -1)
 
-			if eqEl[1] >= neqEl[1] and neqEl[0] in ['>=', '<=', -1] and eqEl[1] != -1:
+			if eqEl[1] != -1 and neqEl[1] != -1 and LooseVersion(eqEl[1]) >= LooseVersion(neqEl[1]) and neqEl[0] in ['>=', '<=', -1]:
 				eqEly = True
 			else:
 				eqEly = False
