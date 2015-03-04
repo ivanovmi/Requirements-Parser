@@ -21,11 +21,7 @@ if __name__ == "__main__":
     with open('req', 'r') as req_file:
         for repo in req_file:
             print "Repos:", repo
-<<<<<<< HEAD
             req_url = 'https://review.fuel-infra.org/gitweb?p=openstack/' + repo.strip() + '.git;a=blob_plain;f=requirements.txt;hb=refs/heads/' + branch
-=======
-            req_url = 'https://review.fuel-infra.org/gitweb?p=openstack/' + repo.strip() + '.git;a=blob_plain;f=requirements.txt;hb=refs/heads/master'
->>>>>>> 8641242da880d12d0fbe534bf5d6930f74da5866
             r = lan.getRequirementsFromUrl(req_url, gerritAccount)
             rq1 = require.Require(reqParse.parseReq(r))
             rq = require.Require.merge(rq1.packs, rq2.packs)
