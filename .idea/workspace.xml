@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="613568da-32d0-4759-9fbf-4d944e66ac4e" name="Default" comment="">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
 =======
@@ -16,6 +17,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reqParse.py" afterPath="$PROJECT_DIR$/reqParse.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/require.py" afterPath="$PROJECT_DIR$/require.py" />
 >>>>>>> 79f0eacf59eff31a3264ce37d0e00374117f84a2
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+>>>>>>> Stashed changes
     </list>
     <ignored path="Requirements-Parser.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -72,6 +76,7 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
             <state vertical-scroll-proportion="0.6006826" vertical-offset="80" max-vertical-offset="666">
               <caret line="24" column="60" selection-start-line="24" selection-start-column="60" selection-end-line="24" selection-end-column="60" />
@@ -79,6 +84,10 @@
             <state vertical-scroll-proportion="0.81311476" vertical-offset="4" max-vertical-offset="540">
               <caret line="14" column="79" selection-start-line="14" selection-start-column="79" selection-end-line="14" selection-end-column="79" />
 >>>>>>> 79f0eacf59eff31a3264ce37d0e00374117f84a2
+=======
+            <state vertical-scroll-proportion="1.9322034" vertical-offset="0" max-vertical-offset="540">
+              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+>>>>>>> Stashed changes
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -329,6 +338,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     <frame x="-1" y="28" width="1368" height="741" extended-state="6" />
     <editor active="true" />
@@ -342,6 +352,13 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32961783" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
 >>>>>>> 79f0eacf59eff31a3264ce37d0e00374117f84a2
+=======
+    <frame x="-1" y="28" width="1368" height="741" extended-state="7" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.6512739" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+>>>>>>> Stashed changes
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -448,6 +465,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
         <state vertical-scroll-proportion="0.6006826" vertical-offset="80" max-vertical-offset="666">
           <caret line="24" column="60" selection-start-line="24" selection-start-column="60" selection-end-line="24" selection-end-column="60" />
@@ -455,6 +473,10 @@
         <state vertical-scroll-proportion="0.81311476" vertical-offset="4" max-vertical-offset="540">
           <caret line="14" column="79" selection-start-line="14" selection-start-column="79" selection-end-line="14" selection-end-column="79" />
 >>>>>>> 79f0eacf59eff31a3264ce37d0e00374117f84a2
+=======
+        <state vertical-scroll-proportion="1.9322034" vertical-offset="0" max-vertical-offset="540">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+>>>>>>> Stashed changes
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
