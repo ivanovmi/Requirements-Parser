@@ -25,34 +25,34 @@ parameters ={
 }
 
 
-def getRequirementsFromUrl(url,gerritAccount):
-	s = requests.Session()
-	s.headers.update({'Cookie' : 'GerritAccount=' + gerritAccount})
-        r = s.get(url)
+def getRequirementsFromUrl(url, gerritAccount):
+    s = requests.Session()
+    s.headers.update({'Cookie' : 'GerritAccount=' + gerritAccount})
+    r = s.get(url)
 
-        if r.status_code == 200:
-                return r.iter_lines()
-        else:
-		print r.status_code   
-                raise SystemExit
+    if r.status_code == 200:
+        return r.iter_lines()
+    else:
+        print r.status_code
+        raise SystemExit
+
 
 def loginToLaunchpad():
     s = requests.Session()
     r = s.get('https://login.launchpad.net')
 
-
     login_data = {
-	'openid.usernamepassword' : '',
-        'csrfmiddlewaretoken' : requests.utils.dict_from_cookiejar(s.cookies)['csrftoken'] ,
- 	'email':        LAUNCHPAD_ID,
-        'password' :    LAUNCHPAD_PW,
-        'user-intentions' :     'login',
+    'openid.usernamepassword' : '',
+    'csrfmiddlewaretoken' : requests.utils.dict_from_cookiejar(s.cookies)['csrftoken'],
+    'email':        LAUNCHPAD_ID,
+    'password' :    LAUNCHPAD_PW,
+    'user-intentions' :     'login',
     }
 
     Cookies = 'C=1; csrftoken=' + requests.utils.dict_from_cookiejar(s.cookies)['csrftoken']
-    s.headers.update({'Referer':'https://login.launchpad.net'})
-    s.headers.update({'Cookie':Cookies})
-    r = s.post('https://login.launchpad.net/+login',data=login_data)
+    s.headers.update({'Referer': 'https://login.launchpad.net'})
+    s.headers.update({'Cookie': Cookies})
+    r = s.post('https://login.launchpad.net/+login', data=login_data)
 
     ss = requests.Session()
     rf = ss.get('https://review.fuel-infra.org/login/q/status:open')
@@ -64,41 +64,36 @@ def loginToLaunchpad():
     Cookiess += '; C=1; sessionid=' + requests.utils.dict_from_cookiejar(s.cookies)['sessionid']
     Cookiess += '; openid_referer="https://review.fuel-infra.org/login/q/status:open"'
 
-    ss.headers.update({'Referer':'https://review.fuel-infra.org/login/q/status:open'})
-    ss.headers.update({'Cookie':Cookiess})
-    r = ss.post('https://login.launchpad.net/+openid',data=parameters,allow_redirects=True)
+    ss.headers.update({'Referer': 'https://review.fuel-infra.org/login/q/status:open'})
+    ss.headers.update({'Cookie': Cookiess})
+    r = ss.post('https://login.launchpad.net/+openid', data=parameters, allow_redirects=True)
 
     d_data = {
-     'csrfmiddlewaretoken' :        requests.utils.dict_from_cookiejar(s.cookies)['csrftoken'],
-     'email' :  'on',
-     'fullname' : 'on',
-     'ok' : '',
-     'openid.usernamepassword' : ''
+     'csrfmiddlewaretoken': requests.utils.dict_from_cookiejar(s.cookies)['csrftoken'],
+     'email': 'on',
+     'fullname': 'on',
+     'ok': '',
+     'openid.usernamepassword': ''
     }
 
     ss.headers.update({'Referer': r.url})
-    header=s.headers
+    header = s.headers
 
-    rd = ss.post(r.url,data=d_data,allow_redirects=True)
+    rd = ss.post(r.url, data=d_data, allow_redirects=True)
 
     if requests.utils.dict_from_cookiejar(ss.cookies).has_key('GerritAccount'):
-	return requests.utils.dict_from_cookiejar(ss.cookies)['GerritAccount']
+        return requests.utils.dict_from_cookiejar(ss.cookies)['GerritAccount']
     else:
-	print 'Could not authenticate'
-	raise SystemExit
+        print 'Could not authenticate'
+        raise SystemExit
 
-gerritAccount = loginToLaunchpad ()
-
-req_url = 'https://review.fuel-infra.org/gitweb?p=openstack/horizon.git;a=blob_plain;f=requirements.txt;hb=refs/heads/master'
-
+#gerritAccount = loginToLaunchpad ()
+#req_url = 'https://review.fuel-infra.org/gitweb?p=openstack/horizon.git;a=blob_plain;f=requirements.txt;hb=refs/heads/master'
 #print getRequirementsFromUrl(req_url, gerritAccount)
-
 #r = getRequirementsFromUrl(req_url, gerritAccount)
-
 #def call_it(r):
 #    res = dict()
 #    for i in r.iter_lines():
 #        print i
 #    return res
-
 #call_it(r)
