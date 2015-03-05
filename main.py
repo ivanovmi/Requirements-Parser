@@ -6,6 +6,13 @@ import lan
 import json
 import reporter.report as generate_report
 
+
+def generate_output():
+        # read example JSON
+        with open("requirements.json") as jsfile:
+            json_data = json.load(jsfile)
+        generate_report.generate_rst(json_data)
+
 if __name__ == "__main__":
     branch_name = ''
     while branch_name not in ['master', '6.1', '6.0.1']:
@@ -46,16 +53,9 @@ if __name__ == "__main__":
         json_file.truncate()
     json_file.write('\t'+'],\n"output_format": "pdf"\n}')
     json_file.close()
+    generate_output()
     #os.system("./emailSend.sh {0} "'"{1}"'"".format("asteroid566@gmail.com", rq.items()))
     #for i in rq1.packs.items():
     #	print i
     # #for key in rq1.packs.keys():
     #	print "{0} {1}".format(key, rq[key])
-
-    def generate_output():
-        # read example JSON
-        with open("requirements.json") as jsfile:
-            json_data = json.load(jsfile)
-        generate_report.generate_rst(json_data)
-
-generate_output()

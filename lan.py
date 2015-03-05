@@ -33,7 +33,7 @@ def getRequirementsFromUrl(url, gerritAccount):
     if r.status_code == 200:
         return r.iter_lines()
     else:
-        print  r.status_code
+        print r.status_code
         raise SystemExit
 
 

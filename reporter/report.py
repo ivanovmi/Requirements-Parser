@@ -7,10 +7,10 @@ import docutils
 def generate_rst(json_data):
     f = open("report.rst", "w")
 
-    from email.Utils import formatdate
+    from email.utils import formatdate
     cur_time = formatdate(timeval=None, localtime=True)
 
-    write_headers(f, '{0} {1}{2}'.format("Dependency checker ", cur_time, "\n"), True)
+    write_headers(f, '{0} {1}{2}'.format("Dependency checker", cur_time, "\n"), True)
     write_parameters(f, ':{0}: {1}\n'.format("Upstream URL", json_data["upstream_url"]))
     write_parameters(f, ':{0}: {1}\n'.format("Upstream branch", json_data["upstream_branch"]))
     write_parameters(f, ':{0}: {1}\n'.format("MOS gerrit URL", json_data["gerrit_url"]))
@@ -34,6 +34,7 @@ def generate_rst(json_data):
         call(["rst2pdf", "report.rst", "-o", "report.pdf"])
     else:
         call(["rst2html", "report.rst", "report.html"])
+
 
 def write_headers(f, header, main=False):
     header_len = len(header) - 1
