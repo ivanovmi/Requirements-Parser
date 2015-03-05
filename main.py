@@ -32,16 +32,19 @@ if __name__ == "__main__":
             rq = require.Require.merge(rq1.packs, rq2.packs)
             json_file.write('\t{\n'+'\t'*2+json.dumps(repo.strip())+': {\n')
             for key in rq1.packs.keys():
-                print len(key)
                 json_file.write('\t'*3+json.dumps(key)+':'+json.dumps(rq[key])+',\n')
                 print "{0}:{1}".format(key, rq[key])
+            json_file.seek(-2, os.SEEK_END)
+            json_file.truncate()
             json_file.write('\t'*2+'}},\n')
+        json_file.seek(-2, os.SEEK_END)
+        json_file.truncate()
     json_file.write('\t'+']\n}')
-            #os.system("./emailSend.sh {0} "'"{1}"'"".format("asteroid566@gmail.com", rq.items()))
-            #for i in rq1.packs.items():
-            #	print i
-            #for key in rq1.packs.keys():
-            #	print "{0} {1}".format(key, rq[key])
+    #os.system("./emailSend.sh {0} "'"{1}"'"".format("asteroid566@gmail.com", rq.items()))
+    #for i in rq1.packs.items():
+    #	print i
+    # #for key in rq1.packs.keys():
+    #	print "{0} {1}".format(key, rq[key])
 '''
     def generate_output():
         # read example JSON
