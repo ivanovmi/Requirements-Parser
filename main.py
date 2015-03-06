@@ -13,6 +13,7 @@ def generate_output():
             json_data = json.load(jsfile)
         generate_report.generate_rst(json_data)
 
+
 def is_changed(a, b):
     try:
         signList_a, verList_a = zip(*a)
@@ -58,19 +59,21 @@ if __name__ == "__main__":
             json_file.write('\t{\n'+'\t'*2+json.dumps(repo.strip())+': {\n')
             json_file.write('\t'*2+'"deps": {\n')
             for key in rq1.packs.keys():
-                json_file.write('\t'*3+json.dumps(key)+':'+json.dumps(''.join([" %s%s;" % x for x in rq[key] ]))+',\n')
                 boldBeg = ""
                 boldEnd = ""
                 if is_changed(rq[key], rq1.packs[key]):
                     boldBeg = "\033[1m"
                     boldEnd = "\033[0m"
+                    json_file.write('\t'*3+json.dumps('**'+key+'**')+':'+json.dumps(''.join([" %s%s;" % x for x in rq[key] ]))+',\n')
+                else:
+                    json_file.write('\t'*3+json.dumps(key)+':'+json.dumps(''.join([" %s%s;" % x for x in rq[key] ]))+',\n')
                 print "{0}{1}{2}:{3}".format(boldBeg, key, boldEnd, ''.join([" %s%s;" % x for x in rq[key]]))
             json_file.seek(-2, os.SEEK_END)
             json_file.truncate()
             json_file.write('\t'*2+'}}},\n')
         json_file.seek(-2, os.SEEK_END)
         json_file.truncate()
-    json_file.write('\t'+'],\n"output_format": "pdf"\n}')
+    json_file.write('\t'+'],\n"output_format": "html"\n}')
     json_file.close()
     generate_output()
     #os.system("./emailSend.sh {0} "'"{1}"'"".format("asteroid566@gmail.com", rq.items()))

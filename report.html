@@ -1,0 +1,2787 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.12: http://docutils.sourceforge.net/" />
+<title>Dependency checker Fri, 06 Mar 2015 17:00:27 +0300</title>
+<style type="text/css">
+
+/*
+:Author: David Goodger (goodger@python.org)
+:Id: $Id: html4css1.css 7614 2013-02-21 15:55:51Z milde $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+
+See http://docutils.sf.net/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+object[type="image/svg+xml"], object[type="application/x-shockwave-flash"] {
+  overflow: hidden;
+}
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title, .code .error {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left, .figure.align-left, object.align-left {
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
+
+img.align-right, .figure.align-right, object.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+img.align-center, .figure.align-center, object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: inherit }
+
+/* div.align-center * { */
+/*   text-align: left } */
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font: inherit }
+
+pre.literal-block, pre.doctest-block, pre.math, pre.code {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+pre.code .ln { color: grey; } /* line numbers */
+pre.code, code { background-color: #eeeeee }
+pre.code .comment, code .comment { color: #5C6576 }
+pre.code .keyword, code .keyword { color: #3B0D06; font-weight: bold }
+pre.code .literal.string, code .literal.string { color: #0C5404 }
+pre.code .name.builtin, code .name.builtin { color: #352B84 }
+pre.code .deleted, code .deleted { background-color: #DEB0A1}
+pre.code .inserted, code .inserted { background-color: #A3D289}
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+/* "booktabs" style (no vertical lines) */
+table.docutils.booktabs {
+  border: 0px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-collapse: collapse;
+}
+table.docutils.booktabs * {
+  border: 0px;
+}
+table.docutils.booktabs th {
+  border-bottom: thin solid;
+  text-align: left;
+}
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+ul.auto-toc {
+  list-style-type: none }
+
+</style>
+</head>
+<body>
+<div class="document" id="dependency-checker-fri-06-mar-2015-17-00-27-0300">
+<h1 class="title">Dependency checker Fri, 06 Mar 2015 17:00:27 +0300</h1>
+<table class="docinfo" frame="void" rules="none">
+<col class="docinfo-name" />
+<col class="docinfo-content" />
+<tbody valign="top">
+<tr class="field"><th class="docinfo-name">Upstream URL:</th><td class="field-body">URL</td>
+</tr>
+<tr class="field"><th class="docinfo-name" colspan="2">Upstream branch:</th></tr>
+<tr class="field"><td>&nbsp;</td><td class="field-body">branch</td>
+</tr>
+<tr class="field"><th class="docinfo-name">MOS gerrit URL:</th><td class="field-body">URL</td>
+</tr>
+<tr class="field"><th class="docinfo-name" colspan="2">MOS gerrit branch:</th></tr>
+<tr class="field"><td>&nbsp;</td><td class="field-body">branch</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="ceilometer">
+<h1>ceilometer</h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Package name</th>
+<th class="head">DEPENDENCIES</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><strong>WSME</strong></td>
+<td>&gt;=0.6; &lt;=0.6.4;</td>
+</tr>
+<tr><td><strong>WebOb</strong></td>
+<td>&gt;=1.2.3; &lt;=1.3.1;</td>
+</tr>
+<tr><td><strong>msgpack-python</strong></td>
+<td>&gt;=0.4.0; &lt;=0.4.5;</td>
+</tr>
+<tr><td>jsonpath-rw</td>
+<td>&gt;=1.2.0; &lt;2.0;</td>
+</tr>
+<tr><td><strong>python-swiftclient</strong></td>
+<td>&gt;=2.2.0; &lt;=2.3.1;</td>
+</tr>
+<tr><td><strong>oslo.rootwrap</strong></td>
+<td>&gt;=1.3.0; &lt;=1.5.0;</td>
+</tr>
+<tr><td><strong>SQLAlchemy</strong></td>
+<td>&gt;=0.8.4; !=0.9.0; !=0.9.1; !=0.9.2; !=0.9.3; !=0.9.4; !=0.9.5; !=0.9.6; &lt;=0.9.99;</td>
+</tr>
+<tr><td>jsonschema</td>
+<td>&gt;=2.0.0; &lt;3.0.0;</td>
+</tr>
+<tr><td><strong>retrying</strong></td>
+<td>&gt;=1.2.2; !=1.3.0; &lt;=1.3.3;</td>
+</tr>
+<tr><td><strong>stevedore</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.0;</td>
+</tr>
+<tr><td><strong>oslo.messaging</strong></td>
+<td>&gt;=1.4.0; &lt;1.5.0;</td>
+</tr>
+<tr><td><strong>croniter</strong></td>
+<td>&gt;=0.3.4; &lt;=0.3.5;</td>
+</tr>
+<tr><td>pysnmp</td>
+<td>&gt;=4.2.1; &lt;5.0.0;</td>
+</tr>
+<tr><td><strong>alembic</strong></td>
+<td>&gt;=0.6.4; &lt;=0.7.4;</td>
+</tr>
+<tr><td><strong>oslo.db</strong></td>
+<td>&gt;=1.0.0; &lt;1.1;</td>
+</tr>
+<tr><td><strong>keystonemiddleware</strong></td>
+<td>&gt;=1.0.0; &lt;1.4.0;</td>
+</tr>
+<tr><td><strong>oslo.i18n</strong></td>
+<td>&gt;=1.0.0; &lt;=1.3.1;</td>
+</tr>
+<tr><td><strong>iso8601</strong></td>
+<td>&gt;=0.1.9; &lt;=0.1.10;</td>
+</tr>
+<tr><td><strong>python-ceilometerclient</strong></td>
+<td>&gt;=1.0.6; &lt;=1.0.12;</td>
+</tr>
+<tr><td>werkzeug</td>
+<td>&gt;=0.7;</td>
+</tr>
+<tr><td><strong>lxml</strong></td>
+<td>&gt;=2.3; &lt;=3.3.3;</td>
+</tr>
+<tr><td><strong>oslo.context</strong></td>
+<td>&lt;=0.1.0; &gt;=0.1.0;</td>
+</tr>
+<tr><td><strong>oslo.config</strong></td>
+<td>&gt;=1.4.0; &lt;=1.6.0;</td>
+</tr>
+<tr><td><strong>python-glanceclient</strong></td>
+<td>&gt;=0.14.0; &lt;=0.15.0;</td>
+</tr>
+<tr><td><strong>oslo.concurrency</strong></td>
+<td>&gt;=0.3.0;</td>
+</tr>
+<tr><td>oslo.middleware</td>
+<td>&gt;=0.3.0;</td>
+</tr>
+<tr><td><strong>python-neutronclient</strong></td>
+<td>&gt;=2.3.6; &lt;3;</td>
+</tr>
+<tr><td><strong>oslo.utils</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.1;</td>
+</tr>
+<tr><td><strong>PasteDeploy</strong></td>
+<td>&gt;=1.5.0; &lt;=1.5.2;</td>
+</tr>
+<tr><td><strong>python-keystoneclient</strong></td>
+<td>&gt;=0.10.0; &lt;=1.1.0;</td>
+</tr>
+<tr><td><strong>pytz</strong></td>
+<td>&lt;=2014.10;</td>
+</tr>
+<tr><td><strong>python-novaclient</strong></td>
+<td>&gt;=2.18.0; &lt;=2.20.0;</td>
+</tr>
+<tr><td><strong>pecan</strong></td>
+<td>&gt;=0.5.0; &lt;=0.8.3;</td>
+</tr>
+<tr><td>pbr</td>
+<td>&gt;=0.6; !=0.7; &lt;1.0;</td>
+</tr>
+<tr><td><strong>sqlalchemy-migrate</strong></td>
+<td>==0.9.1;</td>
+</tr>
+<tr><td><strong>tooz</strong></td>
+<td>&gt;=0.3; &lt;=0.12;</td>
+</tr>
+<tr><td><strong>posix_ipc</strong></td>
+<td>&lt;=0.9.9;</td>
+</tr>
+<tr><td><strong>oslo.serialization</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.0;</td>
+</tr>
+<tr><td><strong>PyYAML</strong></td>
+<td>&gt;=3.1.0; &lt;=3.10;</td>
+</tr>
+<tr><td><strong>six</strong></td>
+<td>&gt;=1.9.0; &lt;=1.9.0;</td>
+</tr>
+<tr><td><strong>eventlet</strong></td>
+<td>&gt;=0.15.1; &lt;=0.15.2;</td>
+</tr>
+<tr><td><strong>requests</strong></td>
+<td>&gt;=2.1.0; &lt;=2.2.1; !=2.4.0;</td>
+</tr>
+<tr><td><strong>netaddr</strong></td>
+<td>&gt;=0.7.12; &lt;=0.7.13;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="cinder">
+<h1>cinder</h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="23%" />
+<col width="77%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Package name</th>
+<th class="head">DEPENDENCIES</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><strong>oslo.config</strong></td>
+<td>&gt;=1.4.0; &lt;=1.6.0;</td>
+</tr>
+<tr><td><strong>WebOb</strong></td>
+<td>&gt;=1.2.3; &lt;=1.3.1;</td>
+</tr>
+<tr><td><strong>python-swiftclient</strong></td>
+<td>&gt;=2.2.0; &lt;=2.3.1;</td>
+</tr>
+<tr><td><strong>oslo.rootwrap</strong></td>
+<td>&gt;=1.3.0; &lt;=1.5.0;</td>
+</tr>
+<tr><td><strong>SQLAlchemy</strong></td>
+<td>&gt;=0.8.4; !=0.9.0; !=0.9.1; !=0.9.2; !=0.9.3; !=0.9.4; !=0.9.5; !=0.9.6; &lt;=0.9.99;</td>
+</tr>
+<tr><td><strong>retrying</strong></td>
+<td>&gt;=1.2.2; !=1.3.0; &lt;=1.3.3;</td>
+</tr>
+<tr><td><strong>stevedore</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.0;</td>
+</tr>
+<tr><td><strong>eventlet</strong></td>
+<td>&gt;=0.15.1; &lt;=0.15.2;</td>
+</tr>
+<tr><td><strong>rtslib-fb</strong></td>
+<td>&gt;=2.1.39; &lt;=2.1.51;</td>
+</tr>
+<tr><td><strong>osprofiler</strong></td>
+<td>&lt;=0.3.0; &gt;=0.3.0;</td>
+</tr>
+<tr><td><strong>oslo.messaging</strong></td>
+<td>&gt;=1.4.0; &lt;1.5.0;</td>
+</tr>
+<tr><td><strong>oslo.utils</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.1;</td>
+</tr>
+<tr><td><strong>oslo.db</strong></td>
+<td>&gt;=1.0.0; &lt;1.1;</td>
+</tr>
+<tr><td><strong>oslo.vmware</strong></td>
+<td>&gt;=0.6.0; &lt;0.9.0;</td>
+</tr>
+<tr><td><strong>keystonemiddleware</strong></td>
+<td>&gt;=1.0.0; &lt;1.4.0;</td>
+</tr>
+<tr><td><strong>oslo.i18n</strong></td>
+<td>&gt;=1.0.0; &lt;=1.3.1;</td>
+</tr>
+<tr><td><strong>Routes</strong></td>
+<td>&gt;=1.12.3; !=2.0; &lt;=2.1;</td>
+</tr>
+<tr><td><strong>python-barbicanclient</strong></td>
+<td>&gt;=2.1.0; !=3.0.0; &lt;3.0.2;</td>
+</tr>
+<tr><td><strong>lxml</strong></td>
+<td>&gt;=2.3; &lt;=3.3.3;</td>
+</tr>
+<tr><td><strong>oslo.context</strong></td>
+<td>&lt;=0.1.0; &gt;=0.1.0;</td>
+</tr>
+<tr><td><strong>anyjson</strong></td>
+<td>&gt;=0.3.3; &lt;=0.3.3;</td>
+</tr>
+<tr><td><strong>greenlet</strong></td>
+<td>&gt;=0.3.2; &lt;=0.4.2;</td>
+</tr>
+<tr><td><strong>python-glanceclient</strong></td>
+<td>&gt;=0.14.0; &lt;=0.15.0;</td>
+</tr>
+<tr><td><strong>oslo.concurrency</strong></td>
+<td>&gt;=0.3.0;</td>
+</tr>
+<tr><td><strong>Babel</strong></td>
+<td>&lt;=1.3; &gt;=1.3;</td>
+</tr>
+<tr><td><strong>Paste</strong></td>
+<td>&lt;=1.7.5.1;</td>
+</tr>
+<tr><td><strong>pyparsing</strong></td>
+<td>&gt;=2.0.1; &lt;=2.0.3;</td>
+</tr>
+<tr><td><strong>PasteDeploy</strong></td>
+<td>&gt;=1.5.0; &lt;=1.5.2;</td>
+</tr>
+<tr><td><strong>suds</strong></td>
+<td>==0.4;</td>
+</tr>
+<tr><td><strong>python-novaclient</strong></td>
+<td>&gt;=2.18.0; &lt;=2.20.0;</td>
+</tr>
+<tr><td><strong>pycrypto</strong></td>
+<td>&gt;=2.6; &lt;=2.6.1;</td>
+</tr>
+<tr><td>pbr</td>
+<td>&gt;=0.6; !=0.7; &lt;1.0;</td>
+</tr>
+<tr><td><strong>paramiko</strong></td>
+<td>&gt;=1.13.0; &lt;=1.15.2;</td>
+</tr>
+<tr><td><strong>sqlalchemy-migrate</strong></td>
+<td>==0.9.1;</td>
+</tr>
+<tr><td><strong>kombu</strong></td>
+<td>==3.0.7;</td>
+</tr>
+<tr><td><strong>iso8601</strong></td>
+<td>&gt;=0.1.9; &lt;=0.1.10;</td>
+</tr>
+<tr><td><strong>oslo.serialization</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.0;</td>
+</tr>
+<tr><td><strong>six</strong></td>
+<td>&gt;=1.7.0; &lt;=1.9.0;</td>
+</tr>
+<tr><td><strong>taskflow</strong></td>
+<td>&gt;=0.4; &lt;0.7.0;</td>
+</tr>
+<tr><td><strong>requests</strong></td>
+<td>&gt;=2.1.0; &lt;=2.2.1; !=2.4.0;</td>
+</tr>
+<tr><td><strong>netaddr</strong></td>
+<td>&gt;=0.7.12; &lt;=0.7.13;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="glance">
+<h1>glance</h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="23%" />
+<col width="77%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Package name</th>
+<th class="head">DEPENDENCIES</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><strong>WSME</strong></td>
+<td>&gt;=0.6; &lt;=0.6.4;</td>
+</tr>
+<tr><td><strong>WebOb</strong></td>
+<td>&gt;=1.2.3; &lt;=1.3.1;</td>
+</tr>
+<tr><td><strong>python-swiftclient</strong></td>
+<td>&gt;=2.2.0; &lt;=2.3.1;</td>
+</tr>
+<tr><td><strong>posix_ipc</strong></td>
+<td>&lt;=0.9.9;</td>
+</tr>
+<tr><td>jsonschema</td>
+<td>&gt;=2.0.0; &lt;3.0.0;</td>
+</tr>
+<tr><td><strong>retrying</strong></td>
+<td>&gt;=1.2.2; !=1.3.0; &lt;=1.3.3;</td>
+</tr>
+<tr><td><strong>stevedore</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.0;</td>
+</tr>
+<tr><td><strong>osprofiler</strong></td>
+<td>&lt;=0.3.0; &gt;=0.3.0;</td>
+</tr>
+<tr><td><strong>pyOpenSSL</strong></td>
+<td>&gt;=0.11; &lt;=0.13;</td>
+</tr>
+<tr><td><strong>oslo.messaging</strong></td>
+<td>&gt;=1.4.0; &lt;1.5.0;</td>
+</tr>
+<tr><td><strong>oslo.vmware</strong></td>
+<td>&gt;=0.6.0; &lt;0.9.0;</td>
+</tr>
+<tr><td><strong>oslo.db</strong></td>
+<td>&gt;=1.0.0; &lt;1.1;</td>
+</tr>
+<tr><td><strong>keystonemiddleware</strong></td>
+<td>&gt;=1.0.0; &lt;1.4.0;</td>
+</tr>
+<tr><td><strong>oslo.i18n</strong></td>
+<td>&gt;=1.0.0; &lt;=1.3.1;</td>
+</tr>
+<tr><td><strong>iso8601</strong></td>
+<td>&gt;=0.1.9; &lt;=0.1.10;</td>
+</tr>
+<tr><td><strong>Routes</strong></td>
+<td>&gt;=1.12.3; !=2.0; &lt;=2.1;</td>
+</tr>
+<tr><td><strong>ordereddict</strong></td>
+<td>&lt;=1.1;</td>
+</tr>
+<tr><td><strong>oslo.context</strong></td>
+<td>&lt;=0.1.0; &gt;=0.1.0;</td>
+</tr>
+<tr><td><strong>anyjson</strong></td>
+<td>&gt;=0.3.3; &lt;=0.3.3;</td>
+</tr>
+<tr><td><strong>oslo.config</strong></td>
+<td>&gt;=1.4.0; &lt;=1.6.0;</td>
+</tr>
+<tr><td><strong>oslo.concurrency</strong></td>
+<td>&gt;=0.3.0;</td>
+</tr>
+<tr><td><strong>Paste</strong></td>
+<td>&lt;=1.7.5.1;</td>
+</tr>
+<tr><td><strong>oslo.utils</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.1;</td>
+</tr>
+<tr><td><strong>PasteDeploy</strong></td>
+<td>&gt;=1.5.0; &lt;=1.5.2;</td>
+</tr>
+<tr><td><strong>httplib2</strong></td>
+<td>&gt;=0.7.5; &lt;=0.9;</td>
+</tr>
+<tr><td><strong>python-keystoneclient</strong></td>
+<td>&gt;=0.10.0; &lt;=1.1.0;</td>
+</tr>
+<tr><td><strong>pycrypto</strong></td>
+<td>&gt;=2.6; &lt;=2.6.1;</td>
+</tr>
+<tr><td><strong>greenlet</strong></td>
+<td>&gt;=0.3.2; &lt;=0.4.2;</td>
+</tr>
+<tr><td>pbr</td>
+<td>&gt;=0.6; !=0.7; &lt;1.0;</td>
+</tr>
+<tr><td><strong>sqlalchemy-migrate</strong></td>
+<td>==0.9.1;</td>
+</tr>
+<tr><td><strong>glance_store</strong></td>
+<td>&gt;=0.1.1; &lt;=0.1.10;</td>
+</tr>
+<tr><td><strong>kombu</strong></td>
+<td>==3.0.7;</td>
+</tr>
+<tr><td><strong>SQLAlchemy</strong></td>
+<td>&gt;=0.8.4; !=0.9.0; !=0.9.1; !=0.9.2; !=0.9.3; !=0.9.4; !=0.9.5; !=0.9.6; &lt;=0.9.99;</td>
+</tr>
+<tr><td><strong>oslo.serialization</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.0;</td>
+</tr>
+<tr><td><strong>six</strong></td>
+<td>&gt;=1.9.0; &lt;=1.9.0;</td>
+</tr>
+<tr><td><strong>eventlet</strong></td>
+<td>&gt;=0.15.1; &lt;=0.15.2;</td>
+</tr>
+<tr><td><strong>taskflow</strong></td>
+<td>&gt;=0.4; &lt;0.7.0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="glance-store">
+<h1>glance_store</h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="53%" />
+<col width="47%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Package name</th>
+<th class="head">DEPENDENCIES</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><strong>oslo.config</strong></td>
+<td>&gt;=1.4.0; &lt;=1.6.0;</td>
+</tr>
+<tr><td><strong>oslo.utils</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.1;</td>
+</tr>
+<tr><td>enum34</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td><strong>ordereddict</strong></td>
+<td>&lt;=1.1;</td>
+</tr>
+<tr><td><strong>oslo.concurrency</strong></td>
+<td>&gt;=0.3.0;</td>
+</tr>
+<tr><td><strong>six</strong></td>
+<td>&gt;=1.7.0; &lt;=1.9.0;</td>
+</tr>
+<tr><td><strong>oslo.i18n</strong></td>
+<td>&gt;=1.0.0; &lt;=1.3.1;</td>
+</tr>
+<tr><td>jsonschema</td>
+<td>&gt;=2.0.0; &lt;3.0.0;</td>
+</tr>
+<tr><td><strong>python-cinderclient</strong></td>
+<td>&gt;=1.1.0; &lt;=1.1.1;</td>
+</tr>
+<tr><td><strong>eventlet</strong></td>
+<td>&gt;=0.15.1; &lt;=0.15.2;</td>
+</tr>
+<tr><td><strong>stevedore</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.0;</td>
+</tr>
+<tr><td><strong>oslo.serialization</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="heat">
+<h1>heat</h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Package name</th>
+<th class="head">DEPENDENCIES</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><strong>oslo.config</strong></td>
+<td>&gt;=1.4.0; &lt;=1.6.0;</td>
+</tr>
+<tr><td><strong>WebOb</strong></td>
+<td>&gt;=1.2.3; &lt;=1.3.1;</td>
+</tr>
+<tr><td><strong>python-swiftclient</strong></td>
+<td>&gt;=2.2.0; &lt;=2.3.1;</td>
+</tr>
+<tr><td><strong>python-troveclient</strong></td>
+<td>&gt;=1.0.4; &lt;=1.0.8;</td>
+</tr>
+<tr><td><strong>posix_ipc</strong></td>
+<td>&lt;=0.9.9;</td>
+</tr>
+<tr><td><strong>stevedore</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.0;</td>
+</tr>
+<tr><td><strong>osprofiler</strong></td>
+<td>&lt;=0.3.0; &gt;=0.3.0;</td>
+</tr>
+<tr><td><strong>oslo.messaging</strong></td>
+<td>&gt;=1.4.0; &lt;1.5.0;</td>
+</tr>
+<tr><td><strong>oslo.utils</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.1;</td>
+</tr>
+<tr><td><strong>oslo.db</strong></td>
+<td>&gt;=1.0.0; &lt;1.1;</td>
+</tr>
+<tr><td><strong>keystonemiddleware</strong></td>
+<td>&gt;=1.0.0; &lt;1.4.0;</td>
+</tr>
+<tr><td><strong>oslo.i18n</strong></td>
+<td>&gt;=1.0.0; &lt;=1.3.1;</td>
+</tr>
+<tr><td><strong>iso8601</strong></td>
+<td>&gt;=0.1.9; &lt;=0.1.10;</td>
+</tr>
+<tr><td><strong>python-ceilometerclient</strong></td>
+<td>&gt;=1.0.6; &lt;=1.0.12;</td>
+</tr>
+<tr><td><strong>python-cinderclient</strong></td>
+<td>&gt;=1.1.0; &lt;=1.1.1;</td>
+</tr>
+<tr><td><strong>Routes</strong></td>
+<td>&gt;=1.12.3; !=2.0; &lt;=2.1;</td>
+</tr>
+<tr><td><strong>lxml</strong></td>
+<td>&gt;=2.3; &lt;=3.3.3;</td>
+</tr>
+<tr><td><strong>oslo.context</strong></td>
+<td>&lt;=0.1.0; &gt;=0.1.0;</td>
+</tr>
+<tr><td><strong>greenlet</strong></td>
+<td>&gt;=0.3.2; &lt;=0.4.2;</td>
+</tr>
+<tr><td><strong>python-glanceclient</strong></td>
+<td>&gt;=0.14.0; &lt;=0.15.0;</td>
+</tr>
+<tr><td><strong>Babel</strong></td>
+<td>&lt;=1.3; &gt;=1.3;</td>
+</tr>
+<tr><td>oslo.middleware</td>
+<td>&gt;=0.3.0;</td>
+</tr>
+<tr><td><strong>python-neutronclient</strong></td>
+<td>&gt;=2.3.6; &lt;3;</td>
+</tr>
+<tr><td><strong>PasteDeploy</strong></td>
+<td>&gt;=1.5.0; &lt;=1.5.2;</td>
+</tr>
+<tr><td>oslo.log</td>
+<td>&gt;=0.4.0;</td>
+</tr>
+<tr><td><strong>httplib2</strong></td>
+<td>&gt;=0.7.5; &lt;=0.9;</td>
+</tr>
+<tr><td><strong>python-keystoneclient</strong></td>
+<td>&gt;=0.10.0; &lt;=1.1.0;</td>
+</tr>
+<tr><td><strong>python-novaclient</strong></td>
+<td>&gt;=2.18.0; &lt;=2.20.0;</td>
+</tr>
+<tr><td><strong>pycrypto</strong></td>
+<td>&gt;=2.6; &lt;=2.6.1;</td>
+</tr>
+<tr><td><strong>qpid-python</strong></td>
+<td>&lt;=0.26.1;</td>
+</tr>
+<tr><td>pbr</td>
+<td>&gt;=0.6; !=0.7; &lt;1.0;</td>
+</tr>
+<tr><td><strong>python-saharaclient</strong></td>
+<td>&gt;=0.7.3; &lt;=0.7.6;</td>
+</tr>
+<tr><td><strong>sqlalchemy-migrate</strong></td>
+<td>==0.9.1;</td>
+</tr>
+<tr><td><strong>kombu</strong></td>
+<td>==3.0.7;</td>
+</tr>
+<tr><td><strong>SQLAlchemy</strong></td>
+<td>&gt;=0.8.4; !=0.9.0; !=0.9.1; !=0.9.2; !=0.9.3; !=0.9.4; !=0.9.5; !=0.9.6; &lt;=0.9.99;</td>
+</tr>
+<tr><td><strong>oslo.serialization</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.0;</td>
+</tr>
+<tr><td><strong>PyYAML</strong></td>
+<td>&gt;=3.1.0; &lt;=3.10;</td>
+</tr>
+<tr><td><strong>python-heatclient</strong></td>
+<td>&gt;=0.2.9; &lt;0.3.0;</td>
+</tr>
+<tr><td><strong>six</strong></td>
+<td>&gt;=1.9.0; &lt;=1.9.0;</td>
+</tr>
+<tr><td><strong>eventlet</strong></td>
+<td>&gt;=0.15.1; &lt;=0.15.2;</td>
+</tr>
+<tr><td><strong>requests</strong></td>
+<td>&gt;=2.1.0; &lt;=2.2.1; !=2.4.0;</td>
+</tr>
+<tr><td><strong>netaddr</strong></td>
+<td>&gt;=0.7.12; &lt;=0.7.13;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="horizon">
+<h1>horizon</h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="51%" />
+<col width="49%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Package name</th>
+<th class="head">DEPENDENCIES</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>XStatic-smart-table</td>
+<td>&gt;=1.4.5.3;</td>
+</tr>
+<tr><td><strong>python-keystoneclient</strong></td>
+<td>&gt;=0.10.0; &lt;=1.1.0;</td>
+</tr>
+<tr><td>XStatic-JSEncrypt</td>
+<td>&gt;=2.0.0.2;</td>
+</tr>
+<tr><td><strong>python-swiftclient</strong></td>
+<td>&gt;=2.2.0; &lt;=2.3.1;</td>
+</tr>
+<tr><td><strong>python-troveclient</strong></td>
+<td>&gt;=1.0.4; &lt;=1.0.8;</td>
+</tr>
+<tr><td>XStatic-jquery-ui</td>
+<td>&gt;=1.10.1;</td>
+</tr>
+<tr><td>pyScss</td>
+<td>&gt;=1.2.1; &lt;1.3;</td>
+</tr>
+<tr><td>XStatic-jQuery</td>
+<td>&gt;=1.7.2;</td>
+</tr>
+<tr><td><strong>eventlet</strong></td>
+<td>&gt;=0.15.1; &lt;=0.15.2;</td>
+</tr>
+<tr><td>Pint</td>
+<td>&gt;=0.5;</td>
+</tr>
+<tr><td><strong>oslo.utils</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.1;</td>
+</tr>
+<tr><td>XStatic-term.js</td>
+<td>&gt;=0.0.4;</td>
+</tr>
+<tr><td><strong>kombu</strong></td>
+<td>==3.0.7;</td>
+</tr>
+<tr><td><strong>oslo.i18n</strong></td>
+<td>&gt;=1.0.0; &lt;=1.3.1;</td>
+</tr>
+<tr><td>XStatic-Angular-Bootstrap</td>
+<td>&gt;=0.11.0.2;</td>
+</tr>
+<tr><td>XStatic-JQuery.TableSorter</td>
+<td>&gt;=2.0.5;</td>
+</tr>
+<tr><td>XStatic-JQuery-Migrate</td>
+<td>&gt;=1.2.1.1;</td>
+</tr>
+<tr><td><strong>django_compressor</strong></td>
+<td>&lt;=1.4; &gt;=1.4;</td>
+</tr>
+<tr><td>XStatic-Angular-Irdragndrop</td>
+<td>&gt;=1.0.2.1;</td>
+</tr>
+<tr><td><strong>python-ceilometerclient</strong></td>
+<td>&gt;=1.0.6; &lt;=1.0.12;</td>
+</tr>
+<tr><td>XStatic-Bootstrap-SCSS</td>
+<td>&gt;=3;</td>
+</tr>
+<tr><td>XStatic</td>
+<td>&gt;=1.0.0;</td>
+</tr>
+<tr><td>XStatic-QUnit</td>
+<td>&gt;=1.14.0.2;</td>
+</tr>
+<tr><td><strong>oslo.config</strong></td>
+<td>&gt;=1.4.0; &lt;=1.6.0;</td>
+</tr>
+<tr><td><strong>python-glanceclient</strong></td>
+<td>&gt;=0.14.0; &lt;=0.15.0;</td>
+</tr>
+<tr><td><strong>oslo.concurrency</strong></td>
+<td>&gt;=0.3.0;</td>
+</tr>
+<tr><td><strong>Babel</strong></td>
+<td>&lt;=1.3; &gt;=1.3;</td>
+</tr>
+<tr><td>XStatic-Angular</td>
+<td>&gt;=1.3.7;</td>
+</tr>
+<tr><td><strong>python-neutronclient</strong></td>
+<td>&gt;=2.3.6; &lt;3;</td>
+</tr>
+<tr><td>Django</td>
+<td>&gt;=1.4.2; &lt;1.7;</td>
+</tr>
+<tr><td>XStatic-Rickshaw</td>
+<td>&gt;=1.5.0;</td>
+</tr>
+<tr><td><strong>httplib2</strong></td>
+<td>&gt;=0.7.5; &lt;=0.9;</td>
+</tr>
+<tr><td><strong>pytz</strong></td>
+<td>&lt;=2014.10;</td>
+</tr>
+<tr><td><strong>six</strong></td>
+<td>&gt;=1.7.0; &lt;=1.9.0;</td>
+</tr>
+<tr><td><strong>django_openstack_auth</strong></td>
+<td>&gt;=1.1.7; !=1.1.8; &lt;=1.1.9;</td>
+</tr>
+<tr><td><strong>python-novaclient</strong></td>
+<td>&gt;=2.18.0; &lt;=2.20.0;</td>
+</tr>
+<tr><td>XStatic-D3</td>
+<td>&gt;=3.1.6.2;</td>
+</tr>
+<tr><td>pbr</td>
+<td>&gt;=0.6; !=0.7; &lt;1.0;</td>
+</tr>
+<tr><td><strong>python-saharaclient</strong></td>
+<td>&gt;=0.7.3; &lt;=0.7.6;</td>
+</tr>
+<tr><td>XStatic-Spin</td>
+<td>&gt;=1.2.5.2;</td>
+</tr>
+<tr><td>XStatic-Bootstrap-Datepicker</td>
+<td>&gt;=1.3.1.0;</td>
+</tr>
+<tr><td>XStatic-Jasmine</td>
+<td>&gt;=2.1.2.0;</td>
+</tr>
+<tr><td>XStatic-Font-Awesome</td>
+<td>&gt;=4.2.0;</td>
+</tr>
+<tr><td><strong>iso8601</strong></td>
+<td>&gt;=0.1.9; &lt;=0.1.10;</td>
+</tr>
+<tr><td><strong>oslo.serialization</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.0;</td>
+</tr>
+<tr><td><strong>PyYAML</strong></td>
+<td>&gt;=3.1.0; &lt;=3.10;</td>
+</tr>
+<tr><td><strong>python-cinderclient</strong></td>
+<td>&gt;=1.1.0; &lt;=1.1.1;</td>
+</tr>
+<tr><td>XStatic-JQuery.quicksearch</td>
+<td>&gt;=2.0.3.1;</td>
+</tr>
+<tr><td><strong>python-heatclient</strong></td>
+<td>&gt;=0.2.9; &lt;0.3.0;</td>
+</tr>
+<tr><td>XStatic-Hogan</td>
+<td>&gt;=2.0.0.2;</td>
+</tr>
+<tr><td><strong>django-pyscss</strong></td>
+<td>&gt;=1.0.3; &lt;=1.0.6;</td>
+</tr>
+<tr><td><strong>netaddr</strong></td>
+<td>&gt;=0.7.12; &lt;=0.7.13;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="keystone">
+<h1>keystone</h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="23%" />
+<col width="77%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Package name</th>
+<th class="head">DEPENDENCIES</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><strong>oslo.config</strong></td>
+<td>&gt;=1.4.0; &lt;=1.6.0;</td>
+</tr>
+<tr><td><strong>WebOb</strong></td>
+<td>&gt;=1.2.3; &lt;=1.3.1;</td>
+</tr>
+<tr><td><strong>pycadf</strong></td>
+<td>&gt;=0.6.0; &lt;0.7.0;</td>
+</tr>
+<tr><td><strong>msgpack-python</strong></td>
+<td>&gt;=0.4.0; &lt;=0.4.5;</td>
+</tr>
+<tr><td><strong>posix_ipc</strong></td>
+<td>&lt;=0.9.9;</td>
+</tr>
+<tr><td>jsonschema</td>
+<td>&gt;=2.0.0; &lt;3.0.0;</td>
+</tr>
+<tr><td><strong>iso8601</strong></td>
+<td>&gt;=0.1.9; &lt;=0.1.10;</td>
+</tr>
+<tr><td><strong>oslo.messaging</strong></td>
+<td>&gt;=1.4.0; &lt;1.5.0;</td>
+</tr>
+<tr><td><strong>oslo.utils</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.1;</td>
+</tr>
+<tr><td><strong>oauthlib</strong></td>
+<td>&gt;=0.6; &lt;=0.7.2;</td>
+</tr>
+<tr><td><strong>oslo.db</strong></td>
+<td>&gt;=1.0.0; &lt;1.1;</td>
+</tr>
+<tr><td><strong>keystonemiddleware</strong></td>
+<td>&gt;=1.0.0; &lt;1.4.0;</td>
+</tr>
+<tr><td><strong>oslo.i18n</strong></td>
+<td>&gt;=1.0.0; &lt;=1.3.1;</td>
+</tr>
+<tr><td><strong>passlib</strong></td>
+<td>&lt;=1.6.2;</td>
+</tr>
+<tr><td><strong>Routes</strong></td>
+<td>&gt;=1.12.3; !=2.0; &lt;=2.1;</td>
+</tr>
+<tr><td><strong>dogpile.cache</strong></td>
+<td>&gt;=0.5.3; &lt;=0.5.6;</td>
+</tr>
+<tr><td><strong>greenlet</strong></td>
+<td>&gt;=0.3.2; &lt;=0.4.2;</td>
+</tr>
+<tr><td><strong>oslo.concurrency</strong></td>
+<td>&gt;=0.3.0;</td>
+</tr>
+<tr><td>oslo.middleware</td>
+<td>&gt;=0.3.0;</td>
+</tr>
+<tr><td><strong>Paste</strong></td>
+<td>&lt;=1.7.5.1;</td>
+</tr>
+<tr><td>pysaml2</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>oslo.log</td>
+<td>&gt;=0.4.0;</td>
+</tr>
+<tr><td><strong>python-keystoneclient</strong></td>
+<td>&gt;=0.10.0; &lt;=1.1.0;</td>
+</tr>
+<tr><td>cryptography</td>
+<td>&gt;=0.4;</td>
+</tr>
+<tr><td>pbr</td>
+<td>&gt;=0.6; !=0.7; &lt;1.0;</td>
+</tr>
+<tr><td><strong>sqlalchemy-migrate</strong></td>
+<td>==0.9.1;</td>
+</tr>
+<tr><td><strong>PasteDeploy</strong></td>
+<td>&gt;=1.5.0; &lt;=1.5.2;</td>
+</tr>
+<tr><td><strong>SQLAlchemy</strong></td>
+<td>&gt;=0.8.4; !=0.9.0; !=0.9.1; !=0.9.2; !=0.9.3; !=0.9.4; !=0.9.5; !=0.9.6; &lt;=0.9.99;</td>
+</tr>
+<tr><td><strong>oslo.serialization</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.0;</td>
+</tr>
+<tr><td><strong>six</strong></td>
+<td>&gt;=1.9.0; &lt;=1.9.0;</td>
+</tr>
+<tr><td><strong>eventlet</strong></td>
+<td>&gt;=0.15.1; &lt;=0.15.2;</td>
+</tr>
+<tr><td><strong>netaddr</strong></td>
+<td>&gt;=0.7.12; &lt;=0.7.13;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="neutron">
+<h1>neutron</h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="23%" />
+<col width="77%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Package name</th>
+<th class="head">DEPENDENCIES</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><strong>Jinja2</strong></td>
+<td>&lt;=2.7.2;</td>
+</tr>
+<tr><td><strong>greenlet</strong></td>
+<td>&gt;=0.3.2; &lt;=0.4.2;</td>
+</tr>
+<tr><td><strong>WebOb</strong></td>
+<td>&gt;=1.2.3; &lt;=1.3.1;</td>
+</tr>
+<tr><td><strong>oslo.rootwrap</strong></td>
+<td>&gt;=1.3.0; &lt;=1.5.0;</td>
+</tr>
+<tr><td><strong>SQLAlchemy</strong></td>
+<td>&gt;=0.8.4; !=0.9.0; !=0.9.1; !=0.9.2; !=0.9.3; !=0.9.4; !=0.9.5; !=0.9.6; &lt;=0.9.99;</td>
+</tr>
+<tr><td><strong>retrying</strong></td>
+<td>&gt;=1.2.2; !=1.3.0; &lt;=1.3.3;</td>
+</tr>
+<tr><td><strong>stevedore</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.0;</td>
+</tr>
+<tr><td><strong>oslo.messaging</strong></td>
+<td>&gt;=1.4.0; &lt;1.5.0;</td>
+</tr>
+<tr><td><strong>oslo.utils</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.1;</td>
+</tr>
+<tr><td><strong>alembic</strong></td>
+<td>&gt;=0.6.4; &lt;=0.7.4;</td>
+</tr>
+<tr><td><strong>oslo.db</strong></td>
+<td>&gt;=1.0.0; &lt;1.1;</td>
+</tr>
+<tr><td><strong>keystonemiddleware</strong></td>
+<td>&gt;=1.0.0; &lt;1.4.0;</td>
+</tr>
+<tr><td><strong>oslo.i18n</strong></td>
+<td>&gt;=1.0.0; &lt;=1.3.1;</td>
+</tr>
+<tr><td><strong>Routes</strong></td>
+<td>&gt;=1.12.3; !=2.0; &lt;=2.1;</td>
+</tr>
+<tr><td><strong>oslo.context</strong></td>
+<td>&lt;=0.1.0; &gt;=0.1.0;</td>
+</tr>
+<tr><td><strong>oslo.serialization</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.0;</td>
+</tr>
+<tr><td><strong>oslo.config</strong></td>
+<td>&gt;=1.4.0; &lt;=1.6.0;</td>
+</tr>
+<tr><td><strong>oslo.concurrency</strong></td>
+<td>&gt;=0.3.0;</td>
+</tr>
+<tr><td>oslo.middleware</td>
+<td>&gt;=0.3.0;</td>
+</tr>
+<tr><td><strong>python-neutronclient</strong></td>
+<td>&gt;=2.3.6; &lt;3;</td>
+</tr>
+<tr><td><strong>Paste</strong></td>
+<td>&lt;=1.7.5.1;</td>
+</tr>
+<tr><td><strong>PasteDeploy</strong></td>
+<td>&gt;=1.5.0; &lt;=1.5.2;</td>
+</tr>
+<tr><td><strong>httplib2</strong></td>
+<td>&gt;=0.7.5; &lt;=0.9;</td>
+</tr>
+<tr><td><strong>python-keystoneclient</strong></td>
+<td>&gt;=0.10.0; &lt;=1.1.0;</td>
+</tr>
+<tr><td><strong>python-novaclient</strong></td>
+<td>&gt;=2.18.0; &lt;=2.20.0;</td>
+</tr>
+<tr><td>pbr</td>
+<td>&gt;=0.6; !=0.7; &lt;1.0;</td>
+</tr>
+<tr><td><strong>jsonrpclib</strong></td>
+<td>&lt;=0.1.3;</td>
+</tr>
+<tr><td><strong>six</strong></td>
+<td>&gt;=1.9.0; &lt;=1.9.0;</td>
+</tr>
+<tr><td><strong>eventlet</strong></td>
+<td>&gt;=0.15.1; &lt;=0.15.2;</td>
+</tr>
+<tr><td><strong>requests</strong></td>
+<td>&gt;=2.1.0; &lt;=2.2.1; !=2.4.0;</td>
+</tr>
+<tr><td><strong>netaddr</strong></td>
+<td>&gt;=0.7.12; &lt;=0.7.13;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="nova">
+<h1>nova</h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="23%" />
+<col width="77%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Package name</th>
+<th class="head">DEPENDENCIES</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><strong>Jinja2</strong></td>
+<td>&lt;=2.7.2;</td>
+</tr>
+<tr><td><strong>oslo.config</strong></td>
+<td>&gt;=1.4.0; &lt;=1.6.0;</td>
+</tr>
+<tr><td><strong>WebOb</strong></td>
+<td>&gt;=1.2.3; &lt;=1.3.1;</td>
+</tr>
+<tr><td><strong>boto</strong></td>
+<td>&gt;=2.32.1; &lt;2.35.0;</td>
+</tr>
+<tr><td><strong>oslo.rootwrap</strong></td>
+<td>&gt;=1.3.0; &lt;=1.5.0;</td>
+</tr>
+<tr><td><strong>SQLAlchemy</strong></td>
+<td>&gt;=0.8.4; !=0.9.0; !=0.9.1; !=0.9.2; !=0.9.3; !=0.9.4; !=0.9.5; !=0.9.6; &lt;=0.9.99;</td>
+</tr>
+<tr><td>jsonschema</td>
+<td>&gt;=2.0.0; &lt;3.0.0;</td>
+</tr>
+<tr><td><strong>decorator</strong></td>
+<td>&lt;=3.4.0; &gt;=3.4.0;</td>
+</tr>
+<tr><td><strong>stevedore</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.0;</td>
+</tr>
+<tr><td><strong>oslo.messaging</strong></td>
+<td>&gt;=1.4.0; &lt;1.5.0;</td>
+</tr>
+<tr><td><strong>oslo.vmware</strong></td>
+<td>&gt;=0.6.0; &lt;0.9.0;</td>
+</tr>
+<tr><td><strong>oslo.db</strong></td>
+<td>&gt;=1.0.0; &lt;1.1;</td>
+</tr>
+<tr><td><strong>keystonemiddleware</strong></td>
+<td>&gt;=1.0.0; &lt;1.4.0;</td>
+</tr>
+<tr><td><strong>oslo.i18n</strong></td>
+<td>&gt;=1.0.0; &lt;=1.3.1;</td>
+</tr>
+<tr><td><strong>Routes</strong></td>
+<td>&gt;=1.12.3; !=2.0; &lt;=2.1;</td>
+</tr>
+<tr><td><strong>rfc3986</strong></td>
+<td>&lt;=0.2.0; &gt;=0.2.0;</td>
+</tr>
+<tr><td><strong>lxml</strong></td>
+<td>&gt;=2.3; &lt;=3.3.3;</td>
+</tr>
+<tr><td><strong>oslo.context</strong></td>
+<td>&lt;=0.1.0; &gt;=0.1.0;</td>
+</tr>
+<tr><td><strong>greenlet</strong></td>
+<td>&gt;=0.3.2; &lt;=0.4.2;</td>
+</tr>
+<tr><td><strong>python-glanceclient</strong></td>
+<td>&gt;=0.14.0; &lt;=0.15.0;</td>
+</tr>
+<tr><td>websockify</td>
+<td>&gt;=0.6.0; &lt;0.7;</td>
+</tr>
+<tr><td><strong>Babel</strong></td>
+<td>&lt;=1.3; &gt;=1.3;</td>
+</tr>
+<tr><td>oslo.middleware</td>
+<td>&gt;=0.3.0;</td>
+</tr>
+<tr><td><strong>python-neutronclient</strong></td>
+<td>&gt;=2.3.6; &lt;3;</td>
+</tr>
+<tr><td><strong>Paste</strong></td>
+<td>&lt;=1.7.5.1;</td>
+</tr>
+<tr><td><strong>oslo.utils</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.1;</td>
+</tr>
+<tr><td><strong>PasteDeploy</strong></td>
+<td>&gt;=1.5.0; &lt;=1.5.2;</td>
+</tr>
+<tr><td>oslo.log</td>
+<td>&gt;=0.4.0;</td>
+</tr>
+<tr><td><strong>suds</strong></td>
+<td>==0.4;</td>
+</tr>
+<tr><td><strong>oslo.concurrency</strong></td>
+<td>&gt;=0.3.0;</td>
+</tr>
+<tr><td>pbr</td>
+<td>&gt;=0.6; !=0.7; &lt;1.0;</td>
+</tr>
+<tr><td><strong>pyasn1</strong></td>
+<td>&lt;=0.1.7;</td>
+</tr>
+<tr><td><strong>paramiko</strong></td>
+<td>&gt;=1.13.0; &lt;=1.15.2;</td>
+</tr>
+<tr><td><strong>sqlalchemy-migrate</strong></td>
+<td>==0.9.1;</td>
+</tr>
+<tr><td>psutil</td>
+<td>&gt;=1.1.1; &lt;2.0.0;</td>
+</tr>
+<tr><td><strong>iso8601</strong></td>
+<td>&gt;=0.1.9; &lt;=0.1.10;</td>
+</tr>
+<tr><td><strong>oslo.serialization</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.0;</td>
+</tr>
+<tr><td><strong>python-cinderclient</strong></td>
+<td>&gt;=1.1.0; &lt;=1.1.1;</td>
+</tr>
+<tr><td><strong>six</strong></td>
+<td>&gt;=1.9.0; &lt;=1.9.0;</td>
+</tr>
+<tr><td><strong>eventlet</strong></td>
+<td>&gt;=0.15.1; &lt;=0.15.2;</td>
+</tr>
+<tr><td><strong>netaddr</strong></td>
+<td>&gt;=0.7.12; &lt;=0.7.13;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="oslo-concurrency">
+<h1>oslo.concurrency</h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="36%" />
+<col width="64%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Package name</th>
+<th class="head">DEPENDENCIES</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><strong>oslo.config</strong></td>
+<td>&gt;=1.4.0; &lt;=1.6.0;</td>
+</tr>
+<tr><td><strong>oslo.utils</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.1;</td>
+</tr>
+<tr><td><strong>Babel</strong></td>
+<td>&lt;=1.3; &gt;=1.3;</td>
+</tr>
+<tr><td>pbr</td>
+<td>&gt;=0.6; !=0.7; &lt;1.0;</td>
+</tr>
+<tr><td><strong>fixtures</strong></td>
+<td>&gt;=0.3.14; &lt;=1.0.0;</td>
+</tr>
+<tr><td><strong>six</strong></td>
+<td>&gt;=1.7.0; &lt;=1.9.0;</td>
+</tr>
+<tr><td><strong>oslo.i18n</strong></td>
+<td>&gt;=1.3.0; &lt;=1.3.1;</td>
+</tr>
+<tr><td><strong>posix_ipc</strong></td>
+<td>&lt;=0.9.9;</td>
+</tr>
+<tr><td><strong>retrying</strong></td>
+<td>&gt;=1.2.2; !=1.3.0; &lt;=1.3.3;</td>
+</tr>
+<tr><td><strong>iso8601</strong></td>
+<td>&gt;=0.1.9; &lt;=0.1.10;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="oslo-config">
+<h1>oslo.config</h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="39%" />
+<col width="61%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Package name</th>
+<th class="head">DEPENDENCIES</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>argparse</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td><strong>netaddr</strong></td>
+<td>&gt;=0.7.12; &lt;=0.7.13;</td>
+</tr>
+<tr><td><strong>six</strong></td>
+<td>&gt;=1.7.0; &lt;=1.9.0;</td>
+</tr>
+<tr><td><strong>stevedore</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.0;</td>
+</tr>
+<tr><td>pbr</td>
+<td>&gt;=0.6; !=0.7; &lt;1.0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="oslo-context">
+<h1>oslo.context</h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="38%" />
+<col width="63%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Package name</th>
+<th class="head">DEPENDENCIES</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><strong>Babel</strong></td>
+<td>&gt;=1.3; &lt;=1.3;</td>
+</tr>
+<tr><td>pbr</td>
+<td>&gt;=0.6; !=0.7; &lt;1.0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="oslo-db">
+<h1>oslo.db</h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="21%" />
+<col width="79%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Package name</th>
+<th class="head">DEPENDENCIES</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><strong>oslo.config</strong></td>
+<td>&gt;=1.4.0; &lt;=1.6.0;</td>
+</tr>
+<tr><td><strong>oslo.utils</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.1;</td>
+</tr>
+<tr><td><strong>Babel</strong></td>
+<td>&lt;=1.3; &gt;=1.3;</td>
+</tr>
+<tr><td>testresources</td>
+<td>&gt;=0.2.4;</td>
+</tr>
+<tr><td>pbr</td>
+<td>&gt;=0.6; !=0.7; &lt;1.0;</td>
+</tr>
+<tr><td><strong>sqlalchemy-migrate</strong></td>
+<td>==0.9.1;</td>
+</tr>
+<tr><td><strong>six</strong></td>
+<td>&gt;=1.7.0; &lt;=1.9.0;</td>
+</tr>
+<tr><td><strong>oslo.i18n</strong></td>
+<td>&gt;=1.3.0; &lt;=1.3.1;</td>
+</tr>
+<tr><td><strong>SQLAlchemy</strong></td>
+<td>&gt;=0.8.4; !=0.9.0; !=0.9.1; !=0.9.2; !=0.9.3; !=0.9.4; !=0.9.5; !=0.9.6; &lt;=0.9.99;</td>
+</tr>
+<tr><td>testscenarios</td>
+<td>&gt;=0.4;</td>
+</tr>
+<tr><td><strong>iso8601</strong></td>
+<td>&gt;=0.1.9; &lt;=0.1.10;</td>
+</tr>
+<tr><td><strong>stevedore</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.0;</td>
+</tr>
+<tr><td><strong>alembic</strong></td>
+<td>&gt;=0.6.4; &lt;=0.7.4;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="oslo-i18n">
+<h1>oslo.i18n</h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="38%" />
+<col width="63%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Package name</th>
+<th class="head">DEPENDENCIES</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><strong>six</strong></td>
+<td>&gt;=1.7.0; &lt;=1.9.0;</td>
+</tr>
+<tr><td><strong>Babel</strong></td>
+<td>&gt;=1.3; &lt;=1.3;</td>
+</tr>
+<tr><td>pbr</td>
+<td>&gt;=0.6; !=0.7; &lt;1.0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="oslo-log">
+<h1>oslo.log</h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="52%" />
+<col width="48%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Package name</th>
+<th class="head">DEPENDENCIES</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><strong>oslo.config</strong></td>
+<td>&gt;=1.4.0; &lt;=1.6.0;</td>
+</tr>
+<tr><td><strong>oslo.utils</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.1;</td>
+</tr>
+<tr><td><strong>Babel</strong></td>
+<td>&lt;=1.3; &gt;=1.3;</td>
+</tr>
+<tr><td>pbr</td>
+<td>&gt;=0.6; !=0.7; &lt;1.0;</td>
+</tr>
+<tr><td><strong>six</strong></td>
+<td>&gt;=1.7.0; &lt;=1.9.0;</td>
+</tr>
+<tr><td><strong>oslo.i18n</strong></td>
+<td>&gt;=1.3.0; &lt;=1.3.1;</td>
+</tr>
+<tr><td><strong>iso8601</strong></td>
+<td>&gt;=0.1.9; &lt;=0.1.10;</td>
+</tr>
+<tr><td><strong>oslo.serialization</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.0;</td>
+</tr>
+<tr><td><strong>oslo.context</strong></td>
+<td>&lt;=0.1.0; &gt;=0.1.0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="oslo-messaging">
+<h1>oslo.messaging</h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="52%" />
+<col width="48%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Package name</th>
+<th class="head">DEPENDENCIES</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><strong>oslo.config</strong></td>
+<td>&gt;=1.4.0; &lt;=1.6.0;</td>
+</tr>
+<tr><td><strong>oslo.utils</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.1;</td>
+</tr>
+<tr><td>oslo.middleware</td>
+<td>&gt;=0.3.0;</td>
+</tr>
+<tr><td>pbr</td>
+<td>&gt;=0.6; !=0.7; &lt;1.0;</td>
+</tr>
+<tr><td>aioeventlet</td>
+<td>&gt;=0.4;</td>
+</tr>
+<tr><td>trollius</td>
+<td>&gt;=1.0;</td>
+</tr>
+<tr><td><strong>six</strong></td>
+<td>&gt;=1.7.0; &lt;=1.9.0;</td>
+</tr>
+<tr><td><strong>oslo.i18n</strong></td>
+<td>&gt;=1.3.0; &lt;=1.3.1;</td>
+</tr>
+<tr><td><strong>kombu</strong></td>
+<td>==3.0.7;</td>
+</tr>
+<tr><td><strong>oslo.serialization</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.0;</td>
+</tr>
+<tr><td><strong>PyYAML</strong></td>
+<td>&gt;=3.1.0; &lt;=3.10;</td>
+</tr>
+<tr><td><strong>futures</strong></td>
+<td>&gt;=2.1.6; &lt;=2.2.0;</td>
+</tr>
+<tr><td><strong>stevedore</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.0;</td>
+</tr>
+<tr><td><strong>eventlet</strong></td>
+<td>&gt;=0.15.1; &lt;=0.15.2;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="oslo-middleware">
+<h1>oslo.middleware</h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="44%" />
+<col width="56%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Package name</th>
+<th class="head">DEPENDENCIES</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><strong>oslo.config</strong></td>
+<td>&gt;=1.4.0; &lt;=1.6.0;</td>
+</tr>
+<tr><td><strong>WebOb</strong></td>
+<td>&gt;=1.2.3; &lt;=1.3.1;</td>
+</tr>
+<tr><td><strong>Babel</strong></td>
+<td>&lt;=1.3; &gt;=1.3;</td>
+</tr>
+<tr><td>pbr</td>
+<td>&gt;=0.6; !=0.7; &lt;1.0;</td>
+</tr>
+<tr><td><strong>six</strong></td>
+<td>&gt;=1.7.0; &lt;=1.9.0;</td>
+</tr>
+<tr><td><strong>oslo.i18n</strong></td>
+<td>&gt;=1.3.0; &lt;=1.3.1;</td>
+</tr>
+<tr><td><strong>stevedore</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.0;</td>
+</tr>
+<tr><td><strong>oslo.context</strong></td>
+<td>&lt;=0.1.0; &gt;=0.1.0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="oslo-rootwrap">
+<h1>oslo.rootwrap</h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="40%" />
+<col width="60%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Package name</th>
+<th class="head">DEPENDENCIES</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><strong>six</strong></td>
+<td>&gt;=1.9.0; &lt;=1.9.0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="oslo-serialization">
+<h1>oslo.serialization</h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="47%" />
+<col width="53%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Package name</th>
+<th class="head">DEPENDENCIES</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><strong>oslo.utils</strong></td>
+<td>&gt;=1.2.0; &lt;=1.2.1;</td>
+</tr>
+<tr><td><strong>Babel</strong></td>
+<td>&lt;=1.3; &gt;=1.3;</td>
+</tr>
+<tr><td>pbr</td>
+<td>&gt;=0.6; !=0.7; &lt;1.0;</td>
+</tr>
+<tr><td><strong>msgpack-python</strong></td>
+<td>&gt;=0.4.0; &lt;=0.4.5;</td>
+</tr>
+<tr><td><strong>six</strong></td>
+<td>&gt;=1.7.0; &lt;=1.9.0;</td>
+</tr>
+<tr><td><strong>iso8601</strong></td>
+<td>&gt;=0.1.9; &lt;=0.1.10;</td>
+</tr>
+<tr><td><strong>pytz</strong></td>
+<td>&lt;=2014.10;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="oslosphinx">
+<h1>oslosphinx</h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="31%" />
+<col width="69%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Package name</th>
+<th class="head">DEPENDENCIES</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><strong>requests</strong></td>
+<td>!=2.4.0; &gt;=2.2.0; &lt;=2.2.1;</td>
+</tr>
+<tr><td>pbr</td>
+<td>&gt;=0.6; !=0.7; &lt;1.0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="oslotest">
+<h1>oslotest</h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="39%" />
+<col width="61%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Package name</th>
+<th class="head">DEPENDENCIES</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><strong>python-subunit</strong></td>
+<td>&gt;=0.0.18; &lt;=1.0.0;</td>
+</tr>
+<tr><td>pbr</td>
+<td>&gt;=0.6; !=0.7; &lt;1.0;</td>
+</tr>
+<tr><td><strong>testrepository</strong></td>
+<td>&gt;=0.0.18; &lt;=0.0.20;</td>
+</tr>
+<tr><td><strong>testtools</strong></td>
+<td>&gt;=0.9.34; !=1.4.0; &lt;=1.5.0;</td>
+</tr>
+<tr><td>discover</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td><strong>fixtures</strong></td>
+<td>&gt;=0.3.14; &lt;=1.0.0;</td>
+</tr>
+<tr><td><strong>six</strong></td>
+<td>&gt;=1.7.0; &lt;=1.9.0;</td>
+</tr>
+<tr><td>mox3</td>
+<td>&gt;=0.7.0;</td>
+</tr>
+<tr><td>testscenarios</td>
+<td>&gt;=0.4;</td>
+</tr>
+<tr><td>mock</td>
+<td>&gt;=1.0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="oslo-utils">
+<h1>oslo.utils</h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="39%" />
+<col width="61%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Package name</th>
+<th class="head">DEPENDENCIES</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><strong>Babel</strong></td>
+<td>&lt;=1.3; &gt;=1.3;</td>
+</tr>
+<tr><td>pbr</td>
+<td>&gt;=0.6; !=0.7; &lt;1.0;</td>
+</tr>
+<tr><td><strong>netifaces</strong></td>
+<td>&gt;=0.10.4; &lt;=0.10.4;</td>
+</tr>
+<tr><td><strong>six</strong></td>
+<td>&gt;=1.7.0; &lt;=1.9.0;</td>
+</tr>
+<tr><td><strong>oslo.i18n</strong></td>
+<td>&gt;=1.3.0; &lt;=1.3.1;</td>
+</tr>
+<tr><td><strong>iso8601</strong></td>
+<td>&gt;=0.1.9; &lt;=0.1.10;</td>
+</tr>
+<tr><td><strong>netaddr</strong></td>
+<td>&gt;=0.7.12; &lt;=0.7.13;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="oslo-vmware">
+<h1>oslo.vmware</h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="45%" />
+<col width="55%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Package name</th>
+<th class="head">DEPENDENCIES</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><strong>oslo.concurrency</strong></td>
+<td>&gt;=0.3.0;</td>
+</tr>
+<tr><td><strong>Babel</strong></td>
+<td>&lt;=1.3; &gt;=1.3;</td>
+</tr>
+<tr><td>pbr</td>
+<td>&gt;=0.6; !=0.7; &lt;1.0;</td>
+</tr>
+<tr><td><strong>netaddr</strong></td>
+<td>&gt;=0.7.12; &lt;=0.7.13;</td>
+</tr>
+<tr><td>urllib3</td>
+<td>&gt;=1.8.3;</td>
+</tr>
+<tr><td><strong>oslo.utils</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.1;</td>
+</tr>
+<tr><td><strong>six</strong></td>
+<td>&gt;=1.7.0; &lt;=1.9.0;</td>
+</tr>
+<tr><td><strong>oslo.i18n</strong></td>
+<td>&gt;=1.3.0; &lt;=1.3.1;</td>
+</tr>
+<tr><td><strong>iso8601</strong></td>
+<td>&gt;=0.1.9; &lt;=0.1.10;</td>
+</tr>
+<tr><td><strong>oslo.serialization</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.0;</td>
+</tr>
+<tr><td><strong>PyYAML</strong></td>
+<td>&gt;=3.1.0; &lt;=3.10;</td>
+</tr>
+<tr><td><strong>suds</strong></td>
+<td>==0.4;</td>
+</tr>
+<tr><td><strong>stevedore</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.0;</td>
+</tr>
+<tr><td><strong>eventlet</strong></td>
+<td>&gt;=0.15.1; &lt;=0.15.2;</td>
+</tr>
+<tr><td><strong>requests</strong></td>
+<td>&gt;=2.1.0; &lt;=2.2.1; !=2.4.0;</td>
+</tr>
+<tr><td><strong>httplib2</strong></td>
+<td>&gt;=0.7.5; &lt;=0.9;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="python-barbicanclient">
+<h1>python-barbicanclient</h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="48%" />
+<col width="52%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Package name</th>
+<th class="head">DEPENDENCIES</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>argparse</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td><strong>oslo.utils</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.1;</td>
+</tr>
+<tr><td>pbr</td>
+<td>&gt;=0.6; !=0.7; &lt;1.0;</td>
+</tr>
+<tr><td><strong>six</strong></td>
+<td>&gt;=1.7.0; &lt;=1.9.0;</td>
+</tr>
+<tr><td><strong>oslo.i18n</strong></td>
+<td>&gt;=1.3.0; &lt;=1.3.1;</td>
+</tr>
+<tr><td><strong>cliff</strong></td>
+<td>&gt;=1.7.0; &lt;=1.9.0;</td>
+</tr>
+<tr><td><strong>oslo.serialization</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.0;</td>
+</tr>
+<tr><td><strong>python-keystoneclient</strong></td>
+<td>&gt;=0.10.0; &lt;=1.1.0;</td>
+</tr>
+<tr><td><strong>requests</strong></td>
+<td>&gt;=2.1.0; &lt;=2.2.1; !=2.4.0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="python-ceilometerclient">
+<h1>python-ceilometerclient</h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="48%" />
+<col width="52%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Package name</th>
+<th class="head">DEPENDENCIES</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>argparse</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td><strong>oslo.utils</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.1;</td>
+</tr>
+<tr><td>PrettyTable</td>
+<td>&gt;=0.7; &lt;0.8;</td>
+</tr>
+<tr><td>pbr</td>
+<td>&gt;=0.6; !=0.7; &lt;1.0;</td>
+</tr>
+<tr><td><strong>python-keystoneclient</strong></td>
+<td>&gt;=0.10.0; &lt;=1.1.0;</td>
+</tr>
+<tr><td><strong>oslo.i18n</strong></td>
+<td>&gt;=1.3.0; &lt;=1.3.1;</td>
+</tr>
+<tr><td><strong>iso8601</strong></td>
+<td>&gt;=0.1.9; &lt;=0.1.10;</td>
+</tr>
+<tr><td><strong>oslo.serialization</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.0;</td>
+</tr>
+<tr><td><strong>six</strong></td>
+<td>&gt;=1.7.0; &lt;=1.9.0;</td>
+</tr>
+<tr><td><strong>stevedore</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.0;</td>
+</tr>
+<tr><td><strong>requests</strong></td>
+<td>&gt;=2.1.0; &lt;=2.2.1; !=2.4.0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="python-cinderclient">
+<h1>python-cinderclient</h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="48%" />
+<col width="52%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Package name</th>
+<th class="head">DEPENDENCIES</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>argparse</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td><strong>simplejson</strong></td>
+<td>&gt;=2.2.0; &lt;=3.3.1;</td>
+</tr>
+<tr><td><strong>Babel</strong></td>
+<td>&lt;=1.3; &gt;=1.3;</td>
+</tr>
+<tr><td>pbr</td>
+<td>&gt;=0.6; !=0.7; &lt;1.0;</td>
+</tr>
+<tr><td>PrettyTable</td>
+<td>&gt;=0.7; &lt;0.8;</td>
+</tr>
+<tr><td><strong>python-keystoneclient</strong></td>
+<td>&gt;=0.10.0; &lt;=1.1.0;</td>
+</tr>
+<tr><td><strong>six</strong></td>
+<td>&gt;=1.7.0; &lt;=1.9.0;</td>
+</tr>
+<tr><td><strong>requests</strong></td>
+<td>&gt;=2.1.0; &lt;=2.2.1; !=2.4.0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="python-glanceclient">
+<h1>python-glanceclient</h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="48%" />
+<col width="52%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Package name</th>
+<th class="head">DEPENDENCIES</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>warlock</td>
+<td>&gt;=1.0.1; &lt;2;</td>
+</tr>
+<tr><td>argparse</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td><strong>oslo.utils</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.1;</td>
+</tr>
+<tr><td><strong>Babel</strong></td>
+<td>&lt;=1.3; &gt;=1.3;</td>
+</tr>
+<tr><td>pbr</td>
+<td>&gt;=0.6; !=0.7; &lt;1.0;</td>
+</tr>
+<tr><td>PrettyTable</td>
+<td>&gt;=0.7; &lt;0.8;</td>
+</tr>
+<tr><td><strong>python-keystoneclient</strong></td>
+<td>&gt;=0.10.0; &lt;=1.1.0;</td>
+</tr>
+<tr><td><strong>oslo.i18n</strong></td>
+<td>&gt;=1.0.0; &lt;=1.3.1;</td>
+</tr>
+<tr><td><strong>pyOpenSSL</strong></td>
+<td>&gt;=0.11; &lt;=0.13;</td>
+</tr>
+<tr><td><strong>six</strong></td>
+<td>&gt;=1.7.0; &lt;=1.9.0;</td>
+</tr>
+<tr><td><strong>requests</strong></td>
+<td>&gt;=2.1.0; &lt;=2.2.1; !=2.4.0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="python-heatclient">
+<h1>python-heatclient</h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="48%" />
+<col width="52%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Package name</th>
+<th class="head">DEPENDENCIES</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>argparse</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td><strong>oslo.utils</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.1;</td>
+</tr>
+<tr><td><strong>Babel</strong></td>
+<td>&lt;=1.3; &gt;=1.3;</td>
+</tr>
+<tr><td>pbr</td>
+<td>&gt;=0.6; !=0.7; &lt;1.0;</td>
+</tr>
+<tr><td>PrettyTable</td>
+<td>&gt;=0.7; &lt;0.8;</td>
+</tr>
+<tr><td><strong>python-keystoneclient</strong></td>
+<td>&gt;=0.10.0; &lt;=1.1.0;</td>
+</tr>
+<tr><td><strong>oslo.i18n</strong></td>
+<td>&gt;=1.3.0; &lt;=1.3.1;</td>
+</tr>
+<tr><td><strong>iso8601</strong></td>
+<td>&gt;=0.1.9; &lt;=0.1.10;</td>
+</tr>
+<tr><td><strong>oslo.serialization</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.0;</td>
+</tr>
+<tr><td><strong>PyYAML</strong></td>
+<td>&gt;=3.1.0; &lt;=3.10;</td>
+</tr>
+<tr><td><strong>six</strong></td>
+<td>&gt;=1.7.0; &lt;=1.9.0;</td>
+</tr>
+<tr><td><strong>requests</strong></td>
+<td>&gt;=2.1.0; &lt;=2.2.1; !=2.4.0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="python-keystoneclient">
+<h1>python-keystoneclient</h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="45%" />
+<col width="55%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Package name</th>
+<th class="head">DEPENDENCIES</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><strong>oslo.config</strong></td>
+<td>&gt;=1.4.0; &lt;=1.6.0;</td>
+</tr>
+<tr><td>argparse</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td><strong>oslo.utils</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.1;</td>
+</tr>
+<tr><td><strong>Babel</strong></td>
+<td>&lt;=1.3; &gt;=1.3;</td>
+</tr>
+<tr><td>PrettyTable</td>
+<td>&gt;=0.7; &lt;0.8;</td>
+</tr>
+<tr><td>pbr</td>
+<td>&gt;=0.6; !=0.7; &lt;1.0;</td>
+</tr>
+<tr><td><strong>six</strong></td>
+<td>&gt;=1.7.0; &lt;=1.9.0;</td>
+</tr>
+<tr><td><strong>oslo.i18n</strong></td>
+<td>&gt;=1.3.0; &lt;=1.3.1;</td>
+</tr>
+<tr><td><strong>iso8601</strong></td>
+<td>&gt;=0.1.9; &lt;=0.1.10;</td>
+</tr>
+<tr><td><strong>oslo.serialization</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.0;</td>
+</tr>
+<tr><td><strong>stevedore</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.0;</td>
+</tr>
+<tr><td><strong>requests</strong></td>
+<td>&gt;=2.1.0; &lt;=2.2.1; !=2.4.0;</td>
+</tr>
+<tr><td><strong>netaddr</strong></td>
+<td>&gt;=0.7.12; &lt;=0.7.13;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="python-neutronclient">
+<h1>python-neutronclient</h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="48%" />
+<col width="52%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Package name</th>
+<th class="head">DEPENDENCIES</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>argparse</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td><strong>simplejson</strong></td>
+<td>&gt;=2.2.0; &lt;=3.3.1;</td>
+</tr>
+<tr><td><strong>Babel</strong></td>
+<td>&lt;=1.3; &gt;=1.3;</td>
+</tr>
+<tr><td>pbr</td>
+<td>&gt;=0.6; !=0.7; &lt;1.0;</td>
+</tr>
+<tr><td><strong>oslo.utils</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.1;</td>
+</tr>
+<tr><td><strong>python-keystoneclient</strong></td>
+<td>&gt;=0.10.0; &lt;=1.1.0;</td>
+</tr>
+<tr><td><strong>oslo.i18n</strong></td>
+<td>&gt;=1.3.0; &lt;=1.3.1;</td>
+</tr>
+<tr><td><strong>iso8601</strong></td>
+<td>&gt;=0.1.9; &lt;=0.1.10;</td>
+</tr>
+<tr><td><strong>oslo.serialization</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.0;</td>
+</tr>
+<tr><td><strong>cliff</strong></td>
+<td>&gt;=1.7.0; &lt;=1.9.0;</td>
+</tr>
+<tr><td><strong>six</strong></td>
+<td>&gt;=1.7.0; &lt;=1.9.0;</td>
+</tr>
+<tr><td><strong>requests</strong></td>
+<td>&gt;=2.1.0; &lt;=2.2.1; !=2.4.0;</td>
+</tr>
+<tr><td><strong>netaddr</strong></td>
+<td>&gt;=0.7.12; &lt;=0.7.13;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="python-novaclient">
+<h1>python-novaclient</h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="48%" />
+<col width="52%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Package name</th>
+<th class="head">DEPENDENCIES</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>argparse</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td><strong>oslo.utils</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.1;</td>
+</tr>
+<tr><td><strong>Babel</strong></td>
+<td>&lt;=1.3; &gt;=1.3;</td>
+</tr>
+<tr><td>PrettyTable</td>
+<td>&gt;=0.7; &lt;0.8;</td>
+</tr>
+<tr><td>pbr</td>
+<td>&gt;=0.6; !=0.7; &lt;1.0;</td>
+</tr>
+<tr><td><strong>simplejson</strong></td>
+<td>&gt;=2.2.0; &lt;=3.3.1;</td>
+</tr>
+<tr><td><strong>six</strong></td>
+<td>&gt;=1.7.0; &lt;=1.9.0;</td>
+</tr>
+<tr><td><strong>oslo.i18n</strong></td>
+<td>&gt;=1.3.0; &lt;=1.3.1;</td>
+</tr>
+<tr><td><strong>iso8601</strong></td>
+<td>&gt;=0.1.9; &lt;=0.1.10;</td>
+</tr>
+<tr><td><strong>oslo.serialization</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.0;</td>
+</tr>
+<tr><td><strong>python-keystoneclient</strong></td>
+<td>&gt;=0.10.0; &lt;=1.1.0;</td>
+</tr>
+<tr><td><strong>requests</strong></td>
+<td>&gt;=2.1.0; &lt;=2.2.1; !=2.4.0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="python-openstackclient">
+<h1>python-openstackclient</h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="48%" />
+<col width="52%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Package name</th>
+<th class="head">DEPENDENCIES</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><strong>oslo.config</strong></td>
+<td>&gt;=1.4.0; &lt;=1.6.0;</td>
+</tr>
+<tr><td><strong>python-glanceclient</strong></td>
+<td>&gt;=0.14.0; &lt;=0.15.0;</td>
+</tr>
+<tr><td><strong>oslo.utils</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.1;</td>
+</tr>
+<tr><td><strong>Babel</strong></td>
+<td>&lt;=1.3; &gt;=1.3;</td>
+</tr>
+<tr><td>pbr</td>
+<td>&gt;=0.6; !=0.7; &lt;1.0;</td>
+</tr>
+<tr><td><strong>python-neutronclient</strong></td>
+<td>&gt;=2.3.6; &lt;3;</td>
+</tr>
+<tr><td><strong>python-keystoneclient</strong></td>
+<td>&gt;=0.10.0; &lt;=1.1.0;</td>
+</tr>
+<tr><td><strong>oslo.i18n</strong></td>
+<td>&gt;=1.3.0; &lt;=1.3.1;</td>
+</tr>
+<tr><td><strong>cliff</strong></td>
+<td>&gt;=1.7.0; &lt;=1.9.0;</td>
+</tr>
+<tr><td><strong>oslo.serialization</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.0;</td>
+</tr>
+<tr><td><strong>python-cinderclient</strong></td>
+<td>&gt;=1.1.0; &lt;=1.1.1;</td>
+</tr>
+<tr><td><strong>cliff-tablib</strong></td>
+<td>&gt;=1.0; &lt;=1.1;</td>
+</tr>
+<tr><td><strong>six</strong></td>
+<td>&gt;=1.7.0; &lt;=1.9.0;</td>
+</tr>
+<tr><td><strong>stevedore</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.0;</td>
+</tr>
+<tr><td><strong>python-novaclient</strong></td>
+<td>&gt;=2.18.0; &lt;=2.20.0;</td>
+</tr>
+<tr><td><strong>requests</strong></td>
+<td>&gt;=2.1.0; &lt;=2.2.1; !=2.4.0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="python-saharaclient">
+<h1>python-saharaclient</h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="48%" />
+<col width="52%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Package name</th>
+<th class="head">DEPENDENCIES</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>argparse</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td><strong>oslo.utils</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.1;</td>
+</tr>
+<tr><td><strong>Babel</strong></td>
+<td>&lt;=1.3; &gt;=1.3;</td>
+</tr>
+<tr><td>PrettyTable</td>
+<td>&gt;=0.7; &lt;0.8;</td>
+</tr>
+<tr><td>pbr</td>
+<td>&gt;=0.6; !=0.7; &lt;1.0;</td>
+</tr>
+<tr><td><strong>python-keystoneclient</strong></td>
+<td>&gt;=0.10.0; &lt;=1.1.0;</td>
+</tr>
+<tr><td><strong>oslo.i18n</strong></td>
+<td>&gt;=1.3.0; &lt;=1.3.1;</td>
+</tr>
+<tr><td><strong>six</strong></td>
+<td>&gt;=1.7.0; &lt;=1.9.0;</td>
+</tr>
+<tr><td><strong>requests</strong></td>
+<td>&gt;=2.1.0; &lt;=2.2.1; !=2.4.0;</td>
+</tr>
+<tr><td><strong>netaddr</strong></td>
+<td>&gt;=0.7.12; &lt;=0.7.13;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="python-swiftclient">
+<h1>python-swiftclient</h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="34%" />
+<col width="66%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Package name</th>
+<th class="head">DEPENDENCIES</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><strong>simplejson</strong></td>
+<td>&gt;=2.2.0; &lt;=3.3.1;</td>
+</tr>
+<tr><td><strong>futures</strong></td>
+<td>&gt;=2.1.6; &lt;=2.2.0;</td>
+</tr>
+<tr><td><strong>requests</strong></td>
+<td>!=2.4.0; &gt;=2.1.0; &lt;=2.2.1;</td>
+</tr>
+<tr><td><strong>six</strong></td>
+<td>&gt;=1.7.0; &lt;=1.9.0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="python-troveclient">
+<h1>python-troveclient</h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="48%" />
+<col width="52%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Package name</th>
+<th class="head">DEPENDENCIES</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>argparse</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td><strong>oslo.utils</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.1;</td>
+</tr>
+<tr><td><strong>Babel</strong></td>
+<td>&lt;=1.3; &gt;=1.3;</td>
+</tr>
+<tr><td>pbr</td>
+<td>&gt;=0.6; !=0.7; &lt;1.0;</td>
+</tr>
+<tr><td>PrettyTable</td>
+<td>&gt;=0.7; &lt;0.8;</td>
+</tr>
+<tr><td><strong>simplejson</strong></td>
+<td>&gt;=2.2.0; &lt;=3.3.1;</td>
+</tr>
+<tr><td><strong>python-keystoneclient</strong></td>
+<td>&gt;=0.10.0; &lt;=1.1.0;</td>
+</tr>
+<tr><td><strong>six</strong></td>
+<td>&gt;=1.7.0; &lt;=1.9.0;</td>
+</tr>
+<tr><td><strong>requests</strong></td>
+<td>&gt;=2.1.0; &lt;=2.2.1; !=2.4.0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="sahara">
+<h1>sahara</h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="23%" />
+<col width="77%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Package name</th>
+<th class="head">DEPENDENCIES</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><strong>Jinja2</strong></td>
+<td>&lt;=2.7.2;</td>
+</tr>
+<tr><td><strong>WebOb</strong></td>
+<td>&gt;=1.2.3; &lt;=1.3.1;</td>
+</tr>
+<tr><td>Flask</td>
+<td>&gt;=0.10; &lt;1.0;</td>
+</tr>
+<tr><td><strong>python-swiftclient</strong></td>
+<td>&gt;=2.2.0; &lt;=2.3.1;</td>
+</tr>
+<tr><td><strong>oslo.rootwrap</strong></td>
+<td>&gt;=1.3.0; &lt;=1.5.0;</td>
+</tr>
+<tr><td><strong>SQLAlchemy</strong></td>
+<td>&gt;=0.8.4; !=0.9.0; !=0.9.1; !=0.9.2; !=0.9.3; !=0.9.4; !=0.9.5; !=0.9.6; &lt;=0.9.99;</td>
+</tr>
+<tr><td>jsonschema</td>
+<td>&gt;=2.0.0; &lt;3.0.0;</td>
+</tr>
+<tr><td><strong>stevedore</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.0;</td>
+</tr>
+<tr><td><strong>oslo.messaging</strong></td>
+<td>&gt;=1.4.0; &lt;1.5.0;</td>
+</tr>
+<tr><td><strong>oslo.utils</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.1;</td>
+</tr>
+<tr><td><strong>alembic</strong></td>
+<td>&gt;=0.6.4; &lt;=0.7.4;</td>
+</tr>
+<tr><td><strong>oslo.db</strong></td>
+<td>&gt;=1.0.0; &lt;1.1;</td>
+</tr>
+<tr><td><strong>keystonemiddleware</strong></td>
+<td>&gt;=1.0.0; &lt;1.4.0;</td>
+</tr>
+<tr><td><strong>oslo.i18n</strong></td>
+<td>&gt;=1.0.0; &lt;=1.3.1;</td>
+</tr>
+<tr><td><strong>python-cinderclient</strong></td>
+<td>&gt;=1.1.0; &lt;=1.1.1;</td>
+</tr>
+<tr><td><strong>oslo.context</strong></td>
+<td>&lt;=0.1.0; &gt;=0.1.0;</td>
+</tr>
+<tr><td><strong>oslo.config</strong></td>
+<td>&gt;=1.4.0; &lt;=1.6.0;</td>
+</tr>
+<tr><td><strong>oslo.concurrency</strong></td>
+<td>&gt;=0.3.0;</td>
+</tr>
+<tr><td><strong>Babel</strong></td>
+<td>&lt;=1.3; &gt;=1.3;</td>
+</tr>
+<tr><td>oslo.middleware</td>
+<td>&gt;=0.3.0;</td>
+</tr>
+<tr><td><strong>python-neutronclient</strong></td>
+<td>&gt;=2.3.6; &lt;3;</td>
+</tr>
+<tr><td><strong>six</strong></td>
+<td>&gt;=1.7.0; &lt;=1.9.0;</td>
+</tr>
+<tr><td>oslo.log</td>
+<td>&gt;=0.4.0;</td>
+</tr>
+<tr><td><strong>python-keystoneclient</strong></td>
+<td>&gt;=0.10.0; &lt;=1.1.0;</td>
+</tr>
+<tr><td><strong>python-novaclient</strong></td>
+<td>&gt;=2.18.0; &lt;=2.20.0;</td>
+</tr>
+<tr><td>pbr</td>
+<td>&gt;=0.6; !=0.7; &lt;1.0;</td>
+</tr>
+<tr><td><strong>paramiko</strong></td>
+<td>&gt;=1.13.0; &lt;=1.15.2;</td>
+</tr>
+<tr><td><strong>iso8601</strong></td>
+<td>&gt;=0.1.9; &lt;=0.1.10;</td>
+</tr>
+<tr><td><strong>oslo.serialization</strong></td>
+<td>&gt;=1.0.0; &lt;=1.2.0;</td>
+</tr>
+<tr><td><strong>python-heatclient</strong></td>
+<td>&gt;=0.2.9; &lt;0.3.0;</td>
+</tr>
+<tr><td><strong>requests</strong></td>
+<td>&gt;=2.1.0; &lt;=2.2.1; !=2.4.0;</td>
+</tr>
+<tr><td><strong>eventlet</strong></td>
+<td>&gt;=0.15.1; &lt;=0.15.2;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="sahara-dashboard">
+<h1>sahara-dashboard</h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="38%" />
+<col width="63%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Package name</th>
+<th class="head">DEPENDENCIES</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>pbr</td>
+<td>!=0.7; &gt;=0.6; &lt;1.0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="swift">
+<h1>swift</h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="41%" />
+<col width="59%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Package name</th>
+<th class="head">DEPENDENCIES</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><strong>greenlet</strong></td>
+<td>&gt;=0.3.2; &lt;=0.4.2;</td>
+</tr>
+<tr><td><strong>simplejson</strong></td>
+<td>&gt;=2.2.0; &lt;=3.3.1;</td>
+</tr>
+<tr><td><strong>netifaces</strong></td>
+<td>&gt;=0.10.4; &lt;=0.10.4;</td>
+</tr>
+<tr><td><strong>dnspython</strong></td>
+<td>&gt;=1.9.4; &lt;=1.12.0;</td>
+</tr>
+<tr><td>pastedeploy</td>
+<td>&gt;=1.3.3;</td>
+</tr>
+<tr><td><strong>xattr</strong></td>
+<td>&gt;=0.4; &lt;=0.6.4;</td>
+</tr>
+<tr><td><strong>eventlet</strong></td>
+<td>&gt;=0.15.1; &lt;=0.15.2;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body>
+</html>
