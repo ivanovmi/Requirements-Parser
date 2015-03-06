@@ -64,7 +64,7 @@ if __name__ == "__main__":
                 if is_changed(rq[key], rq1.packs[key]):
                     boldBeg = "\033[1m"
                     boldEnd = "\033[0m"
-                    json_file.write('\t'*3+json.dumps('**'+key+'**')+':'+json.dumps(''.join([" %s%s;" % x for x in rq[key] ]))+',\n')
+                    json_file.write('\t'*3+json.dumps('* '+key)+':'+json.dumps(''.join([" %s%s;" % x for x in rq[key] ]))+',\n')
                 else:
                     json_file.write('\t'*3+json.dumps(key)+':'+json.dumps(''.join([" %s%s;" % x for x in rq[key] ]))+',\n')
                 print "{0}{1}{2}:{3}".format(boldBeg, key, boldEnd, ''.join([" %s%s;" % x for x in rq[key]]))
