@@ -13,6 +13,20 @@ def generate_output():
             json_data = json.load(jsfile)
         generate_report.generate_rst(json_data)
 
+def is_changed(a, b):
+    try:
+        signList_a, verList_a = zip(*a)
+    except ValueError:
+        signList_a, verList_a = "", ""
+    try:
+        signList_b, verList_b = zip(*b)
+    except ValueError:
+        signList_b, verList_b = "", ""
+    if set(signList_a) != set(signList_b) or set(verList_a) != set(verList_b):
+        return True
+    else:
+        return False
+
 if __name__ == "__main__":
     branch_name = ''
     while branch_name not in ['master', '6.1', '6.0.1']:
@@ -45,7 +59,12 @@ if __name__ == "__main__":
             json_file.write('\t'*2+'"deps": {\n')
             for key in rq1.packs.keys():
                 json_file.write('\t'*3+json.dumps(key)+':'+json.dumps(''.join([" %s%s;" % x for x in rq[key] ]))+',\n')
-                print "{0}:{1}".format(key, ''.join([" %s%s;" % x for x in rq[key]]))
+                boldBeg = ""
+                boldEnd = ""
+                if is_changed(rq[key], rq1.packs[key]):
+                    boldBeg = "\033[1m"
+                    boldEnd = "\033[0m"
+                print "{0}{1}{2}:{3}".format(boldBeg, key, boldEnd, ''.join([" %s%s;" % x for x in rq[key]]))
             json_file.seek(-2, os.SEEK_END)
             json_file.truncate()
             json_file.write('\t'*2+'}}},\n')
