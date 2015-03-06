@@ -33,7 +33,7 @@ def generate_rst(json_data):
     if json_data["output_format"] == "pdf":
         call(["rst2pdf", "report.rst", "-o", "report.pdf"])
     else:
-        call(["rst2html", "report.rst", "report.html"])
+        call(["rst2html.py", "report.rst", "report.html"])
 
 
 def write_headers(f, header, main=False):
