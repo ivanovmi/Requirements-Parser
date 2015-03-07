@@ -18,19 +18,20 @@ class Require:
 
         for el in req1.keys():
             req[el] = set(req[el]) | set(req1[el])
-            req[el] = sorted(req[el], key = lambda x: LooseVersion(x[1]))
+            req[el] = sorted(req[el], key=lambda x: LooseVersion(x[1]))
 
             try:
                 eqEl = filter(lambda x: x[0] == '==', req[el])[-1]
             except IndexError:
-                eqEl = (-1, -1)
+                eqEl = ("0", "0")
 
             try:
                 neqEl = filter(lambda x: x[0] in ['>=', '<=', '>', '<'], req[el])[-1]
             except IndexError:
-                neqEl = (-1, -1)
+                neqEl = ("0", "0")
 
-            if eqEl[1] != -1 and neqEl[1] != -1 and LooseVersion(eqEl[1]) >= LooseVersion(neqEl[1]) and neqEl[0] in ['>=', '<=', -1]:
+            if LooseVersion(eqEl[1]) >= LooseVersion(neqEl[1]) and neqEl[0] in ['>=', '<=', -1]:
+            #if LooseVersion(eqEl[1]) >= LooseVersion(neqEl[1]) and neqEl[0] in ['>=', '<=', "0"]:
                 eqEly = True
             else:
                 eqEly = False
