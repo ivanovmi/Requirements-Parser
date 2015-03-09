@@ -31,7 +31,7 @@ class Require:
                 neqEl = ("0", "0")
 
             if LooseVersion(eqEl[1]) >= LooseVersion(neqEl[1]) and neqEl[0] in ['>=', '<=', -1]:
-            #if LooseVersion(eqEl[1]) >= LooseVersion(neqEl[1]) and neqEl[0] in ['>=', '<=', "0"]:
+            # if LooseVersion(eqEl[1]) >= LooseVersion(neqEl[1]) and neqEl[0] in ['>=', '<=', "0"]:
                 eqEly = True
             else:
                 eqEly = False

@@ -30,6 +30,7 @@ def is_changed(a, b):
         return False
 
 if __name__ == "__main__":
+    gerritAccount = lan.loginToLaunchpad()
     branch_name = ''
     while branch_name not in ['master', '6.1', '6.0.1']:
         #branch_name = 'master'
@@ -41,7 +42,6 @@ if __name__ == "__main__":
         elif branch_name == '6.0.1':
             branch = 'openstack-ci/fuel-6.0.1/2014.2'
     #pdb.set_trace()
-    gerritAccount = lan.loginToLaunchpad()
     file_extension = raw_input("With what extension save a file? (PDF or HTML?) ")
     json_file = open('requirements.json', 'w')
     json_file.write('{"gerrit_url": "URL",\n'
