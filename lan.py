@@ -4,9 +4,6 @@ import requests
 import getpass
 import sys
 
-LAUNCHPAD_ID = 'dtrishkin@mirantis.com'
-LAUNCHPAD_PW = '3393YEShq27'
-
 parameters = {'openid.assoc_handle': '',
               'openid.claimed_id': 'http://specs.openid.net/auth/2.0/identifier_select',
               'openid.ext2.mode': 'fetch_request',
@@ -33,13 +30,14 @@ def getRequirementsFromUrl(url, gerritAccount):
     if r.status_code == 200:
         return r.iter_lines()
     else:
-        print r.status_code
-        raise SystemExit
+        raise KeyError
+        #print r.status_code
+        #raise SystemExit
 
 
 def loginToLaunchpad():
     print 'Please, login to gerrit.'
-    LAUNCHPAD_ID = raw_input('Login:')
+    LAUNCHPAD_ID = raw_input('Login: ')
     LAUNCHPAD_PW = getpass.getpass()
     s = requests.Session()
     r = s.get('https://login.launchpad.net')
@@ -59,23 +57,25 @@ def loginToLaunchpad():
     ss = requests.Session()
     rf = ss.get('https://review.fuel-infra.org/login/q/status:open')
     start_post = rf.content.find('openid.assoc_handle" type="hidden" value="')
-    rf.content[start_post+42 : start_post+42+33]
-    parameters['openid.assoc_handle'] = rf.content[start_post+42 : start_post+42+33]
+    parameters['openid.assoc_handle'] = rf.content[start_post+42: start_post+42+33]
 
     Cookiess = 'csrftoken=' + requests.utils.dict_from_cookiejar(s.cookies)['csrftoken']
-    Cookiess += '; C=1; sessionid=' + requests.utils.dict_from_cookiejar(s.cookies)['sessionid']
+    try:
+        Cookiess += '; C=1; sessionid=' + requests.utils.dict_from_cookiejar(s.cookies)['sessionid']
+    except KeyError:
+        print 'Could not authenticate'
+        raise SystemExit
     Cookiess += '; openid_referer="https://review.fuel-infra.org/login/q/status:open"'
 
     ss.headers.update({'Referer': 'https://review.fuel-infra.org/login/q/status:open'})
     ss.headers.update({'Cookie': Cookiess})
     r = ss.post('https://login.launchpad.net/+openid', data=parameters, allow_redirects=True)
 
-    d_data = {
-     'csrfmiddlewaretoken': requests.utils.dict_from_cookiejar(s.cookies)['csrftoken'],
-     'email': 'on',
-     'fullname': 'on',
-     'ok': '',
-     'openid.usernamepassword': ''
+    d_data = {'csrfmiddlewaretoken': requests.utils.dict_from_cookiejar(s.cookies)['csrftoken'],
+              'email': 'on',
+              'fullname': 'on',
+              'ok': '',
+              'openid.usernamepassword': ''
     }
 
     ss.headers.update({'Referer': r.url})

@@ -1,8 +1,5 @@
 __author__ = 'degorenko'
 
-import rst2pdf
-import docutils
-
 
 def generate_rst(json_data):
     f = open("report.rst", "w")

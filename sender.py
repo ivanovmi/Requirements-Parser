@@ -10,7 +10,7 @@ cur_time = formatdate(timeval=None, localtime=True)
 
 
 def send_mail(send_to, subject, text, files=None, send_from=socket.gethostname(), server='localhost'):
-
+    # Forming e-mail headers.
     msg = MIMEMultipart('application', 'base64')
     msg['Subject'] = subject
     msg['From'] = send_from

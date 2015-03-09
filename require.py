@@ -10,7 +10,7 @@ class Require:
     def __init__(self, req):
         self.packs = req
         for el in self.packs.keys():
-            self.packs[el] = sorted(self.packs[el], key = lambda x: LooseVersion(x[1]))
+            self.packs[el] = sorted(self.packs[el], key=lambda x: LooseVersion(x[1]))
 
     @staticmethod
     def merge(req1, req2):
@@ -23,15 +23,14 @@ class Require:
             try:
                 eqEl = filter(lambda x: x[0] == '==', req[el])[-1]
             except IndexError:
-                eqEl = ("0", "0")
+                eqEl = ('0', '0')
 
             try:
                 neqEl = filter(lambda x: x[0] in ['>=', '<=', '>', '<'], req[el])[-1]
             except IndexError:
-                neqEl = ("0", "0")
+                neqEl = ('0', '0')
 
             if LooseVersion(eqEl[1]) >= LooseVersion(neqEl[1]) and neqEl[0] in ['>=', '<=', -1]:
-            # if LooseVersion(eqEl[1]) >= LooseVersion(neqEl[1]) and neqEl[0] in ['>=', '<=', "0"]:
                 eqEly = True
             else:
                 eqEly = False
