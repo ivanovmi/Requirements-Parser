@@ -1,5 +1,4 @@
-import reqParse
-import require
+import require_utils
 import pdb
 import os
 import lan
@@ -52,7 +51,7 @@ if __name__ == "__main__":
                     '"upstream_branch": "branch",\n')
     json_file.write('\n\t"projects": [\n\t')
     with open('2ndReq', 'r') as f:
-        rq2 = require.Require(reqParse.parseReq(f))
+        rq2 = require_utils.Require(require_utils.Require.parseReq(f))
     with open('req', 'r') as req_file:
         pack_count = 0
         for repo in req_file:
@@ -64,9 +63,9 @@ if __name__ == "__main__":
             except KeyError:
                 print 'Skip ' + repo.strip() + ' repository.'
                 continue
-            rq1 = require.Require(reqParse.parseReq(r))
+            rq1 = require_utils.Require(require_utils.Require.parseReq(r))
             if rq1.packs != {}:
-                rq = require.Require.merge(rq1.packs, rq2.packs)
+                rq = require_utils.Require.merge(rq1.packs, rq2.packs)
                 json_file.write('\t{\n'+'\t'*2+json.dumps(repo.strip())+': {\n')
                 json_file.write('\t'*2+'"deps": {\n')
                 for key in rq1.packs.keys():

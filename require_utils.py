@@ -1,9 +1,13 @@
 import itertools
 import sys
 from distutils.version import LooseVersion
+import re
 
 class Require:
 
+    packageName = re.compile("[a-zA-Z0-9-_.]+")
+    packageEq = re.compile("(>=|<=|>|<|==|!=)+")
+    packageVers = re.compile("[\d.]+")
     packs = dict()
 
     def __init__(self, req):
@@ -81,3 +85,24 @@ class Require:
                     req[el].append(eqEl)
 
         return req
+
+    #This function is for parsing requirements file to special format: [(sign, version),..., (sign, version)].
+    #Output example: { "pbr" : [ (">=", "0.6"), ("!=", "0.7"), ("<", "1.0")] }
+    @staticmethod
+    def parseReq(inp):
+        res = dict()
+        for line in inp:
+            if line == '' or line[0] == '#':
+                continue
+            resName = Require.packageName.search(line)
+            resEq = Require.packageEq.findall(line)
+            it = next(re.finditer('>=|<=|>|<|==|!=', line), None)
+            if it:
+                resVers = Require.packageVers.findall(line[it.start():])
+            if resName:
+                name = resName.group(0)
+                if not res.has_key(name):
+                    res[name] = set()
+                    for idx, sign in enumerate(resEq):
+                        res[name].add((sign, resVers[idx]))
+        return res
