@@ -8,6 +8,9 @@ class Require:
     packageName = re.compile("[a-zA-Z0-9-_.]+")
     packageEq = re.compile("(>=|<=|>|<|==|!=)+")
     packageVers = re.compile("[\d.]+")
+
+    epochRe = re.compile("[(]\d[:]")
+
     packs = dict()
 
     def __init__(self, req):
@@ -106,3 +109,10 @@ class Require:
                     for idx, sign in enumerate(resEq):
                         res[name].add((sign, resVers[idx]))
         return res
+
+    @staticmethod
+    def get_epoch(inp):
+        for line in inp:
+            if "Epoch" in line or Require.epochRe.search(line):
+                return line
+        return None
