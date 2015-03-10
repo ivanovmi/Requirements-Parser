@@ -92,7 +92,7 @@ class Require:
     #This function is for parsing requirements file to special format: [(sign, version),..., (sign, version)].
     #Output example: { "pbr" : [ (">=", "0.6"), ("!=", "0.7"), ("<", "1.0")] }
     @staticmethod
-    def parseReq(inp):
+    def parse_req(inp):
         res = dict()
         for line in inp:
             if line == '' or line[0] == '#':
@@ -116,3 +116,18 @@ class Require:
             if "Epoch" in line or Require.epochRe.search(line):
                 return line
         return None
+
+    @staticmethod
+    def is_changed(req_list1, req_list2):
+        try:
+            signList_a, verList_a = zip(*req_list1)
+        except ValueError:
+            signList_a, verList_a = '', ''
+        try:
+            signList_b, verList_b = zip(*req_list2)
+        except ValueError:
+            signList_b, verList_b = '', ''
+        if set(signList_a) != set(signList_b) or set(verList_a) != set(verList_b):
+            return True
+        else:
+            return False
