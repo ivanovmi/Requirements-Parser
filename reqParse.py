@@ -4,10 +4,10 @@ packageName = re.compile("[a-zA-Z0-9-_.]+")
 packageEq = re.compile("(>=|<=|>|<|==|!=)+")
 packageVers = re.compile("[\d.]+")
 
-
+#This function is for parsing requirements file to special format: [(sign, version),..., (sign, version)].
+#Output example: { "pbr" : [ (">=", "0.6"), ("!=", "0.7"), ("<", "1.0")] }
 def parseReq(inp):
     res = dict()
-    #with open(input, 'r') as f:
     for line in inp:
         if line == '' or line[0] == '#':
             continue
