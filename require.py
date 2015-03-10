@@ -34,7 +34,7 @@ class Require:
 
             #If equal's version is greater than '>=' or '<=', then take '==' as main requirement's version
             #of the package. Else we have to process merged list.
-            if LooseVersion(eqEl[1]) >= LooseVersion(neqEl[1]) and neqEl[0] in ['>=', '<=', "0"]:
+            if LooseVersion(eqEl[1]) >= LooseVersion(neqEl[1]):
                 eqEly = True
                 if eqEl[1] == neqEl[1] == "0":
                     eqEl = []
@@ -76,6 +76,8 @@ class Require:
                         break
                 req[el] = res
             else:
-                req[el] = list(eqEl)
+                req[el] = []
+                if eqEl:
+                    req[el].append(eqEl)
 
         return req
