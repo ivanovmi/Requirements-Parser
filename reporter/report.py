@@ -1,7 +1,7 @@
 __author__ = 'degorenko'
 
 
-def generate_rst(json_data):
+def generate_rst(json_data, epoch = False):
     f = open("report.rst", "w")
 
     from email.utils import formatdate
@@ -13,16 +13,28 @@ def generate_rst(json_data):
     write_parameters(f, ':{0}: {1}\n'.format("MOS gerrit URL", json_data["gerrit_url"]))
     write_parameters(f, ':{0}: {1}\n'.format("MOS gerrit branch", json_data["gerrit_branch"]))
 
+    def req_rst():
+            deps = project[project_name]['deps']
+
+            project_reqs = {}
+            for key in deps.keys():
+                project_reqs[key] = deps[key]
+
+            write_table(f, project_name, project_reqs)
+
+    def epoch_rst():
+            project_epoch = project[project_name]
+
+            write_table(f, project_name, project_epoch, epoch)
+
     projects = json_data["projects"]
     for project in projects:
-        project_name = project.keys()[0]
-        deps = project[project_name]['deps']
+            project_name = project.keys()[0]
 
-        project_reqs = {}
-        for key in deps.keys():
-            project_reqs[key] = deps[key]
-
-        write_table(f, project_name, project_reqs)
+            if epoch:
+                epoch_rst()
+            else:
+                req_rst()
 
     f.close()
 
@@ -52,7 +64,7 @@ def get_sequence(separator, count):
 
 
 def get_word_length(dictionary):
-    # Default length of table columns -> 'Package name', 'MOS', 'Upstream'
+    # Default length of table columns -> 'Package name', 'DEPENDENCIES'
     length = [12, 4]
     for key in dictionary.keys():
         if len(key) > length[0]:
@@ -62,7 +74,7 @@ def get_word_length(dictionary):
     return length
 
 
-def write_table(f, project, requirements):
+def write_table(f, project, requirements, epoch = False):
     word_length = get_word_length(requirements)
 
     def align(word, num):
@@ -75,16 +87,22 @@ def write_table(f, project, requirements):
         else:
             return word
 
-    write_headers(f, '\n{0}\n'.format(project))
-    write_parameters(f, '+{0}+{1}+\n'.format(get_sequence('-', word_length[0]),
-                                                 get_sequence('-', word_length[1])))
-    write_parameters(f, '|{0}|{1}|\n'.format(align("Package name", 0),
-                                                 align("DEPENDENCIES", 1)))
-    write_parameters(f, '+{0}+{1}+\n'.format(get_sequence('=', word_length[0]),
-                                                 get_sequence('=', word_length[1])))
-    for key in requirements.keys():
-
-        write_parameters(f, '|{0}|{1}|\n'.format(align(key, 0),
-                                                     align(requirements[key], 1)))
+    def write(clmn1, clmn2):
+        write_headers(f, '\n{0}\n'.format(project))
         write_parameters(f, '+{0}+{1}+\n'.format(get_sequence('-', word_length[0]),
                                                      get_sequence('-', word_length[1])))
+        write_parameters(f, '|{0}|{1}|\n'.format(align(clmn1, 0),
+                                                     align(clmn2, 1)))
+        write_parameters(f, '+{0}+{1}+\n'.format(get_sequence('=', word_length[0]),
+                                                     get_sequence('=', word_length[1])))
+
+        for key in requirements.keys():
+            write_parameters(f, '|{0}|{1}|\n'.format(align(key, 0),
+                                                         align(requirements[key], 1)))
+            write_parameters(f, '+{0}+{1}+\n'.format(get_sequence('-', word_length[0]),
+                                                         get_sequence('-', word_length[1])))
+
+    if epoch:
+        write("Repo type", "Epoch")
+    else:
+        write("Package name", "DEPENDENCIES")
