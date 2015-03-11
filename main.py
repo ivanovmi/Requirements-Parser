@@ -88,9 +88,11 @@ if __name__ == "__main__":
                 else:
                     continue
             else:
-                req_url_control = 'https://review.fuel-infra.org/gitweb?p=openstack-build/{0}-build.git;a=blob_plain;f=debian/changelog;hb=refs/heads/{1}'.format(repo.strip(), branch)
+                #URL for getting changelog file
+                req_url_changelog = 'https://review.fuel-infra.org/gitweb?p=openstack-build/{0}-build.git;a=blob_plain;f=debian/changelog;hb=refs/heads/{1}'.format(repo.strip(), branch)
 
                 idx = 0
+                #List of URLs for spec file 
                 req_url_spec = ['https://review.fuel-infra.org/gitweb?p=openstack-build/{0}-build.git;a=blob_plain;f=rpm/SPECS/{0}.spec;hb=refs/heads/{1}',
                                 'https://review.fuel-infra.org/gitweb?p=openstack-build/{0}-build.git;a=blob_plain;f=rpm/SPECS/openstack-{0}.spec;hb=refs/heads/{1}',
                                 'https://review.fuel-infra.org/gitweb?p=openstack-build/{0}-build.git;a=blob_plain;f=rpm/SPECS/python-{0}.spec;hb=refs/heads/{1}']
@@ -113,7 +115,7 @@ if __name__ == "__main__":
                         req_spec = None
 
                 try:
-                    req_control = lan.getRequirementsFromUrl(req_url_control, gerritAccount)
+                    req_control = lan.getRequirementsFromUrl(req_url_changelog, gerritAccount)
                 except KeyError:
                     print 'Skip ' + repo.strip() + ' DEB repository.'
                     req_control = None
@@ -125,17 +127,17 @@ if __name__ == "__main__":
                     deb_epoch = require_utils.Require.get_epoch(req_control)
 
                 if rpm_epoch or deb_epoch:
-                    json_file.write('\t' * 2 + json.dumps(repo.strip()) + ': {\n')
+                    json_file.write('\t' * 3 + json.dumps(repo.strip()) + ': {\n')
 
                     if rpm_epoch:
                         print "RPM\n" + rpm_epoch + "\n"
-                        json_file.write('\t' * 3 + '"RPM":' + json.dumps(rpm_epoch) + ',\n')
+                        json_file.write('\t' * 4 + '"RPM":' + json.dumps(rpm_epoch) + ',\n')
 
                     if deb_epoch:
                         print "DEB\n" + deb_epoch + "\n"
-                        json_file.write('\t' * 3 + '"DEB":' + json.dumps(deb_epoch) + '\n')
+                        json_file.write('\t' * 4 + '"DEB":' + json.dumps(deb_epoch) + '\n')
 
-                    json_file.write('\t' * 2 + '},\n')
+                    json_file.write('\t' * 3 + '},\n')
 
         # Delete unnecessary comma in the end of project list
         json_file.seek(-2, os.SEEK_END)

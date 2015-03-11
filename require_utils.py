@@ -110,6 +110,7 @@ class Require:
                         res[name].add((sign, resVers[idx]))
         return res
 
+    #Checks every line single in every single repository for epoch
     @staticmethod
     def get_epoch(inp):
         for line in inp:
@@ -117,6 +118,7 @@ class Require:
                 return line
         return None
 
+    #Check if requirements lists have beend changed by detecting if they are different
     @staticmethod
     def is_changed(req_list1, req_list2):
         try:
