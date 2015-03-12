@@ -9,7 +9,7 @@ def delete_comma(json_file, n):
     json_file.truncate()
 
 
-def get_req(gerritAccount, req_file, rq2, json_file, branch, pack_count):
+def get_req(gerritAccount, req_file, rq2, json_file, branch, pack_count, repo_count):
     for repo in req_file:
         print '\n'*3, 'Repos:', repo
         req_url = 'https://review.fuel-infra.org/gitweb?p=openstack/{0}.git;' \
@@ -24,6 +24,7 @@ def get_req(gerritAccount, req_file, rq2, json_file, branch, pack_count):
 
         rq1 = require_utils.Require(require_utils.Require.parse_req(r))
         if rq1.packs != {}:
+            repo_count += 1
             rq = require_utils.Require.merge(rq1.packs, rq2.packs)
             json_file.write('\t{\n' + '\t'*2+json.dumps(repo.strip())+': {\n')
             json_file.write('\t'*2+'"deps": {\n')
@@ -52,7 +53,7 @@ def get_req(gerritAccount, req_file, rq2, json_file, branch, pack_count):
         else:
             continue
     delete_comma(json_file, -2)
-    return pack_count
+    return pack_count, repo_count
 
 
 def get_epoch(gerrit_account, req_file, branch, json_file):
