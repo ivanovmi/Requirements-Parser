@@ -6,38 +6,35 @@
 	"projects": [
 		{
 			"cinder": {
-				"DEB":"cinder (1:2014.2.2-0ubuntu1) utopic; urgency=medium"			},
+				"DEB": "Epoch: 1"			},
 			"glance": {
-				"DEB":"glance (1:2014.2.2-0ubuntu1) trusty; urgency=medium"			},
+				"DEB": "Epoch: 1"			},
 			"horizon": {
-				"DEB":"horizon (1:2014.2.2-0ubuntu1) utopic; urgency=medium"			},
+				"DEB": "Epoch: 1"			},
 			"keystone": {
-				"DEB":"keystone (1:2014.2.2-0ubuntu1) utopic; urgency=medium"			},
+				"DEB": "Epoch: 1"			},
 			"neutron": {
-				"DEB":"neutron (1:2014.2.2-0ubuntu1) utopic; urgency=medium"			},
+				"DEB": "Epoch: 1"			},
 			"nova": {
-				"DEB":"nova (1:2014.2.2-0ubuntu3) utopic; urgency=medium"			},
+				"DEB": "Epoch: 1"			},
 			"oslo.config": {
 				"RPM":"Epoch:      1",
-				"DEB":"oslo-config (1:1.6.0-0ubuntu1) utopic; urgency=medium"			},
+				"DEB": "Epoch: 1"			},
 			"python-cinderclient": {
-				"DEB":"python-cinderclient (1:1.1.0-0ubuntu1) utopic; urgency=medium"			},
+				"DEB": "Epoch: 1"			},
 			"python-glanceclient": {
-				"RPM":"Epoch:            1",
-				"DEB":"python-glanceclient (1:0.14.1-0ubuntu1) utopic; urgency=medium"			},
+				"DEB": "Epoch: 1"			},
 			"python-keystoneclient": {
-				"RPM":"Epoch:      1",
-				"DEB":"python-keystoneclient (1:0.11.1-0ubuntu1) utopic; urgency=medium"			},
+				"DEB": "Epoch: 1"			},
 			"python-neutronclient": {
-				"DEB":"python-neutronclient (1:2.3.9-0ubuntu1) precise; urgency=low"			},
+				"DEB": "Epoch: 1"			},
 			"python-novaclient": {
-				"RPM":"Epoch:            1",
-				"DEB":"python-novaclient (1:2.20.0-0ubuntu1) precise; urgency=low"			},
+				"DEB": "Epoch: 1"			},
 			"python-swiftclient": {
-				"DEB":"python-swiftclient (1:2.3.1-0ubuntu1) utopic; urgency=medium"			},
+				"DEB": "Epoch: 1"			},
 			"python-troveclient": {
-				"DEB":"python-troveclient (1:1.0.7-0ubuntu1) utopic; urgency=medium"			}
+				"DEB": "Epoch: 1"			}
 		}
 	],
-"output_format": "html"
+"output_format": "pdf"
 }

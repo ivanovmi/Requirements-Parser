@@ -9,18 +9,19 @@ def delete_comma(json_file, n):
     json_file.truncate()
 
 
-def get_req(req_file, gerritAccount, rq2, json_file, branch, pack_count):
-    # global pack_count
+def get_req(gerritAccount, req_file, rq2, json_file, branch, pack_count):
     for repo in req_file:
         print '\n'*3, 'Repos:', repo
         req_url = 'https://review.fuel-infra.org/gitweb?p=openstack/{0}.git;' \
                   'a=blob_plain;f=requirements.txt;hb=refs/heads/{1}'.format(repo.strip(), branch)
+
         # Check the repo is exist. If not - skipping.
         try:
-            r = lan.getRequirementsFromUrl(req_url, gerritAccount)
+            r = lan.get_requirements_from_url(req_url, gerritAccount)
         except KeyError:
             print 'Skip ' + repo.strip() + ' repository.'
             continue
+
         rq1 = require_utils.Require(require_utils.Require.parse_req(r))
         if rq1.packs != {}:
             rq = require_utils.Require.merge(rq1.packs, rq2.packs)
@@ -54,9 +55,10 @@ def get_req(req_file, gerritAccount, rq2, json_file, branch, pack_count):
     return pack_count
 
 
-def get_epoch(gerritAccount, req_file, branch, json_file):
+def get_epoch(gerrit_account, req_file, branch, json_file):
     for repo in req_file:
         print '\n'*3, 'Repos:', repo
+
         # URL for getting changelog file
         req_url_changelog = 'https://review.fuel-infra.org/gitweb?p=openstack-build/{0}-build.git;' \
                             'a=blob_plain;f=debian/changelog;hb=refs/heads/{1}'.format(repo.strip(), branch)
@@ -72,24 +74,23 @@ def get_epoch(gerritAccount, req_file, branch, json_file):
 
         while idx < len(req_url_spec):
             try:
-                req_spec = lan.getRequirementsFromUrl(req_url_spec[idx].format(repo.strip(), branch), gerritAccount)
+                req_spec = lan.get_requirements_from_url(req_url_spec[idx].format(repo.strip(), branch), gerrit_account)
             except KeyError:
                 req_spec = None
             idx += 1
             if req_spec is not None:
                 break
 
-        if req_spec is None:
-            try:
-                req_url_spec = 'https://review.fuel-infra.org/gitweb?p=openstack-build/{0}-build.git;' \
+        try:
+            req_url_spec = 'https://review.fuel-infra.org/gitweb?p=openstack-build/{0}-build.git;' \
                                'a=blob_plain;f=rpm/SPECS/python-{2}.spec;hb=refs/heads/{1}'.format(repo.strip(), branch, repo.strip().replace('.', '-'))
-                req_spec = lan.getRequirementsFromUrl(req_url_spec, gerritAccount)
-            except KeyError:
-                print 'Skip ' + repo.strip() + ' RPM repository.'
-                req_spec = None
+            req_spec = lan.get_requirements_from_url(req_url_spec, gerrit_account)
+        except KeyError:
+            print 'Skip ' + repo.strip() + ' RPM repository.'
+            req_spec = None
 
         try:
-            req_control = lan.getRequirementsFromUrl(req_url_changelog, gerritAccount)
+            req_control = lan.get_requirements_from_url(req_url_changelog, gerrit_account)
         except KeyError:
             print 'Skip ' + repo.strip() + ' DEB repository.'
             req_control = None
@@ -110,7 +111,7 @@ def get_epoch(gerritAccount, req_file, branch, json_file):
 
             if deb_epoch:
                 print "DEB\n" + deb_epoch + "\n"
-                json_file.write('\t' * 4 + '"DEB":' + json.dumps(deb_epoch) + ',\n')
+                json_file.write('\t' * 4 + '"DEB": "Epoch: ' + json.dumps(int(deb_epoch.split(" ")[1].split(":")[0][1::])) + '",\n')
 
             delete_comma(json_file, -2)
             json_file.write('\t' * 3 + '},\n')

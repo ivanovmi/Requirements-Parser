@@ -1,8 +1,5 @@
-#!/usr/bin/python
-
 import requests
 import getpass
-import sys
 
 parameters = {'openid.assoc_handle': '',
               'openid.claimed_id': 'http://specs.openid.net/auth/2.0/identifier_select',
@@ -17,35 +14,37 @@ parameters = {'openid.assoc_handle': '',
               'openid.ns.ext2': 'http://openid.net/srv/ax/1.0',
               'openid.ns.sreg': 'http://openid.net/sreg/1.0',
               'openid.realm': 'https://review.fuel-infra.org/',
-              'openid.return_to': 'https://review.fuel-infra.org/OpenID?gerrit.mode=SIGN_IN&gerrit.token=%2Fq%2Fstatus%3Aopen',
+              'openid.return_to': 'https://review.fuel-infra.org/OpenID?gerrit.mode=SIGN_IN&'
+                                  'gerrit.token=%2Fq%2Fstatus%3Aopen',
               'openid.sreg.required': 'fullname,email',
               }
 
 
-def getRequirementsFromUrl(url, gerritAccount):
+def get_requirements_from_url(url, gerritAccount):
     s = requests.Session()
     s.headers.update({'Cookie': 'GerritAccount=' + gerritAccount})
     r = s.get(url)
 
     if r.status_code == 200:
         return r.iter_lines()
-    else:
+    elif r.status_code == 404:
         raise KeyError
-        #print r.status_code
-        #raise SystemExit
+    else:
+        print r.status_code
+        raise SystemExit
 
 
-def loginToLaunchpad():
+def login_to_launchpad():
     print 'Please, login to gerrit.'
-    LAUNCHPAD_ID = raw_input('Login: ')
-    LAUNCHPAD_PW = getpass.getpass()
+    launchpad_id = raw_input('Login: ')
+    launchpad_pw = getpass.getpass()
     s = requests.Session()
     r = s.get('https://login.launchpad.net')
 
     login_data = {'openid.usernamepassword': '',
                   'csrfmiddlewaretoken': requests.utils.dict_from_cookiejar(s.cookies)['csrftoken'],
-                  'email': LAUNCHPAD_ID,
-                  'password': LAUNCHPAD_PW,
+                  'email': launchpad_id,
+                  'password': launchpad_pw,
                   'user-intentions': 'login',
                   }
 
@@ -59,16 +58,16 @@ def loginToLaunchpad():
     start_post = rf.content.find('openid.assoc_handle" type="hidden" value="')
     parameters['openid.assoc_handle'] = rf.content[start_post+42: start_post+42+33]
 
-    Cookiess = 'csrftoken=' + requests.utils.dict_from_cookiejar(s.cookies)['csrftoken']
+    cookies = 'csrftoken=' + requests.utils.dict_from_cookiejar(s.cookies)['csrftoken']
     try:
-        Cookiess += '; C=1; sessionid=' + requests.utils.dict_from_cookiejar(s.cookies)['sessionid']
+        cookies += '; C=1; sessionid=' + requests.utils.dict_from_cookiejar(s.cookies)['sessionid']
     except KeyError:
         print 'Could not authenticate'
         raise SystemExit
-    Cookiess += '; openid_referer="https://review.fuel-infra.org/login/q/status:open"'
+    cookies += '; openid_referer="https://review.fuel-infra.org/login/q/status:open"'
 
     ss.headers.update({'Referer': 'https://review.fuel-infra.org/login/q/status:open'})
-    ss.headers.update({'Cookie': Cookiess})
+    ss.headers.update({'Cookie': cookies})
     r = ss.post('https://login.launchpad.net/+openid', data=parameters, allow_redirects=True)
 
     d_data = {'csrfmiddlewaretoken': requests.utils.dict_from_cookiejar(s.cookies)['csrftoken'],
@@ -79,8 +78,8 @@ def loginToLaunchpad():
     }
 
     ss.headers.update({'Referer': r.url})
-    header = s.headers
 
+    header = s.headers
     rd = ss.post(r.url, data=d_data, allow_redirects=True)
 
     if requests.utils.dict_from_cookiejar(ss.cookies).has_key('GerritAccount'):

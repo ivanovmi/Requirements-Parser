@@ -1,17 +1,42 @@
 __author__ = 'degorenko'
+import json
 
 
-def generate_rst(json_data, epoch):
+def generate_output(mode):
+        # read example JSON
+        with open('requirements.json') as json_file:
+            json_data = json.load(json_file)
+
+        if mode == 'req':
+            generate_rst(json_data, False)
+        elif mode == 'ep':
+            generate_rst(json_data, True)
+
+
+def generate_header(json_file):
+    json_file.write('{"gerrit_url": "URL",\n'
+                    '"gerrit_branch": "branch",\n'
+                    '"upstream_url": "URL",\n'
+                    '"upstream_branch": "branch",\n')
+    json_file.write('\n\t"projects": [\n\t')
+
+
+def generate_rst(json_data, epoch,):
     f = open("report.rst", "w")
 
     from email.utils import formatdate
     cur_time = formatdate(timeval=None, localtime=True)
 
-    write_headers(f, '{0} {1}{2}'.format("Dependency checker", cur_time, "\n"), True)
-    write_parameters(f, ':{0}: {1}\n'.format("Upstream URL", json_data["upstream_url"]))
-    write_parameters(f, ':{0}: {1}\n'.format("Upstream branch", json_data["upstream_branch"]))
-    write_parameters(f, ':{0}: {1}\n'.format("MOS gerrit URL", json_data["gerrit_url"]))
-    write_parameters(f, ':{0}: {1}\n'.format("MOS gerrit branch", json_data["gerrit_branch"]))
+    write_headers(f, '{0} {1}{2}'.format("Dependency checker",
+                                         cur_time, "\n"), True)
+    write_parameters(f, ':{0}: {1}\n'.format("Upstream URL",
+                                             json_data["upstream_url"]))
+    write_parameters(f, ':{0}: {1}\n'.format("Upstream branch",
+                                             json_data["upstream_branch"]))
+    write_parameters(f, ':{0}: {1}\n'.format("MOS gerrit URL",
+                                             json_data["gerrit_url"]))
+    write_parameters(f, ':{0}: {1}\n'.format("MOS gerrit branch",
+                                             json_data["gerrit_branch"]))
 
     def req_rst(project_name):
         deps = project[project_name]['deps']
@@ -92,17 +117,17 @@ def write_table(f, project, requirements, epoch):
     def write(clmn1, clmn2):
         write_headers(f, '\n{0}\n'.format(project))
         write_parameters(f, '+{0}+{1}+\n'.format(get_sequence('-', word_length[0]),
-                                                     get_sequence('-', word_length[1])))
+                                                 get_sequence('-', word_length[1])))
         write_parameters(f, '|{0}|{1}|\n'.format(align(clmn1, 0),
-                                                     align(clmn2, 1)))
+                                                 align(clmn2, 1)))
         write_parameters(f, '+{0}+{1}+\n'.format(get_sequence('=', word_length[0]),
-                                                     get_sequence('=', word_length[1])))
+                                                 get_sequence('=', word_length[1])))
 
         for key in requirements.keys():
             write_parameters(f, '|{0}|{1}|\n'.format(align(key, 0),
-                                                         align(requirements[key], 1)))
+                                                     align(requirements[key], 1)))
             write_parameters(f, '+{0}+{1}+\n'.format(get_sequence('-', word_length[0]),
-                                                         get_sequence('-', word_length[1])))
+                                                     get_sequence('-', word_length[1])))
 
     if epoch:
         write("Repo type", "Epoch")
