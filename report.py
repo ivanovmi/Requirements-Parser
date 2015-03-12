@@ -1,7 +1,7 @@
 __author__ = 'degorenko'
 
 
-def generate_rst(json_data, epoch = False):
+def generate_rst(json_data, epoch):
     f = open("report.rst", "w")
 
     from email.utils import formatdate
@@ -13,28 +13,30 @@ def generate_rst(json_data, epoch = False):
     write_parameters(f, ':{0}: {1}\n'.format("MOS gerrit URL", json_data["gerrit_url"]))
     write_parameters(f, ':{0}: {1}\n'.format("MOS gerrit branch", json_data["gerrit_branch"]))
 
-    def req_rst():
-            deps = project[project_name]['deps']
+    def req_rst(project_name):
+        deps = project[project_name]['deps']
 
-            project_reqs = {}
-            for key in deps.keys():
-                project_reqs[key] = deps[key]
+        project_reqs = {}
+        for key in deps.keys():
+            project_reqs[key] = deps[key]
 
-            write_table(f, project_name, project_reqs)
+        write_table(f, project_name, project_reqs, False)
 
-    def epoch_rst():
-            project_epoch = project[project_name]
+    def epoch_rst(project_name):
+        project_epoch = project[project_name]
 
-            write_table(f, project_name, project_epoch, epoch)
+        write_table(f, project_name, project_epoch, True)
 
     projects = json_data["projects"]
     for project in projects:
-            project_name = project.keys()[0]
+        project_name = project.keys()
+
+        for i in project_name:
 
             if epoch:
-                epoch_rst()
+                epoch_rst(i)
             else:
-                req_rst()
+                req_rst(i)
 
     f.close()
 
@@ -74,7 +76,7 @@ def get_word_length(dictionary):
     return length
 
 
-def write_table(f, project, requirements, epoch = False):
+def write_table(f, project, requirements, epoch):
     word_length = get_word_length(requirements)
 
     def align(word, num):
