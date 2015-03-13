@@ -4,7 +4,7 @@ import require_utils
 import json
 
 
-def delete_comma(json_file, n):
+def del_symbol(json_file, n):
     json_file.seek(n, os.SEEK_END)
     json_file.truncate()
 
@@ -48,11 +48,11 @@ def get_req(gerritAccount, req_file, rq2, json_file, branch, pack_count, repo_co
                 print '{0}{1}{2}:{3}'.format(bold_beg, key, bold_end, ''.join([" %s%s;" % x for x in rq[key]]))
 
             # Delete unnecessary comma in the end of dependencies list
-            delete_comma(json_file, -2)
+            del_symbol(json_file, -2)
             json_file.write('\t'*2+'}}},\n')
         else:
             continue
-    delete_comma(json_file, -2)
+    del_symbol(json_file, -2)
     return pack_count, repo_count
 
 
@@ -112,8 +112,8 @@ def get_epoch(gerrit_account, req_file, branch, json_file):
 
             if deb_epoch:
                 print "DEB\n" + deb_epoch + "\n"
-                json_file.write('\t' * 4 + '"DEB": "Epoch: ' + json.dumps(int(deb_epoch.split(" ")[1].split(":")[0][1::])) + '",\n')
+                json_file.write('\t' * 4 + '"DEB": "Epoch: ' + json.dumps(deb_epoch) + '",\n')
 
-            delete_comma(json_file, -2)
+            del_symbol(json_file, -2)
             json_file.write('\t' * 3 + '},\n')
-    delete_comma(json_file, -2)
+    del_symbol(json_file, -2)

@@ -2,11 +2,18 @@ import require_utils
 import pdb
 import lan
 import sender
-import getting
+import generator
 import report as generate_report
 from os.path import basename
 
-
+'''
+DRAFT:
+ - Need to sort project
+ - Config from file
+ - Globals from repo
+ - Forming globals
+ - Fix bug with empty repos
+'''
 if __name__ == "__main__":
     pack_count = 0
     repo_count = 0
@@ -56,9 +63,9 @@ if __name__ == "__main__":
     with open(basename(repo_file), 'r') as req_file:
 
         if mode == 'req':
-            pack_count = getting.get_req(gerritAccount, req_file, rq2, json_file, branch, pack_count, repo_count)
+            pack_count = generator.get_req(gerritAccount, req_file, rq2, json_file, branch, pack_count, repo_count)
         else:
-            getting.get_epoch(gerritAccount, req_file, branch, json_file)
+            generator.get_epoch(gerritAccount, req_file, branch, json_file)
 
     if mode == 'ep':
         json_file.write('\n' + '\t' * 2 + '}' + '\n')
