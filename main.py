@@ -15,8 +15,7 @@ DRAFT:
  - Fix bug with empty repos
 '''
 if __name__ == "__main__":
-    pack_count = 0
-    repo_count = 0
+    pack_count = (0, 0)
     gerritAccount = lan.login_to_launchpad()
     branch_name = ''
     mode = ''
@@ -61,21 +60,20 @@ if __name__ == "__main__":
         repo_file = raw_input('Enter the file with repos name: ')
 
     with open(basename(repo_file), 'r') as req_file:
-
         if mode == 'req':
-            pack_count = generator.get_req(gerritAccount, req_file, rq2, json_file, branch, pack_count, repo_count)
+            pack_count = generator.get_req(gerritAccount, req_file, rq2, json_file, branch)
         else:
             generator.get_epoch(gerritAccount, req_file, branch, json_file)
 
     if mode == 'ep':
         json_file.write('\n' + '\t' * 2 + '}' + '\n')
-    json_file.write('\t'+'],\n"output_format": "'+file_extension.lower()+'"\n}')
+    json_file.write('\t' + '],\n"output_format": "' + file_extension.lower() + '"\n}')
     json_file.close()
 
     generate_report.generate_output(mode)
 
     if send.lower() in ['y', 'yes']:
         text = str(pack_count[0]) + ' packages were changed in ' + str(pack_count[1]) + ' repos.'
-        sender.send_mail(email, 'Report from '+sender.cur_time, text, 'report.'+file_extension.lower())
+        sender.send_mail(email, 'Report from ' + sender.cur_time, text, 'report.' + file_extension.lower())
     elif send.lower() in ['n', 'no']:
         raise SystemExit

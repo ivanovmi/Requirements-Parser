@@ -17,7 +17,7 @@ class Require:
     def __init__(self, req):
         self.packs = req
         for el in self.packs.keys():
-            self.packs[el] = sorted(self.packs[el], key=lambda x: LooseVersion(x[1]))
+            self.packs[el] = sorted(self.packs[el], key = lambda x: LooseVersion(x[1]))
 
     # "merge" function is for merging requirements. It is processing list of requirements
     # and returns combined list of requirements in particular way.

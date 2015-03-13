@@ -9,7 +9,9 @@ def del_symbol(json_file, n):
     json_file.truncate()
 
 
-def get_req(gerritAccount, req_file, rq2, json_file, branch, pack_count, repo_count):
+def get_req(gerritAccount, req_file, rq2, json_file, branch):
+    pack_count = 0
+    repo_count = 0
     for repo in req_file:
         print '\n'*3, 'Repos:', repo
         req_url = 'https://review.fuel-infra.org/gitweb?p=openstack/{0}.git;' \
@@ -50,13 +52,13 @@ def get_req(gerritAccount, req_file, rq2, json_file, branch, pack_count, repo_co
             # Delete unnecessary comma in the end of dependencies list
             del_symbol(json_file, -2)
             json_file.write('\t'*2+'}}},\n')
-        else:
-            continue
-    del_symbol(json_file, -2)
+    if repo_count:
+        del_symbol(json_file, -2)
     return pack_count, repo_count
 
 
 def get_epoch(gerrit_account, req_file, branch, json_file):
+    check = False
     for repo in req_file:
         print '\n'*3, 'Repos:', repo
 
@@ -104,6 +106,7 @@ def get_epoch(gerrit_account, req_file, branch, json_file):
             deb_epoch = require_utils.Require.get_epoch(req_control)
 
         if rpm_epoch or deb_epoch:
+            check = True
             json_file.write('\t' * 3 + json.dumps(repo.strip()) + ': {\n')
 
             if rpm_epoch:
@@ -116,4 +119,5 @@ def get_epoch(gerrit_account, req_file, branch, json_file):
 
             del_symbol(json_file, -2)
             json_file.write('\t' * 3 + '},\n')
-    del_symbol(json_file, -2)
+    if check:
+        del_symbol(json_file, -2)
