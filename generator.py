@@ -50,7 +50,7 @@ def del_symbol(json_file, n):
     json_file.truncate()
 
 
-def get_req(gerritAccount, req_file, rq2, json_file, branch):
+def get_req(gerritAccount, req_file, rq2, json_file, branch, global_dict):
     pack_count = 0
     repo_count = 0
     for repo in req_file:
@@ -77,7 +77,10 @@ def get_req(gerritAccount, req_file, rq2, json_file, branch):
             print packs_spec["Requires:"]
             print "\n"
             for el in packs_spec["Requires:"]:
-                rq1.packs.setdefault(require_utils.Require.correlate(rq2.packs, el), "")
+                global_dict.setdefault(el, require_utils.Require.correlate(rq2.packs, el))
+            #for el in packs_spec["Requires:"]:
+            #spec_json.write(json.dumps({el : require_utils.Require.correlate(rq2.packs, el) for el in packs_spec["Requires:"]}, sort_keys=True, indent=4, separators=(',', ': ')))
+
 
         if rq1.packs != {}:
             repo_count += 1
