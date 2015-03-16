@@ -115,7 +115,7 @@ class Require:
     # This function is for getting package names from control file
     @staticmethod
     def get_packs_control(inp):
-        sections = ["Build-Depends-Indep", "Build-Depends", "Depends"]
+        sections = ["Build-Depends-Indep:", "Build-Depends:", "Depends:"]
         res = dict((el, set()) for el in sections)
         sectEnable = ""
         for line in inp:
@@ -137,11 +137,11 @@ class Require:
     # This function is for getting package names from spec file
     @staticmethod
     def get_packs_spec(inp):
-        sections = ["BuildRequires", "Requires"]
+        sections = ["BuildRequires:", "Requires:"]
         res = dict((el, set()) for el in sections)
         for line in inp:
             sectEnable = ""
-            if line == '' or line[0] == '#':
+            if line == '' or line[0] == '#' or '%' in line:
                 continue
             for sect in sections:
                 if sect in line:
@@ -150,7 +150,7 @@ class Require:
             if sectEnable:
                 match = Require.packageName.findall(line)
                 for el in match:
-                    if alpha.search(el) and not el in sections:
+                    if Require.alpha.search(el) and not el + ":" in sections:
                         res[sectEnable].add(el)
         return res
 

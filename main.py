@@ -15,6 +15,7 @@ DRAFT:
  - Fix bug with empty repos
 '''
 if __name__ == "__main__":
+    #pdb.set_trace()
     pack_count = (0, 0)
     gerritAccount = lan.login_to_launchpad()
     branch_name = ''
@@ -33,7 +34,6 @@ if __name__ == "__main__":
             branch = 'openstack-ci/fuel-6.1/2014.2'
         elif branch_name == '6.0.1':
             branch = 'openstack-ci/fuel-6.0.1/2014.2'
-    #pdb.set_trace()
 
     while file_extension.lower() not in ['pdf', 'html']:
         file_extension = raw_input('With what extension save a file? (PDF or HTML?) ')
