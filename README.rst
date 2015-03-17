@@ -3,8 +3,8 @@ Requirements parser
 ===================
 Menu:
 -----
-* `How to preconfigure your system <https://github.com/ivanovmi/Requirements-Parser/tree/master#how-to-preconfigure-your-system>`_
-* `How to use this parser <https://github.com/ivanovmi/Requirements-Parser/tree/master#how-to-use-this-parser>`_
+* `How to preconfigure your system`_
+* `How to use this parser`_
 
 How to preconfigure your system
 -------------------------------
