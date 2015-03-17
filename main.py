@@ -22,9 +22,14 @@ if __name__ == "__main__":
     mode = ''
     file_extension = ''
     send = ''
+    type_req = ''
 
     while mode not in ['ep', 'req']:
         mode = raw_input('Module (Epoch = ep | Requires = req): ')
+
+    type_req = raw_input('Scan RPM or DEB (spec | control): ')
+    if not type_req in ["spec", "control"]:
+        type_req = ''
 
     while branch_name not in ['master', '6.1', '6.0.1']:
         branch_name = raw_input('At the what branch we should check requirements? ')
@@ -59,10 +64,9 @@ if __name__ == "__main__":
     except IOError:
         repo_file = raw_input('Enter the file with repos name: ')
 
-    global_dict = dict()
     with open(basename(repo_file), 'r') as req_file:
         if mode == 'req':
-            pack_count = generator.get_req(gerritAccount, req_file, rq2, json_file, branch, global_dict)
+            pack_count = generator.get_req(gerritAccount, req_file, rq2, json_file, branch, type_req)
         else:
             generator.get_epoch(gerritAccount, req_file, branch, json_file)
 
@@ -70,10 +74,6 @@ if __name__ == "__main__":
         json_file.write('\n' + '\t' * 2 + '}' + '\n')
     json_file.write('\t' + '],\n"output_format": "' + file_extension.lower() + '"\n}')
     json_file.close()
-
-    import json
-    with open('assoc.json', 'w') as spec_json:
-        spec_json.write(json.dumps(global_dict, sort_keys=True, indent=4, separators=(',', ': ')))
 
     generate_report.generate_output(mode)
 
