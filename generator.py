@@ -32,10 +32,10 @@ def request_spec(gerrit_account, repo, branch):
 
     return req_spec
 
-def request_control(gerrit_account, repo, branch):
+def request_control(gerrit_account, repo, branch, type):
     # URL for getting changelog file
     req_url_changelog = 'https://review.fuel-infra.org/gitweb?p=openstack-build/{0}-build.git;' \
-                        'a=blob_plain;f=debian/changelog;hb=refs/heads/{1}'.format(repo.strip(), branch)
+                        'a=blob_plain;f=debian/{2};hb=refs/heads/{1}'.format(repo.strip(), branch, type)
 
     try:
         req_control = lan.get_requirements_from_url(req_url_changelog, gerrit_account)
@@ -50,7 +50,7 @@ def del_symbol(json_file, n):
     json_file.truncate()
 
 
-def get_req(gerritAccount, req_file, rq2, json_file, branch):
+def get_req(gerritAccount, req_file, rq2, json_file, branch, type):
     pack_count = 0
     repo_count = 0
     for repo in req_file:
@@ -67,18 +67,31 @@ def get_req(gerritAccount, req_file, rq2, json_file, branch):
 
         rq1 = require_utils.Require(require_utils.Require.parse_req(r))
 
-        control = request_control(gerritAccount, repo, branch)
-        spec = request_spec(gerritAccount, repo, branch)
+        if type:
 
-        if not control is None:
-            packs_control = require_utils.Require.get_packs_control(control)
-        if not spec is None:
-            packs_spec = require_utils.Require.get_packs_spec(spec)
-            print packs_spec["Requires:"]
-            print "\n"
-            for el in packs_spec["Requires:"]:
-                rq1.packs.setdefault(require_utils.Require.correlate(rq2.packs, el), "")
+            if type == "control":
+                packs_request = request_control(gerritAccount, repo, branch, "control")
+            elif type == "spec":
+                packs_request = request_spec(gerritAccount, repo, branch)
 
+            with open("{0}-base.json".format(type), 'r') as b:
+                base = json.load(b)
+
+            if not packs_request is None:
+
+                if type == "control":
+                    packs_list = require_utils.Require.get_packs_control(packs_request)
+                    sector = "Depends:"
+                elif type == "spec":
+                    packs_list = require_utils.Require.get_packs_spec(packs_request)
+                    sector = "Requires:"
+                    
+                for el in packs_list[sector]:
+                    if (base.has_key(el)):
+                        rq1.packs.setdefault(base[el], list())
+                    else:
+                        print "Unknown: " + el
+            
         if rq1.packs != {}:
             repo_count += 1
             rq = require_utils.Require.merge(rq1.packs, rq2.packs)
@@ -117,7 +130,7 @@ def get_epoch(gerrit_account, req_file, branch, json_file):
         print '\n' * 3, 'Repos:', repo
 
         req_spec = request_spec(gerrit_account, repo, branch)
-        req_control = request_control(gerrit_account, repo, branch)
+        req_control = request_control(gerrit_account, repo, branch, "changelog")
 
         rpm_epoch = deb_epoch = None
 

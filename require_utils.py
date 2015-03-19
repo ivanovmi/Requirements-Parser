@@ -130,7 +130,7 @@ class Require:
             if sectEnable:
                 match = Require.packageName.findall(line)
                 for el in match:
-                    if Require.alpha.search(el) and not el in sections:
+                    if Require.alpha.search(el) and not el + ":" in sections:
                         res[sectEnable].add(el)
         return res
 
