@@ -3,6 +3,7 @@ import lan
 import require_utils
 import json
 
+
 def request_spec(gerrit_account, repo, branch):
     # List of URLs for spec file
     req_url_spec = ['https://review.fuel-infra.org/gitweb?p=openstack-build/{0}-build.git;'
@@ -149,7 +150,7 @@ def get_epoch(gerrit_account, req_file, branch, json_file):
 
             if deb_epoch:
                 print "DEB\n" + deb_epoch + "\n"
-                json_file.write('\t' * 4 + '"DEB": "Epoch: ' + json.dumps(deb_epoch) + '",\n')
+                json_file.write('\t' * 4 + '"DEB": ' + json.dumps(deb_epoch) + ',\n')
 
             del_symbol(json_file, -2)
             json_file.write('\t' * 3 + '},\n')
