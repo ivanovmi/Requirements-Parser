@@ -27,7 +27,7 @@ if __name__ == "__main__":
         type_req = ''
 
         while mode.lower() not in ['ep', 'req', 'e', 'r']:
-            mode = raw_input('Module (Epoch = epoch | Requires = req): ')
+            mode = raw_input('Module (Epoch = ep | Requires = req): ')
 
         type_req = raw_input('Scan RPM or DEB (spec | control | empty to pass): ')
         if type_req.lower() not in ["spec", "control"]:
@@ -65,7 +65,7 @@ if __name__ == "__main__":
         json_file = open('requirements.json', 'w')
         generate_report.generate_header(json_file, branch)
 
-        if mode == 'requirements':
+        if mode == 'req':
             req_url = 'https://raw.githubusercontent.com/openstack/requirements/{0}/global-requirements.txt'.format(global_branch)
             r = lan.get_requirements_from_url(req_url, gerritAccount)
             rq2 = require_utils.Require(require_utils.Require.parse_req(r))

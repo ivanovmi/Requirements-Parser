@@ -14,10 +14,7 @@ def generate_output(mode):
 
 
 def generate_header(json_file, branch):
-    json_file.write('{"gerrit_url": "URL",\n'
-                    '"gerrit_branch": "' + str(branch) + '",\n'
-                    '"upstream_url": "URL",\n'
-                    '"upstream_branch": "branch",\n')
+    json_file.write('{"gerrit_branch": "' + str(branch) + '",\n')
     json_file.write('\n\t"projects": [\n\t')
 
 
@@ -29,12 +26,6 @@ def generate_rst(json_data, epoch,):
 
     write_headers(f, '{0} {1}{2}'.format("Dependency checker",
                                          cur_time, "\n"), True)
-    write_parameters(f, ':{0}: {1}\n'.format("Upstream URL",
-                                             json_data["upstream_url"]))
-    write_parameters(f, ':{0}: {1}\n'.format("Upstream branch",
-                                             json_data["upstream_branch"]))
-    write_parameters(f, ':{0}: {1}\n'.format("MOS gerrit URL",
-                                             json_data["gerrit_url"]))
     write_parameters(f, ':{0}: {1}\n'.format("MOS gerrit branch",
                                              json_data["gerrit_branch"]))
 
@@ -69,7 +60,7 @@ def generate_rst(json_data, epoch,):
     if json_data["output_format"] == "pdf":
         call(["rst2pdf", "report.rst", "-o", "report.pdf"])
     else:
-        call(["rst2html.py", "report.rst", "report.html"])
+        call(["rst2html", "report.rst", "report.html"])
 
 
 def write_headers(f, header, main=False):
