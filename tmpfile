@@ -1,7 +1,3 @@
- apidocs/pom.xml           |  4 ++--
- etc/trove/trove.conf.test |  8 +++----
- requirements.txt          | 56 +++++++++++++++++++++++------------------------
- setup.cfg                 |  2 +-
- test-requirements.txt     | 12 +++++-----
- trove/tests/api/limits.py | 12 ++++------
- 6 files changed, 45 insertions(+), 49 deletions(-)
+ glance/common/utils.py                 | 67 ++++++++++++++++++++++++++++++----
+ glance/tests/unit/common/test_utils.py | 39 ++++++++++++++++++++
+ 2 files changed, 99 insertions(+), 7 deletions(-)
