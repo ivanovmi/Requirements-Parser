@@ -1,9 +1,5 @@
-import require_utils
-import pdb
-
-#pdb.set_trace()
-#print require_utils.Require.correlate({"python-lock":"", "pyok":"", "pypbr":""}, "python-pbr")
-with open('control', 'r') as f:
-	res = require_utils.Require.get_packs_control(f)
-	for i in res.keys():
-		print i, res[i]
+last_line = file('tmpfile', "r")
+#for line in last_line.readline():
+#    print line
+last = last_line.readlines()[-1]
+print last

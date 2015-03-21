@@ -1,13 +1,21 @@
 import os
+import json
 from subprocess import call
 
 
-gerrit = 'mivanov'
-with open('req', 'r') as repo_file:
-    for repo in repo_file:
-        repo = repo.strip()
-        print repo
-        os.system('./check.sh {0} {1}'.format(gerrit, repo))
+with open('new.json', 'w') as json_file:
+
+    gerrit = 'mivanov'
+
+    with open('req', 'r') as repo_file:
+        for repo in repo_file:
+            repo = repo.strip()
+            print repo
+            os.system('./check.sh {0} {1}'.format(gerrit, repo))
+            with open('tmpfile', 'r') as f:
+                last = f.readlines()[-1]
+                #all_changes = f.re
+                json_file.write(json.dumps(last)+': ""')#+json.dumps)
         '''
         call(['git', 'clone', 'ssh://{0}@review.fuel-infra.org:29418/openstack/{1}'.format(gerrit, repo),
               '&&', 'cd', repo,

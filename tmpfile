@@ -1,0 +1,7 @@
+ apidocs/pom.xml           |  4 ++--
+ etc/trove/trove.conf.test |  8 +++----
+ requirements.txt          | 56 +++++++++++++++++++++++------------------------
+ setup.cfg                 |  2 +-
+ test-requirements.txt     | 12 +++++-----
+ trove/tests/api/limits.py | 12 ++++------
+ 6 files changed, 45 insertions(+), 49 deletions(-)
