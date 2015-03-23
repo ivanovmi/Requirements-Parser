@@ -4,8 +4,8 @@ import lan
 import sender
 import generator
 import report as generate_report
-import check_diff
 import getpass
+import os
 from os.path import basename
 
 '''
@@ -33,11 +33,14 @@ if __name__ == "__main__":
         while mode.lower() not in ['ep', 'req', 'diff', 'e', 'r', 'd']:
             mode = raw_input('Module (Epoch = ep | Requires = req | Diff check = diff): ')
 
-        type_req = raw_input('Scan RPM or DEB (spec | control | empty to pass): ')
-        if type_req.lower() not in ["spec", "control"]:
+        if mode not in ['diff', 'd']:
+            type_req = raw_input('Scan RPM or DEB (spec | control | empty to pass): ')
+            if type_req.lower() not in ["spec", "control"]:
+                type_req = ''
+        else:
             type_req = ''
 
-        if mode.lower() not in []:#'diff', 'd']:
+        if mode.lower() not in ['diff', 'd']:
             while branch_name.lower() not in ['master', '6.1', '6.0.1']:
                 branch_name = raw_input('At the what branch we should check requirements? ')
                 if branch_name == 'master':
@@ -46,6 +49,8 @@ if __name__ == "__main__":
                     branch = 'openstack-ci/fuel-6.1/2014.2'
                 elif branch_name == '6.0.1':
                     branch = 'openstack-ci/fuel-6.0.1/2014.2'
+        else:
+            branch = 'master'
 
         if mode.lower() in ['req', 'r']:
             while global_branch_name not in ['master', 'juno', 'icehouse']:
@@ -93,7 +98,7 @@ if __name__ == "__main__":
                         generator.get_epoch(gerritAccount, req_file, branch, json_file)
                         file_exist_check = False
                     else:
-                        generator.check(launchpad_id.split('@')[0])
+                        generator.diff_check(launchpad_id.split('@')[0], json_file, req_file)
                         file_exist_check = False
             except IOError:
                 print 'No such file or directory'

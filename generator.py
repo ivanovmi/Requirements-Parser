@@ -186,32 +186,37 @@ def get_epoch(gerrit_account, req_file, branch, json_file):
         del_symbol(json_file, -2)
 
 
-def check(launchpad_name):
-    with open('requirements.json', 'w') as json_file:
+def diff_check(launchpad_name, json_file, req_file):
 
-        gerrit = launchpad_name
+    gerrit = launchpad_name
 
-        with open('req', 'r') as repo_file:
-            for repo in repo_file:
-                repo = repo.strip()
-                json_file.write(json.dumps(repo)+':\n')
-                print repo
-                if 'murano' in repo or 'mistral' in repo or 'congress' in repo:
-                    git_repo = 'stackforge'
-                else:
-                    git_repo = 'openstack'
-                if 'python' in repo and 'client' in repo or 'mistral' in repo or 'apps' in repo \
-                    or 'store' in repo or 'sphinx' in repo or 'serial' in repo or 'context' in repo \
-                    or 'utils' in repo or 'test' in repo:
-                    git_branch = tag_dict[repo]
-                else:
-                    git_branch = 'upstream/stable/juno'
-                os.system('./check.sh {0} {1} {2} {3}'.format(gerrit, repo, git_repo, git_branch))
-                with open('tmpfile', 'r') as f:
-                    try:
-                        last = f.readlines()[-1]
-                    except IndexError:
-                        json_file.write('\t{"No changes": ""},\n')
-                    else:
-                        json_file.write('\t{'+json.dumps(last.strip())+': ""},\n')
-            del_symbol(json_file, -2)
+    for repo in req_file:
+        repo = repo.strip()
+        json_file.write(json.dumps(repo)+':\n')
+        print repo
+
+        if 'murano' in repo or 'mistral' in repo or 'congress' in repo:
+            git_repo = 'stackforge'
+        else:
+            git_repo = 'openstack'
+
+        if 'python' in repo and 'client' in repo or 'mistral' in repo or 'apps' in repo \
+            or 'store' in repo or 'sphinx' in repo or 'serial' in repo or 'context' in repo \
+            or 'utils' in repo or 'test' in repo:
+            git_branch = tag_dict[repo]
+        else:
+            git_branch = 'upstream/stable/juno'
+
+        os.system('./check.sh {0} {1} {2} {3}'.format(gerrit, repo, git_repo, git_branch))
+
+        with open('tmpfile', 'r') as f:
+            try:
+                last = f.readlines()[-1]
+            except IndexError:
+                json_file.write('\t{"No changes": "Codes of these components probably have not been changed"},\n')
+            else:
+                head = last.strip().split(',',1)[0]
+                tail = last.strip().split(',',1)[1]
+                json_file.write('\t{'+json.dumps(head)+': '+json.dumps(tail)+'},\n')
+    del_symbol(json_file, -2)
+    json_file.write('}')

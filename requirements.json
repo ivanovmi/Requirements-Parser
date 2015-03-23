@@ -2,53 +2,91 @@
 
 	"projects": [
 		{
-	],
-"output_format": "pdf"
-}o.context":
-	{"No changes": ""},
-"oslo.serialization":
-	{"2 files changed, 87 deletions(-)": ""},
-"oslo.utils":
-	{"No changes": ""},
-"oslosphinx":
-	{"No changes": ""},
-"oslotest":
-	{"No changes": ""},
-"python-barbicanclient":
-	{"No changes": ""},
-"python-ceilometerclient":
-	{"4 files changed, 94 insertions(+), 5 deletions(-)": ""},
-"python-cinderclient":
-	{"No changes": ""},
-"python-glanceclient":
-	{"No changes": ""},
-"python-heatclient":
-	{"No changes": ""},
-"python-keystoneclient":
-	{"No changes": ""},
-"python-openstackclient":
-	{"No changes": ""},
-"python-saharaclient":
-	{"1 file changed, 1 insertion(+), 1 deletion(-)": ""},
-"python-swiftclient":
-	{"No changes": ""},
-"python-neutronclient":
-	{"5 files changed, 40 insertions(+), 28 deletions(-)": ""},
-"python-novaclient":
-	{"No changes": ""},
-"python-troveclient":
-	{"No changes": ""},
+"ceilometer":
+	{"24 files changed": " 507 insertions(+), 144 deletions(-)"},
+"cinder":
+	{"2 files changed": " 6 insertions(+), 4 deletions(-)"},
+"glance":
+	{"2 files changed": " 99 insertions(+), 7 deletions(-)"},
+"glance_store":
+	{"1 file changed": " 1 insertion(+), 1 deletion(-)"},
+"heat":
+	{"5 files changed": " 27 insertions(+), 39 deletions(-)"},
+"horizon":
+	{"42 files changed": " 908 insertions(+), 393 deletions(-)"},
+"keystone":
+	{"21 files changed": " 260 insertions(+), 147 deletions(-)"},
 "mistral":
-	{"2 files changed, 26 insertions(+), 27 deletions(-)": ""},
-"murano-apps":
-	{"62 files changed, 1700 insertions(+), 197 deletions(-)": ""},
-"python-mistralclient":
-	{"No changes": ""},
-"python-congressclient":
-	{"No changes": ""},
-"python-muranoclient":
-	{"No changes": ""},
+	{"2 files changed": " 26 insertions(+), 27 deletions(-)"},
 "murano":
-	{"15 files changed, 70 insertions(+), 176 deletions(-)": ""},
+	{"15 files changed": " 70 insertions(+), 176 deletions(-)"},
+"murano-apps":
+	{"62 files changed": " 1700 insertions(+), 197 deletions(-)"},
 "murano-dashboard":
-	{"23 files changed, 579 insertions(+), 287 deletions(-)": ""}
+	{"23 files changed": " 579 insertions(+), 287 deletions(-)"},
+"neutron":
+	{"57 files changed": " 933 insertions(+), 366 deletions(-)"},
+"nova":
+	{"17 files changed": " 171 insertions(+), 87 deletions(-)"},
+"oslo.concurrency":
+	{"54 files changed": " 4267 insertions(+), 2194 deletions(-)"},
+"oslo.config":
+	{"51 files changed": " 8948 insertions(+), 3723 deletions(-)"},
+"oslo.context":
+	{"No changes": "Codes of these components probably have not been changed"},
+"oslo.db":
+	{"4 files changed": " 25 insertions(+), 15 deletions(-)"},
+"oslo.i18n":
+	{"66 files changed": " 2166 insertions(+), 1902 deletions(-)"},
+"oslo.messaging":
+	{"57 files changed": " 1356 insertions(+), 1606 deletions(-)"},
+"oslo.rootwrap":
+	{"30 files changed": " 2269 insertions(+), 1151 deletions(-)"},
+"oslo.serialization":
+	{"2 files changed": " 87 deletions(-)"},
+"oslo.utils":
+	{"No changes": "Codes of these components probably have not been changed"},
+"oslo.vmware":
+	{"19 files changed": " 257 insertions(+), 186 deletions(-)"},
+"oslosphinx":
+	{"No changes": "Codes of these components probably have not been changed"},
+"oslotest":
+	{"No changes": "Codes of these components probably have not been changed"},
+"python-barbicanclient":
+	{"No changes": "Codes of these components probably have not been changed"},
+"python-ceilometerclient":
+	{"4 files changed": " 94 insertions(+), 5 deletions(-)"},
+"python-cinderclient":
+	{"No changes": "Codes of these components probably have not been changed"},
+"python-congressclient":
+	{"No changes": "Codes of these components probably have not been changed"},
+"python-glanceclient":
+	{"No changes": "Codes of these components probably have not been changed"},
+"python-heatclient":
+	{"No changes": "Codes of these components probably have not been changed"},
+"python-keystoneclient":
+	{"No changes": "Codes of these components probably have not been changed"},
+"python-mistralclient":
+	{"No changes": "Codes of these components probably have not been changed"},
+"python-muranoclient":
+	{"No changes": "Codes of these components probably have not been changed"},
+"python-neutronclient":
+	{"5 files changed": " 40 insertions(+), 28 deletions(-)"},
+"python-novaclient":
+	{"No changes": "Codes of these components probably have not been changed"},
+"python-openstackclient":
+	{"No changes": "Codes of these components probably have not been changed"},
+"python-saharaclient":
+	{"1 file changed": " 1 insertion(+), 1 deletion(-)"},
+"python-swiftclient":
+	{"No changes": "Codes of these components probably have not been changed"},
+"python-troveclient":
+	{"No changes": "Codes of these components probably have not been changed"},
+"sahara":
+	{"55 files changed": " 2946 insertions(+), 1569 deletions(-)"},
+"swift":
+	{"3 files changed": " 5 insertions(+), 32 deletions(-)"},
+"trove":
+	{"6 files changed": " 45 insertions(+), 49 deletions(-)"}}	],
+"output_format": "pdf"
+}

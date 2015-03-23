@@ -1,0 +1,6 @@
+e-mail: 'mivanov@mirantis.com'
+password: '16121814'
+mode: 'diff'
+branch: '6.0.1'
+global: 'juno'
+file_extension: 'pdf'

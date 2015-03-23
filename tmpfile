@@ -1,24 +1,7 @@
- muranodashboard/api/packages.py                    |   2 +-
- muranodashboard/dynamic_ui/fields.py               |  15 +-
- muranodashboard/environments/tables.py             |  33 +-
- muranodashboard/environments/topology.py           | 128 +++++---
- muranodashboard/environments/workflows.py          |   4 +-
- muranodashboard/images/tables.py                   |  10 +-
- muranodashboard/packages/tables.py                 |   1 +
- .../static/muranodashboard/css/catalog.css         |  25 ++
- .../static/muranodashboard/js/add-select.js        |  72 ++--
- .../muranodashboard/js/horizon.muranotopology.js   |  28 +-
- muranodashboard/templates/catalog/categories.html  |   1 +
- muranodashboard/templates/common/_data_table.html  |  11 +
- .../deployments/_reports_page_header.html          |  12 +-
- muranodashboard/templates/deployments/reports.html |   1 -
- .../templates/environments/_data_table.html        |  21 ++
- muranodashboard/templates/environments/index.html  |  98 ++++++
- .../templates/services/_detail_page_header.html    |  13 +-
- muranodashboard/templates/services/_overview.html  |   2 +-
- .../templates/services/_page_header.html           |  12 +-
- .../templates/services/_wizard_create.html         |   5 +-
- muranodashboard/templates/services/details.html    |   2 +-
- muranodashboard/templates/services/index.html      |   5 +
- muranodashboard/tests/functional/sanity_check.py   | 365 +++++++++++----------
- 23 files changed, 579 insertions(+), 287 deletions(-)
+ apidocs/pom.xml           |  4 ++--
+ etc/trove/trove.conf.test |  8 +++----
+ requirements.txt          | 56 +++++++++++++++++++++++------------------------
+ setup.cfg                 |  2 +-
+ test-requirements.txt     | 12 +++++-----
+ trove/tests/api/limits.py | 12 ++++------
+ 6 files changed, 45 insertions(+), 49 deletions(-)

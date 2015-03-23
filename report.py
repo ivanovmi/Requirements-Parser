@@ -11,6 +11,8 @@ def generate_output(mode):
             generate_rst(json_data, False)
         elif mode == 'ep':
             generate_rst(json_data, True)
+        elif mode == 'diff':
+            generate_rst(json_data, True)
 
 
 def generate_header(json_file, branch):
@@ -18,7 +20,7 @@ def generate_header(json_file, branch):
     json_file.write('\n\t"projects": [\n\t')
 
 
-def generate_rst(json_data, epoch,):
+def generate_rst(json_data, epoch):
     f = open("report.rst", "w")
 
     from email.utils import formatdate
