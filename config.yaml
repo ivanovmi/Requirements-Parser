@@ -1,0 +1,20 @@
+launchpad_id: # use your launchpad username, like 'mivanov'
+launchpad_pw: # use your launchpad password
+# Сhange modes, as you needed; 
+# Available modes: diff, req, and ep
+mode: 'diff'
+# Use it in mode to finding requirements or in mode for checking epoch
+# Available values: spec, control
+type_req:
+# In what branches we should check requirements or epoch (Uses in req or ep)
+# Available: master, 6.1, 6.0.1
+branch:
+# In the what branch we should check global requirements? (Uses only in req mode)
+# Available values: master, juno, or stable
+global_branch:
+# In which format save your report (pdf or html)
+output_format: 'pdf'
+# Would you like to send email? (yes or no)
+# If yes, you should specify email address
+send_email: 'yes'
+email_to: 'mivanov@mirantis.com'

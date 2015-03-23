@@ -1,5 +1,6 @@
 __author__ = 'degorenko'
 import json
+import os
 
 
 def generate_output(mode):
@@ -8,11 +9,13 @@ def generate_output(mode):
             json_data = json.load(json_file)
 
         if mode == 'req':
-            generate_rst(json_data, False)
+            filename = generate_rst(json_data, False)
         elif mode == 'ep':
-            generate_rst(json_data, True)
+            filename = generate_rst(json_data, True)
         elif mode == 'diff':
-            generate_rst(json_data, True)
+            filename = generate_rst(json_data, True)
+
+        return filename
 
 
 def generate_header(json_file, branch):
@@ -60,11 +63,13 @@ def generate_rst(json_data, epoch):
 
     from subprocess import call
     if json_data["output_format"] == "pdf":
-        filename = 'report'+cur_time+'.pdf'
+        filename = 'report '+cur_time+'.pdf'
         call(["rst2pdf", "report.rst", "-o", filename])
     else:
-        filename = 'report'+cur_time+'.html'
-        call(["rst2html", "report.rst", filename])
+        filename = 'report.html'
+        os.system('rst2html.py report.rst {0}'.format(filename))
+
+    return filename
 
 
 def write_headers(f, header, main=False):
