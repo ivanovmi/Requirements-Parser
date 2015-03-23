@@ -110,6 +110,10 @@ if __name__ == "__main__":
 
         generate_report.generate_output(mode)
 
+        un_file = ['report.rst', 'tmpfile', 'requirements.json']
+        for i in un_file:
+            os.remove(i)
+
         if send.lower() in ['y', 'yes']:
             text = str(pack_count[0]) + ' packages were changed in ' + str(pack_count[1]) + ' repos.'
             sender.send_mail(email, 'Report from ' + sender.cur_time, text, 'report.' + file_extension.lower())

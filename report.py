@@ -60,9 +60,11 @@ def generate_rst(json_data, epoch):
 
     from subprocess import call
     if json_data["output_format"] == "pdf":
-        call(["rst2pdf", "report.rst", "-o", "report.pdf"])
+        filename = 'report'+cur_time+'.pdf'
+        call(["rst2pdf", "report.rst", "-o", filename])
     else:
-        call(["rst2html", "report.rst", "report.html"])
+        filename = 'report'+cur_time+'.html'
+        call(["rst2html", "report.rst", filename])
 
 
 def write_headers(f, header, main=False):
