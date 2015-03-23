@@ -3,6 +3,32 @@ import lan
 import require_utils
 import json
 
+tag_dict = {
+    'python-barbicanclient': '2.2.1',
+    'python-ceilometerclient': '1.0.12',
+    'python-cinderclient': '1.1.1',
+    'python-glanceclient': '0.15.0',
+    'python-heatclient': '0.2.12',
+    'python-keystoneclient': '0.11.1',
+    'python-openstackclient': '0.4.1',
+    'python-saharaclient': '0.7.6',
+    'python-swiftclient': '2.3.1',
+    'python-neutronclient': '2.3.9',
+    'python-novaclient': '2.20.0',
+    'python-troveclient': '1.0.7',
+    'mistral': '2015.1.0b1',
+    'murano-apps': '2014.2',
+    'python-mistralclient': '0.1.1',
+    'python-muranoclient': '0.5.5',
+    'python-congressclient': '1.0.2',
+    'glance_store': '0.1.10',
+    'oslo.context': '0.1.0',
+    'oslo.serialization': '1.2.0',
+    'oslo.utils': '1.2.1',
+    'oslosphinx': '2.2.0',
+    'oslotest': '1.1.0'
+}
+
 
 def request_spec(gerrit_account, repo, branch):
     # List of URLs for spec file
@@ -33,6 +59,7 @@ def request_spec(gerrit_account, repo, branch):
 
     return req_spec
 
+
 def request_control(gerrit_account, repo, branch, type):
     # URL for getting changelog file
     req_url_changelog = 'https://review.fuel-infra.org/gitweb?p=openstack-build/{0}-build.git;' \
@@ -45,6 +72,7 @@ def request_control(gerrit_account, repo, branch, type):
         req_control = None
 
     return req_control
+
 
 def del_symbol(json_file, n):
     json_file.seek(n, os.SEEK_END)
@@ -78,7 +106,7 @@ def get_req(gerritAccount, req_file, rq2, json_file, branch, type):
             with open("{0}-base.json".format(type), 'r') as b:
                 base = json.load(b)
 
-            if not packs_request is None:
+            if packs_request is not None:
 
                 if type == "control":
                     packs_list = require_utils.Require.get_packs_control(packs_request)
@@ -156,3 +184,34 @@ def get_epoch(gerrit_account, req_file, branch, json_file):
             json_file.write('\t' * 3 + '},\n')
     if check:
         del_symbol(json_file, -2)
+
+
+def check(launchpad_name):
+    with open('requirements.json', 'w') as json_file:
+
+        gerrit = launchpad_name
+
+        with open('req', 'r') as repo_file:
+            for repo in repo_file:
+                repo = repo.strip()
+                json_file.write(json.dumps(repo)+':\n')
+                print repo
+                if 'murano' in repo or 'mistral' in repo or 'congress' in repo:
+                    git_repo = 'stackforge'
+                else:
+                    git_repo = 'openstack'
+                if 'python' in repo and 'client' in repo or 'mistral' in repo or 'apps' in repo \
+                    or 'store' in repo or 'sphinx' in repo or 'serial' in repo or 'context' in repo \
+                    or 'utils' in repo or 'test' in repo:
+                    git_branch = tag_dict[repo]
+                else:
+                    git_branch = 'upstream/stable/juno'
+                os.system('./check.sh {0} {1} {2} {3}'.format(gerrit, repo, git_repo, git_branch))
+                with open('tmpfile', 'r') as f:
+                    try:
+                        last = f.readlines()[-1]
+                    except IndexError:
+                        json_file.write('\t{"No changes": ""},\n')
+                    else:
+                        json_file.write('\t{'+json.dumps(last.strip())+': ""},\n')
+            del_symbol(json_file, -2)

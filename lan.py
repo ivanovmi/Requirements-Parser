@@ -1,5 +1,4 @@
 import requests
-import getpass
 
 parameters = {'openid.assoc_handle': '',
               'openid.claimed_id': 'http://specs.openid.net/auth/2.0/identifier_select',
@@ -34,10 +33,7 @@ def get_requirements_from_url(url, gerritAccount):
         raise SystemExit
 
 
-def login_to_launchpad():
-    print 'Please, login to gerrit.'
-    launchpad_id = raw_input('Login: ')
-    launchpad_pw = getpass.getpass()
+def login_to_launchpad(launchpad_id, launchpad_pw):
     s = requests.Session()
     r = s.get('https://login.launchpad.net')
 

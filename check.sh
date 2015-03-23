@@ -5,11 +5,11 @@ git clone ssh://$1@review.fuel-infra.org:29418/openstack/$2 # &> /dev/null
 echo "15%..."
 cd $2
 echo "30%..."
-git remote add upstream https://github.com/openstack/$2.git # &> /dev/null
+git remote add upstream https://github.com/$3/$2.git &> /dev/null
 echo "45%..."
 git remote update &> /dev/null
 echo "60%..."
-git diff --stat upstream/stable/juno origin/openstack-ci/fuel-6.1/2014.2 > ../tmpfile
+git diff --stat $4 origin/openstack-ci/fuel-6.1/2014.2 > ../tmpfile
 echo "75%..."
 cd ..
 echo "90%..."

@@ -10,150 +10,152 @@ endobj
 << /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font >>
 endobj
 4 0 obj
-<< /Contents 26 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 25 0 R /Resources << /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] >> /Rotate 0 /Trans <<  >> 
+<< /Contents 44 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 43 0 R /Resources << /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] >> /Rotate 0 /Trans <<  >> 
   /Type /Page >>
 endobj
 5 0 obj
-<< /Contents 27 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 25 0 R /Resources << /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] >> /Rotate 0 /Trans <<  >> 
+<< /Contents 45 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 43 0 R /Resources << /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] >> /Rotate 0 /Trans <<  >> 
   /Type /Page >>
 endobj
 6 0 obj
-<< /Contents 28 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 25 0 R /Resources << /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] >> /Rotate 0 /Trans <<  >> 
+<< /Contents 46 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 43 0 R /Resources << /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] >> /Rotate 0 /Trans <<  >> 
   /Type /Page >>
 endobj
 7 0 obj
-<< /Outlines 9 0 R /PageLabels 29 0 R /PageMode /UseNone /Pages 25 0 R /Type /Catalog >>
+<< /Contents 47 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 43 0 R /Resources << /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] >> /Rotate 0 /Trans <<  >> 
+  /Type /Page >>
 endobj
 8 0 obj
-<< /Author () /CreationDate (D:20150319231741-03'00') /Creator (\(unspecified\)) /Keywords () /Producer (ReportLab PDF Library - www.reportlab.com) /Subject (\(unspecified\)) 
-  /Title (Dependency checker Thu, 19 Mar 2015 23:17:40 +0300) >>
+<< /Contents 48 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 43 0 R /Resources << /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] >> /Rotate 0 /Trans <<  >> 
+  /Type /Page >>
 endobj
 9 0 obj
-<< /Count 15 /First 10 0 R /Last 24 0 R /Type /Outlines >>
+<< /Contents 49 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 43 0 R /Resources << /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] >> /Rotate 0 /Trans <<  >> 
+  /Type /Page >>
 endobj
 10 0 obj
-<< /Dest [ 4 0 R /XYZ 62.69291 599.0236 0 ] /Next 11 0 R /Parent 9 0 R /Title (python-novaclient) >>
+<< /Contents 50 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 43 0 R /Resources << /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] >> /Rotate 0 /Trans <<  >> 
+  /Type /Page >>
 endobj
 11 0 obj
-<< /Dest [ 4 0 R /XYZ 62.69291 500.0236 0 ] /Next 12 0 R /Parent 9 0 R /Prev 10 0 R /Title (python-keystoneclient) >>
+<< /Contents 51 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 43 0 R /Resources << /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] >> /Rotate 0 /Trans <<  >> 
+  /Type /Page >>
 endobj
 12 0 obj
-<< /Dest [ 4 0 R /XYZ 62.69291 401.0236 0 ] /Next 13 0 R /Parent 9 0 R /Prev 11 0 R /Title (oslo.config) >>
+<< /Contents 52 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 43 0 R /Resources << /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] >> /Rotate 0 /Trans <<  >> 
+  /Type /Page >>
 endobj
 13 0 obj
-<< /Dest [ 4 0 R /XYZ 62.69291 302.0236 0 ] /Next 14 0 R /Parent 9 0 R /Prev 12 0 R /Title (python-neutronclient) >>
+<< /Contents 53 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 43 0 R /Resources << /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] >> /Rotate 0 /Trans <<  >> 
+  /Type /Page >>
 endobj
 14 0 obj
-<< /Dest [ 4 0 R /XYZ 62.69291 221.0236 0 ] /Next 15 0 R /Parent 9 0 R /Prev 13 0 R /Title (python-openstackclient) >>
+<< /Contents 54 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 43 0 R /Resources << /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] >> /Rotate 0 /Trans <<  >> 
+  /Type /Page >>
 endobj
 15 0 obj
-<< /Dest [ 4 0 R /XYZ 62.69291 140.0236 0 ] /Next 16 0 R /Parent 9 0 R /Prev 14 0 R /Title (nova) >>
+<< /Contents 55 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 43 0 R /Resources << /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] >> /Rotate 0 /Trans <<  >> 
+  /Type /Page >>
 endobj
 16 0 obj
-<< /Dest [ 5 0 R /XYZ 62.69291 735.0236 0 ] /Next 17 0 R /Parent 9 0 R /Prev 15 0 R /Title (python-troveclient) >>
+<< /Outlines 18 0 R /PageLabels 56 0 R /PageMode /UseNone /Pages 43 0 R /Type /Catalog >>
 endobj
 17 0 obj
-<< /Dest [ 5 0 R /XYZ 62.69291 654.0236 0 ] /Next 18 0 R /Parent 9 0 R /Prev 16 0 R /Title (keystone) >>
+<< /Author () /CreationDate (D:20150323011319-03'00') /Creator (\(unspecified\)) /Keywords () /Producer (ReportLab PDF Library - www.reportlab.com) /Subject (\(unspecified\)) 
+  /Title (Dependency checker Mon, 23 Mar 2015 01:13:15 +0300) >>
 endobj
 18 0 obj
-<< /Dest [ 5 0 R /XYZ 62.69291 573.0236 0 ] /Next 19 0 R /Parent 9 0 R /Prev 17 0 R /Title (python-cinderclient) >>
+<< /Count 24 /First 19 0 R /Last 42 0 R /Type /Outlines >>
 endobj
 19 0 obj
-<< /Dest [ 5 0 R /XYZ 62.69291 492.0236 0 ] /Next 20 0 R /Parent 9 0 R /Prev 18 0 R /Title (horizon) >>
+<< /Dest [ 4 0 R /XYZ 62.69291 668.0236 0 ] /Next 20 0 R /Parent 18 0 R /Title (glance_store) >>
 endobj
 20 0 obj
-<< /Dest [ 5 0 R /XYZ 62.69291 411.0236 0 ] /Next 21 0 R /Parent 9 0 R /Prev 19 0 R /Title (cinder) >>
+<< /Dest [ 4 0 R /XYZ 62.69291 335.0236 0 ] /Next 21 0 R /Parent 18 0 R /Prev 19 0 R /Title (oslo.context) >>
 endobj
 21 0 obj
-<< /Dest [ 5 0 R /XYZ 62.69291 330.0236 0 ] /Next 22 0 R /Parent 9 0 R /Prev 20 0 R /Title (glance) >>
+<< /Dest [ 4 0 R /XYZ 62.69291 230.0236 0 ] /Next 22 0 R /Parent 18 0 R /Prev 20 0 R /Title (oslo.serialization) >>
 endobj
 22 0 obj
-<< /Dest [ 5 0 R /XYZ 62.69291 249.0236 0 ] /Next 23 0 R /Parent 9 0 R /Prev 21 0 R /Title (python-glanceclient) >>
+<< /Dest [ 5 0 R /XYZ 62.69291 687.0236 0 ] /Next 23 0 R /Parent 18 0 R /Prev 21 0 R /Title (oslo.utils) >>
 endobj
 23 0 obj
-<< /Dest [ 5 0 R /XYZ 62.69291 150.0236 0 ] /Next 24 0 R /Parent 9 0 R /Prev 22 0 R /Title (neutron) >>
+<< /Dest [ 5 0 R /XYZ 62.69291 462.0236 0 ] /Next 24 0 R /Parent 18 0 R /Prev 22 0 R /Title (oslosphinx) >>
 endobj
 24 0 obj
-<< /Dest [ 6 0 R /XYZ 62.69291 765.0236 0 ] /Parent 9 0 R /Prev 23 0 R /Title (python-swiftclient) >>
+<< /Dest [ 5 0 R /XYZ 62.69291 357.0236 0 ] /Next 25 0 R /Parent 18 0 R /Prev 23 0 R /Title (oslotest) >>
 endobj
 25 0 obj
-<< /Count 3 /Kids [ 4 0 R 5 0 R 6 0 R ] /Type /Pages >>
+<< /Dest [ 6 0 R /XYZ 62.69291 765.0236 0 ] /Next 26 0 R /Parent 18 0 R /Prev 24 0 R /Title (python-barbicanclient) >>
 endobj
 26 0 obj
-<< /Length 9143 >>
+<< /Dest [ 6 0 R /XYZ 62.69291 498.0236 0 ] /Next 27 0 R /Parent 18 0 R /Prev 25 0 R /Title (python-ceilometerclient) >>
+endobj
+27 0 obj
+<< /Dest [ 6 0 R /XYZ 62.69291 189.0236 0 ] /Next 28 0 R /Parent 18 0 R /Prev 26 0 R /Title (python-cinderclient) >>
+endobj
+28 0 obj
+<< /Dest [ 7 0 R /XYZ 62.69291 621.0236 0 ] /Next 29 0 R /Parent 18 0 R /Prev 27 0 R /Title (python-glanceclient) >>
+endobj
+29 0 obj
+<< /Dest [ 7 0 R /XYZ 62.69291 318.0236 0 ] /Next 30 0 R /Parent 18 0 R /Prev 28 0 R /Title (python-heatclient) >>
+endobj
+30 0 obj
+<< /Dest [ 8 0 R /XYZ 62.69291 645.0236 0 ] /Next 31 0 R /Parent 18 0 R /Prev 29 0 R /Title (python-keystoneclient) >>
+endobj
+31 0 obj
+<< /Dest [ 8 0 R /XYZ 62.69291 288.0236 0 ] /Next 32 0 R /Parent 18 0 R /Prev 30 0 R /Title (python-openstackclient) >>
+endobj
+32 0 obj
+<< /Dest [ 9 0 R /XYZ 62.69291 519.0236 0 ] /Next 33 0 R /Parent 18 0 R /Prev 31 0 R /Title (python-saharaclient) >>
+endobj
+33 0 obj
+<< /Dest [ 9 0 R /XYZ 62.69291 234.0236 0 ] /Next 34 0 R /Parent 18 0 R /Prev 32 0 R /Title (python-swiftclient) >>
+endobj
+34 0 obj
+<< /Dest [ 10 0 R /XYZ 62.69291 765.0236 0 ] /Next 35 0 R /Parent 18 0 R /Prev 33 0 R /Title (python-neutronclient) >>
+endobj
+35 0 obj
+<< /Dest [ 10 0 R /XYZ 62.69291 402.0236 0 ] /Next 36 0 R /Parent 18 0 R /Prev 34 0 R /Title (python-novaclient) >>
+endobj
+36 0 obj
+<< /Dest [ 11 0 R /XYZ 62.69291 765.0236 0 ] /Next 37 0 R /Parent 18 0 R /Prev 35 0 R /Title (python-troveclient) >>
+endobj
+37 0 obj
+<< /Dest [ 11 0 R /XYZ 62.69291 504.0236 0 ] /Next 38 0 R /Parent 18 0 R /Prev 36 0 R /Title (mistral) >>
+endobj
+38 0 obj
+<< /Dest [ 12 0 R /XYZ 62.69291 417.0236 0 ] /Next 39 0 R /Parent 18 0 R /Prev 37 0 R /Title (python-mistralclient) >>
+endobj
+39 0 obj
+<< /Dest [ 12 0 R /XYZ 62.69291 240.0236 0 ] /Next 40 0 R /Parent 18 0 R /Prev 38 0 R /Title (python-congressclient) >>
+endobj
+40 0 obj
+<< /Dest [ 13 0 R /XYZ 62.69291 681.0236 0 ] /Next 41 0 R /Parent 18 0 R /Prev 39 0 R /Title (python-muranoclient) >>
+endobj
+41 0 obj
+<< /Dest [ 13 0 R /XYZ 62.69291 282.0236 0 ] /Next 42 0 R /Parent 18 0 R /Prev 40 0 R /Title (murano) >>
+endobj
+42 0 obj
+<< /Dest [ 14 0 R /XYZ 62.69291 171.0236 0 ] /Parent 18 0 R /Prev 41 0 R /Title (murano-dashboard) >>
+endobj
+43 0 obj
+<< /Count 12 /Kids [ 4 0 R 5 0 R 6 0 R 7 0 R 8 0 R 9 0 R 10 0 R 11 0 R 12 0 R 13 0 R 
+  14 0 R 15 0 R ] /Type /Pages >>
+endobj
+44 0 obj
+<< /Length 11745 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
 1 0 0 1 62.69291 717.0236 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 28 Tm /F2 20 Tf 24 TL 8.734882 0 Td (Dependency checker Thu, 19 Mar 2015 23:17:40) Tj T* 198.13 0 Td (+0300) Tj T* -206.8649 0 Td ET
+BT 1 0 0 1 0 28 Tm /F2 20 Tf 24 TL 6.514882 0 Td (Dependency checker Mon, 23 Mar 2015 01:13:15) Tj T* 200.35 0 Td (+0300) Tj T* -206.8649 0 Td ET
 Q
 Q
 q
-1 0 0 1 62.69291 692.0236 cm
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL .25937 0 Td (Upstream URL:) Tj T* -0.25937 0 Td ET
-Q
-Q
-q
-1 0 0 1 91.03937 3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (URL) Tj T* ET
-Q
-Q
-q
-Q
-Q
-q
-1 0 0 1 62.69291 665.0236 cm
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 14 Tm /F2 10 Tf 12 TL 26.91937 0 Td (Upstream) Tj T* 9.45 0 Td (branch:) Tj T* -36.36937 0 Td ET
-Q
-Q
-q
-1 0 0 1 91.03937 15 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (branch) Tj T* ET
-Q
-Q
-q
-Q
-Q
-q
-1 0 0 1 62.69291 638.0236 cm
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 14 Tm /F2 10 Tf 12 TL 21.91937 0 Td (MOS gerrit) Tj T* 27.24 0 Td (URL:) Tj T* -49.15937 0 Td ET
-Q
-Q
-q
-1 0 0 1 91.03937 15 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (URL) Tj T* ET
-Q
-Q
-q
-Q
-Q
-q
-1 0 0 1 62.69291 611.0236 cm
+1 0 0 1 62.69291 680.0236 cm
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
 q
@@ -166,83 +168,431 @@ Q
 q
 1 0 0 1 91.03937 15 cm
 q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (master) Tj T* ET
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (master) Tj T* ET
 Q
 Q
 q
 Q
 Q
 q
-1 0 0 1 62.69291 578.0236 cm
+1 0 0 1 62.69291 647.0236 cm
 q
-BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (python-novaclient) Tj T* ET
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (glance_store) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 566.0236 cm
+1 0 0 1 62.69291 635.0236 cm
 Q
 q
-1 0 0 1 62.69291 512.0236 cm
+1 0 0 1 62.69291 347.0236 cm
 1 1 1 rg
-n 0 54 469.8898 -18 re f*
+n 0 288 469.8898 -18 re f*
 .878431 .878431 .878431 rg
-n 0 36 469.8898 -18 re f*
+n 0 270 469.8898 -18 re f*
 1 1 1 rg
-n 0 18 469.8898 -18 re f*
+n 0 252 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 228 469.8898 -24 re f*
+1 1 1 rg
+n 0 204 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 180 469.8898 -24 re f*
+1 1 1 rg
+n 0 156 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 132 469.8898 -24 re f*
+1 1 1 rg
+n 0 108 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 90 469.8898 -24 re f*
+1 1 1 rg
+n 0 66 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 48 469.8898 -24 re f*
+1 1 1 rg
+n 0 24 469.8898 -24 re f*
 .960784 .960784 .862745 rg
-n 0 54 469.8898 -18 re f*
+n 0 288 469.8898 -18 re f*
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
 q
+1 0 0 1 6 273 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 280.5729 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 106.9364 0 Td (Package name) Tj T* -106.9364 0 Td ET
+Q
+Q
+q
+1 0 0 1 298.5729 273 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 165.3169 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 43.20845 0 Td (DEPENDENCIES) Tj T* -43.20845 0 Td ET
+Q
+Q
+0 0 0 rg
+q
+1 0 0 1 6 255 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (enum34) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 243 cm
+Q
+q
+1 0 0 1 6 243 cm
+Q
+q
+1 0 0 1 6 231 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (oslo.i18n) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 231 cm
+Q
+q
+1 0 0 1 298.5729 237 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.0.0; <) Tj (=1.3.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 219 cm
+Q
+q
+1 0 0 1 6 219 cm
+Q
+q
+1 0 0 1 6 207 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (oslo.utils) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 207 cm
+Q
+q
+1 0 0 1 298.5729 213 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.2.0; <) Tj (=1.2.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 195 cm
+Q
+q
+1 0 0 1 6 195 cm
+Q
+q
+1 0 0 1 6 183 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (eventlet) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 183 cm
+Q
+q
+1 0 0 1 298.5729 189 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.15.1; <) Tj (=0.15.2;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 171 cm
+Q
+q
+1 0 0 1 6 171 cm
+Q
+q
+1 0 0 1 6 159 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (oslo.config) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 159 cm
+Q
+q
+1 0 0 1 298.5729 165 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.6.0; <) Tj (=1.6.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 147 cm
+Q
+q
+1 0 0 1 6 147 cm
+Q
+q
+1 0 0 1 6 135 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (oslo.serialization) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 135 cm
+Q
+q
+1 0 0 1 298.5729 141 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.0.0; <) Tj (=1.2.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 123 cm
+Q
+q
+1 0 0 1 6 123 cm
+Q
+q
+1 0 0 1 6 111 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (python-cinderclient) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 111 cm
+Q
+q
+1 0 0 1 298.5729 117 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.1.0; <) Tj (=1.1.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 93 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (jsonschema) Tj T* ET
+Q
+Q
+q
+1 0 0 1 298.5729 93 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=2.0.0; <) Tj (3.0.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 81 cm
+Q
+q
+1 0 0 1 6 81 cm
+Q
+q
+1 0 0 1 6 69 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (ordereddict) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 69 cm
+Q
+q
+1 0 0 1 298.5729 75 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (<) Tj (=1.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 51 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (oslo.concurrency) Tj T* ET
+Q
+Q
+q
+1 0 0 1 298.5729 51 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.4.1;) Tj T* ET
+Q
+Q
+q
 1 0 0 1 6 39 cm
-q
-.960784 .960784 .862745 rg
-n 0 0 68.55253 12 re f*
 Q
+q
+1 0 0 1 6 39 cm
+Q
+q
+1 0 0 1 6 27 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 11.48627 0 Td (Repo type) Tj T* -11.48627 0 Td ET
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
 Q
 Q
 q
-1 0 0 1 86.55253 39 cm
-q
-.960784 .960784 .862745 rg
-n 0 0 377.3372 12 re f*
-Q
+1 0 0 1 23 -3 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 174.4936 0 Td (Epoch) Tj T* -174.4936 0 Td ET
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (stevedore) Tj T* ET
 Q
 Q
+q
+Q
+Q
+q
+1 0 0 1 6 27 cm
+Q
+q
+1 0 0 1 298.5729 33 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.0.0; <) Tj (=1.2.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 3 cm
 0 0 0 rg
+BT /F1 10 Tf 12 TL ET
 q
-1 0 0 1 6 21 cm
+1 0 0 1 6 -3 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (DEB) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
 Q
 Q
 q
-1 0 0 1 86.55253 21 cm
+1 0 0 1 23 -3 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (python-novaclient \(1:2.20.0-0ubuntu1\) precise; urgency=low) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (six) Tj T* ET
+Q
+Q
+q
 Q
 Q
 q
 1 0 0 1 6 3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (RPM) Tj T* ET
-Q
 Q
 q
-1 0 0 1 86.55253 3 cm
+1 0 0 1 298.5729 9 cm
 q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Epoch: 1) Tj T* ET
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.7.0; <) Tj (=1.9.0;) Tj T* ET
 Q
 Q
 q
@@ -250,377 +600,328 @@ q
 1 j
 0 0 0 RG
 .25 w
-n 0 36 m 469.8898 36 l S
-n 0 18 m 469.8898 18 l S
-n 80.55253 0 m 80.55253 54 l S
-n 0 54 m 469.8898 54 l S
+n 0 270 m 469.8898 270 l S
+n 0 252 m 469.8898 252 l S
+n 0 228 m 469.8898 228 l S
+n 0 204 m 469.8898 204 l S
+n 0 180 m 469.8898 180 l S
+n 0 156 m 469.8898 156 l S
+n 0 132 m 469.8898 132 l S
+n 0 108 m 469.8898 108 l S
+n 0 90 m 469.8898 90 l S
+n 0 66 m 469.8898 66 l S
+n 0 48 m 469.8898 48 l S
+n 0 24 m 469.8898 24 l S
+n 292.5729 0 m 292.5729 288 l S
+n 0 288 m 469.8898 288 l S
 n 0 0 m 469.8898 0 l S
-n 0 0 m 0 54 l S
-n 469.8898 0 m 469.8898 54 l S
+n 0 0 m 0 288 l S
+n 469.8898 0 m 469.8898 288 l S
 Q
 Q
 q
-1 0 0 1 62.69291 512.0236 cm
-Q
-q
-1 0 0 1 62.69291 479.0236 cm
-q
-BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (python-keystoneclient) Tj T* ET
-Q
-Q
-q
-1 0 0 1 62.69291 467.0236 cm
-Q
-q
-1 0 0 1 62.69291 413.0236 cm
-1 1 1 rg
-n 0 54 469.8898 -18 re f*
-.878431 .878431 .878431 rg
-n 0 36 469.8898 -18 re f*
-1 1 1 rg
-n 0 18 469.8898 -18 re f*
-.960784 .960784 .862745 rg
-n 0 54 469.8898 -18 re f*
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 39 cm
-q
-.960784 .960784 .862745 rg
-n 0 0 62.19312 12 re f*
-Q
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 8.30656 0 Td (Repo type) Tj T* -8.30656 0 Td ET
-Q
-Q
-q
-1 0 0 1 80.19312 39 cm
-q
-.960784 .960784 .862745 rg
-n 0 0 383.6966 12 re f*
-Q
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 177.6733 0 Td (Epoch) Tj T* -177.6733 0 Td ET
-Q
-Q
-0 0 0 rg
-q
-1 0 0 1 6 21 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (DEB) Tj T* ET
-Q
-Q
-q
-1 0 0 1 80.19312 21 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (python-keystoneclient \(1:0.11.0-0ubuntu1\) utopic; urgency=medium) Tj T* ET
-Q
-Q
-q
-1 0 0 1 6 3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (RPM) Tj T* ET
-Q
-Q
-q
-1 0 0 1 80.19312 3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Epoch: 1) Tj T* ET
-Q
-Q
-q
-1 J
-1 j
-0 0 0 RG
-.25 w
-n 0 36 m 469.8898 36 l S
-n 0 18 m 469.8898 18 l S
-n 74.19312 0 m 74.19312 54 l S
-n 0 54 m 469.8898 54 l S
-n 0 0 m 469.8898 0 l S
-n 0 0 m 0 54 l S
-n 469.8898 0 m 469.8898 54 l S
-Q
-Q
-q
-1 0 0 1 62.69291 413.0236 cm
-Q
-q
-1 0 0 1 62.69291 380.0236 cm
-q
-BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (oslo.config) Tj T* ET
-Q
-Q
-q
-1 0 0 1 62.69291 368.0236 cm
+1 0 0 1 62.69291 347.0236 cm
 Q
 q
 1 0 0 1 62.69291 314.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (oslo.context) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 302.0236 cm
+Q
+q
+1 0 0 1 62.69291 242.0236 cm
 1 1 1 rg
-n 0 54 469.8898 -18 re f*
+n 0 60 469.8898 -18 re f*
 .878431 .878431 .878431 rg
-n 0 36 469.8898 -18 re f*
+n 0 42 469.8898 -24 re f*
 1 1 1 rg
 n 0 18 469.8898 -18 re f*
 .960784 .960784 .862745 rg
-n 0 54 469.8898 -18 re f*
+n 0 60 469.8898 -18 re f*
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 45 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 216.9207 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 75.11033 0 Td (Package name) Tj T* -75.11033 0 Td ET
+Q
+Q
+q
+1 0 0 1 234.9207 45 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 228.9691 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 75.03455 0 Td (DEPENDENCIES) Tj T* -75.03455 0 Td ET
+Q
+Q
+0 0 0 rg
+q
+1 0 0 1 6 33 cm
+Q
+q
+1 0 0 1 6 33 cm
+Q
+q
+1 0 0 1 6 21 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Babel) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 21 cm
+Q
+q
+1 0 0 1 234.9207 27 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.3; <) Tj (=1.3;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (pbr) Tj T* ET
+Q
+Q
+q
+1 0 0 1 234.9207 3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (!=0.7; >) Tj (=0.6; <) Tj (1.0;) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+.25 w
+n 0 42 m 469.8898 42 l S
+n 0 18 m 469.8898 18 l S
+n 228.9207 0 m 228.9207 60 l S
+n 0 60 m 469.8898 60 l S
+n 0 0 m 469.8898 0 l S
+n 0 0 m 0 60 l S
+n 469.8898 0 m 469.8898 60 l S
+Q
+Q
+q
+1 0 0 1 62.69291 242.0236 cm
+Q
+q
+1 0 0 1 62.69291 209.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (oslo.serialization) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 197.0236 cm
+Q
+q
+1 0 0 1 62.69291 83.02362 cm
+1 1 1 rg
+n 0 114 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 96 469.8898 -24 re f*
+1 1 1 rg
+n 0 72 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 48 469.8898 -24 re f*
+1 1 1 rg
+n 0 24 469.8898 -24 re f*
+.960784 .960784 .862745 rg
+n 0 114 469.8898 -18 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 99 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 256.5084 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 94.90422 0 Td (Package name) Tj T* -94.90422 0 Td ET
+Q
+Q
+q
+1 0 0 1 274.5084 99 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 189.3813 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 55.24066 0 Td (DEPENDENCIES) Tj T* -55.24066 0 Td ET
+Q
+Q
+0 0 0 rg
+q
+1 0 0 1 6 87 cm
+Q
+q
+1 0 0 1 6 87 cm
+Q
+q
+1 0 0 1 6 75 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Babel) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 75 cm
+Q
+q
+1 0 0 1 274.5084 81 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.3; <) Tj (=1.3;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 63 cm
+Q
+q
+1 0 0 1 6 63 cm
+Q
+q
+1 0 0 1 6 51 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (oslo.utils) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 51 cm
+Q
+q
+1 0 0 1 274.5084 57 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.4.0; <) Tj (=1.2.1;) Tj T* ET
+Q
+Q
 q
 1 0 0 1 6 39 cm
-q
-.960784 .960784 .862745 rg
-n 0 0 68.55253 12 re f*
 Q
 q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 11.48627 0 Td (Repo type) Tj T* -11.48627 0 Td ET
-Q
+1 0 0 1 6 39 cm
 Q
 q
-1 0 0 1 86.55253 39 cm
-q
-.960784 .960784 .862745 rg
-n 0 0 377.3372 12 re f*
-Q
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 174.4936 0 Td (Epoch) Tj T* -174.4936 0 Td ET
-Q
-Q
-0 0 0 rg
-q
-1 0 0 1 6 21 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (DEB) Tj T* ET
-Q
-Q
-q
-1 0 0 1 86.55253 21 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (oslo-config \(1:1.4.0.0~a5-0ubuntu1\) utopic; urgency=medium) Tj T* ET
-Q
-Q
-q
-1 0 0 1 6 3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (RPM) Tj T* ET
-Q
-Q
-q
-1 0 0 1 86.55253 3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Epoch: 1) Tj T* ET
-Q
-Q
-q
-1 J
-1 j
-0 0 0 RG
-.25 w
-n 0 36 m 469.8898 36 l S
-n 0 18 m 469.8898 18 l S
-n 80.55253 0 m 80.55253 54 l S
-n 0 54 m 469.8898 54 l S
-n 0 0 m 469.8898 0 l S
-n 0 0 m 0 54 l S
-n 469.8898 0 m 469.8898 54 l S
-Q
-Q
-q
-1 0 0 1 62.69291 314.0236 cm
-Q
-q
-1 0 0 1 62.69291 281.0236 cm
-q
-BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (python-neutronclient) Tj T* ET
-Q
-Q
-q
-1 0 0 1 62.69291 269.0236 cm
-Q
-q
-1 0 0 1 62.69291 233.0236 cm
-1 1 1 rg
-n 0 36 469.8898 -18 re f*
-.878431 .878431 .878431 rg
-n 0 18 469.8898 -18 re f*
-.960784 .960784 .862745 rg
-n 0 36 469.8898 -18 re f*
+1 0 0 1 6 27 cm
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
 q
-1 0 0 1 6 21 cm
-q
-.960784 .960784 .862745 rg
-n 0 0 66.31496 12 re f*
-Q
+1 0 0 1 6 -3 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.36748 0 Td (Repo type) Tj T* -10.36748 0 Td ET
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
 Q
 Q
 q
-1 0 0 1 84.31496 21 cm
-q
-.960784 .960784 .862745 rg
-n 0 0 379.5748 12 re f*
-Q
+1 0 0 1 23 -3 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 175.6124 0 Td (Epoch) Tj T* -175.6124 0 Td ET
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (msgpack-python) Tj T* ET
 Q
 Q
-0 0 0 rg
+q
+Q
+Q
+q
+1 0 0 1 6 27 cm
+Q
+q
+1 0 0 1 274.5084 33 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.4.0; <) Tj (=0.4.5;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 15 cm
+Q
 q
 1 0 0 1 6 3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (DEB) Tj T* ET
-Q
-Q
-q
-1 0 0 1 84.31496 3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (python-neutronclient \(1:2.3.9-0ubuntu1\) precise; urgency=low) Tj T* ET
-Q
-Q
-q
-1 J
-1 j
-0 0 0 RG
-.25 w
-n 0 18 m 469.8898 18 l S
-n 78.31496 0 m 78.31496 36 l S
-n 0 36 m 469.8898 36 l S
-n 0 0 m 469.8898 0 l S
-n 0 0 m 0 36 l S
-n 469.8898 0 m 469.8898 36 l S
-Q
-Q
-q
-1 0 0 1 62.69291 233.0236 cm
-Q
-q
-1 0 0 1 62.69291 200.0236 cm
-q
-BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (python-openstackclient) Tj T* ET
-Q
-Q
-q
-1 0 0 1 62.69291 188.0236 cm
-Q
-q
-1 0 0 1 62.69291 152.0236 cm
-1 1 1 rg
-n 0 36 469.8898 -18 re f*
-.878431 .878431 .878431 rg
-n 0 18 469.8898 -18 re f*
-.960784 .960784 .862745 rg
-n 0 36 469.8898 -18 re f*
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
 q
-1 0 0 1 6 21 cm
-q
-.960784 .960784 .862745 rg
-n 0 0 213.5471 12 re f*
-Q
+1 0 0 1 6 -3 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 83.98354 0 Td (Repo type) Tj T* -83.98354 0 Td ET
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
 Q
 Q
 q
-1 0 0 1 231.5471 21 cm
-q
-.960784 .960784 .862745 rg
-n 0 0 232.3427 12 re f*
-Q
+1 0 0 1 23 -3 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 101.9963 0 Td (Epoch) Tj T* -101.9963 0 Td ET
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (iso8601) Tj T* ET
 Q
 Q
-0 0 0 rg
+q
+Q
+Q
 q
 1 0 0 1 6 3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (RPM) Tj T* ET
-Q
 Q
 q
-1 0 0 1 231.5471 3 cm
+1 0 0 1 274.5084 9 cm
 q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Epoch: 1) Tj T* ET
-Q
-Q
-q
-1 J
-1 j
-0 0 0 RG
-.25 w
-n 0 18 m 469.8898 18 l S
-n 225.5471 0 m 225.5471 36 l S
-n 0 36 m 469.8898 36 l S
-n 0 0 m 469.8898 0 l S
-n 0 0 m 0 36 l S
-n 469.8898 0 m 469.8898 36 l S
-Q
-Q
-q
-1 0 0 1 62.69291 152.0236 cm
-Q
-q
-1 0 0 1 62.69291 119.0236 cm
-q
-BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (nova) Tj T* ET
-Q
-Q
-q
-1 0 0 1 62.69291 107.0236 cm
-Q
-q
-1 0 0 1 62.69291 89.02362 cm
-1 1 1 rg
-n 0 18 469.8898 -18 re f*
-.960784 .960784 .862745 rg
-n 0 18 469.8898 -18 re f*
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 3 cm
-q
-.960784 .960784 .862745 rg
-n 0 0 77.50281 12 re f*
-Q
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 15.96141 0 Td (Repo type) Tj T* -15.96141 0 Td ET
-Q
-Q
-q
-1 0 0 1 95.50281 3 cm
-q
-.960784 .960784 .862745 rg
-n 0 0 368.387 12 re f*
-Q
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 170.0185 0 Td (Epoch) Tj T* -170.0185 0 Td ET
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.1.9; <) Tj (=0.1.10;) Tj T* ET
 Q
 Q
 q
@@ -629,629 +930,116 @@ q
 0 0 0 RG
 .25 w
 n 0 0 m 469.8898 0 l S
-n 89.50281 0 m 89.50281 18 l S
-n 0 18 m 469.8898 18 l S
-n 0 0 m 0 18 l S
-n 469.8898 0 m 469.8898 18 l S
+n 0 96 m 469.8898 96 l S
+n 0 72 m 469.8898 72 l S
+n 0 48 m 469.8898 48 l S
+n 0 24 m 469.8898 24 l S
+n 268.5084 0 m 268.5084 114 l S
+n 0 114 m 469.8898 114 l S
+n 0 0 m 0 114 l S
+n 469.8898 0 m 469.8898 114 l S
 Q
 Q
  
 endstream
 endobj
-27 0 obj
-<< /Length 10508 >>
+45 0 obj
+<< /Length 12607 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 62.69291 747.0236 cm
+1 0 0 1 62.69291 699.0236 cm
 1 1 1 rg
-n 0 18 469.8898 -18 re f*
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (DEB) Tj T* ET
-Q
-Q
-q
-1 0 0 1 95.50281 3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (nova \(1:2014.2-0ubuntu2\) UNRELEASED; urgency=medium) Tj T* ET
-Q
-Q
-q
-1 J
-1 j
-0 0 0 RG
-.25 w
-n 0 18 m 469.8898 18 l S
-n 89.50281 0 m 89.50281 18 l S
-n 0 0 m 0 18 l S
-n 469.8898 0 m 469.8898 18 l S
-n 0 0 m 469.8898 0 l S
-Q
-Q
-q
-1 0 0 1 62.69291 747.0236 cm
-Q
-q
-1 0 0 1 62.69291 714.0236 cm
-q
-BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (python-troveclient) Tj T* ET
-Q
-Q
-q
-1 0 0 1 62.69291 702.0236 cm
-Q
-q
-1 0 0 1 62.69291 666.0236 cm
-1 1 1 rg
-n 0 36 469.8898 -18 re f*
+n 0 66 469.8898 -18 re f*
 .878431 .878431 .878431 rg
-n 0 18 469.8898 -18 re f*
-.960784 .960784 .862745 rg
-n 0 36 469.8898 -18 re f*
+n 0 48 469.8898 -24 re f*
+1 1 1 rg
+n 0 24 469.8898 -24 re f*
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
 q
-1 0 0 1 6 21 cm
-q
-.960784 .960784 .862745 rg
-n 0 0 66.31496 12 re f*
-Q
+1 0 0 1 6 51 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.36748 0 Td (Repo type) Tj T* -10.36748 0 Td ET
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (pbr) Tj T* ET
 Q
 Q
 q
-1 0 0 1 84.31496 21 cm
+1 0 0 1 274.5084 51 cm
 q
-.960784 .960784 .862745 rg
-n 0 0 379.5748 12 re f*
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (!=0.7; >) Tj (=0.6; <) Tj (1.0;) Tj T* ET
 Q
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 175.6124 0 Td (Epoch) Tj T* -175.6124 0 Td ET
-Q
-Q
-0 0 0 rg
-q
-1 0 0 1 6 3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (DEB) Tj T* ET
-Q
-Q
-q
-1 0 0 1 84.31496 3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (python-troveclient \(1:1.0.7-0ubuntu1\) utopic; urgency=medium) Tj T* ET
-Q
-Q
-q
-1 J
-1 j
-0 0 0 RG
-.25 w
-n 0 18 m 469.8898 18 l S
-n 78.31496 0 m 78.31496 36 l S
-n 0 36 m 469.8898 36 l S
-n 0 0 m 469.8898 0 l S
-n 0 0 m 0 36 l S
-n 469.8898 0 m 469.8898 36 l S
-Q
-Q
-q
-1 0 0 1 62.69291 666.0236 cm
-Q
-q
-1 0 0 1 62.69291 633.0236 cm
-q
-BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (keystone) Tj T* ET
-Q
-Q
-q
-1 0 0 1 62.69291 621.0236 cm
-Q
-q
-1 0 0 1 62.69291 585.0236 cm
-1 1 1 rg
-n 0 36 469.8898 -18 re f*
-.878431 .878431 .878431 rg
-n 0 18 469.8898 -18 re f*
-.960784 .960784 .862745 rg
-n 0 36 469.8898 -18 re f*
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 21 cm
-q
-.960784 .960784 .862745 rg
-n 0 0 73.4345 12 re f*
-Q
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 13.92725 0 Td (Repo type) Tj T* -13.92725 0 Td ET
-Q
-Q
-q
-1 0 0 1 91.4345 21 cm
-q
-.960784 .960784 .862745 rg
-n 0 0 372.4553 12 re f*
-Q
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 172.0526 0 Td (Epoch) Tj T* -172.0526 0 Td ET
-Q
-Q
-0 0 0 rg
-q
-1 0 0 1 6 3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (DEB) Tj T* ET
-Q
-Q
-q
-1 0 0 1 91.4345 3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (keystone \(1:2014.2~b3-0ubuntu1\) utopic; urgency=medium) Tj T* ET
-Q
-Q
-q
-1 J
-1 j
-0 0 0 RG
-.25 w
-n 0 18 m 469.8898 18 l S
-n 85.4345 0 m 85.4345 36 l S
-n 0 36 m 469.8898 36 l S
-n 0 0 m 469.8898 0 l S
-n 0 0 m 0 36 l S
-n 469.8898 0 m 469.8898 36 l S
-Q
-Q
-q
-1 0 0 1 62.69291 585.0236 cm
-Q
-q
-1 0 0 1 62.69291 552.0236 cm
-q
-BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (python-cinderclient) Tj T* ET
-Q
-Q
-q
-1 0 0 1 62.69291 540.0236 cm
-Q
-q
-1 0 0 1 62.69291 504.0236 cm
-1 1 1 rg
-n 0 36 469.8898 -18 re f*
-.878431 .878431 .878431 rg
-n 0 18 469.8898 -18 re f*
-.960784 .960784 .862745 rg
-n 0 36 469.8898 -18 re f*
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 21 cm
-q
-.960784 .960784 .862745 rg
-n 0 0 65.24215 12 re f*
-Q
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 9.831076 0 Td (Repo type) Tj T* -9.831076 0 Td ET
-Q
-Q
-q
-1 0 0 1 83.24215 21 cm
-q
-.960784 .960784 .862745 rg
-n 0 0 380.6476 12 re f*
-Q
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 176.1488 0 Td (Epoch) Tj T* -176.1488 0 Td ET
-Q
-Q
-0 0 0 rg
-q
-1 0 0 1 6 3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (DEB) Tj T* ET
-Q
-Q
-q
-1 0 0 1 83.24215 3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (python-cinderclient \(1:1.1.0-0ubuntu1\) utopic; urgency=medium) Tj T* ET
-Q
-Q
-q
-1 J
-1 j
-0 0 0 RG
-.25 w
-n 0 18 m 469.8898 18 l S
-n 77.24215 0 m 77.24215 36 l S
-n 0 36 m 469.8898 36 l S
-n 0 0 m 469.8898 0 l S
-n 0 0 m 0 36 l S
-n 469.8898 0 m 469.8898 36 l S
-Q
-Q
-q
-1 0 0 1 62.69291 504.0236 cm
-Q
-q
-1 0 0 1 62.69291 471.0236 cm
-q
-BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (horizon) Tj T* ET
-Q
-Q
-q
-1 0 0 1 62.69291 459.0236 cm
-Q
-q
-1 0 0 1 62.69291 423.0236 cm
-1 1 1 rg
-n 0 36 469.8898 -18 re f*
-.878431 .878431 .878431 rg
-n 0 18 469.8898 -18 re f*
-.960784 .960784 .862745 rg
-n 0 36 469.8898 -18 re f*
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 21 cm
-q
-.960784 .960784 .862745 rg
-n 0 0 74.74888 12 re f*
-Q
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 14.58444 0 Td (Repo type) Tj T* -14.58444 0 Td ET
 Q
-Q
-q
-1 0 0 1 92.74888 21 cm
-q
-.960784 .960784 .862745 rg
-n 0 0 371.1409 12 re f*
-Q
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 171.3954 0 Td (Epoch) Tj T* -171.3954 0 Td ET
-Q
-Q
-0 0 0 rg
-q
-1 0 0 1 6 3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (DEB) Tj T* ET
-Q
-Q
-q
-1 0 0 1 92.74888 3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (horizon \(1:2014.2~b3-0ubuntu1\) utopic; urgency=medium) Tj T* ET
-Q
-Q
-q
-1 J
-1 j
-0 0 0 RG
-.25 w
-n 0 18 m 469.8898 18 l S
-n 86.74888 0 m 86.74888 36 l S
-n 0 36 m 469.8898 36 l S
-n 0 0 m 469.8898 0 l S
-n 0 0 m 0 36 l S
-n 469.8898 0 m 469.8898 36 l S
-Q
-Q
-q
-1 0 0 1 62.69291 423.0236 cm
-Q
-q
-1 0 0 1 62.69291 390.0236 cm
-q
-BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (cinder) Tj T* ET
-Q
-Q
-q
-1 0 0 1 62.69291 378.0236 cm
-Q
-q
-1 0 0 1 62.69291 342.0236 cm
-1 1 1 rg
-n 0 36 469.8898 -18 re f*
-.878431 .878431 .878431 rg
-n 0 18 469.8898 -18 re f*
-.960784 .960784 .862745 rg
-n 0 36 469.8898 -18 re f*
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 21 cm
-q
-.960784 .960784 .862745 rg
-n 0 0 76.10433 12 re f*
-Q
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 15.26217 0 Td (Repo type) Tj T* -15.26217 0 Td ET
-Q
-Q
-q
-1 0 0 1 94.10433 21 cm
-q
-.960784 .960784 .862745 rg
-n 0 0 369.7854 12 re f*
-Q
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 170.7177 0 Td (Epoch) Tj T* -170.7177 0 Td ET
-Q
-Q
-0 0 0 rg
-q
-1 0 0 1 6 3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (DEB) Tj T* ET
-Q
-Q
-q
-1 0 0 1 94.10433 3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (cinder \(1:2014.2~b2-0ubuntu1\) utopic; urgency=medium) Tj T* ET
-Q
-Q
-q
-1 J
-1 j
-0 0 0 RG
-.25 w
-n 0 18 m 469.8898 18 l S
-n 88.10433 0 m 88.10433 36 l S
-n 0 36 m 469.8898 36 l S
-n 0 0 m 469.8898 0 l S
-n 0 0 m 0 36 l S
-n 469.8898 0 m 469.8898 36 l S
-Q
-Q
-q
-1 0 0 1 62.69291 342.0236 cm
-Q
-q
-1 0 0 1 62.69291 309.0236 cm
-q
-BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (glance) Tj T* ET
-Q
-Q
-q
-1 0 0 1 62.69291 297.0236 cm
-Q
-q
-1 0 0 1 62.69291 261.0236 cm
-1 1 1 rg
-n 0 36 469.8898 -18 re f*
-.878431 .878431 .878431 rg
-n 0 18 469.8898 -18 re f*
-.960784 .960784 .862745 rg
-n 0 36 469.8898 -18 re f*
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 21 cm
-q
-.960784 .960784 .862745 rg
-n 0 0 76.10433 12 re f*
-Q
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 15.26217 0 Td (Repo type) Tj T* -15.26217 0 Td ET
-Q
-Q
-q
-1 0 0 1 94.10433 21 cm
-q
-.960784 .960784 .862745 rg
-n 0 0 369.7854 12 re f*
-Q
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 170.7177 0 Td (Epoch) Tj T* -170.7177 0 Td ET
-Q
-Q
-0 0 0 rg
-q
-1 0 0 1 6 3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (DEB) Tj T* ET
-Q
-Q
-q
-1 0 0 1 94.10433 3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (glance \(1:2014.2.b3-0ubuntu1\) trusty; urgency=medium) Tj T* ET
-Q
-Q
-q
-1 J
-1 j
-0 0 0 RG
-.25 w
-n 0 18 m 469.8898 18 l S
-n 88.10433 0 m 88.10433 36 l S
-n 0 36 m 469.8898 36 l S
-n 0 0 m 469.8898 0 l S
-n 0 0 m 0 36 l S
-n 469.8898 0 m 469.8898 36 l S
-Q
-Q
-q
-1 0 0 1 62.69291 261.0236 cm
-Q
-q
-1 0 0 1 62.69291 228.0236 cm
-q
-BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (python-glanceclient) Tj T* ET
-Q
-Q
-q
-1 0 0 1 62.69291 216.0236 cm
-Q
-q
-1 0 0 1 62.69291 162.0236 cm
-1 1 1 rg
-n 0 54 469.8898 -18 re f*
-.878431 .878431 .878431 rg
-n 0 36 469.8898 -18 re f*
-1 1 1 rg
-n 0 18 469.8898 -18 re f*
-.960784 .960784 .862745 rg
-n 0 54 469.8898 -18 re f*
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
 q
 1 0 0 1 6 39 cm
-q
-.960784 .960784 .862745 rg
-n 0 0 60.29073 12 re f*
 Q
 q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 7.355366 0 Td (Repo type) Tj T* -7.355366 0 Td ET
-Q
+1 0 0 1 6 39 cm
 Q
 q
-1 0 0 1 78.29073 39 cm
-q
-.960784 .960784 .862745 rg
-n 0 0 385.599 12 re f*
-Q
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 178.6245 0 Td (Epoch) Tj T* -178.6245 0 Td ET
-Q
-Q
-0 0 0 rg
-q
-1 0 0 1 6 21 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (DEB) Tj T* ET
-Q
-Q
-q
-1 0 0 1 78.29073 21 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (python-glanceclient \(1:0.14.0-0ubuntu2\) UNRELEASED; urgency=medium) Tj T* ET
-Q
-Q
-q
-1 0 0 1 6 3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (RPM) Tj T* ET
-Q
-Q
-q
-1 0 0 1 78.29073 3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Epoch: 1) Tj T* ET
-Q
-Q
-q
-1 J
-1 j
-0 0 0 RG
-.25 w
-n 0 36 m 469.8898 36 l S
-n 0 18 m 469.8898 18 l S
-n 72.29073 0 m 72.29073 54 l S
-n 0 54 m 469.8898 54 l S
-n 0 0 m 469.8898 0 l S
-n 0 0 m 0 54 l S
-n 469.8898 0 m 469.8898 54 l S
-Q
-Q
-q
-1 0 0 1 62.69291 162.0236 cm
-Q
-q
-1 0 0 1 62.69291 129.0236 cm
-q
-BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (neutron) Tj T* ET
-Q
-Q
-q
-1 0 0 1 62.69291 117.0236 cm
-Q
-q
-1 0 0 1 62.69291 81.02362 cm
-1 1 1 rg
-n 0 36 469.8898 -18 re f*
-.878431 .878431 .878431 rg
-n 0 18 469.8898 -18 re f*
-.960784 .960784 .862745 rg
-n 0 36 469.8898 -18 re f*
+1 0 0 1 6 27 cm
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
 q
-1 0 0 1 6 21 cm
-q
-.960784 .960784 .862745 rg
-n 0 0 74.74888 12 re f*
-Q
+1 0 0 1 6 -3 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 14.58444 0 Td (Repo type) Tj T* -14.58444 0 Td ET
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
 Q
 Q
 q
-1 0 0 1 92.74888 21 cm
-q
-.960784 .960784 .862745 rg
-n 0 0 371.1409 12 re f*
-Q
+1 0 0 1 23 -3 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 171.3954 0 Td (Epoch) Tj T* -171.3954 0 Td ET
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (pytz) Tj T* ET
 Q
 Q
-0 0 0 rg
+q
+Q
+Q
+q
+1 0 0 1 6 27 cm
+Q
+q
+1 0 0 1 274.5084 33 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=2013.6; <) Tj (=2014.10;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 15 cm
+Q
 q
 1 0 0 1 6 3 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (DEB) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
 Q
 Q
 q
-1 0 0 1 92.74888 3 cm
+1 0 0 1 23 -3 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (neutron \(1:2014.2~b2-0ubuntu1\) utopic; urgency=medium) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (six) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 3 cm
+Q
+q
+1 0 0 1 274.5084 9 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.9.0; <) Tj (=1.9.0;) Tj T* ET
 Q
 Q
 q
@@ -1259,78 +1047,1092 @@ q
 1 j
 0 0 0 RG
 .25 w
-n 0 18 m 469.8898 18 l S
-n 86.74888 0 m 86.74888 36 l S
-n 0 36 m 469.8898 36 l S
+n 0 66 m 469.8898 66 l S
+n 0 48 m 469.8898 48 l S
+n 0 24 m 469.8898 24 l S
+n 268.5084 0 m 268.5084 66 l S
+n 0 0 m 0 66 l S
+n 469.8898 0 m 469.8898 66 l S
 n 0 0 m 469.8898 0 l S
-n 0 0 m 0 36 l S
-n 469.8898 0 m 469.8898 36 l S
 Q
 Q
 q
-1 0 0 1 62.69291 81.02362 cm
+1 0 0 1 62.69291 699.0236 cm
+Q
+q
+1 0 0 1 62.69291 666.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (oslo.utils) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 654.0236 cm
+Q
+q
+1 0 0 1 62.69291 474.0236 cm
+1 1 1 rg
+n 0 180 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 162 469.8898 -24 re f*
+1 1 1 rg
+n 0 138 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 114 469.8898 -24 re f*
+1 1 1 rg
+n 0 90 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 72 469.8898 -24 re f*
+1 1 1 rg
+n 0 48 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 24 469.8898 -24 re f*
+.960784 .960784 .862745 rg
+n 0 180 469.8898 -18 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 165 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 239.3364 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 86.31819 0 Td (Package name) Tj T* -86.31819 0 Td ET
+Q
+Q
+q
+1 0 0 1 257.3364 165 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 206.5534 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 63.82669 0 Td (DEPENDENCIES) Tj T* -63.82669 0 Td ET
+Q
+Q
+0 0 0 rg
+q
+1 0 0 1 6 153 cm
+Q
+q
+1 0 0 1 6 153 cm
+Q
+q
+1 0 0 1 6 141 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (oslo.i18n) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 141 cm
+Q
+q
+1 0 0 1 257.3364 147 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.3.0; <) Tj (=1.3.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 129 cm
+Q
+q
+1 0 0 1 6 129 cm
+Q
+q
+1 0 0 1 6 117 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Babel) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 117 cm
+Q
+q
+1 0 0 1 257.3364 123 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.3; <) Tj (=1.3;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 105 cm
+Q
+q
+1 0 0 1 6 105 cm
+Q
+q
+1 0 0 1 6 93 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (iso8601) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 93 cm
+Q
+q
+1 0 0 1 257.3364 99 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.1.9; <) Tj (=0.1.10;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 75 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (pbr) Tj T* ET
+Q
+Q
+q
+1 0 0 1 257.3364 75 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (!=0.7; >) Tj (=0.6; <) Tj (1.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 63 cm
+Q
+q
+1 0 0 1 6 63 cm
+Q
+q
+1 0 0 1 6 51 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (netifaces) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 51 cm
+Q
+q
+1 0 0 1 257.3364 57 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.10.4; <) Tj (=0.10.4;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 39 cm
+Q
+q
+1 0 0 1 6 39 cm
+Q
+q
+1 0 0 1 6 27 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (netaddr) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 27 cm
+Q
+q
+1 0 0 1 257.3364 33 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.7.12; <) Tj (=0.7.13;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 3 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (six) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 3 cm
+Q
+q
+1 0 0 1 257.3364 9 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.9.0; <) Tj (=1.9.0;) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+.25 w
+n 0 162 m 469.8898 162 l S
+n 0 138 m 469.8898 138 l S
+n 0 114 m 469.8898 114 l S
+n 0 90 m 469.8898 90 l S
+n 0 72 m 469.8898 72 l S
+n 0 48 m 469.8898 48 l S
+n 0 24 m 469.8898 24 l S
+n 251.3364 0 m 251.3364 180 l S
+n 0 180 m 469.8898 180 l S
+n 0 0 m 469.8898 0 l S
+n 0 0 m 0 180 l S
+n 469.8898 0 m 469.8898 180 l S
+Q
+Q
+q
+1 0 0 1 62.69291 474.0236 cm
+Q
+q
+1 0 0 1 62.69291 441.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (oslosphinx) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 429.0236 cm
+Q
+q
+1 0 0 1 62.69291 369.0236 cm
+1 1 1 rg
+n 0 60 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 42 469.8898 -24 re f*
+1 1 1 rg
+n 0 18 469.8898 -18 re f*
+.960784 .960784 .862745 rg
+n 0 60 469.8898 -18 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 45 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 198.9709 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 66.13546 0 Td (Package name) Tj T* -66.13546 0 Td ET
+Q
+Q
+q
+1 0 0 1 216.9709 45 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 246.9188 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 84.00942 0 Td (DEPENDENCIES) Tj T* -84.00942 0 Td ET
+Q
+Q
+0 0 0 rg
+q
+1 0 0 1 6 33 cm
+Q
+q
+1 0 0 1 6 33 cm
+Q
+q
+1 0 0 1 6 21 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (requests) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 21 cm
+Q
+q
+1 0 0 1 216.9709 27 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (!=2.4.0; >) Tj (=2.2.0; <) Tj (=2.2.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (pbr) Tj T* ET
+Q
+Q
+q
+1 0 0 1 216.9709 3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (!=0.7; >) Tj (=0.6; <) Tj (1.0;) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+.25 w
+n 0 42 m 469.8898 42 l S
+n 0 18 m 469.8898 18 l S
+n 210.9709 0 m 210.9709 60 l S
+n 0 60 m 469.8898 60 l S
+n 0 0 m 469.8898 0 l S
+n 0 0 m 0 60 l S
+n 469.8898 0 m 469.8898 60 l S
+Q
+Q
+q
+1 0 0 1 62.69291 369.0236 cm
+Q
+q
+1 0 0 1 62.69291 336.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (oslotest) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 324.0236 cm
+Q
+q
+1 0 0 1 62.69291 96.02362 cm
+1 1 1 rg
+n 0 228 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 210 469.8898 -18 re f*
+1 1 1 rg
+n 0 192 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 168 469.8898 -24 re f*
+1 1 1 rg
+n 0 144 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 120 469.8898 -18 re f*
+1 1 1 rg
+n 0 102 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 78 469.8898 -18 re f*
+1 1 1 rg
+n 0 60 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 42 469.8898 -24 re f*
+1 1 1 rg
+n 0 18 469.8898 -18 re f*
+.960784 .960784 .862745 rg
+n 0 228 469.8898 -18 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 213 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 190.4141 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 61.85703 0 Td (Package name) Tj T* -61.85703 0 Td ET
+Q
+Q
+q
+1 0 0 1 208.4141 213 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 255.4757 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 88.28786 0 Td (DEPENDENCIES) Tj T* -88.28786 0 Td ET
+Q
+Q
+0 0 0 rg
+q
+1 0 0 1 6 195 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (testscenarios) Tj T* ET
+Q
+Q
+q
+1 0 0 1 208.4141 195 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.4;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 183 cm
+Q
+q
+1 0 0 1 6 183 cm
+Q
+q
+1 0 0 1 6 171 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (testtools) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 171 cm
+Q
+q
+1 0 0 1 208.4141 177 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (!=1.2.0; !=1.4.0; >) Tj (=0.9.36; <) Tj (=1.5.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 159 cm
+Q
+q
+1 0 0 1 6 159 cm
+Q
+q
+1 0 0 1 6 147 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (six) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 147 cm
+Q
+q
+1 0 0 1 208.4141 153 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.9.0; <) Tj (=1.9.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 135 cm
+Q
+q
+1 0 0 1 6 135 cm
+Q
+q
+1 0 0 1 6 123 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (testrepository) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 123 cm
+Q
+q
+1 0 0 1 208.4141 129 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.0.18; <) Tj (=0.0.20;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 105 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (pbr) Tj T* ET
+Q
+Q
+q
+1 0 0 1 208.4141 105 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (!=0.7; >) Tj (=0.6; <) Tj (1.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 93 cm
+Q
+q
+1 0 0 1 6 93 cm
+Q
+q
+1 0 0 1 6 81 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (fixtures) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 81 cm
+Q
+q
+1 0 0 1 208.4141 87 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.3.14; <) Tj (=1.0.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 63 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (discover) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 45 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (mock) Tj T* ET
+Q
+Q
+q
+1 0 0 1 208.4141 45 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 33 cm
+Q
+q
+1 0 0 1 6 33 cm
+Q
+q
+1 0 0 1 6 21 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (python-subunit) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 21 cm
+Q
+q
+1 0 0 1 208.4141 27 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.0.18; <) Tj (=1.0.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (mox3) Tj T* ET
+Q
+Q
+q
+1 0 0 1 208.4141 3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.7.0;) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+.25 w
+n 0 210 m 469.8898 210 l S
+n 0 192 m 469.8898 192 l S
+n 0 168 m 469.8898 168 l S
+n 0 144 m 469.8898 144 l S
+n 0 120 m 469.8898 120 l S
+n 0 102 m 469.8898 102 l S
+n 0 78 m 469.8898 78 l S
+n 0 60 m 469.8898 60 l S
+n 0 42 m 469.8898 42 l S
+n 0 18 m 469.8898 18 l S
+n 202.4141 0 m 202.4141 228 l S
+n 0 228 m 469.8898 228 l S
+n 0 0 m 469.8898 0 l S
+n 0 0 m 0 228 l S
+n 469.8898 0 m 469.8898 228 l S
+Q
+Q
+q
+1 0 0 1 62.69291 96.02362 cm
 Q
  
 endstream
 endobj
-28 0 obj
-<< /Length 1263 >>
+46 0 obj
+<< /Length 12849 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
 1 0 0 1 62.69291 744.0236 cm
 q
-BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (python-swiftclient) Tj T* ET
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (python-barbicanclient) Tj T* ET
 Q
 Q
 q
 1 0 0 1 62.69291 732.0236 cm
 Q
 q
-1 0 0 1 62.69291 696.0236 cm
+1 0 0 1 62.69291 510.0236 cm
 1 1 1 rg
-n 0 36 469.8898 -18 re f*
+n 0 222 469.8898 -18 re f*
 .878431 .878431 .878431 rg
-n 0 18 469.8898 -18 re f*
+n 0 204 469.8898 -24 re f*
+1 1 1 rg
+n 0 180 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 156 469.8898 -24 re f*
+1 1 1 rg
+n 0 132 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 108 469.8898 -18 re f*
+1 1 1 rg
+n 0 90 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 66 469.8898 -18 re f*
+1 1 1 rg
+n 0 48 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 24 469.8898 -24 re f*
 .960784 .960784 .862745 rg
-n 0 36 469.8898 -18 re f*
+n 0 222 469.8898 -18 re f*
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
 q
-1 0 0 1 6 21 cm
+1 0 0 1 6 207 cm
 q
 .960784 .960784 .862745 rg
-n 0 0 67.41799 12 re f*
+n 0 0 253.2604 12 re f*
 Q
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.91899 0 Td (Repo type) Tj T* -10.91899 0 Td ET
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 93.28018 0 Td (Package name) Tj T* -93.28018 0 Td ET
 Q
 Q
 q
-1 0 0 1 85.41799 21 cm
+1 0 0 1 271.2604 207 cm
 q
 .960784 .960784 .862745 rg
-n 0 0 378.4718 12 re f*
+n 0 0 192.6294 12 re f*
 Q
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 175.0609 0 Td (Epoch) Tj T* -175.0609 0 Td ET
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 56.86471 0 Td (DEPENDENCIES) Tj T* -56.86471 0 Td ET
 Q
 Q
 0 0 0 rg
+q
+1 0 0 1 6 195 cm
+Q
+q
+1 0 0 1 6 195 cm
+Q
+q
+1 0 0 1 6 183 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (cliff) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 183 cm
+Q
+q
+1 0 0 1 271.2604 189 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.7.0; <) Tj (=1.9.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 171 cm
+Q
+q
+1 0 0 1 6 171 cm
+Q
+q
+1 0 0 1 6 159 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (oslo.i18n) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 159 cm
+Q
+q
+1 0 0 1 271.2604 165 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.3.0; <) Tj (=1.3.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 147 cm
+Q
+q
+1 0 0 1 6 147 cm
+Q
+q
+1 0 0 1 6 135 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (oslo.utils) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 135 cm
+Q
+q
+1 0 0 1 271.2604 141 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.2.0; <) Tj (=1.2.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 123 cm
+Q
+q
+1 0 0 1 6 123 cm
+Q
+q
+1 0 0 1 6 111 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (oslo.serialization) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 111 cm
+Q
+q
+1 0 0 1 271.2604 117 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.2.0; <) Tj (=1.2.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 93 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (pbr) Tj T* ET
+Q
+Q
+q
+1 0 0 1 271.2604 93 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (!=0.7; >) Tj (=0.6; <) Tj (1.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 81 cm
+Q
+q
+1 0 0 1 6 81 cm
+Q
+q
+1 0 0 1 6 69 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (requests) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 69 cm
+Q
+q
+1 0 0 1 271.2604 75 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (!=2.4.0; >) Tj (=2.2.0; <) Tj (=2.2.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 51 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (argparse) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 39 cm
+Q
+q
+1 0 0 1 6 39 cm
+Q
+q
+1 0 0 1 6 27 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (python-keystoneclient) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 27 cm
+Q
+q
+1 0 0 1 271.2604 33 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.1.0; <) Tj (=1.1.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 15 cm
+Q
 q
 1 0 0 1 6 3 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (DEB) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
 Q
 Q
 q
-1 0 0 1 85.41799 3 cm
+1 0 0 1 23 -3 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (python-swiftclient \(1:2.3.1-0ubuntu1\) vivid; urgency=medium) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (six) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 3 cm
+Q
+q
+1 0 0 1 271.2604 9 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.9.0; <) Tj (=1.9.0;) Tj T* ET
 Q
 Q
 q
@@ -1338,34 +2140,8339 @@ q
 1 j
 0 0 0 RG
 .25 w
-n 0 18 m 469.8898 18 l S
-n 79.41799 0 m 79.41799 36 l S
-n 0 36 m 469.8898 36 l S
+n 0 204 m 469.8898 204 l S
+n 0 180 m 469.8898 180 l S
+n 0 156 m 469.8898 156 l S
+n 0 132 m 469.8898 132 l S
+n 0 108 m 469.8898 108 l S
+n 0 90 m 469.8898 90 l S
+n 0 66 m 469.8898 66 l S
+n 0 48 m 469.8898 48 l S
+n 0 24 m 469.8898 24 l S
+n 265.2604 0 m 265.2604 222 l S
+n 0 222 m 469.8898 222 l S
 n 0 0 m 469.8898 0 l S
-n 0 0 m 0 36 l S
-n 469.8898 0 m 469.8898 36 l S
+n 0 0 m 0 222 l S
+n 469.8898 0 m 469.8898 222 l S
 Q
 Q
 q
-1 0 0 1 62.69291 696.0236 cm
+1 0 0 1 62.69291 510.0236 cm
+Q
+q
+1 0 0 1 62.69291 477.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (python-ceilometerclient) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 465.0236 cm
+Q
+q
+1 0 0 1 62.69291 201.0236 cm
+1 1 1 rg
+n 0 264 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 246 469.8898 -24 re f*
+1 1 1 rg
+n 0 222 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 198 469.8898 -24 re f*
+1 1 1 rg
+n 0 174 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 150 469.8898 -18 re f*
+1 1 1 rg
+n 0 132 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 108 469.8898 -18 re f*
+1 1 1 rg
+n 0 90 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 66 469.8898 -24 re f*
+1 1 1 rg
+n 0 42 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 24 469.8898 -24 re f*
+.960784 .960784 .862745 rg
+n 0 264 469.8898 -18 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 249 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 253.2604 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 93.28018 0 Td (Package name) Tj T* -93.28018 0 Td ET
+Q
+Q
+q
+1 0 0 1 271.2604 249 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 192.6294 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 56.86471 0 Td (DEPENDENCIES) Tj T* -56.86471 0 Td ET
+Q
+Q
+0 0 0 rg
+q
+1 0 0 1 6 237 cm
+Q
+q
+1 0 0 1 6 237 cm
+Q
+q
+1 0 0 1 6 225 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (oslo.i18n) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 225 cm
+Q
+q
+1 0 0 1 271.2604 231 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.3.0; <) Tj (=1.3.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 213 cm
+Q
+q
+1 0 0 1 6 213 cm
+Q
+q
+1 0 0 1 6 201 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (oslo.utils) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 201 cm
+Q
+q
+1 0 0 1 271.2604 207 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.2.0; <) Tj (=1.2.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 189 cm
+Q
+q
+1 0 0 1 6 189 cm
+Q
+q
+1 0 0 1 6 177 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (iso8601) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 177 cm
+Q
+q
+1 0 0 1 271.2604 183 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.1.9; <) Tj (=0.1.10;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 165 cm
+Q
+q
+1 0 0 1 6 165 cm
+Q
+q
+1 0 0 1 6 153 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (oslo.serialization) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 153 cm
+Q
+q
+1 0 0 1 271.2604 159 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.2.0; <) Tj (=1.2.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 135 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (pbr) Tj T* ET
+Q
+Q
+q
+1 0 0 1 271.2604 135 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (!=0.7; >) Tj (=0.6; <) Tj (1.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 123 cm
+Q
+q
+1 0 0 1 6 123 cm
+Q
+q
+1 0 0 1 6 111 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (requests) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 111 cm
+Q
+q
+1 0 0 1 271.2604 117 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (!=2.4.0; >) Tj (=2.2.0; <) Tj (=2.2.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 93 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (argparse) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 81 cm
+Q
+q
+1 0 0 1 6 81 cm
+Q
+q
+1 0 0 1 6 69 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (python-keystoneclient) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 69 cm
+Q
+q
+1 0 0 1 271.2604 75 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.1.0; <) Tj (=1.1.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 57 cm
+Q
+q
+1 0 0 1 6 57 cm
+Q
+q
+1 0 0 1 6 45 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (stevedore) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 45 cm
+Q
+q
+1 0 0 1 271.2604 51 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.1.0; <) Tj (=1.2.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 27 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (PrettyTable) Tj T* ET
+Q
+Q
+q
+1 0 0 1 271.2604 27 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.7; <) Tj (0.8;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 3 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (six) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 3 cm
+Q
+q
+1 0 0 1 271.2604 9 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.9.0; <) Tj (=1.9.0;) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+.25 w
+n 0 246 m 469.8898 246 l S
+n 0 222 m 469.8898 222 l S
+n 0 198 m 469.8898 198 l S
+n 0 174 m 469.8898 174 l S
+n 0 150 m 469.8898 150 l S
+n 0 132 m 469.8898 132 l S
+n 0 108 m 469.8898 108 l S
+n 0 90 m 469.8898 90 l S
+n 0 66 m 469.8898 66 l S
+n 0 42 m 469.8898 42 l S
+n 0 24 m 469.8898 24 l S
+n 265.2604 0 m 265.2604 264 l S
+n 0 264 m 469.8898 264 l S
+n 0 0 m 469.8898 0 l S
+n 0 0 m 0 264 l S
+n 469.8898 0 m 469.8898 264 l S
+Q
+Q
+q
+1 0 0 1 62.69291 201.0236 cm
+Q
+q
+1 0 0 1 62.69291 168.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (python-cinderclient) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 156.0236 cm
+Q
+q
+1 0 0 1 62.69291 96.02362 cm
+1 1 1 rg
+n 0 60 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 42 469.8898 -18 re f*
+1 1 1 rg
+n 0 24 469.8898 -24 re f*
+.960784 .960784 .862745 rg
+n 0 60 469.8898 -18 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 45 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 253.2604 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 93.28018 0 Td (Package name) Tj T* -93.28018 0 Td ET
+Q
+Q
+q
+1 0 0 1 271.2604 45 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 192.6294 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 56.86471 0 Td (DEPENDENCIES) Tj T* -56.86471 0 Td ET
+Q
+Q
+0 0 0 rg
+q
+1 0 0 1 6 27 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (PrettyTable) Tj T* ET
+Q
+Q
+q
+1 0 0 1 271.2604 27 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.7; <) Tj (0.8;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 3 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Babel) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 3 cm
+Q
+q
+1 0 0 1 271.2604 9 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.3; <) Tj (=1.3;) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+.25 w
+n 0 0 m 469.8898 0 l S
+n 0 42 m 469.8898 42 l S
+n 0 24 m 469.8898 24 l S
+n 265.2604 0 m 265.2604 60 l S
+n 0 60 m 469.8898 60 l S
+n 0 0 m 0 60 l S
+n 469.8898 0 m 469.8898 60 l S
+Q
 Q
  
 endstream
 endobj
-29 0 obj
-<< /Nums [ 0 30 0 R 1 31 0 R 2 32 0 R ] >>
+47 0 obj
+<< /Length 13525 >>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 633.0236 cm
+1 1 1 rg
+n 0 132 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 108 469.8898 -18 re f*
+1 1 1 rg
+n 0 90 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 66 469.8898 -18 re f*
+1 1 1 rg
+n 0 48 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 24 469.8898 -24 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 123 cm
+Q
+q
+1 0 0 1 6 123 cm
+Q
+q
+1 0 0 1 6 111 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (simplejson) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 111 cm
+Q
+q
+1 0 0 1 271.2604 117 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=2.2.0; <) Tj (=3.3.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 93 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (pbr) Tj T* ET
+Q
+Q
+q
+1 0 0 1 271.2604 93 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (!=0.7; >) Tj (=0.6; <) Tj (1.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 81 cm
+Q
+q
+1 0 0 1 6 81 cm
+Q
+q
+1 0 0 1 6 69 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (requests) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 69 cm
+Q
+q
+1 0 0 1 271.2604 75 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (!=2.4.0; >) Tj (=2.2.0; <) Tj (=2.2.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 51 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (argparse) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 39 cm
+Q
+q
+1 0 0 1 6 39 cm
+Q
+q
+1 0 0 1 6 27 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (python-keystoneclient) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 27 cm
+Q
+q
+1 0 0 1 271.2604 33 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.0.0; <) Tj (=1.1.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 3 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (six) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 3 cm
+Q
+q
+1 0 0 1 271.2604 9 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.7.0; <) Tj (=1.9.0;) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+.25 w
+n 0 132 m 469.8898 132 l S
+n 0 108 m 469.8898 108 l S
+n 0 90 m 469.8898 90 l S
+n 0 66 m 469.8898 66 l S
+n 0 48 m 469.8898 48 l S
+n 0 24 m 469.8898 24 l S
+n 265.2604 0 m 265.2604 132 l S
+n 0 0 m 0 132 l S
+n 469.8898 0 m 469.8898 132 l S
+n 0 0 m 469.8898 0 l S
+Q
+Q
+q
+1 0 0 1 62.69291 633.0236 cm
+Q
+q
+1 0 0 1 62.69291 600.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (python-glanceclient) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 588.0236 cm
+Q
+q
+1 0 0 1 62.69291 330.0236 cm
+1 1 1 rg
+n 0 258 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 240 469.8898 -24 re f*
+1 1 1 rg
+n 0 216 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 192 469.8898 -24 re f*
+1 1 1 rg
+n 0 168 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 150 469.8898 -18 re f*
+1 1 1 rg
+n 0 132 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 108 469.8898 -24 re f*
+1 1 1 rg
+n 0 84 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 66 469.8898 -24 re f*
+1 1 1 rg
+n 0 42 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 24 469.8898 -24 re f*
+.960784 .960784 .862745 rg
+n 0 258 469.8898 -18 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 243 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 253.2604 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 93.28018 0 Td (Package name) Tj T* -93.28018 0 Td ET
+Q
+Q
+q
+1 0 0 1 271.2604 243 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 192.6294 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 56.86471 0 Td (DEPENDENCIES) Tj T* -56.86471 0 Td ET
+Q
+Q
+0 0 0 rg
+q
+1 0 0 1 6 231 cm
+Q
+q
+1 0 0 1 6 231 cm
+Q
+q
+1 0 0 1 6 219 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (oslo.i18n) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 219 cm
+Q
+q
+1 0 0 1 271.2604 225 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.3.0; <) Tj (=1.3.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 207 cm
+Q
+q
+1 0 0 1 6 207 cm
+Q
+q
+1 0 0 1 6 195 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Babel) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 195 cm
+Q
+q
+1 0 0 1 271.2604 201 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.3; <) Tj (=1.3;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 183 cm
+Q
+q
+1 0 0 1 6 183 cm
+Q
+q
+1 0 0 1 6 171 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (oslo.utils) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 171 cm
+Q
+q
+1 0 0 1 271.2604 177 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.2.0; <) Tj (=1.2.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 153 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (warlock) Tj T* ET
+Q
+Q
+q
+1 0 0 1 271.2604 153 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.0.1; <) Tj (2;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 135 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (pbr) Tj T* ET
+Q
+Q
+q
+1 0 0 1 271.2604 135 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (!=0.7; >) Tj (=0.6; <) Tj (1.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 123 cm
+Q
+q
+1 0 0 1 6 123 cm
+Q
+q
+1 0 0 1 6 111 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (pyOpenSSL) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 111 cm
+Q
+q
+1 0 0 1 271.2604 117 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.11; <) Tj (=0.13;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 99 cm
+Q
+q
+1 0 0 1 6 99 cm
+Q
+q
+1 0 0 1 6 87 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (requests) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 87 cm
+Q
+q
+1 0 0 1 271.2604 93 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (!=2.4.0; >) Tj (=2.2.0; <) Tj (=2.2.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 69 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (argparse) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 57 cm
+Q
+q
+1 0 0 1 6 57 cm
+Q
+q
+1 0 0 1 6 45 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (python-keystoneclient) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 45 cm
+Q
+q
+1 0 0 1 271.2604 51 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.0.0; <) Tj (=1.1.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 27 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (PrettyTable) Tj T* ET
+Q
+Q
+q
+1 0 0 1 271.2604 27 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.7; <) Tj (0.8;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 3 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (six) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 3 cm
+Q
+q
+1 0 0 1 271.2604 9 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.7.0; <) Tj (=1.9.0;) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+.25 w
+n 0 240 m 469.8898 240 l S
+n 0 216 m 469.8898 216 l S
+n 0 192 m 469.8898 192 l S
+n 0 168 m 469.8898 168 l S
+n 0 150 m 469.8898 150 l S
+n 0 132 m 469.8898 132 l S
+n 0 108 m 469.8898 108 l S
+n 0 84 m 469.8898 84 l S
+n 0 66 m 469.8898 66 l S
+n 0 42 m 469.8898 42 l S
+n 0 24 m 469.8898 24 l S
+n 265.2604 0 m 265.2604 258 l S
+n 0 258 m 469.8898 258 l S
+n 0 0 m 469.8898 0 l S
+n 0 0 m 0 258 l S
+n 469.8898 0 m 469.8898 258 l S
+Q
+Q
+q
+1 0 0 1 62.69291 330.0236 cm
+Q
+q
+1 0 0 1 62.69291 297.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (python-heatclient) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 285.0236 cm
+Q
+q
+1 0 0 1 62.69291 81.02362 cm
+1 1 1 rg
+n 0 204 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 186 469.8898 -24 re f*
+1 1 1 rg
+n 0 162 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 138 469.8898 -24 re f*
+1 1 1 rg
+n 0 114 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 90 469.8898 -24 re f*
+1 1 1 rg
+n 0 66 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 42 469.8898 -18 re f*
+1 1 1 rg
+n 0 24 469.8898 -24 re f*
+.960784 .960784 .862745 rg
+n 0 204 469.8898 -18 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 189 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 253.2604 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 93.28018 0 Td (Package name) Tj T* -93.28018 0 Td ET
+Q
+Q
+q
+1 0 0 1 271.2604 189 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 192.6294 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 56.86471 0 Td (DEPENDENCIES) Tj T* -56.86471 0 Td ET
+Q
+Q
+0 0 0 rg
+q
+1 0 0 1 6 177 cm
+Q
+q
+1 0 0 1 6 177 cm
+Q
+q
+1 0 0 1 6 165 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (python-keystoneclient) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 165 cm
+Q
+q
+1 0 0 1 271.2604 171 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.1.0; <) Tj (=1.1.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 153 cm
+Q
+q
+1 0 0 1 6 153 cm
+Q
+q
+1 0 0 1 6 141 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (oslo.i18n) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 141 cm
+Q
+q
+1 0 0 1 271.2604 147 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.3.0; <) Tj (=1.3.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 129 cm
+Q
+q
+1 0 0 1 6 129 cm
+Q
+q
+1 0 0 1 6 117 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (PyYAML) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 117 cm
+Q
+q
+1 0 0 1 271.2604 123 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=3.1.0; <) Tj (=3.10;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 105 cm
+Q
+q
+1 0 0 1 6 105 cm
+Q
+q
+1 0 0 1 6 93 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (oslo.utils) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 93 cm
+Q
+q
+1 0 0 1 271.2604 99 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.2.0; <) Tj (=1.2.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 81 cm
+Q
+q
+1 0 0 1 6 81 cm
+Q
+q
+1 0 0 1 6 69 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (iso8601) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 69 cm
+Q
+q
+1 0 0 1 271.2604 75 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.1.9; <) Tj (=0.1.10;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 57 cm
+Q
+q
+1 0 0 1 6 57 cm
+Q
+q
+1 0 0 1 6 45 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (oslo.serialization) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 45 cm
+Q
+q
+1 0 0 1 271.2604 51 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.2.0; <) Tj (=1.2.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 27 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (pbr) Tj T* ET
+Q
+Q
+q
+1 0 0 1 271.2604 27 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (!=0.7; >) Tj (=0.6; <) Tj (1.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 3 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (requests) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 3 cm
+Q
+q
+1 0 0 1 271.2604 9 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (!=2.4.0; >) Tj (=2.2.0; <) Tj (=2.2.1;) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+.25 w
+n 0 0 m 469.8898 0 l S
+n 0 186 m 469.8898 186 l S
+n 0 162 m 469.8898 162 l S
+n 0 138 m 469.8898 138 l S
+n 0 114 m 469.8898 114 l S
+n 0 90 m 469.8898 90 l S
+n 0 66 m 469.8898 66 l S
+n 0 42 m 469.8898 42 l S
+n 0 24 m 469.8898 24 l S
+n 265.2604 0 m 265.2604 204 l S
+n 0 204 m 469.8898 204 l S
+n 0 0 m 0 204 l S
+n 469.8898 0 m 469.8898 204 l S
+Q
+Q
+ 
+endstream
 endobj
-30 0 obj
+48 0 obj
+<< /Length 13192 >>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 657.0236 cm
+1 1 1 rg
+n 0 108 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 84 469.8898 -18 re f*
+1 1 1 rg
+n 0 66 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 42 469.8898 -18 re f*
+1 1 1 rg
+n 0 24 469.8898 -24 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 99 cm
+Q
+q
+1 0 0 1 6 99 cm
+Q
+q
+1 0 0 1 6 87 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (six) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 87 cm
+Q
+q
+1 0 0 1 271.2604 93 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.9.0; <) Tj (=1.9.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 69 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (argparse) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 57 cm
+Q
+q
+1 0 0 1 6 57 cm
+Q
+q
+1 0 0 1 6 45 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (python-swiftclient) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 45 cm
+Q
+q
+1 0 0 1 271.2604 51 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=2.2.0; <) Tj (=2.3.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 27 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (PrettyTable) Tj T* ET
+Q
+Q
+q
+1 0 0 1 271.2604 27 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.7; <) Tj (0.8;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 3 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Babel) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 3 cm
+Q
+q
+1 0 0 1 271.2604 9 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.3; <) Tj (=1.3;) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+.25 w
+n 0 108 m 469.8898 108 l S
+n 0 84 m 469.8898 84 l S
+n 0 66 m 469.8898 66 l S
+n 0 42 m 469.8898 42 l S
+n 0 24 m 469.8898 24 l S
+n 265.2604 0 m 265.2604 108 l S
+n 0 0 m 0 108 l S
+n 469.8898 0 m 469.8898 108 l S
+n 0 0 m 469.8898 0 l S
+Q
+Q
+q
+1 0 0 1 62.69291 657.0236 cm
+Q
+q
+1 0 0 1 62.69291 624.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (python-keystoneclient) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 612.0236 cm
+Q
+q
+1 0 0 1 62.69291 300.0236 cm
+1 1 1 rg
+n 0 312 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 294 469.8898 -24 re f*
+1 1 1 rg
+n 0 270 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 246 469.8898 -24 re f*
+1 1 1 rg
+n 0 222 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 198 469.8898 -24 re f*
+1 1 1 rg
+n 0 174 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 150 469.8898 -18 re f*
+1 1 1 rg
+n 0 132 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 108 469.8898 -24 re f*
+1 1 1 rg
+n 0 84 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 66 469.8898 -24 re f*
+1 1 1 rg
+n 0 42 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 18 469.8898 -18 re f*
+.960784 .960784 .862745 rg
+n 0 312 469.8898 -18 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 297 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 242.8555 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 88.07773 0 Td (Package name) Tj T* -88.07773 0 Td ET
+Q
+Q
+q
+1 0 0 1 260.8555 297 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 203.0343 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 62.06715 0 Td (DEPENDENCIES) Tj T* -62.06715 0 Td ET
+Q
+Q
+0 0 0 rg
+q
+1 0 0 1 6 285 cm
+Q
+q
+1 0 0 1 6 285 cm
+Q
+q
+1 0 0 1 6 273 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (oslo.i18n) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 273 cm
+Q
+q
+1 0 0 1 260.8555 279 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.3.0; <) Tj (=1.3.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 261 cm
+Q
+q
+1 0 0 1 6 261 cm
+Q
+q
+1 0 0 1 6 249 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Babel) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 249 cm
+Q
+q
+1 0 0 1 260.8555 255 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.3; <) Tj (=1.3;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 237 cm
+Q
+q
+1 0 0 1 6 237 cm
+Q
+q
+1 0 0 1 6 225 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (oslo.utils) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 225 cm
+Q
+q
+1 0 0 1 260.8555 231 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.2.0; <) Tj (=1.2.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 213 cm
+Q
+q
+1 0 0 1 6 213 cm
+Q
+q
+1 0 0 1 6 201 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (oslo.config) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 201 cm
+Q
+q
+1 0 0 1 260.8555 207 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.9.0; <) Tj (=1.6.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 189 cm
+Q
+q
+1 0 0 1 6 189 cm
+Q
+q
+1 0 0 1 6 177 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (iso8601) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 177 cm
+Q
+q
+1 0 0 1 260.8555 183 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.1.9; <) Tj (=0.1.10;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 165 cm
+Q
+q
+1 0 0 1 6 165 cm
+Q
+q
+1 0 0 1 6 153 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (oslo.serialization) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 153 cm
+Q
+q
+1 0 0 1 260.8555 159 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.2.0; <) Tj (=1.2.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 135 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (pbr) Tj T* ET
+Q
+Q
+q
+1 0 0 1 260.8555 135 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (!=0.7; >) Tj (=0.6; <) Tj (1.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 123 cm
+Q
+q
+1 0 0 1 6 123 cm
+Q
+q
+1 0 0 1 6 111 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (requests) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 111 cm
+Q
+q
+1 0 0 1 260.8555 117 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (!=2.4.0; >) Tj (=2.2.0; <) Tj (=2.2.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 99 cm
+Q
+q
+1 0 0 1 6 99 cm
+Q
+q
+1 0 0 1 6 87 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (netaddr) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 87 cm
+Q
+q
+1 0 0 1 260.8555 93 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.7.12; <) Tj (=0.7.13;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 69 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (argparse) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 57 cm
+Q
+q
+1 0 0 1 6 57 cm
+Q
+q
+1 0 0 1 6 45 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (six) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 45 cm
+Q
+q
+1 0 0 1 260.8555 51 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.9.0; <) Tj (=1.9.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 33 cm
+Q
+q
+1 0 0 1 6 33 cm
+Q
+q
+1 0 0 1 6 21 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (stevedore) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 21 cm
+Q
+q
+1 0 0 1 260.8555 27 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.1.0; <) Tj (=1.2.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (PrettyTable) Tj T* ET
+Q
+Q
+q
+1 0 0 1 260.8555 3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.7; <) Tj (0.8;) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+.25 w
+n 0 294 m 469.8898 294 l S
+n 0 270 m 469.8898 270 l S
+n 0 246 m 469.8898 246 l S
+n 0 222 m 469.8898 222 l S
+n 0 198 m 469.8898 198 l S
+n 0 174 m 469.8898 174 l S
+n 0 150 m 469.8898 150 l S
+n 0 132 m 469.8898 132 l S
+n 0 108 m 469.8898 108 l S
+n 0 84 m 469.8898 84 l S
+n 0 66 m 469.8898 66 l S
+n 0 42 m 469.8898 42 l S
+n 0 18 m 469.8898 18 l S
+n 254.8555 0 m 254.8555 312 l S
+n 0 312 m 469.8898 312 l S
+n 0 0 m 469.8898 0 l S
+n 0 0 m 0 312 l S
+n 469.8898 0 m 469.8898 312 l S
+Q
+Q
+q
+1 0 0 1 62.69291 300.0236 cm
+Q
+q
+1 0 0 1 62.69291 267.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (python-openstackclient) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 255.0236 cm
+Q
+q
+1 0 0 1 62.69291 99.02362 cm
+1 1 1 rg
+n 0 156 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 138 469.8898 -18 re f*
+1 1 1 rg
+n 0 120 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 96 469.8898 -24 re f*
+1 1 1 rg
+n 0 72 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 48 469.8898 -24 re f*
+1 1 1 rg
+n 0 24 469.8898 -24 re f*
+.960784 .960784 .862745 rg
+n 0 156 469.8898 -18 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 141 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 241.0176 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 87.15878 0 Td (Package name) Tj T* -87.15878 0 Td ET
+Q
+Q
+q
+1 0 0 1 259.0176 141 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 204.8722 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 62.9861 0 Td (DEPENDENCIES) Tj T* -62.9861 0 Td ET
+Q
+Q
+0 0 0 rg
+q
+1 0 0 1 6 123 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (python-neutronclient) Tj T* ET
+Q
+Q
+q
+1 0 0 1 259.0176 123 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=2.3.11; <) Tj (3;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 111 cm
+Q
+q
+1 0 0 1 6 111 cm
+Q
+q
+1 0 0 1 6 99 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (cliff) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 99 cm
+Q
+q
+1 0 0 1 259.0176 105 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.7.0; <) Tj (=1.9.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 87 cm
+Q
+q
+1 0 0 1 6 87 cm
+Q
+q
+1 0 0 1 6 75 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (oslo.i18n) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 75 cm
+Q
+q
+1 0 0 1 259.0176 81 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.3.0; <) Tj (=1.3.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 63 cm
+Q
+q
+1 0 0 1 6 63 cm
+Q
+q
+1 0 0 1 6 51 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Babel) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 51 cm
+Q
+q
+1 0 0 1 259.0176 57 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.3; <) Tj (=1.3;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 39 cm
+Q
+q
+1 0 0 1 6 39 cm
+Q
+q
+1 0 0 1 6 27 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (oslo.utils) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 27 cm
+Q
+q
+1 0 0 1 259.0176 33 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.2.0; <) Tj (=1.2.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 3 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (oslo.config) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 3 cm
+Q
+q
+1 0 0 1 259.0176 9 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.9.0; <) Tj (=1.6.0;) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+.25 w
+n 0 0 m 469.8898 0 l S
+n 0 138 m 469.8898 138 l S
+n 0 120 m 469.8898 120 l S
+n 0 96 m 469.8898 96 l S
+n 0 72 m 469.8898 72 l S
+n 0 48 m 469.8898 48 l S
+n 0 24 m 469.8898 24 l S
+n 253.0176 0 m 253.0176 156 l S
+n 0 156 m 469.8898 156 l S
+n 0 0 m 0 156 l S
+n 469.8898 0 m 469.8898 156 l S
+Q
+Q
+ 
+endstream
+endobj
+49 0 obj
+<< /Length 13905 >>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 531.0236 cm
+1 1 1 rg
+n 0 234 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 210 469.8898 -24 re f*
+1 1 1 rg
+n 0 186 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 168 469.8898 -24 re f*
+1 1 1 rg
+n 0 144 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 120 469.8898 -24 re f*
+1 1 1 rg
+n 0 96 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 72 469.8898 -24 re f*
+1 1 1 rg
+n 0 48 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 24 469.8898 -24 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 225 cm
+Q
+q
+1 0 0 1 6 225 cm
+Q
+q
+1 0 0 1 6 213 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (oslo.serialization) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 213 cm
+Q
+q
+1 0 0 1 259.0176 219 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.2.0; <) Tj (=1.2.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 201 cm
+Q
+q
+1 0 0 1 6 201 cm
+Q
+q
+1 0 0 1 6 189 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (python-cinderclient) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 189 cm
+Q
+q
+1 0 0 1 259.0176 195 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.1.0; <) Tj (=1.1.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 171 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (pbr) Tj T* ET
+Q
+Q
+q
+1 0 0 1 259.0176 171 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (!=0.7; >) Tj (=0.6; <) Tj (1.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 159 cm
+Q
+q
+1 0 0 1 6 159 cm
+Q
+q
+1 0 0 1 6 147 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (cliff-tablib) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 147 cm
+Q
+q
+1 0 0 1 259.0176 153 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.0; <) Tj (=1.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 135 cm
+Q
+q
+1 0 0 1 6 135 cm
+Q
+q
+1 0 0 1 6 123 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (requests) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 123 cm
+Q
+q
+1 0 0 1 259.0176 129 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (!=2.4.0; >) Tj (=2.2.0; <) Tj (=2.2.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 111 cm
+Q
+q
+1 0 0 1 6 111 cm
+Q
+q
+1 0 0 1 6 99 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (python-glanceclient) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 99 cm
+Q
+q
+1 0 0 1 259.0176 105 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.15.0; <) Tj (=0.15.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 87 cm
+Q
+q
+1 0 0 1 6 87 cm
+Q
+q
+1 0 0 1 6 75 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (python-novaclient) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 75 cm
+Q
+q
+1 0 0 1 259.0176 81 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (!=2.21.0; >) Tj (=2.18.0; <) Tj (=2.20.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 63 cm
+Q
+q
+1 0 0 1 6 63 cm
+Q
+q
+1 0 0 1 6 51 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (python-keystoneclient) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 51 cm
+Q
+q
+1 0 0 1 259.0176 57 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.1.0; <) Tj (=1.1.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 39 cm
+Q
+q
+1 0 0 1 6 39 cm
+Q
+q
+1 0 0 1 6 27 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (stevedore) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 27 cm
+Q
+q
+1 0 0 1 259.0176 33 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.1.0; <) Tj (=1.2.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 3 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (six) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 3 cm
+Q
+q
+1 0 0 1 259.0176 9 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.9.0; <) Tj (=1.9.0;) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+.25 w
+n 0 234 m 469.8898 234 l S
+n 0 210 m 469.8898 210 l S
+n 0 186 m 469.8898 186 l S
+n 0 168 m 469.8898 168 l S
+n 0 144 m 469.8898 144 l S
+n 0 120 m 469.8898 120 l S
+n 0 96 m 469.8898 96 l S
+n 0 72 m 469.8898 72 l S
+n 0 48 m 469.8898 48 l S
+n 0 24 m 469.8898 24 l S
+n 253.0176 0 m 253.0176 234 l S
+n 0 0 m 0 234 l S
+n 469.8898 0 m 469.8898 234 l S
+n 0 0 m 469.8898 0 l S
+Q
+Q
+q
+1 0 0 1 62.69291 531.0236 cm
+Q
+q
+1 0 0 1 62.69291 498.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (python-saharaclient) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 486.0236 cm
+Q
+q
+1 0 0 1 62.69291 246.0236 cm
+1 1 1 rg
+n 0 240 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 222 469.8898 -24 re f*
+1 1 1 rg
+n 0 198 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 174 469.8898 -24 re f*
+1 1 1 rg
+n 0 150 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 132 469.8898 -24 re f*
+1 1 1 rg
+n 0 108 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 84 469.8898 -18 re f*
+1 1 1 rg
+n 0 66 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 42 469.8898 -18 re f*
+1 1 1 rg
+n 0 24 469.8898 -24 re f*
+.960784 .960784 .862745 rg
+n 0 240 469.8898 -18 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 225 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 253.2604 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 93.28018 0 Td (Package name) Tj T* -93.28018 0 Td ET
+Q
+Q
+q
+1 0 0 1 271.2604 225 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 192.6294 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 56.86471 0 Td (DEPENDENCIES) Tj T* -56.86471 0 Td ET
+Q
+Q
+0 0 0 rg
+q
+1 0 0 1 6 213 cm
+Q
+q
+1 0 0 1 6 213 cm
+Q
+q
+1 0 0 1 6 201 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (oslo.i18n) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 201 cm
+Q
+q
+1 0 0 1 271.2604 207 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.3.0; <) Tj (=1.3.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 189 cm
+Q
+q
+1 0 0 1 6 189 cm
+Q
+q
+1 0 0 1 6 177 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Babel) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 177 cm
+Q
+q
+1 0 0 1 271.2604 183 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.3; <) Tj (=1.3;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 165 cm
+Q
+q
+1 0 0 1 6 165 cm
+Q
+q
+1 0 0 1 6 153 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (oslo.utils) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 153 cm
+Q
+q
+1 0 0 1 271.2604 159 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.2.0; <) Tj (=1.2.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 135 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (pbr) Tj T* ET
+Q
+Q
+q
+1 0 0 1 271.2604 135 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (!=0.7; >) Tj (=0.6; <) Tj (1.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 123 cm
+Q
+q
+1 0 0 1 6 123 cm
+Q
+q
+1 0 0 1 6 111 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (requests) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 111 cm
+Q
+q
+1 0 0 1 271.2604 117 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (!=2.4.0; >) Tj (=2.2.0; <) Tj (=2.2.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 99 cm
+Q
+q
+1 0 0 1 6 99 cm
+Q
+q
+1 0 0 1 6 87 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (netaddr) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 87 cm
+Q
+q
+1 0 0 1 271.2604 93 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.7.12; <) Tj (=0.7.13;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 69 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (argparse) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 57 cm
+Q
+q
+1 0 0 1 6 57 cm
+Q
+q
+1 0 0 1 6 45 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (python-keystoneclient) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 45 cm
+Q
+q
+1 0 0 1 271.2604 51 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.0.0; <) Tj (=1.1.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 27 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (PrettyTable) Tj T* ET
+Q
+Q
+q
+1 0 0 1 271.2604 27 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.7; <) Tj (0.8;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 3 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (six) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 3 cm
+Q
+q
+1 0 0 1 271.2604 9 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.7.0; <) Tj (=1.9.0;) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+.25 w
+n 0 222 m 469.8898 222 l S
+n 0 198 m 469.8898 198 l S
+n 0 174 m 469.8898 174 l S
+n 0 150 m 469.8898 150 l S
+n 0 132 m 469.8898 132 l S
+n 0 108 m 469.8898 108 l S
+n 0 84 m 469.8898 84 l S
+n 0 66 m 469.8898 66 l S
+n 0 42 m 469.8898 42 l S
+n 0 24 m 469.8898 24 l S
+n 265.2604 0 m 265.2604 240 l S
+n 0 240 m 469.8898 240 l S
+n 0 0 m 469.8898 0 l S
+n 0 0 m 0 240 l S
+n 469.8898 0 m 469.8898 240 l S
+Q
+Q
+q
+1 0 0 1 62.69291 246.0236 cm
+Q
+q
+1 0 0 1 62.69291 213.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (python-swiftclient) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 201.0236 cm
+Q
+q
+1 0 0 1 62.69291 87.02362 cm
+1 1 1 rg
+n 0 114 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 96 469.8898 -24 re f*
+1 1 1 rg
+n 0 72 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 48 469.8898 -24 re f*
+1 1 1 rg
+n 0 24 469.8898 -24 re f*
+.960784 .960784 .862745 rg
+n 0 114 469.8898 -18 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 99 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 209.1246 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 71.2123 0 Td (Package name) Tj T* -71.2123 0 Td ET
+Q
+Q
+q
+1 0 0 1 227.1246 99 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 236.7652 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 78.93258 0 Td (DEPENDENCIES) Tj T* -78.93258 0 Td ET
+Q
+Q
+0 0 0 rg
+q
+1 0 0 1 6 87 cm
+Q
+q
+1 0 0 1 6 87 cm
+Q
+q
+1 0 0 1 6 75 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (requests) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 75 cm
+Q
+q
+1 0 0 1 227.1246 81 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (!=2.4.0; >) Tj (=2.1.0; <) Tj (=2.2.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 63 cm
+Q
+q
+1 0 0 1 6 63 cm
+Q
+q
+1 0 0 1 6 51 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (futures) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 51 cm
+Q
+q
+1 0 0 1 227.1246 57 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=2.1.6; <) Tj (=2.2.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 39 cm
+Q
+q
+1 0 0 1 6 39 cm
+Q
+q
+1 0 0 1 6 27 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (simplejson) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 27 cm
+Q
+q
+1 0 0 1 227.1246 33 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=2.2.0; <) Tj (=3.3.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 3 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (six) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 3 cm
+Q
+q
+1 0 0 1 227.1246 9 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.7.0; <) Tj (=1.9.0;) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+.25 w
+n 0 96 m 469.8898 96 l S
+n 0 72 m 469.8898 72 l S
+n 0 48 m 469.8898 48 l S
+n 0 24 m 469.8898 24 l S
+n 221.1246 0 m 221.1246 114 l S
+n 0 114 m 469.8898 114 l S
+n 0 0 m 469.8898 0 l S
+n 0 0 m 0 114 l S
+n 469.8898 0 m 469.8898 114 l S
+Q
+Q
+q
+1 0 0 1 62.69291 87.02362 cm
+Q
+ 
+endstream
+endobj
+50 0 obj
+<< /Length 13835 >>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 744.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (python-neutronclient) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 732.0236 cm
+Q
+q
+1 0 0 1 62.69291 414.0236 cm
+1 1 1 rg
+n 0 318 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 300 469.8898 -24 re f*
+1 1 1 rg
+n 0 276 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 252 469.8898 -24 re f*
+1 1 1 rg
+n 0 228 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 204 469.8898 -24 re f*
+1 1 1 rg
+n 0 180 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 156 469.8898 -18 re f*
+1 1 1 rg
+n 0 138 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 114 469.8898 -24 re f*
+1 1 1 rg
+n 0 90 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 66 469.8898 -18 re f*
+1 1 1 rg
+n 0 48 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 24 469.8898 -24 re f*
+.960784 .960784 .862745 rg
+n 0 318 469.8898 -18 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 303 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 253.2604 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 93.28018 0 Td (Package name) Tj T* -93.28018 0 Td ET
+Q
+Q
+q
+1 0 0 1 271.2604 303 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 192.6294 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 56.86471 0 Td (DEPENDENCIES) Tj T* -56.86471 0 Td ET
+Q
+Q
+0 0 0 rg
+q
+1 0 0 1 6 291 cm
+Q
+q
+1 0 0 1 6 291 cm
+Q
+q
+1 0 0 1 6 279 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (cliff) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 279 cm
+Q
+q
+1 0 0 1 271.2604 285 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.7.0; <) Tj (=1.9.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 267 cm
+Q
+q
+1 0 0 1 6 267 cm
+Q
+q
+1 0 0 1 6 255 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (oslo.i18n) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 255 cm
+Q
+q
+1 0 0 1 271.2604 261 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.3.0; <) Tj (=1.3.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 243 cm
+Q
+q
+1 0 0 1 6 243 cm
+Q
+q
+1 0 0 1 6 231 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (simplejson) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 231 cm
+Q
+q
+1 0 0 1 271.2604 237 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=2.2.0; <) Tj (=3.3.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 219 cm
+Q
+q
+1 0 0 1 6 219 cm
+Q
+q
+1 0 0 1 6 207 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (oslo.utils) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 207 cm
+Q
+q
+1 0 0 1 271.2604 213 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.2.0; <) Tj (=1.2.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 195 cm
+Q
+q
+1 0 0 1 6 195 cm
+Q
+q
+1 0 0 1 6 183 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (iso8601) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 183 cm
+Q
+q
+1 0 0 1 271.2604 189 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.1.9; <) Tj (=0.1.10;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 171 cm
+Q
+q
+1 0 0 1 6 171 cm
+Q
+q
+1 0 0 1 6 159 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (oslo.serialization) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 159 cm
+Q
+q
+1 0 0 1 271.2604 165 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.2.0; <) Tj (=1.2.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 141 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (pbr) Tj T* ET
+Q
+Q
+q
+1 0 0 1 271.2604 141 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (!=0.7; >) Tj (=0.6; <) Tj (1.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 129 cm
+Q
+q
+1 0 0 1 6 129 cm
+Q
+q
+1 0 0 1 6 117 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (requests) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 117 cm
+Q
+q
+1 0 0 1 271.2604 123 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (!=2.4.0; >) Tj (=2.2.0; <) Tj (=2.2.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 105 cm
+Q
+q
+1 0 0 1 6 105 cm
+Q
+q
+1 0 0 1 6 93 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (netaddr) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 93 cm
+Q
+q
+1 0 0 1 271.2604 99 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.7.12; <) Tj (=0.7.13;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 81 cm
+Q
+q
+1 0 0 1 6 81 cm
+Q
+q
+1 0 0 1 6 69 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Babel) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 69 cm
+Q
+q
+1 0 0 1 271.2604 75 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.3; <) Tj (=1.3;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 51 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (argparse) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 39 cm
+Q
+q
+1 0 0 1 6 39 cm
+Q
+q
+1 0 0 1 6 27 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (python-keystoneclient) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 27 cm
+Q
+q
+1 0 0 1 271.2604 33 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.1.0; <) Tj (=1.1.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 3 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (six) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 3 cm
+Q
+q
+1 0 0 1 271.2604 9 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.9.0; <) Tj (=1.9.0;) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+.25 w
+n 0 300 m 469.8898 300 l S
+n 0 276 m 469.8898 276 l S
+n 0 252 m 469.8898 252 l S
+n 0 228 m 469.8898 228 l S
+n 0 204 m 469.8898 204 l S
+n 0 180 m 469.8898 180 l S
+n 0 156 m 469.8898 156 l S
+n 0 138 m 469.8898 138 l S
+n 0 114 m 469.8898 114 l S
+n 0 90 m 469.8898 90 l S
+n 0 66 m 469.8898 66 l S
+n 0 48 m 469.8898 48 l S
+n 0 24 m 469.8898 24 l S
+n 265.2604 0 m 265.2604 318 l S
+n 0 318 m 469.8898 318 l S
+n 0 0 m 469.8898 0 l S
+n 0 0 m 0 318 l S
+n 469.8898 0 m 469.8898 318 l S
+Q
+Q
+q
+1 0 0 1 62.69291 414.0236 cm
+Q
+q
+1 0 0 1 62.69291 381.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (python-novaclient) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 369.0236 cm
+Q
+q
+1 0 0 1 62.69291 81.02362 cm
+1 1 1 rg
+n 0 288 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 270 469.8898 -24 re f*
+1 1 1 rg
+n 0 246 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 222 469.8898 -24 re f*
+1 1 1 rg
+n 0 198 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 174 469.8898 -24 re f*
+1 1 1 rg
+n 0 150 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 132 469.8898 -24 re f*
+1 1 1 rg
+n 0 108 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 84 469.8898 -18 re f*
+1 1 1 rg
+n 0 66 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 42 469.8898 -18 re f*
+1 1 1 rg
+n 0 24 469.8898 -24 re f*
+.960784 .960784 .862745 rg
+n 0 288 469.8898 -18 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 273 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 253.2604 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 93.28018 0 Td (Package name) Tj T* -93.28018 0 Td ET
+Q
+Q
+q
+1 0 0 1 271.2604 273 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 192.6294 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 56.86471 0 Td (DEPENDENCIES) Tj T* -56.86471 0 Td ET
+Q
+Q
+0 0 0 rg
+q
+1 0 0 1 6 261 cm
+Q
+q
+1 0 0 1 6 261 cm
+Q
+q
+1 0 0 1 6 249 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (oslo.i18n) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 249 cm
+Q
+q
+1 0 0 1 271.2604 255 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.3.0; <) Tj (=1.3.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 237 cm
+Q
+q
+1 0 0 1 6 237 cm
+Q
+q
+1 0 0 1 6 225 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (simplejson) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 225 cm
+Q
+q
+1 0 0 1 271.2604 231 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=2.2.0; <) Tj (=3.3.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 213 cm
+Q
+q
+1 0 0 1 6 213 cm
+Q
+q
+1 0 0 1 6 201 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (oslo.utils) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 201 cm
+Q
+q
+1 0 0 1 271.2604 207 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.2.0; <) Tj (=1.2.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 189 cm
+Q
+q
+1 0 0 1 6 189 cm
+Q
+q
+1 0 0 1 6 177 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (iso8601) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 177 cm
+Q
+q
+1 0 0 1 271.2604 183 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.1.9; <) Tj (=0.1.10;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 165 cm
+Q
+q
+1 0 0 1 6 165 cm
+Q
+q
+1 0 0 1 6 153 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (oslo.serialization) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 153 cm
+Q
+q
+1 0 0 1 271.2604 159 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.2.0; <) Tj (=1.2.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 135 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (pbr) Tj T* ET
+Q
+Q
+q
+1 0 0 1 271.2604 135 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (!=0.7; >) Tj (=0.6; <) Tj (1.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 123 cm
+Q
+q
+1 0 0 1 6 123 cm
+Q
+q
+1 0 0 1 6 111 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (requests) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 111 cm
+Q
+q
+1 0 0 1 271.2604 117 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (!=2.4.0; >) Tj (=2.2.0; <) Tj (=2.2.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 99 cm
+Q
+q
+1 0 0 1 6 99 cm
+Q
+q
+1 0 0 1 6 87 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (six) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 87 cm
+Q
+q
+1 0 0 1 271.2604 93 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.9.0; <) Tj (=1.9.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 69 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (argparse) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 57 cm
+Q
+q
+1 0 0 1 6 57 cm
+Q
+q
+1 0 0 1 6 45 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (python-keystoneclient) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 45 cm
+Q
+q
+1 0 0 1 271.2604 51 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.1.0; <) Tj (=1.1.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 27 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (PrettyTable) Tj T* ET
+Q
+Q
+q
+1 0 0 1 271.2604 27 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.7; <) Tj (0.8;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 3 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Babel) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 3 cm
+Q
+q
+1 0 0 1 271.2604 9 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.3; <) Tj (=1.3;) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+.25 w
+n 0 270 m 469.8898 270 l S
+n 0 246 m 469.8898 246 l S
+n 0 222 m 469.8898 222 l S
+n 0 198 m 469.8898 198 l S
+n 0 174 m 469.8898 174 l S
+n 0 150 m 469.8898 150 l S
+n 0 132 m 469.8898 132 l S
+n 0 108 m 469.8898 108 l S
+n 0 84 m 469.8898 84 l S
+n 0 66 m 469.8898 66 l S
+n 0 42 m 469.8898 42 l S
+n 0 24 m 469.8898 24 l S
+n 265.2604 0 m 265.2604 288 l S
+n 0 288 m 469.8898 288 l S
+n 0 0 m 469.8898 0 l S
+n 0 0 m 0 288 l S
+n 469.8898 0 m 469.8898 288 l S
+Q
+Q
+q
+1 0 0 1 62.69291 81.02362 cm
+Q
+ 
+endstream
+endobj
+51 0 obj
+<< /Length 13820 >>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 744.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (python-troveclient) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 732.0236 cm
+Q
+q
+1 0 0 1 62.69291 516.0236 cm
+1 1 1 rg
+n 0 216 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 198 469.8898 -24 re f*
+1 1 1 rg
+n 0 174 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 150 469.8898 -24 re f*
+1 1 1 rg
+n 0 126 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 102 469.8898 -18 re f*
+1 1 1 rg
+n 0 84 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 60 469.8898 -18 re f*
+1 1 1 rg
+n 0 42 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 24 469.8898 -24 re f*
+.960784 .960784 .862745 rg
+n 0 216 469.8898 -18 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 201 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 253.2604 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 93.28018 0 Td (Package name) Tj T* -93.28018 0 Td ET
+Q
+Q
+q
+1 0 0 1 271.2604 201 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 192.6294 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 56.86471 0 Td (DEPENDENCIES) Tj T* -56.86471 0 Td ET
+Q
+Q
+0 0 0 rg
+q
+1 0 0 1 6 189 cm
+Q
+q
+1 0 0 1 6 189 cm
+Q
+q
+1 0 0 1 6 177 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (simplejson) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 177 cm
+Q
+q
+1 0 0 1 271.2604 183 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=2.2.0; <) Tj (=3.3.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 165 cm
+Q
+q
+1 0 0 1 6 165 cm
+Q
+q
+1 0 0 1 6 153 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (python-keystoneclient) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 153 cm
+Q
+q
+1 0 0 1 271.2604 159 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.1.0; <) Tj (=1.1.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 141 cm
+Q
+q
+1 0 0 1 6 141 cm
+Q
+q
+1 0 0 1 6 129 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Babel) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 129 cm
+Q
+q
+1 0 0 1 271.2604 135 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.3; <) Tj (=1.3;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 117 cm
+Q
+q
+1 0 0 1 6 117 cm
+Q
+q
+1 0 0 1 6 105 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (oslo.utils) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 105 cm
+Q
+q
+1 0 0 1 271.2604 111 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.4.0; <) Tj (=1.2.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 87 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (pbr) Tj T* ET
+Q
+Q
+q
+1 0 0 1 271.2604 87 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (!=0.7; >) Tj (=0.6; <) Tj (1.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 75 cm
+Q
+q
+1 0 0 1 6 75 cm
+Q
+q
+1 0 0 1 6 63 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (requests) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 63 cm
+Q
+q
+1 0 0 1 271.2604 69 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (!=2.4.0; >) Tj (=2.2.0; <) Tj (=2.2.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 45 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (argparse) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 27 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (PrettyTable) Tj T* ET
+Q
+Q
+q
+1 0 0 1 271.2604 27 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.7; <) Tj (0.8;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 3 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (six) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 3 cm
+Q
+q
+1 0 0 1 271.2604 9 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.9.0; <) Tj (=1.9.0;) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+.25 w
+n 0 198 m 469.8898 198 l S
+n 0 174 m 469.8898 174 l S
+n 0 150 m 469.8898 150 l S
+n 0 126 m 469.8898 126 l S
+n 0 102 m 469.8898 102 l S
+n 0 84 m 469.8898 84 l S
+n 0 60 m 469.8898 60 l S
+n 0 42 m 469.8898 42 l S
+n 0 24 m 469.8898 24 l S
+n 265.2604 0 m 265.2604 216 l S
+n 0 216 m 469.8898 216 l S
+n 0 0 m 469.8898 0 l S
+n 0 0 m 0 216 l S
+n 469.8898 0 m 469.8898 216 l S
+Q
+Q
+q
+1 0 0 1 62.69291 516.0236 cm
+Q
+q
+1 0 0 1 62.69291 483.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (mistral) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 471.0236 cm
+Q
+q
+1 0 0 1 62.69291 81.02362 cm
+1 1 1 rg
+n 0 390 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 372 469.8898 -24 re f*
+1 1 1 rg
+n 0 348 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 324 469.8898 -24 re f*
+1 1 1 rg
+n 0 300 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 276 469.8898 -24 re f*
+1 1 1 rg
+n 0 252 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 228 469.8898 -24 re f*
+1 1 1 rg
+n 0 204 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 186 469.8898 -24 re f*
+1 1 1 rg
+n 0 162 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 138 469.8898 -24 re f*
+1 1 1 rg
+n 0 114 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 96 469.8898 -24 re f*
+1 1 1 rg
+n 0 72 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 48 469.8898 -24 re f*
+1 1 1 rg
+n 0 24 469.8898 -24 re f*
+.960784 .960784 .862745 rg
+n 0 390 469.8898 -18 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 375 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 128.5653 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 30.93266 0 Td (Package name) Tj T* -30.93266 0 Td ET
+Q
+Q
+q
+1 0 0 1 146.5653 375 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 317.3244 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 119.2122 0 Td (DEPENDENCIES) Tj T* -119.2122 0 Td ET
+Q
+Q
+0 0 0 rg
+q
+1 0 0 1 6 363 cm
+Q
+q
+1 0 0 1 6 363 cm
+Q
+q
+1 0 0 1 6 351 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Babel) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 351 cm
+Q
+q
+1 0 0 1 146.5653 357 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.3; <) Tj (=1.3;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 339 cm
+Q
+q
+1 0 0 1 6 339 cm
+Q
+q
+1 0 0 1 6 327 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (PyYAML) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 327 cm
+Q
+q
+1 0 0 1 146.5653 333 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=3.1.0; <) Tj (=3.10;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 315 cm
+Q
+q
+1 0 0 1 6 315 cm
+Q
+q
+1 0 0 1 6 303 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (eventlet) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 303 cm
+Q
+q
+1 0 0 1 146.5653 309 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.15.1; <) Tj (=0.15.2;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 291 cm
+Q
+q
+1 0 0 1 6 291 cm
+Q
+q
+1 0 0 1 6 279 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (python-heatclient) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 279 cm
+Q
+q
+1 0 0 1 146.5653 285 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.2.9; <) Tj (0.3.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 267 cm
+Q
+q
+1 0 0 1 6 267 cm
+Q
+q
+1 0 0 1 6 255 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (keystonemiddleware) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 255 cm
+Q
+q
+1 0 0 1 146.5653 261 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.0.0; <) Tj (1.4.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 243 cm
+Q
+q
+1 0 0 1 6 243 cm
+Q
+q
+1 0 0 1 6 231 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (python-glanceclient) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 231 cm
+Q
+q
+1 0 0 1 146.5653 237 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.14.0; <) Tj (=0.15.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 219 cm
+Q
+q
+1 0 0 1 6 219 cm
+Q
+q
+1 0 0 1 6 207 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (requests) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 207 cm
+Q
+q
+1 0 0 1 146.5653 213 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (!=2.4.0; >) Tj (=2.1.0; <) Tj (=2.2.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 189 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (argparse) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 177 cm
+Q
+q
+1 0 0 1 6 177 cm
+Q
+q
+1 0 0 1 6 165 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (python-novaclient) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 165 cm
+Q
+q
+1 0 0 1 146.5653 171 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=2.18.0; <) Tj (=2.20.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 153 cm
+Q
+q
+1 0 0 1 6 153 cm
+Q
+q
+1 0 0 1 6 141 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (python-keystoneclient) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 141 cm
+Q
+q
+1 0 0 1 146.5653 147 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.10.0; <) Tj (=1.1.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 129 cm
+Q
+q
+1 0 0 1 6 129 cm
+Q
+q
+1 0 0 1 6 117 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (stevedore) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 117 cm
+Q
+q
+1 0 0 1 146.5653 123 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.0.0; <) Tj (=1.2.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 99 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (python-neutronclient) Tj T* ET
+Q
+Q
+q
+1 0 0 1 146.5653 99 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=2.3.6; <) Tj (3;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 87 cm
+Q
+q
+1 0 0 1 6 87 cm
+Q
+q
+1 0 0 1 6 75 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (kombu) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 75 cm
+Q
+q
+1 0 0 1 146.5653 81 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=2.5.0; <) Tj (=3.0.7;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 63 cm
+Q
+q
+1 0 0 1 6 63 cm
+Q
+q
+1 0 0 1 6 51 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (oslo.messaging) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 51 cm
+Q
+q
+1 0 0 1 146.5653 57 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.4.0; <) Tj (1.5.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 39 cm
+Q
+q
+1 0 0 1 6 39 cm
+Q
+q
+1 0 0 1 6 27 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (oslo.config) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 27 cm
+Q
+q
+1 0 0 1 146.5653 33 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.4.0; <) Tj (=1.6.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 3 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (six) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 3 cm
+Q
+q
+1 0 0 1 146.5653 9 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.7.0; <) Tj (=1.9.0;) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+.25 w
+n 0 0 m 469.8898 0 l S
+n 0 372 m 469.8898 372 l S
+n 0 348 m 469.8898 348 l S
+n 0 324 m 469.8898 324 l S
+n 0 300 m 469.8898 300 l S
+n 0 276 m 469.8898 276 l S
+n 0 252 m 469.8898 252 l S
+n 0 228 m 469.8898 228 l S
+n 0 204 m 469.8898 204 l S
+n 0 186 m 469.8898 186 l S
+n 0 162 m 469.8898 162 l S
+n 0 138 m 469.8898 138 l S
+n 0 114 m 469.8898 114 l S
+n 0 96 m 469.8898 96 l S
+n 0 72 m 469.8898 72 l S
+n 0 48 m 469.8898 48 l S
+n 0 24 m 469.8898 24 l S
+n 140.5653 0 m 140.5653 390 l S
+n 0 390 m 469.8898 390 l S
+n 0 0 m 0 390 l S
+n 469.8898 0 m 469.8898 390 l S
+Q
+Q
+ 
+endstream
+endobj
+52 0 obj
+<< /Length 13196 >>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 429.0236 cm
+1 1 1 rg
+n 0 336 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 312 469.8898 -24 re f*
+1 1 1 rg
+n 0 288 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 270 469.8898 -30 re f*
+1 1 1 rg
+n 0 240 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 216 469.8898 -24 re f*
+1 1 1 rg
+n 0 192 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 174 469.8898 -24 re f*
+1 1 1 rg
+n 0 150 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 132 469.8898 -24 re f*
+1 1 1 rg
+n 0 108 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 90 469.8898 -24 re f*
+1 1 1 rg
+n 0 66 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 48 469.8898 -24 re f*
+1 1 1 rg
+n 0 24 469.8898 -24 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 327 cm
+Q
+q
+1 0 0 1 6 327 cm
+Q
+q
+1 0 0 1 6 315 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (WSME) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 315 cm
+Q
+q
+1 0 0 1 146.5653 321 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.6; <) Tj (=0.6.4;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 303 cm
+Q
+q
+1 0 0 1 6 303 cm
+Q
+q
+1 0 0 1 6 291 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (iso8601) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 291 cm
+Q
+q
+1 0 0 1 146.5653 297 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.1.9; <) Tj (=0.1.10;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 273 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (yaql) Tj T* ET
+Q
+Q
+q
+1 0 0 1 146.5653 273 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.2.4; <) Tj (0.3;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 261 cm
+Q
+q
+1 0 0 1 6 261 cm
+Q
+q
+1 0 0 1 6 249 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (SQLAlchemy) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 249 cm
+Q
+q
+1 0 0 1 146.5653 243 cm
+q
+BT 1 0 0 1 0 14 Tm 12 TL /F1 10 Tf 0 0 0 rg (!=0.9.0; !=0.9.1; !=0.9.2; !=0.9.3; !=0.9.4; !=0.9.5; !=0.9.6; >) Tj (=0.9.7;) Tj T* (<) Tj (=0.9.99;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 231 cm
+Q
+q
+1 0 0 1 6 231 cm
+Q
+q
+1 0 0 1 6 219 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (networkx) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 219 cm
+Q
+q
+1 0 0 1 146.5653 225 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.8; <) Tj (=1.9.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 207 cm
+Q
+q
+1 0 0 1 6 207 cm
+Q
+q
+1 0 0 1 6 195 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (posix_ipc) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 195 cm
+Q
+q
+1 0 0 1 146.5653 201 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (<) Tj (=0.9.9;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 177 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (amqplib) Tj T* ET
+Q
+Q
+q
+1 0 0 1 146.5653 177 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.6.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 165 cm
+Q
+q
+1 0 0 1 6 165 cm
+Q
+q
+1 0 0 1 6 153 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (oslo.db) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 153 cm
+Q
+q
+1 0 0 1 146.5653 159 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.0.0; <) Tj (1.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 135 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (jsonschema) Tj T* ET
+Q
+Q
+q
+1 0 0 1 146.5653 135 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=2.0.0; <) Tj (3.0.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 123 cm
+Q
+q
+1 0 0 1 6 123 cm
+Q
+q
+1 0 0 1 6 111 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (python-cinderclient) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 111 cm
+Q
+q
+1 0 0 1 146.5653 117 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.1.0; <) Tj (=1.1.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 93 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (pbr) Tj T* ET
+Q
+Q
+q
+1 0 0 1 146.5653 93 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (!=0.7; >) Tj (=0.6; <) Tj (1.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 81 cm
+Q
+q
+1 0 0 1 6 81 cm
+Q
+q
+1 0 0 1 6 69 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (croniter) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 69 cm
+Q
+q
+1 0 0 1 146.5653 75 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.3.4; <) Tj (=0.3.5;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 51 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (mock) Tj T* ET
+Q
+Q
+q
+1 0 0 1 146.5653 51 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 39 cm
+Q
+q
+1 0 0 1 6 39 cm
+Q
+q
+1 0 0 1 6 27 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (pecan) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 27 cm
+Q
+q
+1 0 0 1 146.5653 33 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.8.0; <) Tj (=0.8.3;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 3 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (paramiko) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 3 cm
+Q
+q
+1 0 0 1 146.5653 9 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.13.0; <) Tj (=1.15.2;) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+.25 w
+n 0 336 m 469.8898 336 l S
+n 0 312 m 469.8898 312 l S
+n 0 288 m 469.8898 288 l S
+n 0 270 m 469.8898 270 l S
+n 0 240 m 469.8898 240 l S
+n 0 216 m 469.8898 216 l S
+n 0 192 m 469.8898 192 l S
+n 0 174 m 469.8898 174 l S
+n 0 150 m 469.8898 150 l S
+n 0 132 m 469.8898 132 l S
+n 0 108 m 469.8898 108 l S
+n 0 90 m 469.8898 90 l S
+n 0 66 m 469.8898 66 l S
+n 0 48 m 469.8898 48 l S
+n 0 24 m 469.8898 24 l S
+n 140.5653 0 m 140.5653 336 l S
+n 0 0 m 0 336 l S
+n 469.8898 0 m 469.8898 336 l S
+n 0 0 m 469.8898 0 l S
+Q
+Q
+q
+1 0 0 1 62.69291 429.0236 cm
+Q
+q
+1 0 0 1 62.69291 396.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (python-mistralclient) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 384.0236 cm
+Q
+q
+1 0 0 1 62.69291 252.0236 cm
+1 1 1 rg
+n 0 132 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 114 469.8898 -24 re f*
+1 1 1 rg
+n 0 90 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 66 469.8898 -24 re f*
+1 1 1 rg
+n 0 42 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 18 469.8898 -18 re f*
+.960784 .960784 .862745 rg
+n 0 132 469.8898 -18 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 117 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 253.2604 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 93.28018 0 Td (Package name) Tj T* -93.28018 0 Td ET
+Q
+Q
+q
+1 0 0 1 271.2604 117 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 192.6294 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 56.86471 0 Td (DEPENDENCIES) Tj T* -56.86471 0 Td ET
+Q
+Q
+0 0 0 rg
+q
+1 0 0 1 6 105 cm
+Q
+q
+1 0 0 1 6 105 cm
+Q
+q
+1 0 0 1 6 93 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (requests) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 93 cm
+Q
+q
+1 0 0 1 271.2604 99 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (!=2.4.0; >) Tj (=2.1.0; <) Tj (=2.2.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 81 cm
+Q
+q
+1 0 0 1 6 81 cm
+Q
+q
+1 0 0 1 6 69 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (python-keystoneclient) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 69 cm
+Q
+q
+1 0 0 1 271.2604 75 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.10.0; <) Tj (=1.1.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 57 cm
+Q
+q
+1 0 0 1 6 57 cm
+Q
+q
+1 0 0 1 6 45 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (cliff) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 45 cm
+Q
+q
+1 0 0 1 271.2604 51 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.7.0; <) Tj (=1.9.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 33 cm
+Q
+q
+1 0 0 1 6 33 cm
+Q
+q
+1 0 0 1 6 21 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (PyYAML) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 21 cm
+Q
+q
+1 0 0 1 271.2604 27 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=3.1.0; <) Tj (=3.10;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (pbr) Tj T* ET
+Q
+Q
+q
+1 0 0 1 271.2604 3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (!=0.7; >) Tj (=0.6; <) Tj (1.0;) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+.25 w
+n 0 114 m 469.8898 114 l S
+n 0 90 m 469.8898 90 l S
+n 0 66 m 469.8898 66 l S
+n 0 42 m 469.8898 42 l S
+n 0 18 m 469.8898 18 l S
+n 265.2604 0 m 265.2604 132 l S
+n 0 132 m 469.8898 132 l S
+n 0 0 m 469.8898 0 l S
+n 0 0 m 0 132 l S
+n 469.8898 0 m 469.8898 132 l S
+Q
+Q
+q
+1 0 0 1 62.69291 252.0236 cm
+Q
+q
+1 0 0 1 62.69291 219.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (python-congressclient) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 207.0236 cm
+Q
+q
+1 0 0 1 62.69291 99.02362 cm
+1 1 1 rg
+n 0 108 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 90 469.8898 -24 re f*
+1 1 1 rg
+n 0 66 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 42 469.8898 -24 re f*
+1 1 1 rg
+n 0 18 469.8898 -18 re f*
+.960784 .960784 .862745 rg
+n 0 108 469.8898 -18 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 93 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 253.2604 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 93.28018 0 Td (Package name) Tj T* -93.28018 0 Td ET
+Q
+Q
+q
+1 0 0 1 271.2604 93 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 192.6294 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 56.86471 0 Td (DEPENDENCIES) Tj T* -56.86471 0 Td ET
+Q
+Q
+0 0 0 rg
+q
+1 0 0 1 6 81 cm
+Q
+q
+1 0 0 1 6 81 cm
+Q
+q
+1 0 0 1 6 69 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (cliff) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 69 cm
+Q
+q
+1 0 0 1 271.2604 75 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.7.0; <) Tj (=1.9.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 57 cm
+Q
+q
+1 0 0 1 6 57 cm
+Q
+q
+1 0 0 1 6 45 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (oslo.i18n) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 45 cm
+Q
+q
+1 0 0 1 271.2604 51 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.3.0; <) Tj (=1.3.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 33 cm
+Q
+q
+1 0 0 1 6 33 cm
+Q
+q
+1 0 0 1 6 21 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Babel) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 21 cm
+Q
+q
+1 0 0 1 271.2604 27 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.3; <) Tj (=1.3;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (pbr) Tj T* ET
+Q
+Q
+q
+1 0 0 1 271.2604 3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (!=0.7; >) Tj (=0.6; <) Tj (1.0;) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+.25 w
+n 0 0 m 469.8898 0 l S
+n 0 90 m 469.8898 90 l S
+n 0 66 m 469.8898 66 l S
+n 0 42 m 469.8898 42 l S
+n 0 18 m 469.8898 18 l S
+n 265.2604 0 m 265.2604 108 l S
+n 0 108 m 469.8898 108 l S
+n 0 0 m 0 108 l S
+n 469.8898 0 m 469.8898 108 l S
+Q
+Q
+ 
+endstream
+endobj
+53 0 obj
+<< /Length 13826 >>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 693.0236 cm
+1 1 1 rg
+n 0 72 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 48 469.8898 -24 re f*
+1 1 1 rg
+n 0 24 469.8898 -24 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 63 cm
+Q
+q
+1 0 0 1 6 63 cm
+Q
+q
+1 0 0 1 6 51 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (requests) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 51 cm
+Q
+q
+1 0 0 1 271.2604 57 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (!=2.4.0; >) Tj (=2.2.0; <) Tj (=2.2.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 39 cm
+Q
+q
+1 0 0 1 6 39 cm
+Q
+q
+1 0 0 1 6 27 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (python-keystoneclient) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 27 cm
+Q
+q
+1 0 0 1 271.2604 33 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.1.0; <) Tj (=1.1.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 3 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (six) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 3 cm
+Q
+q
+1 0 0 1 271.2604 9 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.7.0; <) Tj (=1.9.0;) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+.25 w
+n 0 72 m 469.8898 72 l S
+n 0 48 m 469.8898 48 l S
+n 0 24 m 469.8898 24 l S
+n 265.2604 0 m 265.2604 72 l S
+n 0 0 m 0 72 l S
+n 469.8898 0 m 469.8898 72 l S
+n 0 0 m 469.8898 0 l S
+Q
+Q
+q
+1 0 0 1 62.69291 693.0236 cm
+Q
+q
+1 0 0 1 62.69291 660.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (python-muranoclient) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 648.0236 cm
+Q
+q
+1 0 0 1 62.69291 294.0236 cm
+1 1 1 rg
+n 0 354 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 336 469.8898 -24 re f*
+1 1 1 rg
+n 0 312 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 288 469.8898 -18 re f*
+1 1 1 rg
+n 0 270 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 246 469.8898 -24 re f*
+1 1 1 rg
+n 0 222 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 198 469.8898 -24 re f*
+1 1 1 rg
+n 0 174 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 156 469.8898 -18 re f*
+1 1 1 rg
+n 0 138 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 114 469.8898 -24 re f*
+1 1 1 rg
+n 0 90 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 72 469.8898 -24 re f*
+1 1 1 rg
+n 0 48 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 24 469.8898 -24 re f*
+.960784 .960784 .862745 rg
+n 0 354 469.8898 -18 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 339 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 253.2604 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 93.28018 0 Td (Package name) Tj T* -93.28018 0 Td ET
+Q
+Q
+q
+1 0 0 1 271.2604 339 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 192.6294 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 56.86471 0 Td (DEPENDENCIES) Tj T* -56.86471 0 Td ET
+Q
+Q
+0 0 0 rg
+q
+1 0 0 1 6 327 cm
+Q
+q
+1 0 0 1 6 327 cm
+Q
+q
+1 0 0 1 6 315 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (httplib2) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 315 cm
+Q
+q
+1 0 0 1 271.2604 321 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.7.5; <) Tj (=0.9;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 303 cm
+Q
+q
+1 0 0 1 6 303 cm
+Q
+q
+1 0 0 1 6 291 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (python-keystoneclient) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 291 cm
+Q
+q
+1 0 0 1 271.2604 297 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.11.1; <) Tj (=1.1.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 273 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (PrettyTable) Tj T* ET
+Q
+Q
+q
+1 0 0 1 271.2604 273 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.7; <) Tj (0.8;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 261 cm
+Q
+q
+1 0 0 1 6 261 cm
+Q
+q
+1 0 0 1 6 249 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (PyYAML) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 249 cm
+Q
+q
+1 0 0 1 271.2604 255 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=3.1.0; <) Tj (=3.10;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 237 cm
+Q
+q
+1 0 0 1 6 237 cm
+Q
+q
+1 0 0 1 6 225 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (oslo.utils) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 225 cm
+Q
+q
+1 0 0 1 271.2604 231 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.1.0; <) Tj (=1.2.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 213 cm
+Q
+q
+1 0 0 1 6 213 cm
+Q
+q
+1 0 0 1 6 201 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (pyOpenSSL) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 201 cm
+Q
+q
+1 0 0 1 271.2604 207 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.11; <) Tj (=0.13;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 189 cm
+Q
+q
+1 0 0 1 6 189 cm
+Q
+q
+1 0 0 1 6 177 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (iso8601) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 177 cm
+Q
+q
+1 0 0 1 271.2604 183 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.1.9; <) Tj (=0.1.10;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 159 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (yaql) Tj T* ET
+Q
+Q
+q
+1 0 0 1 271.2604 159 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.2.3; <) Tj (0.3;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 141 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (pbr) Tj T* ET
+Q
+Q
+q
+1 0 0 1 271.2604 141 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (!=0.7; >) Tj (=0.6; <) Tj (1.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 129 cm
+Q
+q
+1 0 0 1 6 129 cm
+Q
+q
+1 0 0 1 6 117 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (requests) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 117 cm
+Q
+q
+1 0 0 1 271.2604 123 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (!=2.4.0; >) Tj (=2.2.0; <) Tj (=2.2.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 105 cm
+Q
+q
+1 0 0 1 6 105 cm
+Q
+q
+1 0 0 1 6 93 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (python-glanceclient) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 93 cm
+Q
+q
+1 0 0 1 271.2604 99 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.15.0; <) Tj (=0.15.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 75 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (argparse) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 63 cm
+Q
+q
+1 0 0 1 6 63 cm
+Q
+q
+1 0 0 1 6 51 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (six) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 51 cm
+Q
+q
+1 0 0 1 271.2604 57 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.7.0; <) Tj (=1.9.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 39 cm
+Q
+q
+1 0 0 1 6 39 cm
+Q
+q
+1 0 0 1 6 27 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (oslo.serialization) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 27 cm
+Q
+q
+1 0 0 1 271.2604 33 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.0.0; <) Tj (=1.2.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 3 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Babel) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 3 cm
+Q
+q
+1 0 0 1 271.2604 9 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.3; <) Tj (=1.3;) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+.25 w
+n 0 336 m 469.8898 336 l S
+n 0 312 m 469.8898 312 l S
+n 0 288 m 469.8898 288 l S
+n 0 270 m 469.8898 270 l S
+n 0 246 m 469.8898 246 l S
+n 0 222 m 469.8898 222 l S
+n 0 198 m 469.8898 198 l S
+n 0 174 m 469.8898 174 l S
+n 0 156 m 469.8898 156 l S
+n 0 138 m 469.8898 138 l S
+n 0 114 m 469.8898 114 l S
+n 0 90 m 469.8898 90 l S
+n 0 72 m 469.8898 72 l S
+n 0 48 m 469.8898 48 l S
+n 0 24 m 469.8898 24 l S
+n 265.2604 0 m 265.2604 354 l S
+n 0 354 m 469.8898 354 l S
+n 0 0 m 469.8898 0 l S
+n 0 0 m 0 354 l S
+n 469.8898 0 m 469.8898 354 l S
+Q
+Q
+q
+1 0 0 1 62.69291 294.0236 cm
+Q
+q
+1 0 0 1 62.69291 261.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (murano) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 249.0236 cm
+Q
+q
+1 0 0 1 62.69291 87.02362 cm
+1 1 1 rg
+n 0 162 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 144 469.8898 -24 re f*
+1 1 1 rg
+n 0 120 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 96 469.8898 -24 re f*
+1 1 1 rg
+n 0 72 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 48 469.8898 -24 re f*
+1 1 1 rg
+n 0 24 469.8898 -24 re f*
+.960784 .960784 .862745 rg
+n 0 162 469.8898 -18 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 147 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 128.5653 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 30.93266 0 Td (Package name) Tj T* -30.93266 0 Td ET
+Q
+Q
+q
+1 0 0 1 146.5653 147 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 317.3244 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 119.2122 0 Td (DEPENDENCIES) Tj T* -119.2122 0 Td ET
+Q
+Q
+0 0 0 rg
+q
+1 0 0 1 6 135 cm
+Q
+q
+1 0 0 1 6 135 cm
+Q
+q
+1 0 0 1 6 123 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (oslo.i18n) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 123 cm
+Q
+q
+1 0 0 1 146.5653 129 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.3.0; <) Tj (=1.3.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 111 cm
+Q
+q
+1 0 0 1 6 111 cm
+Q
+q
+1 0 0 1 6 99 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Babel) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 99 cm
+Q
+q
+1 0 0 1 146.5653 105 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.3; <) Tj (=1.3;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 87 cm
+Q
+q
+1 0 0 1 6 87 cm
+Q
+q
+1 0 0 1 6 75 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (PyYAML) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 75 cm
+Q
+q
+1 0 0 1 146.5653 81 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=3.1.0; <) Tj (=3.10;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 63 cm
+Q
+q
+1 0 0 1 6 63 cm
+Q
+q
+1 0 0 1 6 51 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (eventlet) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 51 cm
+Q
+q
+1 0 0 1 146.5653 57 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.16.1; <) Tj (=0.15.2;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 39 cm
+Q
+q
+1 0 0 1 6 39 cm
+Q
+q
+1 0 0 1 6 27 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (python-heatclient) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 27 cm
+Q
+q
+1 0 0 1 146.5653 33 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.2.9; <) Tj (0.3.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 3 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (keystonemiddleware) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 3 cm
+Q
+q
+1 0 0 1 146.5653 9 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.0.0; <) Tj (1.4.0;) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+.25 w
+n 0 0 m 469.8898 0 l S
+n 0 144 m 469.8898 144 l S
+n 0 120 m 469.8898 120 l S
+n 0 96 m 469.8898 96 l S
+n 0 72 m 469.8898 72 l S
+n 0 48 m 469.8898 48 l S
+n 0 24 m 469.8898 24 l S
+n 140.5653 0 m 140.5653 162 l S
+n 0 162 m 469.8898 162 l S
+n 0 0 m 0 162 l S
+n 469.8898 0 m 469.8898 162 l S
+Q
+Q
+ 
+endstream
+endobj
+54 0 obj
+<< /Length 13908 >>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 183.0236 cm
+1 1 1 rg
+n 0 582 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 558 469.8898 -24 re f*
+1 1 1 rg
+n 0 534 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 510 469.8898 -24 re f*
+1 1 1 rg
+n 0 486 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 462 469.8898 -18 re f*
+1 1 1 rg
+n 0 444 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 420 469.8898 -18 re f*
+1 1 1 rg
+n 0 402 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 378 469.8898 -18 re f*
+1 1 1 rg
+n 0 360 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 336 469.8898 -24 re f*
+1 1 1 rg
+n 0 312 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 288 469.8898 -24 re f*
+1 1 1 rg
+n 0 264 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 240 469.8898 -18 re f*
+1 1 1 rg
+n 0 222 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 198 469.8898 -18 re f*
+1 1 1 rg
+n 0 180 469.8898 -30 re f*
+.878431 .878431 .878431 rg
+n 0 150 469.8898 -18 re f*
+1 1 1 rg
+n 0 132 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 108 469.8898 -24 re f*
+1 1 1 rg
+n 0 84 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 66 469.8898 -18 re f*
+1 1 1 rg
+n 0 48 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 24 469.8898 -24 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 573 cm
+Q
+q
+1 0 0 1 6 573 cm
+Q
+q
+1 0 0 1 6 561 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (oslo.serialization) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 561 cm
+Q
+q
+1 0 0 1 146.5653 567 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.0.0; <) Tj (=1.2.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 549 cm
+Q
+q
+1 0 0 1 6 549 cm
+Q
+q
+1 0 0 1 6 537 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (netaddr) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 537 cm
+Q
+q
+1 0 0 1 146.5653 543 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.7.12; <) Tj (=0.7.13;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 525 cm
+Q
+q
+1 0 0 1 6 525 cm
+Q
+q
+1 0 0 1 6 513 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (jsonpatch) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 513 cm
+Q
+q
+1 0 0 1 146.5653 519 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.1; <) Tj (=1.3;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 501 cm
+Q
+q
+1 0 0 1 6 501 cm
+Q
+q
+1 0 0 1 6 489 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (WebOb) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 489 cm
+Q
+q
+1 0 0 1 146.5653 495 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.2.3; <) Tj (=1.3.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 477 cm
+Q
+q
+1 0 0 1 6 477 cm
+Q
+q
+1 0 0 1 6 465 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (python-keystoneclient) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 465 cm
+Q
+q
+1 0 0 1 146.5653 471 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.1.0; <) Tj (=1.1.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 447 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (python-muranoclient) Tj T* ET
+Q
+Q
+q
+1 0 0 1 146.5653 447 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.5.5;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 435 cm
+Q
+q
+1 0 0 1 6 435 cm
+Q
+q
+1 0 0 1 6 423 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Paste) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 423 cm
+Q
+q
+1 0 0 1 146.5653 429 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (<) Tj (=1.7.5.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 405 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (python-neutronclient) Tj T* ET
+Q
+Q
+q
+1 0 0 1 146.5653 405 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=2.3.6; <) Tj (3;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 393 cm
+Q
+q
+1 0 0 1 6 393 cm
+Q
+q
+1 0 0 1 6 381 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (PasteDeploy) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 381 cm
+Q
+q
+1 0 0 1 146.5653 387 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.5.0; <) Tj (=1.5.2;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 363 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (python-mistralclient) Tj T* ET
+Q
+Q
+q
+1 0 0 1 146.5653 363 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.1.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 351 cm
+Q
+q
+1 0 0 1 6 351 cm
+Q
+q
+1 0 0 1 6 339 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (oslo.utils) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 339 cm
+Q
+q
+1 0 0 1 146.5653 345 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.1.0; <) Tj (=1.2.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 327 cm
+Q
+q
+1 0 0 1 6 327 cm
+Q
+q
+1 0 0 1 6 315 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (kombu) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 315 cm
+Q
+q
+1 0 0 1 146.5653 321 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=2.5.0; <) Tj (=3.0.7;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 303 cm
+Q
+q
+1 0 0 1 6 303 cm
+Q
+q
+1 0 0 1 6 291 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (oslo.messaging) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 291 cm
+Q
+q
+1 0 0 1 146.5653 297 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.4.0; <) Tj (1.5.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 279 cm
+Q
+q
+1 0 0 1 6 279 cm
+Q
+q
+1 0 0 1 6 267 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (oslo.config) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 267 cm
+Q
+q
+1 0 0 1 146.5653 273 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.4.0; <) Tj (=1.6.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 255 cm
+Q
+q
+1 0 0 1 6 255 cm
+Q
+q
+1 0 0 1 6 243 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (six) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 243 cm
+Q
+q
+1 0 0 1 146.5653 249 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.7.0; <) Tj (=1.9.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 225 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (python-congressclient) Tj T* ET
+Q
+Q
+q
+1 0 0 1 146.5653 225 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.0.2;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 213 cm
+Q
+q
+1 0 0 1 6 213 cm
+Q
+q
+1 0 0 1 6 201 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (iso8601) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 201 cm
+Q
+q
+1 0 0 1 146.5653 207 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.1.9; <) Tj (=0.1.10;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 183 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (yaql) Tj T* ET
+Q
+Q
+q
+1 0 0 1 146.5653 183 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.2.3; <) Tj (0.3;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 171 cm
+Q
+q
+1 0 0 1 6 171 cm
+Q
+q
+1 0 0 1 6 159 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (SQLAlchemy) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 159 cm
+Q
+q
+1 0 0 1 146.5653 153 cm
+q
+BT 1 0 0 1 0 14 Tm 12 TL /F1 10 Tf 0 0 0 rg (!=0.9.0; !=0.9.1; !=0.9.2; !=0.9.3; !=0.9.4; !=0.9.5; !=0.9.6; >) Tj (=0.9.7;) Tj T* (<) Tj (=0.9.99;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 135 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (psutil) Tj T* ET
+Q
+Q
+q
+1 0 0 1 146.5653 135 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.1.1; <) Tj (2.0.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 123 cm
+Q
+q
+1 0 0 1 6 123 cm
+Q
+q
+1 0 0 1 6 111 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Routes) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 111 cm
+Q
+q
+1 0 0 1 146.5653 117 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (!=2.0; >) Tj (=1.12.3; <) Tj (=2.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 99 cm
+Q
+q
+1 0 0 1 6 99 cm
+Q
+q
+1 0 0 1 6 87 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (oslo.db) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 87 cm
+Q
+q
+1 0 0 1 146.5653 93 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.1.0; <) Tj (1.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 69 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (jsonschema) Tj T* ET
+Q
+Q
+q
+1 0 0 1 146.5653 69 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=2.0.0; <) Tj (3.0.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 51 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (pbr) Tj T* ET
+Q
+Q
+q
+1 0 0 1 146.5653 51 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (!=0.7; >) Tj (=0.6; <) Tj (1.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 39 cm
+Q
+q
+1 0 0 1 6 39 cm
+Q
+q
+1 0 0 1 6 27 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (lockfile) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 27 cm
+Q
+q
+1 0 0 1 146.5653 33 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.8; <) Tj (=0.8;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 3 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (alembic) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 3 cm
+Q
+q
+1 0 0 1 146.5653 9 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.7.2; <) Tj (=0.7.4;) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+.25 w
+n 0 582 m 469.8898 582 l S
+n 0 558 m 469.8898 558 l S
+n 0 534 m 469.8898 534 l S
+n 0 510 m 469.8898 510 l S
+n 0 486 m 469.8898 486 l S
+n 0 462 m 469.8898 462 l S
+n 0 444 m 469.8898 444 l S
+n 0 420 m 469.8898 420 l S
+n 0 402 m 469.8898 402 l S
+n 0 378 m 469.8898 378 l S
+n 0 360 m 469.8898 360 l S
+n 0 336 m 469.8898 336 l S
+n 0 312 m 469.8898 312 l S
+n 0 288 m 469.8898 288 l S
+n 0 264 m 469.8898 264 l S
+n 0 240 m 469.8898 240 l S
+n 0 222 m 469.8898 222 l S
+n 0 198 m 469.8898 198 l S
+n 0 180 m 469.8898 180 l S
+n 0 150 m 469.8898 150 l S
+n 0 132 m 469.8898 132 l S
+n 0 108 m 469.8898 108 l S
+n 0 84 m 469.8898 84 l S
+n 0 66 m 469.8898 66 l S
+n 0 48 m 469.8898 48 l S
+n 0 24 m 469.8898 24 l S
+n 140.5653 0 m 140.5653 582 l S
+n 0 0 m 0 582 l S
+n 469.8898 0 m 469.8898 582 l S
+n 0 0 m 469.8898 0 l S
+Q
+Q
+q
+1 0 0 1 62.69291 183.0236 cm
+Q
+q
+1 0 0 1 62.69291 150.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (murano-dashboard) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 138.0236 cm
+Q
+q
+1 0 0 1 62.69291 78.02362 cm
+1 1 1 rg
+n 0 60 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 42 469.8898 -18 re f*
+1 1 1 rg
+n 0 24 469.8898 -24 re f*
+.960784 .960784 .862745 rg
+n 0 60 469.8898 -18 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 45 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 257.9367 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 95.61834 0 Td (Package name) Tj T* -95.61834 0 Td ET
+Q
+Q
+q
+1 0 0 1 275.9367 45 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 187.9531 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 54.52655 0 Td (DEPENDENCIES) Tj T* -54.52655 0 Td ET
+Q
+Q
+0 0 0 rg
+q
+1 0 0 1 6 27 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (beautifulsoup4) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 3 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (iso8601) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 3 cm
+Q
+q
+1 0 0 1 275.9367 9 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.1.9; <) Tj (=0.1.10;) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+.25 w
+n 0 0 m 469.8898 0 l S
+n 0 42 m 469.8898 42 l S
+n 0 24 m 469.8898 24 l S
+n 269.9367 0 m 269.9367 60 l S
+n 0 60 m 469.8898 60 l S
+n 0 0 m 0 60 l S
+n 469.8898 0 m 469.8898 60 l S
+Q
+Q
+ 
+endstream
+endobj
+55 0 obj
+<< /Length 2473 >>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 645.0236 cm
+1 1 1 rg
+n 0 120 469.8898 -24 re f*
+.878431 .878431 .878431 rg
+n 0 96 469.8898 -18 re f*
+1 1 1 rg
+n 0 78 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 60 469.8898 -18 re f*
+1 1 1 rg
+n 0 42 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 24 469.8898 -24 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 111 cm
+Q
+q
+1 0 0 1 6 111 cm
+Q
+q
+1 0 0 1 6 99 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (PyYAML) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 99 cm
+Q
+q
+1 0 0 1 275.9367 105 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=3.1.0; <) Tj (=3.10;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 81 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (django-floppyforms) Tj T* ET
+Q
+Q
+q
+1 0 0 1 275.9367 81 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.1;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 63 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (yaql) Tj T* ET
+Q
+Q
+q
+1 0 0 1 275.9367 63 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.2.3; <) Tj (0.3;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 45 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (pbr) Tj T* ET
+Q
+Q
+q
+1 0 0 1 275.9367 45 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (!=0.7; >) Tj (=0.6; <) Tj (1.0;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 27 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (python-muranoclient) Tj T* ET
+Q
+Q
+q
+1 0 0 1 275.9367 27 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=0.5.5;) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 15 cm
+Q
+q
+1 0 0 1 6 3 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (six) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 6 3 cm
+Q
+q
+1 0 0 1 275.9367 9 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (>) Tj (=1.7.0; <) Tj (=1.9.0;) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+.25 w
+n 0 120 m 469.8898 120 l S
+n 0 96 m 469.8898 96 l S
+n 0 78 m 469.8898 78 l S
+n 0 60 m 469.8898 60 l S
+n 0 42 m 469.8898 42 l S
+n 0 24 m 469.8898 24 l S
+n 269.9367 0 m 269.9367 120 l S
+n 0 0 m 0 120 l S
+n 469.8898 0 m 469.8898 120 l S
+n 0 0 m 469.8898 0 l S
+Q
+Q
+q
+1 0 0 1 62.69291 645.0236 cm
+Q
+ 
+endstream
+endobj
+56 0 obj
+<< /Nums [ 0 57 0 R 1 58 0 R 2 59 0 R 3 60 0 R 4 61 0 R 
+  5 62 0 R 6 63 0 R 7 64 0 R 8 65 0 R 9 66 0 R 
+  10 67 0 R 11 68 0 R ] >>
+endobj
+57 0 obj
 << /S /D /St 1 >>
 endobj
-31 0 obj
+58 0 obj
 << /S /D /St 2 >>
 endobj
-32 0 obj
+59 0 obj
 << /S /D /St 3 >>
 endobj
+60 0 obj
+<< /S /D /St 4 >>
+endobj
+61 0 obj
+<< /S /D /St 5 >>
+endobj
+62 0 obj
+<< /S /D /St 6 >>
+endobj
+63 0 obj
+<< /S /D /St 7 >>
+endobj
+64 0 obj
+<< /S /D /St 8 >>
+endobj
+65 0 obj
+<< /S /D /St 9 >>
+endobj
+66 0 obj
+<< /S /D /St 10 >>
+endobj
+67 0 obj
+<< /S /D /St 11 >>
+endobj
+68 0 obj
+<< /S /D /St 12 >>
+endobj
 xref
-0 33
+0 69
 0000000000 65535 f
 0000000075 00000 n
 0000000119 00000 n
@@ -1374,36 +10481,72 @@ xref
 0000000553 00000 n
 0000000762 00000 n
 0000000971 00000 n
-0000001078 00000 n
-0000001338 00000 n
-0000001415 00000 n
-0000001535 00000 n
-0000001672 00000 n
-0000001799 00000 n
-0000001935 00000 n
-0000002073 00000 n
-0000002193 00000 n
-0000002327 00000 n
-0000002451 00000 n
-0000002586 00000 n
-0000002709 00000 n
-0000002831 00000 n
-0000002953 00000 n
-0000003088 00000 n
-0000003211 00000 n
-0000003332 00000 n
-0000003407 00000 n
-0000012607 00000 n
-0000023173 00000 n
-0000024493 00000 n
-0000024555 00000 n
-0000024592 00000 n
-0000024629 00000 n
+0000001180 00000 n
+0000001389 00000 n
+0000001598 00000 n
+0000001808 00000 n
+0000002018 00000 n
+0000002228 00000 n
+0000002438 00000 n
+0000002648 00000 n
+0000002858 00000 n
+0000002967 00000 n
+0000003228 00000 n
+0000003306 00000 n
+0000003422 00000 n
+0000003551 00000 n
+0000003686 00000 n
+0000003813 00000 n
+0000003940 00000 n
+0000004065 00000 n
+0000004203 00000 n
+0000004343 00000 n
+0000004479 00000 n
+0000004615 00000 n
+0000004749 00000 n
+0000004887 00000 n
+0000005026 00000 n
+0000005162 00000 n
+0000005297 00000 n
+0000005435 00000 n
+0000005570 00000 n
+0000005706 00000 n
+0000005831 00000 n
+0000005969 00000 n
+0000006108 00000 n
+0000006245 00000 n
+0000006369 00000 n
+0000006490 00000 n
+0000006630 00000 n
+0000018433 00000 n
+0000031098 00000 n
+0000044005 00000 n
+0000057588 00000 n
+0000070838 00000 n
+0000084801 00000 n
+0000098694 00000 n
+0000112572 00000 n
+0000125826 00000 n
+0000139710 00000 n
+0000153676 00000 n
+0000156206 00000 n
+0000156359 00000 n
+0000156396 00000 n
+0000156433 00000 n
+0000156470 00000 n
+0000156507 00000 n
+0000156544 00000 n
+0000156581 00000 n
+0000156618 00000 n
+0000156655 00000 n
+0000156692 00000 n
+0000156730 00000 n
+0000156768 00000 n
 trailer
 << /ID 
  % ReportLab generated PDF document -- digest (http://www.reportlab.com)
- [(G\242\365W\231\323r\214\244\223\024\323,\240J\032) (G\242\365W\231\323r\214\244\223\024\323,\240J\032)]
- /Info 8 0 R /Root 7 0 R /Size 33 >>
+ [(\220\0227\220\025wB\362br\031\333\321\363/\262) (\220\0227\220\025wB\362br\031\333\321\363/\262)]
+ /Info 17 0 R /Root 16 0 R /Size 69 >>
 startxref
-24666
+156806
 %%EOF

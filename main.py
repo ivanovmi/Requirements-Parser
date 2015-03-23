@@ -4,21 +4,25 @@ import lan
 import sender
 import generator
 import report as generate_report
+import check_diff
+import getpass
 from os.path import basename
 
 '''
 DRAFT:
  - Need to sort project
  - Config from file
- - Globals from repo
  - Forming globals
- - Fix bug with empty repos
 '''
+
 if __name__ == "__main__":
     try:
+        print 'Please, login to gerrit.'
+        launchpad_id = raw_input('Login: ')
+        launchpad_pw = getpass.getpass()
         #pdb.set_trace()
         pack_count = (0, 0)
-        gerritAccount = lan.login_to_launchpad()
+        gerritAccount = lan.login_to_launchpad(launchpad_id, launchpad_pw)
         global_branch_name = ''
         branch_name = ''
         mode = ''
@@ -26,21 +30,22 @@ if __name__ == "__main__":
         send = ''
         type_req = ''
 
-        while mode.lower() not in ['ep', 'req', 'e', 'r']:
-            mode = raw_input('Module (Epoch = ep | Requires = req): ')
+        while mode.lower() not in ['ep', 'req', 'diff', 'e', 'r', 'd']:
+            mode = raw_input('Module (Epoch = ep | Requires = req | Diff check = diff): ')
 
         type_req = raw_input('Scan RPM or DEB (spec | control | empty to pass): ')
         if type_req.lower() not in ["spec", "control"]:
             type_req = ''
 
-        while branch_name.lower() not in ['master', '6.1', '6.0.1']:
-            branch_name = raw_input('At the what branch we should check requirements? ')
-            if branch_name == 'master':
-                branch = 'master'
-            elif branch_name == '6.1':
-                branch = 'openstack-ci/fuel-6.1/2014.2'
-            elif branch_name == '6.0.1':
-                branch = 'openstack-ci/fuel-6.0.1/2014.2'
+        if mode.lower() not in []:#'diff', 'd']:
+            while branch_name.lower() not in ['master', '6.1', '6.0.1']:
+                branch_name = raw_input('At the what branch we should check requirements? ')
+                if branch_name == 'master':
+                    branch = 'master'
+                elif branch_name == '6.1':
+                    branch = 'openstack-ci/fuel-6.1/2014.2'
+                elif branch_name == '6.0.1':
+                    branch = 'openstack-ci/fuel-6.0.1/2014.2'
 
         if mode.lower() in ['req', 'r']:
             while global_branch_name not in ['master', 'juno', 'icehouse']:
@@ -63,6 +68,7 @@ if __name__ == "__main__":
                 pass
 
         json_file = open('requirements.json', 'w')
+
         generate_report.generate_header(json_file, branch)
 
         if mode == 'req':
@@ -83,8 +89,11 @@ if __name__ == "__main__":
                     if mode == 'req':
                         pack_count = generator.get_req(gerritAccount, req_file, rq2, json_file, branch, type_req)
                         file_exist_check = False
-                    else:
+                    elif mode == 'ep':
                         generator.get_epoch(gerritAccount, req_file, branch, json_file)
+                        file_exist_check = False
+                    else:
+                        generator.check(launchpad_id.split('@')[0])
                         file_exist_check = False
             except IOError:
                 print 'No such file or directory'
