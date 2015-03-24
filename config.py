@@ -71,49 +71,54 @@ def check_config():
         return [launchpad_id, gerritAccount, mode, type_req, branch, global_branch, file_extension, send, email]
 
     else:
-        docs = yaml.load_all(config)
-        for doc in docs:
+        try:
+            docs = yaml.load_all(config)
+            for doc in docs:
 
-            launchpad_id = doc['launchpad_id']
-            launchpad_pw = doc['launchpad_pw']
-            gerritAccount = lan.login_to_launchpad(launchpad_id, launchpad_pw)
+                launchpad_id = doc['launchpad_id']
+                launchpad_pw = doc['launchpad_pw']
+                gerritAccount = lan.login_to_launchpad(launchpad_id, launchpad_pw)
 
-            mode = doc['mode']
+                mode = doc['mode']
 
-            if mode not in ['diff', 'd']:
-                type_req = doc['type_req']
-            else:
-                type_req = ''
+                if mode not in ['diff', 'd']:
+                    type_req = doc['type_req']
+                else:
+                    type_req = ''
 
-            if mode not in ['diff', 'd']:
-                branch_name = doc['branch']
-                if branch_name == 'master':
+                if mode not in ['diff', 'd']:
+                    branch_name = doc['branch']
+                    if branch_name == 'master':
+                        branch = 'master'
+                    elif branch_name == '6.1':
+                        branch = 'openstack-ci/fuel-6.1/2014.2'
+                    elif branch_name == '6.0.1':
+                        branch = 'openstack-ci/fuel-6.0.1/2014.2'
+                else:
                     branch = 'master'
-                elif branch_name == '6.1':
-                    branch = 'openstack-ci/fuel-6.1/2014.2'
-                elif branch_name == '6.0.1':
-                    branch = 'openstack-ci/fuel-6.0.1/2014.2'
-            else:
-                branch = 'master'
 
-            if mode in ['req', 'r']:
-                global_branch_name = doc['global_branch']
-                if global_branch_name == 'master':
-                    global_branch = 'master'
-                elif global_branch_name == 'juno':
-                    global_branch = 'stable/juno'
-                elif global_branch_name == 'icehouse':
-                    global_branch = 'stable/icehouse'
-            else:
-                global_branch = None
+                if mode in ['req', 'r']:
+                    global_branch_name = doc['global_branch']
+                    if global_branch_name == 'master':
+                        global_branch = 'master'
+                    elif global_branch_name == 'juno':
+                        global_branch = 'stable/juno'
+                    elif global_branch_name == 'icehouse':
+                        global_branch = 'stable/icehouse'
+                else:
+                    global_branch = None
 
-            file_extension = doc['output_format']
-            
-            send = doc['send_email']
+                file_extension = doc['output_format']
 
-            if send.lower() in ['yes', 'y']:
-                email_to = doc['email_to']
-            elif send.lower() in ['no', 'n']:
-                email_to = None
+                send = doc['send_email']
 
-        return [launchpad_id, gerritAccount, mode, type_req, branch, global_branch, file_extension, send, email_to]
+                if send.lower() in ['yes', 'y']:
+                    email_to = doc['email_to']
+                elif send.lower() in ['no', 'n']:
+                    email_to = None
+
+            return [launchpad_id, gerritAccount, mode, type_req, branch, global_branch, file_extension, send, email_to]
+
+        except KeyError,  err:
+            print str(err)+' not defined'
+            raise SystemExit

@@ -4,7 +4,6 @@ import lan
 import sender
 import generator
 import report as generate_report
-import getpass
 import os
 from os.path import basename
 import config
@@ -12,14 +11,17 @@ import config
 '''
 DRAFT:
  - Need to sort project
- - Config from file
  - Forming globals
 '''
 
 if __name__ == "__main__":
     try:
         pack_count = (0, 0)
-        parameters_list = config.check_config()
+        try:
+            parameters_list = config.check_config()
+        except UnboundLocalError, err:
+            print str(err).split(' ')[2]+' not defined'
+            raise SystemExit
 
         launchpad_id = parameters_list[0]
         gerritAccount = parameters_list[1]
