@@ -1,10 +1,13 @@
 ===================
 Requirements parser
 ===================
+
 Menu:
------
+=====
 * `How to preconfigure your system`_
-* `How to use this parser`_
+* How to use this parser
+    - `Without config`_
+    - `With config`_
 
 How to preconfigure your system
 -------------------------------
@@ -15,4 +18,59 @@ How to preconfigure your system
 
 How to use this parser
 ----------------------
+Without config
+^^^^^^^^^^^^^^
+You can store you repo list in file, named ``repos_name``.
 Just make ``python main.py``,  and answer on the questions.
+  
+With config
+^^^^^^^^^^^
+You must use yaml-file. In this yaml:
+  * Launchpad ID (Parameter: ``launchpad_id``);
+  * Launchpad password (Parameter: ``launchpad_pw``);
+  * Mode (Parameter: ``mode``; values: ``req``, ``ep``, ``diff``):
+    
+    - If mode ``req``:
+      
+      + Should we use data, stored in a spec or control file? 
+        
+        * Parameter: ``type_req``; 
+        * Values: ``''``, ``'control'``, ``'spec'``;
+        
+      + Branch name 
+        
+        * Parameter: ``branch``;
+        * Values: ``master``, ``6.1``, ``6.0.1``;
+        
+      + Global branch name
+        
+        * Parameter: ``global_branch``;
+        * Value: ``master``, ``juno``, ``icehouse``;
+        
+    - If mode ``ep``:
+      
+      + Should we use data, stored in a spec or control file? 
+        
+        * Parameter: ``type_req``; 
+        * Values: ``''``, ``'control'``, ``'spec'``;
+        
+      + Branch name 
+        
+        * Parameter: ``branch``;
+        * Values: ``master``, ``6.1``, ``6.0.1``;
+  
+  * Output format:
+  
+    - ``pdf``;
+    - ``html``;
+    
+  * Would you like to send report via email? 
+    
+    - Parameter: ``send_email``; Values: ``yes``, ``no``;
+    - If ``yes``:
+      
+      + Specify the email;
+      
+After creating your yaml-file you should make ``python main.py -c {config}.yaml``, where you specify your config.
+You can store you repo list in file, named ``repos_name``. 
+If tool not found file named ``repos_name``, it will ask you, in which file stored repo list.

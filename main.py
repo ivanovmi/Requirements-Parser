@@ -44,25 +44,27 @@ if __name__ == "__main__":
         else:
             json_file.write('\t{\n')
 
+        file_exist_check = False
         try:
-            f = open('repos_name', 'r')
+            req_file = open('repos_name', 'r')
         except IOError:
             file_exist_check = True
+
+
         while file_exist_check:
             repo_file = raw_input('Enter the file with repos name: ')
             try:
                 with open(basename(repo_file), 'r') as req_file:
-                    if mode == 'req':
-                        pack_count = generator.get_req(gerritAccount, req_file, rq2, json_file, branch, type_req)
-                        file_exist_check = False
-                    elif mode == 'ep':
-                        generator.get_epoch(gerritAccount, req_file, branch, json_file)
-                        file_exist_check = False
-                    else:
-                        generator.diff_check(launchpad_id.split('@')[0], json_file, req_file)
                         file_exist_check = False
             except IOError:
                 print 'No such file or directory'
+
+        if mode == 'req':
+            pack_count = generator.get_req(gerritAccount, req_file, rq2, json_file, branch, type_req)
+        elif mode == 'ep':
+            generator.get_epoch(gerritAccount, req_file, branch, json_file)
+        else:
+            generator.diff_check(launchpad_id.split('@')[0], json_file, req_file)
 
         if mode == 'ep':
             json_file.write('\n' + '\t' * 2 + '}' + '\n')
