@@ -10,7 +10,7 @@ type_req:
 # Available: master, 6.1, 6.0.1
 branch: '6.1' 
 # In the what branch we should check global requirements? (Uses only in req mode)
-# Available values: master, juno, or stable
+# Available values: master, juno, or icehouse
 global_branch: 'juno' 
 # In which format save your report (pdf or html)
 output_format: 'html'
