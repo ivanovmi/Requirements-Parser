@@ -51,6 +51,7 @@ def generate_rst(json_data, epoch):
     projects = json_data["projects"]
     for project in projects:
         project_name = project.keys()
+        project_name.sort()
 
         for i in project_name:
 
@@ -92,7 +93,7 @@ def get_sequence(separator, count):
 
 def get_word_length(dictionary):
     # Default length of table columns -> 'Package name', 'DEPENDENCIES'
-    length = [12, 4]
+    length = [12, 15]
     for key in dictionary.keys():
         if len(key) > length[0]:
             length[0] = len(key)

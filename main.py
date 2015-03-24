@@ -10,7 +10,6 @@ import config
 
 '''
 DRAFT:
- - Need to sort project
  - Forming globals
 '''
 
@@ -74,6 +73,7 @@ if __name__ == "__main__":
         filename = generate_report.generate_output(mode)
 
         un_file = ['report.rst', 'tmpfile', 'requirements.json']
+
         try:
             for i in un_file:
                 os.remove(i)
