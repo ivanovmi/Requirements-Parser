@@ -14,6 +14,7 @@ DRAFT:
 '''
 
 if __name__ == "__main__":
+    #pdb.set_trace()
     try:
         pack_count = (0, 0)
         try:
@@ -37,7 +38,8 @@ if __name__ == "__main__":
         generate_report.generate_header(json_file, branch)
 
         if mode == 'req':
-            req_url = 'https://raw.githubusercontent.com/openstack/requirements/{0}/global-requirements.txt'.format(global_branch)
+            req_url = 'https://raw.githubusercontent.com/openstack/requirements/' \
+            '{0}/global-requirements.txt'.format(global_branch)
             r = lan.get_requirements_from_url(req_url, gerritAccount)
             rq2 = require_utils.Require(require_utils.Require.parse_req(r))
         else:

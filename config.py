@@ -15,7 +15,6 @@ def check_config():
         print 'Please, login to gerrit.'
         launchpad_id = raw_input('Login: ')
         launchpad_pw = getpass.getpass()
-        #pdb.set_trace()
         gerritAccount = lan.login_to_launchpad(launchpad_id, launchpad_pw)
         global_branch_name = ''
         branch_name = ''
@@ -68,7 +67,8 @@ def check_config():
             elif send.lower() in ['n', 'no']:
                 email = None
 
-        return [launchpad_id, gerritAccount, mode, type_req, branch, global_branch, file_extension, send, email]
+        return [launchpad_id, gerritAccount, mode, type_req, branch, 
+        global_branch, file_extension, send, email]
 
     else:
         try:
@@ -117,7 +117,8 @@ def check_config():
                 elif send.lower() in ['no', 'n']:
                     email_to = None
 
-            return [launchpad_id, gerritAccount, mode, type_req, branch, global_branch, file_extension, send, email_to]
+            return [launchpad_id, gerritAccount, mode, type_req, branch, 
+            global_branch, file_extension, send, email_to]
 
         except KeyError,  err:
             print str(err)+' not defined'

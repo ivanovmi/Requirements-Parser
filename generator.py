@@ -41,7 +41,8 @@ def request_spec(gerrit_account, repo, branch):
     idx = 0
     while idx < len(req_url_spec):
         try:
-            req_spec = lan.get_requirements_from_url(req_url_spec[idx].format(repo.strip(), branch), gerrit_account)
+            req_spec = lan.get_requirements_from_url(req_url_spec[idx].format(repo.strip(), branch),
+             gerrit_account)
         except KeyError:
             req_spec = None
         idx += 1
@@ -51,7 +52,8 @@ def request_spec(gerrit_account, repo, branch):
     if req_spec is None: 
         try:
             req_url_spec = 'https://review.fuel-infra.org/gitweb?p=openstack-build/{0}-build.git;' \
-                               'a=blob_plain;f=rpm/SPECS/python-{2}.spec;hb=refs/heads/{1}'.format(repo.strip(), branch, repo.strip().replace('.', '-'))
+                               'a=blob_plain;f=rpm/SPECS/python-{2}.spec;hb=refs/heads/{1}'.format(repo.strip(),
+                                branch, repo.strip().replace('.', '-'))
             req_spec = lan.get_requirements_from_url(req_url_spec, gerrit_account)
         except KeyError:
             print 'Skip ' + repo.strip() + ' RPM repository.'
@@ -136,8 +138,8 @@ def get_req(gerritAccount, req_file, rq2, json_file, branch, type):
                     pack_count += 1
                     bold_beg = '\033[1m'
                     bold_end = '\033[0m'
-                    json_file.write('\t' * 3 + json.dumps(''.join('* ' + '**' + key + '**' + ' ' * 8 )) + ':' +
-                                    json.dumps(''.join([" %s%s;" % x for x in rq[key]])) + ',\n')
+                    json_file.write('\t' * 3 + json.dumps(''.join('* ' + '**' + key + '**' + ' ' * 8 )) + 
+                        ':' + json.dumps(''.join([" %s%s;" % x for x in rq[key]])) + ',\n')
                 else:
                     # Write to file with standard font.
                     json_file.write('\t' * 3 + json.dumps(''.join(key + ' ' * 8)) + ':' +

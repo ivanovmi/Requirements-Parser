@@ -28,8 +28,10 @@ class Require:
         req = dict(req1.items() + req2.items())
 
         for el in req1.keys():
-            req[el] = set(req[el]) | set(req1[el])  # Merge requirements sets.
-            req[el] = sorted(req[el], key = lambda x: LooseVersion(x[1]))   # Sort requirements list by the version.
+            # Merge requirements sets
+            req[el] = set(req[el]) | set(req1[el])
+            # Sort requirements list by the version
+            req[el] = sorted(req[el], key = lambda x: LooseVersion(x[1]))
 
             try:
                 eqEl = filter(lambda x: x[0] == '==', req[el])[-1]
@@ -41,8 +43,8 @@ class Require:
             except IndexError:
                 neqEl = ("0", "0")
 
-            # If equal's version is greater than '>=' or '<=', then take '==' as main requirement's version
-            # of the package. Else we have to process merged list.
+            # If equal's version is greater than '>=' or '<=', then take '=='
+            # as main requirement's version of the package. Else we have to process merged list.
             if LooseVersion(eqEl[1]) >= LooseVersion(neqEl[1]):
                 eqEly = True
                 if eqEl[1] == neqEl[1] == "0":
@@ -50,7 +52,8 @@ class Require:
             else:
                 eqEly = False
 
-            # Processing of two lists of requirements merged in one (deleting duplicates of versions with resolving conflicts).
+            # Processing of two lists of requirements merged in one
+            # (deleting duplicates of versions with resolving conflicts).
             if not eqEly:
                 pred = None
                 idx = 0
@@ -91,7 +94,8 @@ class Require:
 
         return req
 
-    # This function is for parsing requirements file to special format: [(sign, version),..., (sign, version)].
+    # This function is for parsing requirements file to special format:
+    # [(sign, version),..., (sign, version)].
     # Output example: { "pbr" : [ (">=", "0.6"), ("!=", "0.7"), ("<", "1.0")] }
     @staticmethod
     def parse_req(inp):
