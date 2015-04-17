@@ -22,32 +22,56 @@ def compare(version, sets):
     if len(a)>0:
         for i in a:
             if i[0] == '<':
+<<<<<<< HEAD
                 if compare_version(version) < compare_version(i[1]):
+=======
+                if versiontuple(version) < versiontuple(i[1]):
+>>>>>>> a1c7fe2f7ab3d3c2dd2563ad495d34c54f46b6e0
                     status.append(True)
                 else:
                     status.append(False)
             elif i[0] == '>':
+<<<<<<< HEAD
                 if compare_version(version) > compare_version(i[1]):
+=======
+                if versiontuple(version) > versiontuple(i[1]):
+>>>>>>> a1c7fe2f7ab3d3c2dd2563ad495d34c54f46b6e0
                     status.append(True)
                 else:
                     status.append(False)
             elif i[0] == '==':
+<<<<<<< HEAD
                 if compare_version(version) == compare_version(i[1]):
+=======
+                if versiontuple(version) == versiontuple(i[1]):
+>>>>>>> a1c7fe2f7ab3d3c2dd2563ad495d34c54f46b6e0
                     status.append(True)
                 else:
                     status.append(False)
             elif i[0] == '>=':
+<<<<<<< HEAD
                 if compare_version(version) >= compare_version(i[1]):
+=======
+                if versiontuple(version) >= versiontuple(i[1]):
+>>>>>>> a1c7fe2f7ab3d3c2dd2563ad495d34c54f46b6e0
                     status.append(True)
                 else:
                     status.append(False)
             elif i[0] == '<=':
+<<<<<<< HEAD
                 if compare_version(version) <= compare_version(i[1]):
+=======
+                if versiontuple(version) <= versiontuple(i[1]):
+>>>>>>> a1c7fe2f7ab3d3c2dd2563ad495d34c54f46b6e0
                     status.append(True)
                 else:
                     status.append(False)
             elif i[0] == '!=':
+<<<<<<< HEAD
                 if compare_version(version) != compare_version(i[1]):
+=======
+                if versiontuple(version) != versiontuple(i[1]):
+>>>>>>> a1c7fe2f7ab3d3c2dd2563ad495d34c54f46b6e0
                     status.append(True)
                 else:
                     status.append(False)
@@ -55,6 +79,12 @@ def compare(version, sets):
         print "The dependencie wrong on " + str(status.index(False)+1) + " border"
     else:
         print 'All OK'
+<<<<<<< HEAD
+=======
+
+#compare("1.1.3", [('>', '1.8.0'), ('!=', '1.8.3')])
+
+>>>>>>> a1c7fe2f7ab3d3c2dd2563ad495d34c54f46b6e0
 
 packages_dict = {}
 
@@ -72,7 +102,11 @@ with open("tmp", "r") as f:
                 package_version = package_version.split(':')[1]
         except TypeError:
             pass
+<<<<<<< HEAD
         packages_dict[package_name] = package_version
+=======
+        packages_dict[package_name] = vers
+>>>>>>> a1c7fe2f7ab3d3c2dd2563ad495d34c54f46b6e0
 
 try:
     os.remove('tmp')
@@ -98,8 +132,19 @@ for item in rq2:
 # generate cli output
 for key in packages_dict:
     if key in rq2:
+<<<<<<< HEAD
         print key
         a = list(rq2[key])
         a.sort(reverse=True)
         print packages_dict[key] + "    ========    " + str(a)
         compare(packages_dict[key], rq2[key])
+=======
+        #print key
+        a = list(rq2[key])
+        a.sort(reverse=True)
+        try:
+            print packages_dict[key] + "    ========    " + str(a)#.sort(reverse=True))
+            compare(packages_dict[key], rq2[key])
+        except TypeError:
+            print "None" + "    ========    " + str(list(rq2[key]).sort(reverse=True))
+>>>>>>> a1c7fe2f7ab3d3c2dd2563ad495d34c54f46b6e0
