@@ -52,7 +52,7 @@ def compare(version, sets):
                 else:
                     status.append(False)
     if False in status:
-        print "The dependencie wrong on " + str(status.index(False)+1) + " border"
+        print "The dependency wrong on " + str(status.index(False)+1) + " border"
     else:
         print 'All OK'
 
@@ -81,7 +81,7 @@ except OSError:
 
 
 # Get global requirements
-gerritAccount=lan.login_to_launchpad()
+gerritAccount=lan.login_to_launchpad('''provide your credentials''')
 req_url = 'https://raw.githubusercontent.com/openstack/requirements/' \
             '{0}/global-requirements.txt'.format("stable/kilo")
 r = lan.get_requirements_from_url(req_url, gerritAccount)
@@ -101,5 +101,5 @@ for key in packages_dict:
         print key
         a = list(rq2[key])
         a.sort(reverse=True)
-        print packages_dict[key] + "    ========    " + str(a)
+        print packages_dict[key] + "    ==================    " + str(a)
         compare(packages_dict[key], rq2[key])
