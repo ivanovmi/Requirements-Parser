@@ -16,24 +16,48 @@ def versiontuple(v):
 
 
 def compare(version, sets):
+    status = []
     a = list(sets)
-
+    a.sort(reverse=True)
     if len(a)>0:
         for i in a:
             if i[0] == '<':
-                print versiontuple(version) < versiontuple(i[1])
+                if versiontuple(version) < versiontuple(i[1]):
+                    status.append(True)
+                else:
+                    status.append(False)
             elif i[0] == '>':
-                print versiontuple(version) > versiontuple(i[1])
+                if versiontuple(version) > versiontuple(i[1]):
+                    status.append(True)
+                else:
+                    status.append(False)
             elif i[0] == '==':
-                print versiontuple(version) == versiontuple(i[1])
+                if versiontuple(version) == versiontuple(i[1]):
+                    status.append(True)
+                else:
+                    status.append(False)
             elif i[0] == '>=':
-                print versiontuple(version) >= versiontuple(i[1])
+                if versiontuple(version) >= versiontuple(i[1]):
+                    status.append(True)
+                else:
+                    status.append(False)
             elif i[0] == '<=':
-                print versiontuple(version) <= versiontuple(i[1])
+                if versiontuple(version) <= versiontuple(i[1]):
+                    status.append(True)
+                else:
+                    status.append(False)
             elif i[0] == '!=':
-                print versiontuple(version) != versiontuple(i[1])
+                if versiontuple(version) != versiontuple(i[1]):
+                    status.append(True)
+                else:
+                    status.append(False)
+    if False in status:
+        print "The dependencie wrong on " + str(status.index(False)+1) + " border"
     else:
-        print 'asd'
+        print 'All OK'
+
+#compare("1.1.3", [('>', '1.8.0'), ('!=', '1.8.3')])
+
 
 packages_dict = {}
 with open("tmp", "r") as f:
@@ -50,7 +74,6 @@ with open("tmp", "r") as f:
                 vers = vers.split(':')[1]
         except TypeError:
             pass
-
         packages_dict[package_name] = vers
 
 try:
@@ -76,9 +99,11 @@ for item in rq2:
 
 for key in packages_dict:
     if key in rq2:
-        print key
+        #print key
+        a = list(rq2[key])
+        a.sort(reverse=True)
         try:
-            print packages_dict[key] + "    ========    " + str(list(rq2[key]))
+            print packages_dict[key] + "    ========    " + str(a)#.sort(reverse=True))
             compare(packages_dict[key], rq2[key])
         except TypeError:
-            print "None" + "    ========    " + str(list(rq2[key]))
+            print "None" + "    ========    " + str(list(rq2[key]).sort(reverse=True))
