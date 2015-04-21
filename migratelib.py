@@ -5,11 +5,20 @@ import lan
 import require_utils
 import os
 import json
+from colorama import Fore
+import csv
 
 version_mask = re.compile("^[0-9_.:]+")
 
 os.system("aptitude -F '%p %V' --disable-columns search '~n . ~O Mirantis' >> tmp")
 
+
+def write_header_csv():
+    with open('table.csv', 'wb') as csvfile:
+        spamwriter = csv.writer(csvfile, delimiter='|', quoting=csv.QUOTE_MINIMAL)
+        spamwriter.writerow(['package_name','GR_lower_bound', 'package_version','GR_upper_bound', 'status'])
+
+write_header_csv()
 
 def compare_version(v):
     return tuple(map(int, (v.split("."))))
@@ -52,9 +61,9 @@ def compare(version, sets):
                 else:
                     status.append(False)
     if False in status:
-        print "The dependency wrong on " + str(status.index(False)+1) + " border"
+        return Fore.RED+"The dependency wrong on " + str(status.index(False)+1) + " border"
     else:
-        print 'All OK'
+        return Fore.GREEN+'All OK'
 
 packages_dict = {}
 
@@ -81,7 +90,7 @@ except OSError:
 
 
 # Get global requirements
-gerritAccount=lan.login_to_launchpad('''provide your credentials''')
+gerritAccount=lan.login_to_launchpad('mivanov@mirantis.com', '16121814')
 req_url = 'https://raw.githubusercontent.com/openstack/requirements/' \
             '{0}/global-requirements.txt'.format("stable/kilo")
 r = lan.get_requirements_from_url(req_url, gerritAccount)
@@ -95,11 +104,16 @@ for item in rq2:
         if item == basename:
             rq2[key]=rq2.pop(item)
 
+#write_header_csv()
 # generate cli output
 for key in packages_dict:
     if key in rq2:
-        print key
         a = list(rq2[key])
         a.sort(reverse=True)
-        print packages_dict[key] + "    ==================    " + str(a)
-        compare(packages_dict[key], rq2[key])
+        if a == []:
+            a = "Any"
+            string_format = str(a)
+        else:
+            string_format = ''.join([" %s%s;" % x for x in rq2[key]])
+        print key, '\t', packages_dict[key] + "    ==================    " + string_format, compare(packages_dict[key], rq2[key]), Fore.RESET
+ 
