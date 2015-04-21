@@ -1,12 +1,14 @@
 __author__ = 'degorenko'
 import json
 import os
+import csv
 
 
 def generate_output(mode):
         # read example JSON
-        with open('requirements.json') as json_file:
-            json_data = json.load(json_file)
+        if mode != 'migr':
+            with open('requirements.json') as json_file:
+                json_data = json.load(json_file)
 
         if mode == 'req':
             filename = generate_rst(json_data, False)
@@ -14,11 +16,24 @@ def generate_output(mode):
             filename = generate_rst(json_data, True)
         elif mode == 'diff':
             filename = generate_rst(json_data, True)
+        elif mode == 'migr':
+            filename = ''
 
         return filename
 
 
-def generate_header(json_file, branch):
+def generate_header_csv(csvfile):
+    csvwriter = csv.writer(csvfile, delimiter=',', quoting=csv.QUOTE_MINIMAL)
+    csvwriter.writerow(['Package name', 'Package version', 'Requirements', 'Status'])
+
+
+def generate_csv(csvfile, package_name, version, vers_req, result):
+
+    csvwriter = csv.writer(csvfile, delimiter=',', quoting=csv.QUOTE_MINIMAL)
+    csvwriter.writerow([package_name, version, vers_req, result])
+
+
+def generate_header_rst(json_file, branch):
     json_file.write('{"gerrit_branch": "' + str(branch) + '",\n')
     json_file.write('\n\t"projects": [\n\t')
 

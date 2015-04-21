@@ -23,17 +23,17 @@ def check_config():
         send = ''
         type_req = ''
 
-        while mode.lower() not in ['ep', 'req', 'diff', 'e', 'r', 'd']:
-            mode = raw_input('Module (Epoch = ep | Requires = req | Diff check = diff): ')
+        while mode.lower() not in ['ep', 'req', 'diff', 'e', 'r', 'd', 'm', 'migr']:
+            mode = raw_input('Module (Epoch = ep | Requires = req | Diff check = diff | Migrate tool = migr): ')
 
-        if mode not in ['diff', 'd']:
+        if mode not in ['diff', 'd', 'm', 'migr']:
             type_req = raw_input('Scan RPM or DEB (spec | control | empty to pass): ')
             if type_req.lower() not in ["spec", "control"]:
                 type_req = ''
         else:
             type_req = ''
 
-        if mode.lower() not in ['diff', 'd']:
+        if mode.lower() not in ['diff', 'd', 'm', 'migr']:
             while branch_name.lower() not in ['master', '6.1', '6.0.1']:
                 branch_name = raw_input('At the what branch we should check requirements? ')
                 if branch_name == 'master':
@@ -45,8 +45,8 @@ def check_config():
         else:
             branch = 'master'
 
-        if mode.lower() in ['req', 'r']:
-            while global_branch_name not in ['master', 'juno', 'icehouse']:
+        if mode.lower() in ['req', 'r', 'm', 'migr']:
+            while global_branch_name not in ['master', 'juno', 'icehouse', 'kilo']:
                 global_branch_name = raw_input('At the what branch we should find global requirements? ')
                 if global_branch_name == 'master':
                     global_branch = 'master'
@@ -54,18 +54,26 @@ def check_config():
                     global_branch = 'stable/juno'
                 elif global_branch_name == 'icehouse':
                     global_branch = 'stable/icehouse'
+                elif global_branch_name == 'kilo':
+                    global_branch = 'stable/kilo'
         else:
             global_branch = None
 
-        while file_extension.lower() not in ['pdf', 'html']:
-            file_extension = raw_input('With what extension save a file? (PDF or HTML?) ')
+        if mode != 'migr':
+            while file_extension.lower() not in ['pdf', 'html']:
+                file_extension = raw_input('With what extension save a file? (PDF or HTML?) ')
 
-        while send.lower() not in ['y', 'n', 'yes', 'no']:
-            send = raw_input('Would you like to send a report on whether the e-mail? ')
-            if send.lower() in ['y', 'yes']:
-                email = raw_input('Enter the e-mail: ')
-            elif send.lower() in ['n', 'no']:
-                email = None
+
+            while send.lower() not in ['y', 'n', 'yes', 'no']:
+                send = raw_input('Would you like to send a report on whether the e-mail? ')
+                if send.lower() in ['y', 'yes']:
+                    email = raw_input('Enter the e-mail: ')
+                elif send.lower() in ['n', 'no']:
+                    email = None
+
+        else:
+            file_extension = None
+            email = None
 
         return [launchpad_id, gerritAccount, mode, type_req, branch, 
         global_branch, file_extension, send, email]
@@ -105,6 +113,8 @@ def check_config():
                         global_branch = 'stable/juno'
                     elif global_branch_name == 'icehouse':
                         global_branch = 'stable/icehouse'
+                    elif global_branch_name == 'kilo':
+                        global_branch = 'stable/kilo'
                 else:
                     global_branch = None
 

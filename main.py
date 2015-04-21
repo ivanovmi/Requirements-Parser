@@ -7,7 +7,7 @@ import report as generate_report
 import os
 from os.path import basename
 import config
-
+import migratelib
 '''
 DRAFT:
  - Forming globals
@@ -33,15 +33,21 @@ if __name__ == "__main__":
         send = parameters_list[7]
         email = parameters_list[8]
 
-        json_file = open('requirements.json', 'w')
+        if mode != 'migr':
+            json_file = open('requirements.json', 'w')
+            generate_report.generate_header_rst(json_file, branch)
+        else:
+            csvfile = open('table.csv', 'w')
+            generate_report.generate_header_csv(csvfile)
 
-        generate_report.generate_header(json_file, branch)
-
-        if mode == 'req':
+        if mode in ['req', 'migr']:
             req_url = 'https://raw.githubusercontent.com/openstack/requirements/' \
             '{0}/global-requirements.txt'.format(global_branch)
             r = lan.get_requirements_from_url(req_url, gerritAccount)
-            rq2 = require_utils.Require(require_utils.Require.parse_req(r))
+            if mode == 'req':
+                rq2 = require_utils.Require(require_utils.Require.parse_req(r))
+            elif mode == 'migr':
+                rq2 = require_utils.Require.parse_req(r)
         else:
             json_file.write('\t{\n')
 
@@ -64,13 +70,17 @@ if __name__ == "__main__":
             pack_count = generator.get_req(gerritAccount, req_file, rq2, json_file, branch, type_req)
         elif mode == 'ep':
             generator.get_epoch(gerritAccount, req_file, branch, json_file)
+        elif mode == 'migr':
+            generator.migrate(rq2, csvfile)
         else:
             generator.diff_check(launchpad_id.split('@')[0], json_file, req_file)
 
         if mode == 'ep':
             json_file.write('\n' + '\t' * 2 + '}' + '\n')
-        json_file.write('\t' + '],\n"output_format": "' + file_extension.lower() + '"\n}')
-        json_file.close()
+
+        if mode != 'migr':
+            json_file.write('\t' + '],\n"output_format": "' + file_extension.lower() + '"\n}')
+            json_file.close()
 
         filename = generate_report.generate_output(mode)
 

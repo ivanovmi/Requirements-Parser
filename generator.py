@@ -2,6 +2,10 @@ import os
 import lan
 import require_utils
 import json
+import report
+from colorama import Fore
+import tempfile
+import re, migratelib
 
 tag_dict = {
     'python-barbicanclient': '2.2.1',
@@ -222,3 +226,66 @@ def diff_check(launchpad_name, json_file, req_file):
                 json_file.write('\t{'+json.dumps(head)+': '+json.dumps(tail)+'},\n')
     del_symbol(json_file, -2)
     json_file.write('}')
+
+
+def migrate(rq2, csvfile):
+    version_mask = re.compile("^[0-9_.:]+")
+    tmpfile = tempfile.NamedTemporaryFile(delete=False)
+    os.system("aptitude -F '%p %V' --disable-columns search '~n . ~O Mirantis' >> {0}".format(tmpfile.name))
+
+    packages_dict = {}
+
+    with open(str(tmpfile.name), 'r') as f:
+        for line in f:
+            package_name = line.split(' ')[0]
+            apt_version = line.split(' ')[1].strip()
+            version = version_mask.search(apt_version)
+            if version:
+                package_version = version.group(0)
+            else:
+                package_version = None
+            try:
+                if ':' in package_version:
+                    package_version = package_version.split(':')[1]
+            except TypeError:
+                pass
+            packages_dict[package_name] = package_version
+
+    try:
+        os.remove(tmpfile.name)
+    except OSError:
+        pass
+
+    # change names according base-control rules
+    control_base_file = open("control-base.json", "r")
+    control_base = json.load(control_base_file)
+    for item in rq2:
+        for key, basename in control_base.iteritems():
+            if item == basename:
+                rq2[key]=rq2.pop(item)
+
+    #csvfile = open('table.csv', 'w')
+    report.generate_header_csv(csvfile)
+
+    # generate cli output
+    for key in packages_dict:
+        if key in rq2:
+
+            a = list(rq2[key])
+            a.sort(reverse=True)
+            if a == []:
+                a = "Any"
+                string_format = str(a)
+            else:
+                string_format = ''.join([" %s%s;" % x for x in rq2[key]])
+
+            result, status = migratelib.compare(packages_dict[key], rq2[key])
+            report.generate_csv(csvfile, key, packages_dict[key], string_format, result)
+            if result == 'All OK':
+                result = Fore.GREEN+'All OK'+Fore.RESET
+            else:
+                result = Fore.RED+"The dependency wrong on " + str(status.index(False)+1) + " border"+Fore.RESET
+            print key, \
+                '\t', \
+                packages_dict[key] + "  ==================  " + string_format, \
+                result
