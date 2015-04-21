@@ -90,7 +90,7 @@ except OSError:
 
 
 # Get global requirements
-gerritAccount=lan.login_to_launchpad('''provide your credentials''')
+gerritAccount=lan.login_to_launchpad('mivanov@mirantis.com', '16121814')
 req_url = 'https://raw.githubusercontent.com/openstack/requirements/' \
             '{0}/global-requirements.txt'.format("stable/kilo")
 r = lan.get_requirements_from_url(req_url, gerritAccount)
