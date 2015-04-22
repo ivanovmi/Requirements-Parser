@@ -3,8 +3,11 @@ import json
 import os
 import csv
 
+from email.utils import formatdate
+cur_time = formatdate(timeval=None, localtime=True)
 
-def generate_output(mode):
+
+def generate_output(mode, file=None):
         # read example JSON
         if mode != 'migr':
             with open('requirements.json') as json_file:
@@ -17,7 +20,7 @@ def generate_output(mode):
         elif mode == 'diff':
             filename = generate_rst(json_data, True)
         elif mode == 'migr':
-            filename = ''
+            filename = file
 
         return filename
 
@@ -41,8 +44,7 @@ def generate_header_rst(json_file, branch):
 def generate_rst(json_data, epoch):
     f = open("report.rst", "w")
 
-    from email.utils import formatdate
-    cur_time = formatdate(timeval=None, localtime=True)
+
 
     write_headers(f, '{0} {1}{2}'.format("Dependency checker",
                                          cur_time, "\n"), True)
@@ -81,7 +83,7 @@ def generate_rst(json_data, epoch):
     if json_data["output_format"] == "pdf":
         filename = 'report '+cur_time+'.pdf'
         call(["rst2pdf", "report.rst", "-o", filename])
-    else:
+    elif json_data["output_format"]:
         filename = 'report.html'
         os.system('rst2html.py report.rst {0}'.format(filename))
 

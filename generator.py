@@ -5,7 +5,8 @@ import json
 import report
 from colorama import Fore
 import tempfile
-import re, migratelib
+import re
+import migratelib
 
 tag_dict = {
     'python-barbicanclient': '2.2.1',
@@ -56,8 +57,9 @@ def request_spec(gerrit_account, repo, branch):
     if req_spec is None: 
         try:
             req_url_spec = 'https://review.fuel-infra.org/gitweb?p=openstack-build/{0}-build.git;' \
-                               'a=blob_plain;f=rpm/SPECS/python-{2}.spec;hb=refs/heads/{1}'.format(repo.strip(),
-                                branch, repo.strip().replace('.', '-'))
+                           'a=blob_plain;f=rpm/SPECS/python-{2}.spec;hb=refs/heads/{1}'.format(repo.strip(),
+                                                                        branch, repo.strip().replace('.', '-'))
+
             req_spec = lan.get_requirements_from_url(req_url_spec, gerrit_account)
         except KeyError:
             print 'Skip ' + repo.strip() + ' RPM repository.'
@@ -140,10 +142,10 @@ def get_req(gerritAccount, req_file, rq2, json_file, branch, type):
                 if require_utils.Require.is_changed(rq[key], rq1.packs[key]):
                     # Write to file with bold font and pointer.
                     pack_count += 1
-                    bold_beg = '\033[1m'
-                    bold_end = '\033[0m'
-                    json_file.write('\t' * 3 + json.dumps(''.join('* ' + '**' + key + '**' + ' ' * 8 )) + 
-                        ':' + json.dumps(''.join([" %s%s;" % x for x in rq[key]])) + ',\n')
+                    bold_beg = Fore.RED
+                    bold_end = Fore.RESET
+                    json_file.write('\t' * 3 + json.dumps(''.join('* ' + '**' + key + '**' + ' ' * 8)) +
+                                    ':' + json.dumps(''.join([" %s%s;" % x for x in rq[key]])) + ',\n')
                 else:
                     # Write to file with standard font.
                     json_file.write('\t' * 3 + json.dumps(''.join(key + ' ' * 8)) + ':' +
@@ -208,7 +210,7 @@ def diff_check(launchpad_name, json_file, req_file):
 
         if 'python' in repo and 'client' in repo or 'mistral' in repo or 'apps' in repo \
             or 'store' in repo or 'sphinx' in repo or 'serial' in repo or 'context' in repo \
-            or 'utils' in repo or 'test' in repo:
+                or 'utils' in repo or 'test' in repo:
             git_branch = tag_dict[repo]
         else:
             git_branch = 'upstream/stable/juno'
@@ -216,13 +218,14 @@ def diff_check(launchpad_name, json_file, req_file):
         os.system('./check.sh {0} {1} {2} {3}'.format(gerrit, repo, git_repo, git_branch))
 
         with open('tmpfile', 'r') as f:
+
             try:
                 last = f.readlines()[-1]
             except IndexError:
                 json_file.write('\t{"No changes": "Codes of these components probably have not been changed"},\n')
             else:
-                head = last.strip().split(',',1)[0]
-                tail = last.strip().split(',',1)[1]
+                head = last.strip().split(',', 1)[0]
+                tail = last.strip().split(',', 1)[1]
                 json_file.write('\t{'+json.dumps(head)+': '+json.dumps(tail)+'},\n')
     del_symbol(json_file, -2)
     json_file.write('}')
@@ -231,7 +234,14 @@ def diff_check(launchpad_name, json_file, req_file):
 def migrate(rq2, csvfile):
     version_mask = re.compile("^[0-9_.:]+")
     tmpfile = tempfile.NamedTemporaryFile(delete=False)
-    os.system("aptitude -F '%p %V' --disable-columns search '~n . ~O Mirantis' >> {0}".format(tmpfile.name))
+
+    try:
+        apt_check = open('/usr/bin/aptitude','r')
+        apt_check.close()
+    except:
+        print 'Aptitude is not installed. Please, use apt-get install aptitude before start this tool again'
+    else:
+        os.system("aptitude -F '%p %V' --disable-columns search '~n . ~O Mirantis' >> {0}".format(tmpfile.name))
 
     packages_dict = {}
 
@@ -263,9 +273,6 @@ def migrate(rq2, csvfile):
         for key, basename in control_base.iteritems():
             if item == basename:
                 rq2[key]=rq2.pop(item)
-
-    #csvfile = open('table.csv', 'w')
-    report.generate_header_csv(csvfile)
 
     # generate cli output
     for key in packages_dict:

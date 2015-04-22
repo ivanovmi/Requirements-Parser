@@ -22,7 +22,7 @@ def send_mail(send_to, subject, text, files=None,
     with open(files, "rb") as attach_file:
         part = MIMEApplication(attach_file.read())
         part.add_header('Content-Disposition',
-            'attachment', filename=basename(files))
+                        'attachment', filename=basename(files))
         msg.attach(part)
 
     smtp = smtplib.SMTP(server)
