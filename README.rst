@@ -81,8 +81,7 @@ You must use yaml-file. In this yaml:
   
   * Output format:
   
-    - ``pdf``;
-    - ``html``;
+    - Parameter: ``output_format``; Values: ``pdf``, ``html``;
     - If you use ``migr`` mode option, ``output_format`` option not used
     
   * Would you like to send report via email? 
