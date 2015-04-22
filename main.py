@@ -8,6 +8,7 @@ import os
 from os.path import basename
 import config
 import migratelib
+
 '''
 DRAFT:
  - Forming globals
@@ -37,7 +38,7 @@ if __name__ == "__main__":
             json_file = open('requirements.json', 'w')
             generate_report.generate_header_rst(json_file, branch)
         else:
-            csvfile = open('table.csv', 'w')
+            csvfile = open('table '+sender.cur_time+'.csv', 'w')
             generate_report.generate_header_csv(csvfile)
 
         if mode in ['req', 'migr']:
@@ -52,10 +53,11 @@ if __name__ == "__main__":
             json_file.write('\t{\n')
 
         file_exist_check = False
-        try:
-            req_file = open('repos_name', 'r')
-        except IOError:
-            file_exist_check = True
+        if mode != 'migr':
+            try:
+                req_file = open('repos_name', 'r')
+            except IOError:
+                file_exist_check = True
 
 
         while file_exist_check:
@@ -82,15 +84,18 @@ if __name__ == "__main__":
             json_file.write('\t' + '],\n"output_format": "' + file_extension.lower() + '"\n}')
             json_file.close()
 
-        filename = generate_report.generate_output(mode)
+        if mode != 'migr':
+            filename = generate_report.generate_output(mode)
+        else:
+            filename = generate_report.generate_output(mode, csvfile.name)
 
         un_file = ['report.rst', 'tmpfile', 'requirements.json']
 
-        try:
-            for i in un_file:
+        for i in un_file:
+            try:
                 os.remove(i)
-        except OSError:
-            pass
+            except OSError:
+                pass
 
         if send.lower() in ['y', 'yes']:
             text = str(pack_count[0]) + ' packages were changed in ' + str(pack_count[1]) + ' repos.'

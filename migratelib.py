@@ -2,7 +2,12 @@
 
 
 def compare_version(v):
-    return tuple(map(int, (v.split("."))))
+    try:
+        return tuple(map(int, (v.split("."))))
+    except ValueError:
+        pass
+    except AttributeError:
+        pass
 
 
 def compare(version, sets):
@@ -12,36 +17,19 @@ def compare(version, sets):
     a.sort(reverse=True)
     if len(a)>0:
         for i in a:
+
             if i[0] == '<':
-                if compare_version(version) < compare_version(i[1]):
-                    status.append(True)
-                else:
-                    status.append(False)
+                    status.append(compare_version(version) < compare_version(i[1]))
             elif i[0] == '>':
-                if compare_version(version) > compare_version(i[1]):
-                    status.append(True)
-                else:
-                    status.append(False)
+                    status.append(compare_version(version) > compare_version(i[1]))
             elif i[0] == '==':
-                if compare_version(version) == compare_version(i[1]):
-                    status.append(True)
-                else:
-                    status.append(False)
+                status.append(compare_version(version) == compare_version(i[1]))
             elif i[0] == '>=':
-                if compare_version(version) >= compare_version(i[1]):
-                    status.append(True)
-                else:
-                    status.append(False)
+                status.append(compare_version(version) >= compare_version(i[1]))
             elif i[0] == '<=':
-                if compare_version(version) <= compare_version(i[1]):
-                    status.append(True)
-                else:
-                    status.append(False)
+                status.append(compare_version(version) <= compare_version(i[1]))
             elif i[0] == '!=':
-                if compare_version(version) != compare_version(i[1]):
-                    status.append(True)
-                else:
-                    status.append(False)
+                status.append(compare_version(version) != compare_version(i[1]))
     if False in status:
         return "The dependency wrong on " + str(status.index(False)+1) + " border", status
     else:
