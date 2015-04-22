@@ -10,6 +10,7 @@ def compare_version(v):
         pass
 
 
+
 def compare(version, sets):
     # global status
     status = []

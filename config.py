@@ -92,9 +92,11 @@ def check_config():
 
             launchpad_id = parameters['launchpad_id']
             launchpad_pw = parameters['launchpad_pw']
+
             if launchpad_id is None or launchpad_id == '' \
                     or launchpad_pw is None or launchpad_pw == '':
                     raise KeyError, 'launchpad_id or launchpad_pw'
+
             gerritAccount = lan.login_to_launchpad(launchpad_id, launchpad_pw)
             file_extension = parameters['output_format']
             send = parameters['send_email']
