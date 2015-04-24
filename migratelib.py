@@ -10,7 +10,6 @@ def compare_version(v):
         pass
 
 
-
 def compare(version, sets):
     # global status
     status = []
@@ -35,3 +34,35 @@ def compare(version, sets):
         return "The dependency wrong on " + str(status.index(False)+1) + " border", status
     else:
         return 'All OK', status
+
+
+def get_version(package_name):
+    import os
+    import tempfile
+    import subprocess
+
+    if package_name.startswith('python-') and package_name.endswith('client'):
+        pass
+    elif package_name.startswith('python-'):
+        package_arr = package_name.split('-')
+        package_arr.remove('python')
+        if len(package_arr)>1:
+            package_name = '-'.join(package_arr)
+        else:
+            package_name = package_arr[0]
+
+    tmpfile = tempfile.NamedTemporaryFile(delete=False)
+
+    #os.system('easy_install --dry-run --user {0} >> {1}'.format(package_name, tmpfile.name))
+    command = 'easy_install --dry-run --user '+package_name+' >> ' + tmpfile.name
+    stdout = open('/dev/null', "w")
+    stderr = open('/dev/null', "w")
+    subprocess.call(command, shell=True, stdout=stdout, stderr=stderr)
+
+    with open(tmpfile.name, 'r') as f:
+        for i in f:
+            if i.startswith('Best'):
+                version = i.split(' ')[3]
+                return version.strip()
+    f.close()
+    os.remove(tmpfile.name)

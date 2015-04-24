@@ -136,14 +136,14 @@ def get_req(gerritAccount, req_file, rq2, json_file, branch, type):
             json_file.write('\t' * 2 + '"deps": {\n')
             for key in rq1.packs.keys():
 
-                bold_beg = ''
-                bold_end = ''
+                color_beg = ''
+                color_end = ''
 
                 if require_utils.Require.is_changed(rq[key], rq1.packs[key]):
                     # Write to file with bold font and pointer.
                     pack_count += 1
-                    bold_beg = Fore.RED
-                    bold_end = Fore.RESET
+                    color_beg = Fore.RED
+                    color_end = Fore.RESET
                     json_file.write('\t' * 3 + json.dumps(''.join('* ' + '**' + key + '**' + ' ' * 8)) +
                                     ':' + json.dumps(''.join([" %s%s;" % x for x in rq[key]])) + ',\n')
                 else:
@@ -151,7 +151,7 @@ def get_req(gerritAccount, req_file, rq2, json_file, branch, type):
                     json_file.write('\t' * 3 + json.dumps(''.join(key + ' ' * 8)) + ':' +
                                     json.dumps(''.join([" %s%s;" % x for x in rq[key]])) + ',\n')
 
-                print '{0}{1}{2}:{3}'.format(bold_beg, key, bold_end, ''.join([" %s%s;" % x for x in rq[key]]))
+                print '{0}{1}{2}:{3}'.format(color_beg, key, color_end, ''.join([" %s%s;" % x for x in rq[key]]))
 
             # Delete unnecessary comma in the end of dependencies list
             del_symbol(json_file, -2)
@@ -236,7 +236,7 @@ def migrate(rq2, csvfile):
     tmpfile = tempfile.NamedTemporaryFile(delete=False)
 
     try:
-        apt_check = open('/usr/bin/aptitude','r')
+        apt_check = open('/usr/bin/aptitude', 'r')
         apt_check.close()
     except:
         print 'Aptitude is not installed. Please, use apt-get install aptitude before start this tool again'
@@ -281,7 +281,7 @@ def migrate(rq2, csvfile):
             a = list(rq2[key])
             a.sort(reverse=True)
             if a == []:
-                a = "Any"
+                a = migratelib.get_version(key)
                 string_format = str(a)
             else:
                 string_format = ''.join([" %s%s;" % x for x in rq2[key]])
@@ -299,5 +299,5 @@ def migrate(rq2, csvfile):
                     result
             except TypeError:
                 print '\t', \
-                    "None  ==================  " + string_format, \
-                    result
+                "None  ==================  " + string_format, \
+                result

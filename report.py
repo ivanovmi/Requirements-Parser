@@ -44,8 +44,6 @@ def generate_header_rst(json_file, branch):
 def generate_rst(json_data, epoch):
     f = open("report.rst", "w")
 
-
-
     write_headers(f, '{0} {1}{2}'.format("Dependency checker",
                                          cur_time, "\n"), True)
     write_parameters(f, ':{0}: {1}\n'.format("MOS gerrit branch",
