@@ -1,5 +1,5 @@
-launchpad_id: 'mivanov@mirantis.com' # use your launchpad username, like 'mivanov@mirantis.com'
-launchpad_pw: '16121814' # use your launchpad password
+launchpad_id: '' # use your launchpad username, like 'mivanov@mirantis.com'
+launchpad_pw: '' # use your launchpad password
 # Сhange modes, as you needed; 
 # Available modes: diff, req, migr, and ep
 mode: 'ep'
