@@ -12,7 +12,7 @@ Menu:
 How to preconfigure your system
 -------------------------------
 
-* This tool used ``colorama``, run ``pip install colorama``
+* This tool used ``colorama``, run ``pip install colorama rst2pdf rst2html5``
 
 * On the Debian-based (Debian, Ubuntu and other) run ``apt-get install -y mailutils aptitude``
 * On the RHEL-based (Fedora, CentOS and other) run ``yum install -y mailutils``
