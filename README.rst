@@ -11,10 +11,24 @@ Menu:
 
 How to preconfigure your system
 -------------------------------
+
 * On the Debian-based (Debian, Ubuntu and other) run ``apt-get install -y mailutils``
 * On the RHEL-based (Fedora, CentOS and other) run ``yum install -y mailutils``
 
 * You should to select ``Internet site`` button
+
+If you use 'migrate' option
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Create *.list file in ``/etc/apt/sources.list.d/{your_list}`` with content: 
+    ``deb  {mirantis_repo} {version} main``
+
+* Create *.pin file in ``/etc/apt/preferences.d/{your_file}`` with content:
+    ``Package: *``
+    
+    ``Pin: release o=Mirantis``
+    
+    ``Pin-Priority: 1000``
 
 How to use this parser
 ----------------------
@@ -28,7 +42,7 @@ With config
 You must use yaml-file. In this yaml:
   * Launchpad ID (Parameter: ``launchpad_id``);
   * Launchpad password (Parameter: ``launchpad_pw``);
-  * Mode (Parameter: ``mode``; values: ``req``, ``ep``, ``diff``):
+  * Mode (Parameter: ``mode``; values: ``req``, ``ep``, ``diff``, ``migr``):
     
     - If mode ``req``:
       
@@ -45,7 +59,7 @@ You must use yaml-file. In this yaml:
       + Global branch name
         
         * Parameter: ``global_branch``;
-        * Value: ``master``, ``juno``, ``icehouse``;
+        * Value: ``master``, ``kilo``, ``juno``, ``icehouse``;
         
     - If mode ``ep``:
       
@@ -58,11 +72,17 @@ You must use yaml-file. In this yaml:
         
         * Parameter: ``branch``;
         * Values: ``master``, ``6.1``, ``6.0.1``;
+    - If mode ``migr``:
+    
+      + Global branch name
+        
+        * Parameter: ``global_branch``;
+        * Value: ``master``, ``kilo``, ``juno``, ``icehouse``;
   
   * Output format:
   
-    - ``pdf``;
-    - ``html``;
+    - Parameter: ``output_format``; Values: ``pdf``, ``html``;
+    - If you use ``migr`` mode option, ``output_format`` option not used
     
   * Would you like to send report via email? 
     
