@@ -1,8 +1,11 @@
-import yaml
-config = open('config.yaml', 'r')
-docs = yaml.load_all(config)
-for doc in docs:
-    parameters = doc.copy()
+file_ = open('req', 'r')
 
-for i in parameters:
-    print i+': '+parameters[i]
+a=[]
+for i in file_:
+    a.append(i)
+    if not i.strip():
+        continue
+    else:
+        print i
+
+print a

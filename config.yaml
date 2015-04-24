@@ -1,8 +1,8 @@
-launchpad_id: '' # use your launchpad username, like 'mivanov@mirantis.com'
-launchpad_pw: '' # use your launchpad password
+launchpad_id: 'mivanov@mirantis.com' # use your launchpad username, like 'mivanov@mirantis.com'
+launchpad_pw: '16121814' # use your launchpad password
 # Сhange modes, as you needed; 
 # Available modes: diff, req, migr, and ep
-mode: 'migr'
+mode: 'ep'
 # Use it in mode to finding requirements or in mode for checking epoch
 # Available values: spec, control
 type_req: ''
@@ -11,7 +11,7 @@ type_req: ''
 branch: 'master'
 # In the what branch we should check global requirements? (Uses only in req mode)
 # Available values: master, juno, kilo, or icehouse
-global_branch: 'juno'
+global_branch: 'master'
 # In which format save your report (pdf or html)
 # If you use migrate mode, this field will be optional
 output_format: 'pdf'

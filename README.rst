@@ -12,8 +12,11 @@ Menu:
 How to preconfigure your system
 -------------------------------
 
-* On the Debian-based (Debian, Ubuntu and other) run ``apt-get install -y mailutils``
+* This tool used ``colorama``, run ``pip install colorama``
+
+* On the Debian-based (Debian, Ubuntu and other) run ``apt-get install -y mailutils aptitude``
 * On the RHEL-based (Fedora, CentOS and other) run ``yum install -y mailutils``
+  (migrate option not available for this distribution)
 
 * You should to select ``Internet site`` button
 

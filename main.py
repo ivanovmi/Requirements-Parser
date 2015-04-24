@@ -7,7 +7,6 @@ import report as generate_report
 import os
 from os.path import basename
 import config
-import migratelib
 
 '''
 DRAFT:
@@ -63,8 +62,8 @@ if __name__ == "__main__":
         while file_exist_check:
             repo_file = raw_input('Enter the file with repos name: ')
             try:
-                with open(basename(repo_file), 'r') as req_file:
-                        file_exist_check = False
+                req_file =  open(basename(repo_file), 'r')
+                file_exist_check = False
             except IOError:
                 print 'No such file or directory'
 
@@ -74,6 +73,7 @@ if __name__ == "__main__":
             generator.get_epoch(gerritAccount, req_file, branch, json_file)
         elif mode == 'migr':
             generator.migrate(rq2, csvfile)
+            csvfile.close()
         else:
             generator.diff_check(launchpad_id.split('@')[0], json_file, req_file)
 

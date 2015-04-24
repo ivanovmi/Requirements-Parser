@@ -56,6 +56,7 @@ def get_version(package_name):
     #os.system('easy_install --dry-run --user {0} >> {1}'.format(package_name, tmpfile.name))
     try:
         easy_install_check = open('/usr/local/bin/easy_install', 'r')
+        easy_install_check.close()
     except:
         print 'easy_install is not installed. Please, use apt-get install python-setuptools before start this tool again'
         raise SystemExit
@@ -65,12 +66,12 @@ def get_version(package_name):
     stdout = open('/dev/null', "w")
     stderr = open('/dev/null', "w")
     subprocess.call(command, shell=True, stdout=stdout, stderr=stderr)
-    print tmpfile.name
+
     with open(tmpfile.name, 'r') as f:
         for i in f:
             if i.startswith('Best'):
                 version = i.split(' ')[3]
     f.close()
     os.remove(tmpfile.name)
-    
+
     return version.strip()
