@@ -22,7 +22,10 @@ parameters = {'openid.assoc_handle': '',
 def get_requirements_from_url(url, gerritAccount):
     s = requests.Session()
     s.headers.update({'Cookie': 'GerritAccount=' + gerritAccount})
-    r = s.get(url)
+    try:
+        r = s.get(url)
+    except requests.exceptions.ConnectionError:
+        print 'Sorry, connection was not established'
 
     if r.status_code == 200:
         return r.iter_lines()
@@ -35,7 +38,11 @@ def get_requirements_from_url(url, gerritAccount):
 
 def login_to_launchpad(launchpad_id, launchpad_pw):
     s = requests.Session()
-    r = s.get('https://login.launchpad.net')
+    try:
+        r = s.get('https://login.launchpad.net')
+    except requests.exceptions.ConnectionError:
+        print 'Sorry, connection was not established'
+        raise SystemExit
 
     login_data = {'openid.usernamepassword': '',
                   'csrfmiddlewaretoken': requests.utils.dict_from_cookiejar(s.cookies)['csrftoken'],

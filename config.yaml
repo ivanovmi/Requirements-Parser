@@ -2,7 +2,7 @@ launchpad_id: '' # use your launchpad username, like 'mivanov@mirantis.com'
 launchpad_pw: '' # use your launchpad password
 # Сhange modes, as you needed; 
 # Available modes: diff, req, migr, and ep
-mode: 'ep'
+mode: 'req'
 # Use it in mode to finding requirements or in mode for checking epoch
 # Available values: spec, control
 type_req: ''

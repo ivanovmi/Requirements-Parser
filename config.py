@@ -15,7 +15,10 @@ def check_config():
         print 'Please, login to gerrit.'
         launchpad_id = raw_input('Login: ')
         launchpad_pw = getpass.getpass()
-        gerritAccount = lan.login_to_launchpad(launchpad_id, launchpad_pw)
+        try:
+            gerritAccount = lan.login_to_launchpad(launchpad_id, launchpad_pw)
+        except:
+            print "Sorry, connection wasn't established"
         global_branch_name = ''
         branch_name = ''
         mode = ''

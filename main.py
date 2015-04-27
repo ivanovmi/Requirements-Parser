@@ -1,4 +1,5 @@
 import require_utils
+import socket
 import pdb
 import lan
 import sender
@@ -99,7 +100,10 @@ if __name__ == "__main__":
 
         if send.lower() in ['y', 'yes']:
             text = str(pack_count[0]) + ' packages were changed in ' + str(pack_count[1]) + ' repos.'
-            sender.send_mail(email, 'Report from ' + sender.cur_time, text, filename)
+            try:
+                sender.send_mail(email, 'Report from ' + sender.cur_time, text, filename)
+            except socket.error:
+                print 'Ooops. I did not know, whats wrong. It is with socket, I think'
         elif send.lower() in ['n', 'no']:
             raise SystemExit
         pass
