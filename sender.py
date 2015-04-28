@@ -26,5 +26,8 @@ def send_mail(send_to, subject, text, files=None,
         msg.attach(part)
 
     smtp = smtplib.SMTP(server)
-    smtp.sendmail(send_from, send_to, msg.as_string())
+    try:
+        smtp.sendmail(send_from, send_to, msg.as_string())
+    except smtplib.SMTPRecipientsRefused:
+        print 'Sorry. Your e-mail was not sended. Maybe you not set recipient?'
     smtp.close()
