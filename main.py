@@ -33,6 +33,7 @@ if __name__ == "__main__":
         file_extension = parameters_list[6]
         send = parameters_list[7]
         email = parameters_list[8]
+        file_with_repo = parameters_list[9]
 
         if mode != 'migr':
             json_file = open('requirements.json', 'w')
@@ -54,10 +55,13 @@ if __name__ == "__main__":
 
         file_exist_check = False
         if mode != 'migr':
-            try:
-                req_file = open('repos_name', 'r')
-            except IOError:
-                file_exist_check = True
+            if file_with_repo:
+                req_file = open(file_with_repo, 'r')
+            else:
+                try:
+                    req_file = open('repos_name', 'r')
+                except IOError:
+                    file_exist_check = True
 
 
         while file_exist_check:

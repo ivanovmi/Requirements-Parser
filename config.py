@@ -84,8 +84,10 @@ def check_config():
             elif send.lower() in ['n', 'no']:
                 email = None
 
+        repo_file = None
+
         return [launchpad_id, gerritAccount, mode, type_req, branch, 
-        global_branch, file_extension, send, email]
+        global_branch, file_extension, send, email, repo_file]
 
     else:
         try:
@@ -98,7 +100,7 @@ def check_config():
 
             if launchpad_id is None or launchpad_id == '' \
                     or launchpad_pw is None or launchpad_pw == '':
-                    raise KeyError, 'launchpad_id or launchpad_pw'
+                raise KeyError, 'launchpad_id or launchpad_pw'
 
             gerritAccount = lan.login_to_launchpad(launchpad_id, launchpad_pw)
             file_extension = parameters['output_format']
@@ -138,6 +140,15 @@ def check_config():
             else:
                 global_branch = None
 
+            repo_file = parameters['file']
+            try:
+                f = open(repo_file, 'r')
+                f.close()
+            except IOError:
+                repo_file = None
+            else:
+                repo_file = parameters['file']
+
             if mode != 'migr' and file_extension is None or file_extension == '':
                 raise KeyError, 'output_format'
 
@@ -146,8 +157,8 @@ def check_config():
             elif send.lower() in ['no', 'n']:
                 email_to = None
 
-            return [launchpad_id, gerritAccount, mode, type_req, branch, 
-            global_branch, file_extension, send, email_to]
+            return [launchpad_id, gerritAccount, mode, type_req, branch,
+                    global_branch, file_extension, send, email_to, repo_file]
 
         except KeyError,  err:
             print str(err)+' not defined'
