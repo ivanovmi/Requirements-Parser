@@ -146,6 +146,8 @@ def check_config():
                 f.close()
             except IOError:
                 repo_file = None
+            except TypeError:
+                repo_file = None
             else:
                 repo_file = parameters['file']
 
