@@ -70,14 +70,25 @@ def request_spec(gerrit_account, repo, branch):
 
 def request_control(gerrit_account, repo, branch, type):
     # URL for getting changelog file
-    req_url_changelog = 'https://review.fuel-infra.org/gitweb?p=openstack-build/{0}-build.git;' \
-                        'a=blob_plain;f=debian/{2};hb=refs/heads/{1}'.format(repo.strip(), branch, type)
+    req_url_changelog = ['https://review.fuel-infra.org/gitweb?p=openstack-build/{0}-build.git;' \
+                        'a=blob_plain;f=debian/{2};hb=refs/heads/{1}',
+                        'https://review.fuel-infra.org/gitweb?p=openstack-build/{0}-build.git;' \
+                        'a=blob_plain;f=trusty/debian/{2};hb=refs/heads/{1}']
 
-    try:
-        req_control = lan.get_requirements_from_url(req_url_changelog, gerrit_account)
-    except KeyError:
+    idx = 0 
+    while idx < len(req_url_changelog):
+        try:
+            req_control = \
+                lan.get_requirements_from_url(req_url_changelog[idx].format(repo.strip(), branch, type),
+                    gerrit_account)
+        except KeyError:
+            req_control = None
+        idx += 1
+        if req_control is not None:
+            break
+
+    if req_control is None:
         print 'Skip ' + repo.strip() + ' DEB repository.'
-        req_control = None
 
     return req_control
 

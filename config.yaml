@@ -2,10 +2,10 @@ launchpad_id: '' # use your launchpad username, like 'mivanov@mirantis.com'
 launchpad_pw: '' # use your launchpad password
 # Сhange modes, as you needed; 
 # Available modes: diff, req, migr, and ep
-mode: 'req'
+mode: 'ep'
 # Use it in mode to finding requirements or in mode for checking epoch
 # Available values: spec, control
-type_req: ''
+type_req: 'control'
 # In what branches we should check requirements or epoch (Uses in req or ep)
 # Available: master, 6.1, 6.0.1
 branch: 'master'
@@ -19,5 +19,5 @@ file: 'req'
 output_format: 'pdf'
 # Would you like to send email? (yes or no)
 # If yes, you should specify email address
-send_email: 'yes'
+send_email: 'no'
 email_to: 'mivanov@mirantis.com'
