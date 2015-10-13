@@ -57,12 +57,12 @@ You must use yaml-file. In this yaml:
       + Branch name 
         
         * Parameter: ``branch``;
-        * Values: ``master``, ``6.1``, ``6.0.1``;
+        * Values: ``master``, ``8.0``, ``7.0``, ``6.1``, ``6.0.1``;
         
       + Global branch name
         
         * Parameter: ``global_branch``;
-        * Value: ``master``, ``kilo``, ``juno``, ``icehouse``;
+        * Value: ``master``, ``liberty``, ``kilo``, ``juno``, ``icehouse``;
         
     - If mode ``ep``:
       
@@ -74,13 +74,13 @@ You must use yaml-file. In this yaml:
       + Branch name 
         
         * Parameter: ``branch``;
-        * Values: ``master``, ``6.1``, ``6.0.1``;
+        * Values: ``master``, ``8.0``, ``7.0``, ``6.1``, ``6.0.1``;
     - If mode ``migr``:
     
       + Global branch name
         
         * Parameter: ``global_branch``;
-        * Value: ``master``, ``kilo``, ``juno``, ``icehouse``;
+        * Value: ``master``, ``liberty``, ``kilo``, ``juno``, ``icehouse``;
   
   * Output format:
   
