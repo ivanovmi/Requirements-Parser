@@ -24,7 +24,6 @@ def check_config():
         mode = ''
         file_extension = ''
         send = ''
-        type_req = ''
 
         while mode.lower() not in ['ep', 'req', 'diff', 'migr', 'e', 'r', 'd', 'm']:
             mode = raw_input('Module (Epoch = ep | Requires = req | Diff check = diff | Migrate tool = migr): ')
@@ -46,10 +45,14 @@ def check_config():
             type_req = ''
 
         if mode.lower() not in ['diff', 'migr']:
-            while branch_name.lower() not in ['master', '6.1', '6.0.1']:
+            while branch_name.lower() not in ['master', '8.0', '7.0', '6.1', '6.0.1']:
                 branch_name = raw_input('At the what branch we should check requirements? ')
                 if branch_name == 'master':
                     branch = 'master'
+                elif branch_name == '8.0':
+                    branch = 'openstack-ci/fuel-8.0/liberty'
+                elif branch_name == '6.1':
+                    branch = 'openstack-ci/fuel-7.0/2015.1.0'
                 elif branch_name == '6.1':
                     branch = 'openstack-ci/fuel-6.1/2014.2'
                 elif branch_name == '6.0.1':
@@ -58,7 +61,7 @@ def check_config():
             branch = 'master'
 
         if mode.lower() in ['req', 'migr']:
-            while global_branch_name not in ['master', 'juno', 'icehouse', 'kilo']:
+            while global_branch_name not in ['master', 'juno', 'icehouse', 'kilo', 'liberty']:
                 global_branch_name = raw_input('At the what branch we should find global requirements? ')
                 if global_branch_name == 'master':
                     global_branch = 'master'
@@ -68,6 +71,8 @@ def check_config():
                     global_branch = 'stable/icehouse'
                 elif global_branch_name == 'kilo':
                     global_branch = 'stable/kilo'
+                elif global_branch_name == 'liberty':
+                    global_branch = 'stable/liberty'
         else:
             global_branch = None
 
