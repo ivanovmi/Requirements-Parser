@@ -42,7 +42,13 @@ def request_spec(gerrit_account, repo, branch):
                     'https://review.fuel-infra.org/gitweb?p=openstack-build/{0}-build.git;'
                     'a=blob_plain;f=rpm/SPECS/openstack-{0}.spec;hb=refs/heads/{1}',
                     'https://review.fuel-infra.org/gitweb?p=openstack-build/{0}-build.git;'
-                    'a=blob_plain;f=rpm/SPECS/python-{0}.spec;hb=refs/heads/{1}']
+                    'a=blob_plain;f=rpm/SPECS/python-{0}.spec;hb=refs/heads/{1}',
+                    'https://review.fuel-infra.org/gitweb?p=openstack-build/{0}-build.git;'
+                    'a=blob_plain;f=centos7/rpm/SPECS/{0}.spec;hb=refs/heads/{1}',
+                    'https://review.fuel-infra.org/gitweb?p=openstack-build/{0}-build.git;'
+                    'a=blob_plain;f=centos7/rpm/SPECS/openstack-{0}.spec;hb=refs/heads/{1}',
+                    'https://review.fuel-infra.org/gitweb?p=openstack-build/{0}-build.git;'
+                    'a=blob_plain;f=centos7/rpm/SPECS/python-{0}.spec;hb=refs/heads/{1}']
     idx = 0
     while idx < len(req_url_spec):
         try:
