@@ -27,7 +27,8 @@ def generate_output(mode, file=None):
 
 def generate_header_csv(csvfile):
     csvwriter = csv.writer(csvfile, delimiter=',', quoting=csv.QUOTE_MINIMAL)
-    csvwriter.writerow(['Package name', 'Package version', 'Requirements', 'Status'])
+    csvwriter.writerow(['Package name', 'Package version',
+                        'Requirements', 'Status'])
 
 
 def generate_csv(csvfile, package_name, version, vers_req, result):
@@ -132,18 +133,22 @@ def write_table(f, project, requirements, epoch):
 
     def write(clmn1, clmn2):
         write_headers(f, '\n{0}\n'.format(project))
-        write_parameters(f, '+{0}+{1}+\n'.format(get_sequence('-', word_length[0]),
-                                                 get_sequence('-', word_length[1])))
+        write_parameters(f, '+{0}+{1}+\n'.
+                         format(get_sequence('-', word_length[0]),
+                                get_sequence('-', word_length[1])))
         write_parameters(f, '|{0}|{1}|\n'.format(align(clmn1, 0),
                                                  align(clmn2, 1)))
-        write_parameters(f, '+{0}+{1}+\n'.format(get_sequence('=', word_length[0]),
-                                                 get_sequence('=', word_length[1])))
+        write_parameters(f, '+{0}+{1}+\n'.
+                         format(get_sequence('=', word_length[0]),
+                                get_sequence('=', word_length[1])))
 
         for key in requirements.keys():
-            write_parameters(f, '|{0}|{1}|\n'.format(align(key, 0),
-                                                     align(requirements[key], 1)))
-            write_parameters(f, '+{0}+{1}+\n'.format(get_sequence('-', word_length[0]),
-                                                     get_sequence('-', word_length[1])))
+            write_parameters(f, '|{0}|{1}|\n'.
+                             format(align(key, 0),
+                                    align(requirements[key], 1)))
+            write_parameters(f, '+{0}+{1}+\n'.
+                             format(get_sequence('-', word_length[0]),
+                                    get_sequence('-', word_length[1])))
 
     if epoch:
         write("Repo type", "Epoch")

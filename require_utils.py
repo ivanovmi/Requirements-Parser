@@ -1,5 +1,3 @@
-import itertools
-import sys
 from distutils.version import LooseVersion
 import re
 
@@ -18,11 +16,14 @@ class Require:
     def __init__(self, req):
         self.packs = req
         for el in self.packs.keys():
-            self.packs[el] = sorted(self.packs[el], key = lambda x: LooseVersion(x[1]))
+            self.packs[el] = sorted(self.packs[el],
+                                    key=lambda x: LooseVersion(x[1]))
 
-    # "merge" function is for merging requirements. It is processing list of requirements
+    # "merge" function is for merging requirements.
+    # It is processing list of requirements
     # and returns combined list of requirements in particular way.
-    # Example of output: { "pbr" : [("!=", "0.7"), (">=", "0.6"), ("<", "1.0")] }
+    # Example of output:
+    # { "pbr" : [("!=", "0.7"), (">=", "0.6"), ("<", "1.0")] }
     @staticmethod
     def merge(req1, req2):
         req = dict(req1.items() + req2.items())
@@ -31,7 +32,7 @@ class Require:
             # Merge requirements sets
             req[el] = set(req[el]) | set(req1[el])
             # Sort requirements list by the version
-            req[el] = sorted(req[el], key = lambda x: LooseVersion(x[1]))
+            req[el] = sorted(req[el], key=lambda x: LooseVersion(x[1]))
 
             try:
                 eqEl = filter(lambda x: x[0] == '==', req[el])[-1]
@@ -39,12 +40,14 @@ class Require:
                 eqEl = ("0", "0")
 
             try:
-                neqEl = filter(lambda x: x[0] in ['>=', '<=', '>', '<'], req[el])[-1]
+                neqEl = filter(lambda x: x[0] in
+                               ['>=', '<=', '>', '<'], req[el])[-1]
             except IndexError:
                 neqEl = ("0", "0")
 
             # If equal's version is greater than '>=' or '<=', then take '=='
-            # as main requirement's version of the package. Else we have to process merged list.
+            # as main requirement's version of the package.
+            # Else we have to process merged list.
             if LooseVersion(eqEl[1]) >= LooseVersion(neqEl[1]):
                 eqEly = True
                 if eqEl[1] == neqEl[1] == "0":
@@ -58,17 +61,20 @@ class Require:
                 pred = None
                 idx = 0
                 while idx < len(req[el]):
-                    if pred != None:
+                    if pred is not None:
                         if req[el][idx][1] == pred[1]:
                             if req[el][idx][0] in ['!=', '==']:
-                                req[el][idx], req[el][idx - 1] = req[el][idx - 1], req[el][idx]
+                                req[el][idx], req[el][idx - 1] = \
+                                    req[el][idx - 1], req[el][idx]
                             if req[el][idx][0] in ['>', '<']:
                                 req[el].pop(idx - 1)
                             elif req[el][idx][0] in ['>=', '<=']:
-                                if not req[el][idx - 1][0] in ['!=', '<=', '>=']:
+                                if not req[el][idx - 1][0]\
+                                        in ['!=', '<=', '>=']:
                                     req[el].pop(idx - 1)
                                 elif req[el][idx - 1][0] == '!=':
-                                    req[el][idx] = (req[el][idx][0][:1], req[el][idx][1])
+                                    req[el][idx] = (req[el][idx][0][:1],
+                                                    req[el][idx][1])
                                     req[el].pop(idx - 1)
                                 else:
                                     idx += 1
@@ -79,11 +85,13 @@ class Require:
                 # Filter out '!=' signs.
                 res = filter(lambda x: x[0] == '!=', req[el])
                 for i in reversed(req[el]):
-                    if i[0] in ['>', '>=']:  # Take first '>' or '>=' sign from the end.
+                    # Take first '>' or '>=' sign from the end.
+                    if i[0] in ['>', '>=']:
                         res.append(i)
                         break
                 for i in req[el]:
-                    if i[0] in ['<', '<=']:  # Take first '<' or '<=' from the begin.
+                    # Take first '<' or '<=' from the begin.
+                    if i[0] in ['<', '<=']:
                         res.append(i)
                         break
                 req[el] = res
@@ -110,7 +118,7 @@ class Require:
                 resVers = Require.packageVers.findall(line[it.start():])
             if resName:
                 name = resName.group(0)
-                if not res.has_key(name):
+                if name not in res:
                     res[name] = set()
                     for idx, sign in enumerate(resEq):
                         res[name].add((sign, resVers[idx]))
@@ -119,14 +127,15 @@ class Require:
     # This function is for getting package names from control file
     @staticmethod
     def get_packs_control(inp):
-        sections = ["Build-Depends-Indep:", "Build-Depends:", "Depends:", "Suggests:", "Recommends:",
-        "Pre-Depends:", "Conflicts:", "Provides:", "Breaks:", "Replaces:"]
+        sections = ["Build-Depends-Indep:", "Build-Depends:", "Depends:",
+                    "Suggests:", "Recommends:", "Pre-Depends:",
+                    "Conflicts:", "Provides:", "Breaks:", "Replaces:"]
         res = dict((el, set()) for el in sections)
         sectEnable = ""
         for line in inp:
             if line == '' or line[0] == '#':
                 continue
-            if sectEnable and not ',' in line:
+            if sectEnable and ',' not in line:
                 sectEnable = ""
             for sect in sections:
                 if sect in line:
@@ -167,18 +176,20 @@ class Require:
                 return line
         return None
 
-    # Check if requirements lists have beend changed by detecting if they are different
+    # Check if requirements lists have been
+    #  changed by detecting if they are different
     @staticmethod
     def is_changed(req_list1, req_list2):
         try:
-            signList_a, verList_a = zip(*req_list1)
+            sign_list_a, ver_list_a = zip(*req_list1)
         except ValueError:
-            signList_a, verList_a = '', ''
+            sign_list_a, ver_list_a = '', ''
         try:
-            signList_b, verList_b = zip(*req_list2)
+            sign_list_b, ver_list_b = zip(*req_list2)
         except ValueError:
-            signList_b, verList_b = '', ''
-        if set(signList_a) != set(signList_b) or set(verList_a) != set(verList_b):
+            sign_list_b, ver_list_b = '', ''
+        if set(sign_list_a) != set(sign_list_b) \
+                or set(ver_list_a) != set(ver_list_b):
             return True
         else:
             return False

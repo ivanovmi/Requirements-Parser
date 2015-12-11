@@ -1,6 +1,5 @@
 import require_utils
 import socket
-import pdb
 import lan
 import sender
 import generator
@@ -15,7 +14,6 @@ DRAFT:
 '''
 
 if __name__ == "__main__":
-    #pdb.set_trace()
     try:
         pack_count = (0, 0)
         try:
@@ -44,7 +42,7 @@ if __name__ == "__main__":
 
         if mode in ['req', 'migr']:
             req_url = 'https://raw.githubusercontent.com/openstack/requirements/' \
-            '{0}/global-requirements.txt'.format(global_branch)
+                      '{0}/global-requirements.txt'.format(global_branch)
             r = lan.get_requirements_from_url(req_url, gerritAccount)
             if mode == 'req':
                 rq2 = require_utils.Require(require_utils.Require.parse_req(r))
@@ -63,30 +61,32 @@ if __name__ == "__main__":
                 except IOError:
                     file_exist_check = True
 
-
         while file_exist_check:
             repo_file = raw_input('Enter the file with repos name: ')
             try:
-                req_file =  open(basename(repo_file), 'r')
+                req_file = open(basename(repo_file), 'r')
                 file_exist_check = False
             except IOError:
                 print 'No such file or directory'
 
         if mode == 'req':
-            pack_count = generator.get_req(gerritAccount, req_file, rq2, json_file, branch, type_req)
+            pack_count = generator.get_req(gerritAccount, req_file,
+                                           rq2, json_file, branch, type_req)
         elif mode == 'ep':
             generator.get_epoch(gerritAccount, req_file, branch, json_file)
         elif mode == 'migr':
             generator.migrate(rq2, csvfile)
             csvfile.close()
         else:
-            generator.diff_check(launchpad_id.split('@')[0], json_file, req_file)
+            generator.diff_check(launchpad_id.split('@')[0],
+                                 json_file, req_file)
 
         if mode == 'ep':
             json_file.write('\n' + '\t' * 2 + '}' + '\n')
 
         if mode != 'migr':
-            json_file.write('\t' + '],\n"output_format": "' + file_extension.lower() + '"\n}')
+            json_file.write('\t' + '],\n"output_format": "' +
+                            file_extension.lower() + '"\n}')
             json_file.close()
 
         if mode != 'migr':
@@ -103,11 +103,14 @@ if __name__ == "__main__":
                 pass
 
         if send.lower() in ['y', 'yes']:
-            text = str(pack_count[0]) + ' packages were changed in ' + str(pack_count[1]) + ' repos.'
+            text = str(pack_count[0]) + ' packages were changed in ' +\
+                str(pack_count[1]) + ' repos.'
             try:
-                sender.send_mail(email, 'Report from ' + sender.cur_time, text, filename)
+                sender.send_mail(email, 'Report from ' + sender.cur_time,
+                                 text, filename)
             except socket.error:
-                print 'Ooops. I did not know, whats wrong. It is with socket, I think'
+                print 'Ooops. I did not know, whats wrong. ' \
+                      'It is with socket, I think'
         elif send.lower() in ['n', 'no']:
             raise SystemExit
         pass

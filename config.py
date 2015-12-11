@@ -25,8 +25,10 @@ def check_config():
         file_extension = ''
         send = ''
 
-        while mode.lower() not in ['ep', 'req', 'diff', 'migr', 'e', 'r', 'd', 'm']:
-            mode = raw_input('Module (Epoch = ep | Requires = req | Diff check = diff | Migrate tool = migr): ')
+        while mode.lower() not in ['ep', 'req', 'diff',
+                                   'migr', 'e', 'r', 'd', 'm']:
+            mode = raw_input('Module (Epoch = ep | Requires = req |'
+                             ' Diff check = diff | Migrate tool = migr): ')
 
         if mode.lower() == 'r':
             mode = 'req'
@@ -38,15 +40,18 @@ def check_config():
             mode = 'migr'
 
         if mode not in ['diff', 'migr']:
-            type_req = raw_input('Scan RPM or DEB (spec | control | empty to pass): ')
+            type_req = raw_input('Scan RPM or DEB (spec | control | '
+                                 'empty to pass): ')
             if type_req.lower() not in ["spec", "control"]:
                 type_req = ''
         else:
             type_req = ''
 
         if mode.lower() not in ['diff', 'migr']:
-            while branch_name.lower() not in ['master', '8.0', '7.0', '6.1', '6.0.1']:
-                branch_name = raw_input('At the what branch we should check requirements? ')
+            while branch_name.lower() not in ['master', '8.0',
+                                              '7.0', '6.1', '6.0.1']:
+                branch_name = raw_input('At the what branch we should '
+                                        'check requirements? ')
                 if branch_name == 'master':
                     branch = 'master'
                 elif branch_name == '8.0':
@@ -61,8 +66,10 @@ def check_config():
             branch = 'master'
 
         if mode.lower() in ['req', 'migr']:
-            while global_branch_name not in ['master', 'juno', 'icehouse', 'kilo', 'liberty']:
-                global_branch_name = raw_input('At the what branch we should find global requirements? ')
+            while global_branch_name not in ['master', 'juno',
+                                             'icehouse', 'kilo', 'liberty']:
+                global_branch_name = raw_input('At the what branch we should '
+                                               'find global requirements? ')
                 if global_branch_name == 'master':
                     global_branch = 'master'
                 elif global_branch_name == 'juno':
@@ -78,12 +85,14 @@ def check_config():
 
         if mode != 'migr':
             while file_extension.lower() not in ['pdf', 'html']:
-                file_extension = raw_input('With what extension save a file? (PDF or HTML?) ')
+                file_extension = raw_input('With what extension '
+                                           'save a file? (PDF or HTML?) ')
         else:
             file_extension = None
 
         while send.lower() not in ['y', 'n', 'yes', 'no']:
-            send = raw_input('Would you like to send a report on whether the e-mail? ')
+            send = raw_input('Would you like to send a report '
+                             'on whether the e-mail? ')
             if send.lower() in ['y', 'yes']:
                 email = raw_input('Enter the e-mail: ')
             elif send.lower() in ['n', 'no']:
@@ -91,8 +100,8 @@ def check_config():
 
         repo_file = None
 
-        return [launchpad_id, gerritAccount, mode, type_req, branch, 
-        global_branch, file_extension, send, email, repo_file]
+        return [launchpad_id, gerritAccount, mode, type_req, branch,
+                global_branch, file_extension, send, email, repo_file]
 
     else:
         try:
@@ -105,7 +114,7 @@ def check_config():
 
             if launchpad_id is None or launchpad_id == '' \
                     or launchpad_pw is None or launchpad_pw == '':
-                raise KeyError, 'launchpad_id or launchpad_pw'
+                raise KeyError('launchpad_id or launchpad_pw')
 
             gerritAccount = lan.login_to_launchpad(launchpad_id, launchpad_pw)
             file_extension = parameters['output_format']
@@ -114,7 +123,7 @@ def check_config():
             mode = parameters['mode']
 
             if mode is None or mode == '':
-                raise KeyError,'mode'
+                raise KeyError('mode')
 
             if mode not in ['diff', 'd', 'migr', 'm']:
                 type_req = parameters['type_req']
@@ -125,6 +134,10 @@ def check_config():
                 branch_name = parameters['branch']
                 if branch_name == 'master':
                     branch = 'master'
+                elif branch_name == '8.0':
+                    branch = 'openstack-ci/fuel-8.0/liberty'
+                elif branch_name == '7.0':
+                    branch = 'openstack-ci/fuel-7.0/2015.1.0'
                 elif branch_name == '6.1':
                     branch = 'openstack-ci/fuel-6.1/2014.2'
                 elif branch_name == '6.0.1':
@@ -142,6 +155,8 @@ def check_config():
                     global_branch = 'stable/icehouse'
                 elif global_branch_name == 'kilo':
                     global_branch = 'stable/kilo'
+                elif global_branch_name == 'liberty':
+                    global_branch = 'stable/liberty'
             else:
                 global_branch = None
 
@@ -156,8 +171,9 @@ def check_config():
             else:
                 repo_file = parameters['file']
 
-            if mode != 'migr' and file_extension is None or file_extension == '':
-                raise KeyError, 'output_format'
+            if mode != 'migr' and file_extension is None \
+                    or file_extension == '':
+                raise KeyError('output_format')
 
             if send.lower() in ['yes', 'y']:
                 email_to = parameters['email_to']

@@ -1,4 +1,4 @@
-#                   aptitude -F '%p %V' --disable-columns search '~n . ~O Mirantis'
+#              aptitude -F '%p %V' --disable-columns search '~n . ~O Mirantis'
 
 
 def compare_version(v):
@@ -15,23 +15,30 @@ def compare(version, sets):
     status = []
     a = list(sets)
     a.sort(reverse=True)
-    if len(a)>0:
+    if len(a) > 0:
         for i in a:
 
             if i[0] == '<':
-                    status.append(compare_version(version) < compare_version(i[1]))
+                    status.append(compare_version(version)
+                                  < compare_version(i[1]))
             elif i[0] == '>':
-                    status.append(compare_version(version) > compare_version(i[1]))
+                    status.append(compare_version(version)
+                                  > compare_version(i[1]))
             elif i[0] == '==':
-                status.append(compare_version(version) == compare_version(i[1]))
+                status.append(compare_version(version)
+                              == compare_version(i[1]))
             elif i[0] == '>=':
-                status.append(compare_version(version) >= compare_version(i[1]))
+                status.append(compare_version(version)
+                              >= compare_version(i[1]))
             elif i[0] == '<=':
-                status.append(compare_version(version) <= compare_version(i[1]))
+                status.append(compare_version(version)
+                              <= compare_version(i[1]))
             elif i[0] == '!=':
-                status.append(compare_version(version) != compare_version(i[1]))
+                status.append(compare_version(version)
+                              != compare_version(i[1]))
     if False in status:
-        return "The dependency wrong on " + str(status.index(False)+1) + " border", status
+        return "The dependency wrong on " + str(status.index(False)+1) + \
+               " border", status
     else:
         return 'All OK', status
 
@@ -46,22 +53,26 @@ def get_version(package_name):
     elif package_name.startswith('python-'):
         package_arr = package_name.split('-')
         package_arr.remove('python')
-        if len(package_arr)>1:
+        if len(package_arr) > 1:
             package_name = '-'.join(package_arr)
         else:
             package_name = package_arr[0]
 
     tmpfile = tempfile.NamedTemporaryFile(delete=False)
 
-    #os.system('easy_install --dry-run --user {0} >> {1}'.format(package_name, tmpfile.name))
+    # os.system('easy_install --dry-run --user {0} >> {1}'.
+    # format(package_name, tmpfile.name))
     try:
         easy_install_check = open('/usr/local/bin/easy_install', 'r')
         easy_install_check.close()
     except:
-        print 'easy_install is not installed. Please, use apt-get install python-setuptools before start this tool again'
+        print 'easy_install is not installed. ' \
+              'Please, use apt-get install python-setuptools ' \
+              'before start this tool again'
         raise SystemExit
     else:
-        command = 'easy_install --dry-run --user '+package_name+' >> ' + tmpfile.name
+        command = 'easy_install --dry-run --user '\
+                  + package_name + ' >> ' + tmpfile.name
 
     stdout = open('/dev/null', "w")
     stderr = open('/dev/null', "w")

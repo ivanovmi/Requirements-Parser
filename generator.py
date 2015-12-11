@@ -37,40 +37,58 @@ tag_dict = {
 
 def request_spec(gerrit_account, repo, branch):
     # List of URLs for spec file
-    req_url_spec = ['https://review.fuel-infra.org/gitweb?p=openstack-build/{0}-build.git;'
-                    'a=blob_plain;f=rpm/SPECS/{0}.spec;hb=refs/heads/{1}',
-                    'https://review.fuel-infra.org/gitweb?p=openstack-build/{0}-build.git;'
-                    'a=blob_plain;f=rpm/SPECS/openstack-{0}.spec;hb=refs/heads/{1}',
-                    'https://review.fuel-infra.org/gitweb?p=openstack-build/{0}-build.git;'
-                    'a=blob_plain;f=rpm/SPECS/python-{0}.spec;hb=refs/heads/{1}',
-		    'https://review.fuel-infra.org/gitweb?p=openstack-build/{0}-build.git;'
-                    'a=blob_plain;f=rpm/SPECS/python-django-{0}.spec;hb=refs/heads/{1}',
-                    'https://review.fuel-infra.org/gitweb?p=openstack-build/{0}-build.git;'
-                    'a=blob_plain;f=centos7/rpm/SPECS/{0}.spec;hb=refs/heads/{1}',
-                    'https://review.fuel-infra.org/gitweb?p=openstack-build/{0}-build.git;'
-                    'a=blob_plain;f=centos7/rpm/SPECS/openstack-{0}.spec;hb=refs/heads/{1}',
-                    'https://review.fuel-infra.org/gitweb?p=openstack-build/{0}-build.git;'
-                    'a=blob_plain;f=centos7/rpm/SPECS/python-{0}.spec;hb=refs/heads/{1}',
-                    'https://review.fuel-infra.org/gitweb?p=openstack-build/{0}-build.git;'
-                    'a=blob_plain;f=centos7/rpm/SPECS/python-django-{0}.spec;hb=refs/heads/{1}']
+    req_url_spec = ['https://review.fuel-infra.org/gitweb?p=openstack-build/'
+                    '{0}-build.git;a=blob_plain;f=rpm/SPECS/{0}.spec;'
+                    'hb=refs/heads/{1}',
+                    'https://review.fuel-infra.org/gitweb?p=openstack-build/'
+                    '{0}-build.git;a=blob_plain;f=rpm/SPECS/openstack-{0}'
+                    '.spec;hb=refs/heads/{1}',
+                    'https://review.fuel-infra.org/gitweb?p=openstack-build/'
+                    '{0}-build.git;a=blob_plain;f=rpm/SPECS/python-{0}.spec;'
+                    'hb=refs/heads/{1}',
+                    'https://review.fuel-infra.org/gitweb?p=openstack-build/'
+                    '{0}-build.git;a=blob_plain;f=rpm/SPECS/python-django-'
+                    '{0}.spec;hb=refs/heads/{1}',
+                    'https://review.fuel-infra.org/gitweb?p=openstack-build/'
+                    '{0}-build.git;a=blob_plain;f=centos7/rpm/SPECS/{0}.spec;'
+                    'hb=refs/heads/{1}',
+                    'https://review.fuel-infra.org/gitweb?p=openstack-build/'
+                    '{0}-build.git;a=blob_plain;f=centos7/rpm/SPECS/'
+                    'openstack-{0}.spec;hb=refs/heads/{1}',
+                    'https://review.fuel-infra.org/gitweb?p=openstack-build/'
+                    '{0}-build.git;a=blob_plain;'
+                    'f=centos7/rpm/SPECS/python-{0}.spec;'
+                    'hb=refs/heads/{1}',
+                    'https://review.fuel-infra.org/gitweb?p=openstack-build/'
+                    '{0}-build.git;a=blob_plain;'
+                    'f=centos7/rpm/SPECS/python-django-{0}.spec;'
+                    'hb=refs/heads/{1}']
     idx = 0
     while idx < len(req_url_spec):
         try:
-            req_spec = lan.get_requirements_from_url(req_url_spec[idx].format(repo.strip(), branch),
-             gerrit_account)
+            req_spec = lan.get_requirements_from_url(
+                req_url_spec[idx].format(repo.strip(), branch), gerrit_account)
         except KeyError:
             req_spec = None
         idx += 1
         if req_spec is not None:
             break
 
-    if req_spec is None: 
+    if req_spec is None:
         try:
-            req_url_spec = 'https://review.fuel-infra.org/gitweb?p=openstack-build/{0}-build.git;' \
-                           'a=blob_plain;f=rpm/SPECS/python-{2}.spec;hb=refs/heads/{1}'.format(repo.strip(),
-                                                                        branch, repo.strip().replace('.', '-'))
+            if branch == 'openstack-ci/fuel-8.0/liberty':
+                req_url_spec = 'https://review.fuel-infra.org/gitweb?p=openstack-build/{0}-build.git;' \
+                               'a=blob_plain;f=centos7/rpm/SPECS/python-{2}.spec;hb=refs/heads/{1}'.\
+                    format(repo.strip(), branch, repo.strip().
+                           replace('.', '-'))
+            else:
+                req_url_spec = 'https://review.fuel-infra.org/gitweb?p=openstack-build/{0}-build.git;' \
+                               'a=blob_plain;f=rpm/SPECS/python-{2}.spec;hb=refs/heads/{1}'.\
+                    format(repo.strip(), branch, repo.strip().
+                           replace('.', '-'))
 
-            req_spec = lan.get_requirements_from_url(req_url_spec, gerrit_account)
+            req_spec = lan.get_requirements_from_url(req_url_spec,
+                                                     gerrit_account)
         except KeyError:
             print 'Skip ' + repo.strip() + ' RPM repository.'
             req_spec = None
@@ -80,16 +98,19 @@ def request_spec(gerrit_account, repo, branch):
 
 def request_control(gerrit_account, repo, branch, type):
     # URL for getting changelog file
-    req_url_changelog = ['https://review.fuel-infra.org/gitweb?p=openstack-build/{0}-build.git;' \
-                        'a=blob_plain;f=debian/{2};hb=refs/heads/{1}',
-                        'https://review.fuel-infra.org/gitweb?p=openstack-build/{0}-build.git;' \
-                        'a=blob_plain;f=trusty/debian/{2};hb=refs/heads/{1}']
+    req_url_changelog = ['https://review.fuel-infra.org/gitweb?'
+                         'p=openstack-build/{0}-build.git;'
+                         'a=blob_plain;f=debian/{2};hb=refs/heads/{1}',
+                         'https://review.fuel-infra.org/gitweb?'
+                         'p=openstack-build/{0}-build.git;'
+                         'a=blob_plain;f=trusty/debian/{2};hb=refs/heads/{1}']
 
-    idx = 0 
+    idx = 0
     while idx < len(req_url_changelog):
         try:
             req_control = \
-                lan.get_requirements_from_url(req_url_changelog[idx].format(repo.strip(), branch, type),
+                lan.get_requirements_from_url(req_url_changelog[idx].format(
+                    repo.strip(), branch, type),
                     gerrit_account)
         except KeyError:
             req_control = None
@@ -111,12 +132,12 @@ def del_symbol(json_file, n):
 def get_req(gerritAccount, req_file, rq2, json_file, branch, type):
     pack_count = 0
     repo_count = 0
-    a=[]
     for repo in req_file:
         if repo != '\n':
             print '\n' * 3, 'Repos:', repo
             req_url = 'https://review.fuel-infra.org/gitweb?p=openstack/{0}.git;' \
-                      'a=blob_plain;f=requirements.txt;hb=refs/heads/{1}'.format(repo.strip(), branch)
+                      'a=blob_plain;f=requirements.txt;hb=refs/heads/{1}'.\
+                format(repo.strip(), branch)
 
             # Check the repo is exist. If not - skipping.
             try:
@@ -130,7 +151,8 @@ def get_req(gerritAccount, req_file, rq2, json_file, branch, type):
             if type:
 
                 if type == "control":
-                    packs_request = request_control(gerritAccount, repo, branch, "control")
+                    packs_request = request_control(gerritAccount,
+                                                    repo, branch, "control")
                 elif type == "spec":
                     packs_request = request_spec(gerritAccount, repo, branch)
 
@@ -140,14 +162,16 @@ def get_req(gerritAccount, req_file, rq2, json_file, branch, type):
                 if packs_request is not None:
 
                     if type == "control":
-                        packs_list = require_utils.Require.get_packs_control(packs_request)
+                        packs_list = require_utils.Require.get_packs_control(
+                            packs_request)
                         sector = "Depends:"
                     elif type == "spec":
-                        packs_list = require_utils.Require.get_packs_spec(packs_request)
+                        packs_list = require_utils.Require.get_packs_spec(
+                            packs_request)
                         sector = "Requires:"
 
                     for el in packs_list[sector]:
-                        if (base.has_key(el)):
+                        if el in base:
                             rq1.packs.setdefault(base[el], list())
                         else:
                             print "Unknown: " + el
@@ -155,26 +179,36 @@ def get_req(gerritAccount, req_file, rq2, json_file, branch, type):
             if rq1.packs != {}:
                 repo_count += 1
                 rq = require_utils.Require.merge(rq1.packs, rq2.packs)
-                json_file.write('\t{\n' + '\t' * 2 + json.dumps(repo.strip()) + ': {\n')
+                json_file.write('\t{\n' + '\t' * 2 +
+                                json.dumps(repo.strip()) + ': {\n')
                 json_file.write('\t' * 2 + '"deps": {\n')
                 for key in rq1.packs.keys():
 
                     color_beg = ''
                     color_end = ''
 
-                    if require_utils.Require.is_changed(rq[key], rq1.packs[key]):
+                    if require_utils.Require.is_changed(rq[key],
+                                                        rq1.packs[key]):
                         # Write to file with bold font and pointer.
                         pack_count += 1
                         color_beg = Fore.RED
                         color_end = Fore.RESET
-                        json_file.write('\t' * 3 + json.dumps(''.join('* ' + '**' + key + '**' + ' ' * 8)) +
-                                        ':' + json.dumps(''.join([" %s%s;" % x for x in rq[key]])) + ',\n')
+                        json_file.write('\t' * 3 + json.dumps(
+                            ''.join('* ' + '**' + key + '**' + ' ' * 8))+':' +
+                            json.dumps(''.join([" %s%s;" % x
+                                                for x in rq[key]])) + ',\n')
                     else:
                         # Write to file with standard font.
-                        json_file.write('\t' * 3 + json.dumps(''.join(key + ' ' * 8)) + ':' +
-                                        json.dumps(''.join([" %s%s;" % x for x in rq[key]])) + ',\n')
+                        json_file.write('\t' * 3 + json.dumps(
+                            ''.join(key + ' ' * 8)) + ':' +
+                            json.dumps(
+                                ''.join([" %s%s;" % x
+                                         for x in rq[key]]))
+                                + ',\n')
 
-                    print '{0}{1}{2}:{3}'.format(color_beg, key, color_end, ''.join([" %s%s;" % x for x in rq[key]]))
+                    print '{0}{1}{2}:{3}'.format(color_beg, key, color_end,
+                                                 ''.join([" %s%s;" % x
+                                                          for x in rq[key]]))
 
                 # Delete unnecessary comma in the end of dependencies list
                 del_symbol(json_file, -2)
@@ -193,7 +227,8 @@ def get_epoch(gerrit_account, req_file, branch, json_file):
             print '\n' * 3, 'Repos:', repo
 
             req_spec = request_spec(gerrit_account, repo, branch)
-            req_control = request_control(gerrit_account, repo, branch, "changelog")
+            req_control = request_control(
+                gerrit_account, repo, branch, "changelog")
 
             rpm_epoch = deb_epoch = None
 
@@ -208,11 +243,13 @@ def get_epoch(gerrit_account, req_file, branch, json_file):
 
                 if rpm_epoch:
                     print "RPM\n" + rpm_epoch + "\n"
-                    json_file.write('\t' * 4 + '"RPM":' + json.dumps(rpm_epoch) + ',\n')
+                    json_file.write('\t' * 4 + '"RPM":' +
+                                    json.dumps(rpm_epoch) + ',\n')
 
                 if deb_epoch:
                     print "DEB\n" + deb_epoch + "\n"
-                    json_file.write('\t' * 4 + '"DEB": ' + json.dumps(deb_epoch) + ',\n')
+                    json_file.write('\t' * 4 + '"DEB": ' +
+                                    json.dumps(deb_epoch) + ',\n')
 
                 del_symbol(json_file, -2)
                 json_file.write('\t' * 3 + '},\n')
@@ -245,18 +282,22 @@ def diff_check(launchpad_name, json_file, req_file):
             else:
                 git_branch = 'upstream/stable/juno'
 
-            os.system('./check.sh {0} {1} {2} {3}'.format(gerrit, repo, git_repo, git_branch))
+            os.system('./check.sh {0} {1} {2} {3}'.
+                      format(gerrit, repo, git_repo, git_branch))
 
             with open('tmpfile', 'r') as f:
 
                 try:
                     last = f.readlines()[-1]
                 except IndexError:
-                    json_file.write('\t{"No changes": "Codes of these components probably have not been changed"},\n')
+                    json_file.write('\t{"No changes": '
+                                    '"Codes of these components '
+                                    'probably have not been changed"},\n')
                 else:
                     head = last.strip().split(',', 1)[0]
                     tail = last.strip().split(',', 1)[1]
-                    json_file.write('\t{'+json.dumps(head)+': '+json.dumps(tail)+'},\n')
+                    json_file.write('\t{'+json.dumps(head) +
+                                    ': '+json.dumps(tail)+'},\n')
         else:
             continue
     del_symbol(json_file, -2)
@@ -271,9 +312,11 @@ def migrate(rq2, csvfile):
         apt_check = open('/usr/bin/aptitude', 'r')
         apt_check.close()
     except:
-        print 'Aptitude is not installed. Please, use apt-get install aptitude before start this tool again'
+        print 'Aptitude is not installed. Please, use' \
+              ' apt-get install aptitude before start this tool again'
     else:
-        os.system("aptitude -F '%p %V' --disable-columns search '~n . ~O Mirantis' >> {0}".format(tmpfile.name))
+        os.system("aptitude -F '%p %V' --disable-columns search '~n "
+                  ". ~O Mirantis' >> {0}".format(tmpfile.name))
 
     packages_dict = {}
 
@@ -304,7 +347,7 @@ def migrate(rq2, csvfile):
     for item in rq2:
         for key, basename in control_base.iteritems():
             if item == basename:
-                rq2[key]=rq2.pop(item)
+                rq2[key] = rq2.pop(item)
 
     # generate cli output
     for key in packages_dict:
@@ -319,11 +362,13 @@ def migrate(rq2, csvfile):
                 string_format = ''.join([" %s%s;" % x for x in rq2[key]])
 
             result, status = migratelib.compare(packages_dict[key], rq2[key])
-            report.generate_csv(csvfile, key, packages_dict[key], string_format, result)
+            report.generate_csv(csvfile, key,
+                                packages_dict[key], string_format, result)
             if result == 'All OK':
                 result = Fore.GREEN+'All OK'+Fore.RESET
             else:
-                result = Fore.RED+"The dependency wrong on " + str(status.index(False)+1) + " border"+Fore.RESET
+                result = Fore.RED+"The dependency wrong on " + \
+                    str(status.index(False)+1) + " border"+Fore.RESET
             try:
                 print key, \
                     '\t', \
