@@ -111,6 +111,8 @@ class Require:
         for line in inp:
             if line == '' or line[0] == '#':
                 continue
+            elif ';' in line:
+                line = line.split(';')[0]
             resName = Require.packageName.search(line)
             resEq = Require.packageEq.findall(line)
             it = next(re.finditer('>=|<=|>|<|==|!=', line), None)

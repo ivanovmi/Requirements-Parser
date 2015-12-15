@@ -109,12 +109,14 @@ def get_sequence(separator, count):
 
 def get_word_length(dictionary):
     # Default length of table columns -> 'Package name', 'DEPENDENCIES'
-    length = [12, 15]
+    length = [12, 15, 15]
     for key in dictionary.keys():
         if len(key) > length[0]:
             length[0] = len(key)
-        if len(dictionary[key]) > length[1]:
-            length[1] = len(dictionary[key])
+        if len(dictionary[key][0]) > length[1]:
+            length[1] = len(dictionary[key][0])
+        if len(dictionary[key][1]) > length[2]:
+            length[2] = len(dictionary[key][1])
     return length
 
 
@@ -131,26 +133,32 @@ def write_table(f, project, requirements, epoch):
         else:
             return word
 
-    def write(clmn1, clmn2):
+    def write(clmn1, clmn2, clmn3=None):
         write_headers(f, '\n{0}\n'.format(project))
-        write_parameters(f, '+{0}+{1}+\n'.
+        write_parameters(f, '+{0}+{1}+{2}+\n'.
                          format(get_sequence('-', word_length[0]),
-                                get_sequence('-', word_length[1])))
-        write_parameters(f, '|{0}|{1}|\n'.format(align(clmn1, 0),
-                                                 align(clmn2, 1)))
-        write_parameters(f, '+{0}+{1}+\n'.
+                                get_sequence('-', word_length[1]),
+                                get_sequence('-', word_length[2])))
+        write_parameters(f, '|{0}|{1}|{2}|\n'.format(align(clmn1, 0),
+                                                 align(clmn2, 1),
+                                                 align(clmn3, 2)))
+        write_parameters(f, '+{0}+{1}+{2}+\n'.
                          format(get_sequence('=', word_length[0]),
-                                get_sequence('=', word_length[1])))
+                                get_sequence('=', word_length[1]),
+                                get_sequence('=', word_length[2])))
 
         for key in requirements.keys():
-            write_parameters(f, '|{0}|{1}|\n'.
+            write_parameters(f, '|{0}|{1}|{2}|\n'.
                              format(align(key, 0),
-                                    align(requirements[key], 1)))
-            write_parameters(f, '+{0}+{1}+\n'.
+                                    align(requirements[key][0], 1),
+                                    align(requirements[key][1], 2)))
+            write_parameters(f, '+{0}+{1}+{2}+\n'.
                              format(get_sequence('-', word_length[0]),
-                                    get_sequence('-', word_length[1])))
+                                    get_sequence('-', word_length[1]),
+                                    get_sequence('-', word_length[2])))
 
     if epoch:
         write("Repo type", "Epoch")
     else:
-        write("Package name", "DEPENDENCIES")
+        write("Package name", "DEPENDENCIES", "Deps from gr")
+

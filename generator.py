@@ -186,25 +186,25 @@ def get_req(gerritAccount, req_file, rq2, json_file, branch, type):
 
                     color_beg = ''
                     color_end = ''
-
                     if require_utils.Require.is_changed(rq[key],
                                                         rq1.packs[key]):
                         # Write to file with bold font and pointer.
                         pack_count += 1
                         color_beg = Fore.RED
                         color_end = Fore.RESET
+                        #print rq1.packs[key]
                         json_file.write('\t' * 3 + json.dumps(
-                            ''.join('* ' + '**' + key + '**' + ' ' * 8))+':' +
+                            ''.join('* ' + '**' + key + '**' + ' ' * 8))+': [' +
                             json.dumps(''.join([" %s%s;" % x
-                                                for x in rq[key]])) + ',\n')
+                                                for x in rq[key]])) + ','+json.dumps(''.join([" %s%s;" % x for x in rq1.packs[key]]))+'],\n')
                     else:
                         # Write to file with standard font.
                         json_file.write('\t' * 3 + json.dumps(
-                            ''.join(key + ' ' * 8)) + ':' +
+                            ''.join(key + ' ' * 8)) + ': [' +
                             json.dumps(
                                 ''.join([" %s%s;" % x
-                                         for x in rq[key]]))
-                                + ',\n')
+                                         for x in rq[key]]))+','+json.dumps('')
+                                + '],\n')
 
                     print '{0}{1}{2}:{3}'.format(color_beg, key, color_end,
                                                  ''.join([" %s%s;" % x
